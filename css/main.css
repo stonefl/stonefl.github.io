@@ -324,7 +324,9 @@ footer .theme-by {
 .post-preview .post-read-more {
   font-weight: 800;
 }
-
+.post-read-more {
+  color: 4078C0;
+}
 @media only screen and (min-width: 768px) {
   .post-preview .post-title {
     font-size: 36px;
