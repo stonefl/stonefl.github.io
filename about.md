@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About Lei Feng
-subtitle: A little about Lei Feng and this Website.
+title: About
+subtitle: A little about me and my Website.
 ---
 
 ## About Me
