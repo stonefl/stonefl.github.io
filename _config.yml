@@ -23,8 +23,8 @@ description: Lei Feng's Website
 
 # List of links in the navigation bar
 navbar-links:
+  Home: ""
   About: "about"
-  Blog: ""
   Archive: "tags"
   Resources: "links"
   Subscribe: "subscribe"
