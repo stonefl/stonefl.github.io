@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-subtitle: A little about me and my Website.
+subtitle: Somthing about me and my Website.
 ---
 
 ## About Me
