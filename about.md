@@ -7,7 +7,7 @@ title: About
 
 Hello! My name is Lei Feng. I live in Memphis, Tennessee and work in FedEx as an Operations Research Advisor there. I passionate about Operation Research, Data Science, Machine Learning, Artificial Intelligence, Desktop and Web Application developments, and any other tech things. I enjoy learning and applying these techs in my daily job.
 
-<img src="/img/avatar/family.jpg" alt="Picture of my beautiful family." align="right" style="PADDING-LEFT: 10px" /> I am a furhter of a two-year cute girl. In my spare time, I read all kinds of books, play soccor, lift weight, and explore the outdoors, of course, the best time I am enjoying are staying with my beatiful family!
+<img src="/img/family.jpg" alt="Picture of my beautiful family." align="right" style="PADDING-LEFT: 10px" /> I am a furhter of a two-year cute girl. In my spare time, I read all kinds of books, play soccor, lift weight, and explore the outdoors, of course, the best time I am enjoying are staying with my beatiful family!
 
 
 ## About This Website
