@@ -12,9 +12,8 @@ Hello! My name is Lei Feng. I live in Memphis, Tennessee and work in FedEx as an
 
 I am a furhter of a two-year cute girl. In my spare time, I read all kinds of books, play soccor, lift weight, and explore the outdoors, of course, the best time I am enjoying are staying with my beatiful family!|
 
-
-
 ---
+
 ## About This Website
 
 This website/blog covers a wide range of tips and tricks on all kinds of techs I have used or learned in my day-to-day work.
