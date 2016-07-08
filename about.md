@@ -1,16 +1,17 @@
 ---
 layout: page
 title: About
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+## About Me
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Hello! My name is Lei Feng. I live in Memphis, Tennessee and work in FedEx as an Operations Research Advisor there. I passionate about Operation Research, Data Science, Machine Learning, Artificial Intelligence, Desktop and Web Application developments, and any other tech things. I enjoy learning and applying these techs in my daily job.
 
-What else do you need?
+<img src="/img/avatar/family.jpg" alt="Picture of my beautiful family." align="right" style="PADDING-LEFT: 10px" /> I am a furhter of a two-year cute girl. In my spare time, I read all kinds of books, play soccor, lift weight, and explore the outdoors, of course, the best time I am enjoying are staying with my beatiful family!
 
-### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+## About This Website
+
+This website/blog covers a wide range of tips and tricks on all kinds of techs I have used or learned in my day-to-day work.
+
+The templete is built on top of [Jekyll](http://jekyllrb.com/) and the theme is forked and updated from [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll) built by [Dean Attali](http://deanattali.com/aboutme#contact). 
