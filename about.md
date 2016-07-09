@@ -2,6 +2,7 @@
 layout: page
 title: About
 subtitle: Somthing about me and my Website.
+comments: false
 ---
 
 ## About Me
