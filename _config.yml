@@ -79,14 +79,15 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
+# turning on recognition of GitHub Flavored Markdown 
 kramdown:
-  input: GFM
+  input: GFM 
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
     scope:
-      path: ""
+      path: "" # all files in the project 
       type: "posts"
     values:
       layout: "post"
