@@ -2,6 +2,8 @@
 layout: post
 title: To be
 subtitle: ... or not to be?
+category: Dev
+tags: [web, jekyll]
 ---
 
 To be, or not to be--that is the question:
