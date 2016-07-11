@@ -67,7 +67,13 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+		  <span class="post-date">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+		  <!--Post tags-->
+		    {% if page.tags %} | 
+  		     {% for tag in page.tags %}
+        		<a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+  	             {% endfor %}
+  		    {% endif %}
 		  {% endif %}
         </div>
       </div>
