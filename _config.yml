@@ -25,14 +25,14 @@ description: Lei Feng's Website
 navbar-links:
   Home: ""
   Archives:
-   - Categories: "categories"
-   - Tags: "tags"
+   - Categories: "/archives/categories"
+   - Tags: "/archives/tags"
   About Me: "about"
   
   
 # where are the tags and categories pages
-tag_page: "tags"
-category_page: "categories"
+tag_page: "/archives/tags"
+category_page: "/archives/categories"
  
  #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
  #   - Learn markdown: "http://www.markdowntutorial.com/"
