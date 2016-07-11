@@ -28,6 +28,9 @@ navbar-links:
   Categories: "categories"
   Tags: "tags"
   
+# where are the tags and categories pages
+tag_page: "tages"
+category_page: "categories"
  
  #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
  #   - Learn markdown: "http://www.markdowntutorial.com/"
