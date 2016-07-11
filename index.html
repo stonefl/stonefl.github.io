@@ -17,14 +17,13 @@ subtitle: Notebook of tips and tricks I learned through doing, in both work and 
 	  {% endif %}
     </a>
 
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-       {% if post.tags %} | 
+    <span class="post-date"> Posted on {{ post.date | date: "%B %-d, %Y" }} </span>
+    {% if post.tags %} | 
 	 {% for tag in post.tags %}
     		<a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
     	{% endfor %}
-       {% endif %}
-    </p>
+     {% endif %}
+    
 
     <div class="post-entry">
       {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
