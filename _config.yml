@@ -25,6 +25,8 @@ description: Lei Feng's Website
 navbar-links:
   Home: ""
   About: "about"
+  Categories: "categories"
+  Tags: "tags"
   
  
  #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
