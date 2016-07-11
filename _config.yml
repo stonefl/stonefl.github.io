@@ -25,8 +25,8 @@ description: Lei Feng's Website
 navbar-links:
   Home: ""
   Archives:
-   -Categories: "categories"
-   -Tags:"tags"
+   - Categories: "categories"
+   - Tags: "tags"
   About Me: "about"
   
   
