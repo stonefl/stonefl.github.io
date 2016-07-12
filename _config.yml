@@ -23,11 +23,11 @@ description: Lei Feng's Website
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
+  Home: "/"
   Archives:
    - Categories: "/archives/categories"
    - Tags: "/archives/tags"
-  About Me: "about"
+  About Me: "/about/"
   
   
 # where are the tags and categories pages
