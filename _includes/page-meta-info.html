@@ -1,4 +1,4 @@
-<p class="post-meta">
+<span class="post-meta">
 
   <i class="fa fa-calendar" aria-hidden="true" title="Date published"></i> {{ page.date | date_to_string }}
   
@@ -15,13 +15,13 @@
        <a href="{{ site.tag_page | prepend: site.baseurl }}#{{ tag | slugify }}" class="post-tag"><i class="fa fa-tags" title="Post tags"></i>{{ tag }}</a>
     {% endfor %}
  {% endif %}
-</p>
- 
- <p class="social-icons">
+</span>
+ <br>
+ <span class="social-icons">
    <!--twitter-->
    <a href="https://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.owner.twitter }}"  class="social-icons" target="_blank" title="Share on twitter"> <i class="fa fa-twitter meta"></i></a>
    <!--Linkedin-->
    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}"  class="social-icons" target="_blank" title="Share on LinkedIn"> <i class="fa fa-linkedin"></i></a>
    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"  class="social-icons" target="_blank" title="Share on Google+"> <i class="fa fa-google-plus"></i></a>
    <a href="javascript:window.print()" class="social-icons" title="Printer friendly format"><i class="fa fa-print"></i></a>
-</p>
+</span>
