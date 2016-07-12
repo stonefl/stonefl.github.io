@@ -20,7 +20,7 @@ subtitle: Notebook of tips and tricks I learned through doing, in both work and 
     <span class="post-date"> <i class="fa fa-calendar" aria-hidden="true" title="Date published"></i> Posted on {{ post.date | date_to_string }}</span>
      {% if post.categories %} | 
 	 {% for cat in post.categories %}
-    		<a href="{{ site.category_page | prepend: site.baseurl }}#{{ cat | slugify }}" class="post-cat"><i class="fa fa-folder" title="post categories"></i>{{ cat }}</a>
+    		<a href="{{ site.category_page | prepend: site.baseurl }}#{{ cat | slugify }}" class="post-cat"><i class="fa fa-folders" title="post categories"></i>{{ cat }}</a>
     	{% endfor %}
      {% endif %}
     {% if post.tags %} | 
