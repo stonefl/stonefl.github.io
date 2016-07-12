@@ -21,7 +21,7 @@ subtitle: Notebook of tips and tricks I learned through doing, in both work and 
     <div class="post-entry">
       {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
 	  <!-- <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a> -->
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;[Read&nbsp;More]</a>
+	  <div><a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more"><i class="fa fa-plus-circle" aria-hidden="true"></i>[Read&nbsp;More]</a></div>
     </div>
 
    </article>
