@@ -313,13 +313,17 @@ footer .theme-by {
   margin-bottom: 10px;
 }
 
- .post-preview .post-meta .post-date .post-cat .post-tag,
-.post-heading .post-meta .post-date .post-cat .post-tag {
+ .post-preview .post-meta, 
+.post-heading .post-meta {
   color: #808080;
   font-size: 18px;
   margin: 0 0 10px;
 }
-
+a.post-cat, a.post-tag{
+  color: #808080;
+  font-size: 18px;
+  margin: 0 0 10px;
+}
 
 
 .post-preview .post-entry {
