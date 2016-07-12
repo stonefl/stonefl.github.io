@@ -38,8 +38,8 @@
 		  {% if include.type == "post" %}
 		  <span class="post-date"><i class="fa fa-calendar" aria-hidden="true" title="Date published"></i> Posted on {{ page.date | date_to_string }}</span>
 		    <!--Post categories-->
-		   {% if post.categories %} | 
-	 	     {% for cat in post.categories %}
+		   {% if page.categories %} | 
+	 	     {% for cat in page.categories %}
     		       <a href="{{ site.category_page | prepend: site.baseurl }}#{{ cat | slugify }}" class="post-cat"><i class="fa fa-folder" title="post categories"></i>{{ cat }}</a>
     	             {% endfor %}
                    {% endif %}
@@ -76,8 +76,8 @@
 		  {% if include.type == "post" %}
 		  <span class="post-date"><i class="fa fa-calendar" aria-hidden="true" title="Date published"></i> Posted on {{ page.date | date_to_string }}</span>
 		  <!--Post categories-->
-		   {% if post.categories %} | 
-	 	     {% for cat in post.categories %}
+		   {% if page.categories %} | 
+	 	     {% for cat in page.categories %}
     		       <a href="{{ site.category_page | prepend: site.baseurl }}#{{ cat | slugify }}" class="post-cat"><i class="fa fa-folder" title="post categories"></i>{{ cat }}</a>
     	             {% endfor %}
                    {% endif %}
