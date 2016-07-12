@@ -36,21 +36,8 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-date"><i class="fa fa-calendar" aria-hidden="true" title="Date published"></i> Posted on {{ page.date | date_to_string }}</span>
-		    <!--Post categories-->
-		   {% if page.categories %} | 
-	 	     {% for cat in page.categories %}
-    		       <a href="{{ site.category_page | prepend: site.baseurl }}#{{ cat | slugify }}" class="post-cat"><i class="fa fa-folder" title="post categories"></i>{{ cat }}</a>
-    	             {% endfor %}
-                   {% endif %}
-		   
-		   <!--Post tags-->
-		    {% if page.tags %} | 
-  		     {% for tag in page.tags %}
-        		<a href="{{ site.tag_page | prepend: site.baseurl }}#{{ tag | slugify }}" class="post-tag"><i class="fa fa-tags" title="post tags"></i>{{ tag }}</a>
-  	             {% endfor %}
-  		    {% endif %}
-		  {% endif %}
+		     {% include post-meta-info.html %}
+		 {% endif %}
         </div>
       </div>
     </div>
@@ -74,20 +61,7 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-date"><i class="fa fa-calendar" aria-hidden="true" title="Date published"></i> Posted on {{ page.date | date_to_string }}</span>
-		  <!--Post categories-->
-		   {% if page.categories %} | 
-	 	     {% for cat in page.categories %}
-    		       <a href="{{ site.category_page | prepend: site.baseurl }}#{{ cat | slugify }}" class="post-cat"><i class="fa fa-folder" title="post categories"></i>{{ cat }}</a>
-    	             {% endfor %}
-                   {% endif %}
-		 
-		  <!--Post tags-->
-		    {% if page.tags %} | 
-  		     {% for tag in page.tags %}
-        		<a href="{{ site.tag_page | prepend: site.baseurl }}#{{ tag | slugify }}" class="post-tag"><i class="fa fa-tags" title="post tags"></i>{{ tag }}</a>
-  	             {% endfor %}
-  		    {% endif %}
+		     {% include post-meta-info.html %}
 		  {% endif %}
         </div>
       </div>
