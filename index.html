@@ -16,7 +16,7 @@ subtitle: Notebook of tips and tricks I learned through doing, in both work and 
 	  </h3>
 	  {% endif %}
     </a>
-
+    <!--
     <span class="post-date"> <i class="fa fa-calendar" aria-hidden="true" title="Date published"></i> Posted on {{ post.date | date_to_string }}</span>
      {% if post.categories %} | 
 	 {% for cat in post.categories %}
@@ -28,7 +28,7 @@ subtitle: Notebook of tips and tricks I learned through doing, in both work and 
     		<a href="{{ site.tag_page | prepend: site.baseurl }}#{{ tag | slugify }}" class="post-tag"><i class="fa fa-tags" title="post tags"></i>{{ tag }}</a>
     	{% endfor %}
      {% endif %}
-    
+    -->
 
     <div class="post-entry">
       {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
