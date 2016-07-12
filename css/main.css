@@ -21,10 +21,10 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
-/*
+
 a {
   color: #008AFF;
-}*/
+}
 a:hover,
 a:focus {
   color: #0085a1;
@@ -313,8 +313,8 @@ footer .theme-by {
   margin-bottom: 10px;
 }
 
- .post-preview .post-meta,
-.post-heading .post-meta {
+ .post-preview .post-meta .post-date .post-cat .post-tag,
+.post-heading .post-meta .post-date .post-cat .post-tag {
   color: #808080;
   font-size: 18px;
   margin: 0 0 10px;
@@ -481,6 +481,8 @@ footer .theme-by {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+
 
 /* --- Pager --- */
 
