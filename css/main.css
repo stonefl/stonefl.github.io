@@ -362,8 +362,14 @@ div.social-icons {
 }
 
 .tags-expo a.post-title {
-  color: #808080;
+  color: #404040;
 }
+
+small.post-date {
+  color: #808080;
+  font-style: italic;
+}
+
 .tags-expo a:focus,
 .tags-expo a:hover {
   text-decoration: none;
