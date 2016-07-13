@@ -11,7 +11,7 @@
 	        {% if forloop.first %}
 	            <i class="fa fa-folder" title="Post categories"></i>
 	        {% endif %}
-	            <a href="{{ site.category_page | prepend: site.baseurl }}#{{ cat | slugify }}" class="post-cat" title="Pages categorized {{ cat }}">{{ cat }}</a>
+	            <a href="{{ site.category_page | prepend: site.baseurl }}#{{ cat | slugify }}" class="post-cat" title="Posts categorized {{ cat }}">{{ cat }}</a>
     		{% unless forloop.last %} &bull; {% endunless %}
     	    {% endfor %}
     	{% endif %}
@@ -24,7 +24,7 @@
 	        {% if forloop.first %}
 	            <i class="fa fa-tags" title="Post tags"></i>
 	        {% endif %}
-	            <a href="{{ site.tag_page | prepend: site.baseurl }}#{{ tag | slugify }}" class="post-tag" title="Pages tagged {{ tag }}">{{ tag }}</a>
+	            <a href="{{ site.tag_page | prepend: site.baseurl }}#{{ tag | slugify }}" class="post-tag" title="Posts tagged {{ tag }}">{{ tag }}</a>
     		{% unless forloop.last %} &bull; {% endunless %}
     	    {% endfor %}
     	{% endif %}
