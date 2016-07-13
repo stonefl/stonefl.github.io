@@ -320,7 +320,7 @@ footer .theme-by {
   margin: 0 0 10px;
 }
 
-a.post-cat, a.post-tag{
+a.post-cat, a.post-tag, a.social-icons{
   color: #808080;
   font-size: 18px;
   margin: 0 0 10px;
@@ -329,7 +329,9 @@ a.post-cat, a.post-tag{
 a.post-cat:focus,
 a.post-cat:hover,
 a.post-tag:focus,
-a.post-tag:hover {
+a.post-tag:hover 
+a.social-icons:focus,
+a.social-icons:hover {
   text-decoration: none;
   color: #0085a1;
 }
