@@ -329,7 +329,7 @@ a.post-cat, a.post-tag, a.social-icons{
 a.post-cat:focus,
 a.post-cat:hover,
 a.post-tag:focus,
-a.post-tag:hover 
+a.post-tag:hover, 
 a.social-icons:focus,
 a.social-icons:hover {
   text-decoration: none;
