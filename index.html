@@ -20,7 +20,12 @@ subtitle: Notebook of tips and tricks I learned through doing, in both work and 
     {% include post-meta-info.html %}
     <div class="post-entry">
       <!-- {{ post.content | strip_html | xml_escape | truncatewords: 50 }} -->
-      {{ post.content | xml_escape | truncatewords: 50 }}
+      {% if post.description.size > 140 %}
+          {{ post.description | markdownify | remove: '<p>' | remove: '</p>' }}
+      {% else %}
+          {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+      {% endif %}
+      
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more"><i class="fa fa-plus-circle" aria-hidden="true"></i>[Read&nbsp;More]</a>
     </div>
 
