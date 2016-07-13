@@ -85,6 +85,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+excerpt_separator: <!--more-->
 
 # turning on recognition of GitHub Flavored Markdown 
 kramdown:
