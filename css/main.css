@@ -360,8 +360,14 @@ div.social-icons {
   padding-top: .5px;
   padding-bottom: 20px;
 }
-small.post-date {
+
+.tags-expo a.post-title {
   color: #808080;
+}
+.tags-expo a:focus,
+.tags-expo a:hover {
+  text-decoration: none;
+  color: #0085a1;
 }
 
 /* --- Post and page headers --- */
