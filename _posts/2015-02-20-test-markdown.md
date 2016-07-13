@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Test markdown
+title: Test markdown 01
 subtitle: Each post also has a subtitle
 category: dev
 tag: markdown
