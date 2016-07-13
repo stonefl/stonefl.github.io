@@ -25,7 +25,6 @@ subtitle: Notebook of tips and tricks I learned through doing, in both work and 
       {% else %}
           {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
       {% endif %}
-      
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more"><i class="fa fa-plus-circle" aria-hidden="true"></i>[Read&nbsp;More]</a>
     </div>
 
