@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Migrating from Wordpress.com to Github
 subtitle: Why and How I move my blog from Wordpress.com to Github
 date: 20146-07-13
