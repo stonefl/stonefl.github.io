@@ -360,6 +360,9 @@ div.social-icons {
   padding-top: .5px;
   padding-bottom: 20px;
 }
+small.post-date {
+  color: #808080;
+}
 
 /* --- Post and page headers --- */
 
