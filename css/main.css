@@ -326,7 +326,11 @@ a.post-cat, a.post-tag{
   margin: 0 0 10px;
   font-weight: 600;
 }
-
+a.post-cat:focus,
+a.post-tag:hover {
+  text-decoration: none;
+  color: #0085a1;
+}
 
 .post-preview .post-entry {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
