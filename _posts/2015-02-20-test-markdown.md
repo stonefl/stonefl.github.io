@@ -42,3 +42,14 @@ var foo = function(x) {
 }
 foo(3)
 ```
+
+This some java code with syntax highlighting:
+
+```java
+public String saySomething(String s){
+	System.out.println(s);
+}
+//print out
+String s = "Hello World!";
+saySomething(s);
+```
