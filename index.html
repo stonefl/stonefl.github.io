@@ -19,7 +19,8 @@ subtitle: Notebook of tips and tricks I learned through doing, in both work and 
     
     {% include post-meta-info.html %}
     <div class="post-entry">
-      {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+      <!-- {{ post.content | strip_html | xml_escape | truncatewords: 50 }} -->
+      {{ post.content | xml_escape | truncatewords: 50 }}
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more"><i class="fa fa-plus-circle" aria-hidden="true"></i>[Read&nbsp;More]</a>
     </div>
 
