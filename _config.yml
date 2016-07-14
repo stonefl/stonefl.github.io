@@ -118,9 +118,8 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
+  rooturl: '_posts' # restrict authoring access to a directory
+  ignore:  # Array of files to ignore and hide in Prose
     - 404.html
     - LICENSE
     - feed.xml
@@ -130,7 +129,9 @@ prose:
     - /css
     - /img
     - /js
-  metadata:
+  siteurl: "https://stonefl.github.io/" # turns on Jekyll live preview
+  media: 'img' # specify a media directory uploading images defaults to.
+  metadata: # front matter settings
     _posts:
       - name: "layout"
         field:
@@ -160,7 +161,29 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Choose Tags"
+          options:
+           - name: "Programming"
+             value: "Programming"
+           - name: "Operations Research"
+             value: "Operations Research"
+           - name: "Algorithms"
+             value: "Algorithms"
+           - name: "Data Structure"
+             value: "Data Structure"
+           - name: "Machine Learning"
+             value: "Machine Learning"
+          alterable: true
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Tags"
+          placeholder: "Add Tags"
+          alterable: true
 gems:
   - jekyll-paginate
 
