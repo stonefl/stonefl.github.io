@@ -8,9 +8,10 @@ published: true
 categories:
   - Programming
 tags: Markdown
+date: ''
 ---
 
-[Markdown](http://markdowntutorial.com/) is a way to write content for the web. You can write regular Markdown in your post and Jekyll will automatically covert it to a nice webpage. Formatting text in Markdown does not do anything fancy like change font size, color, or type in CSS. All you have control over are displaying plaintext bold, creating headers, and organizing lists and blocks through a few symbols, such as asterisks(`*`) and backticks(`\``). So once familiar with these s
+[Markdown](http://markdowntutorial.com/) is a way to write content for the web. You can write regular Markdown in your post and Jekyll will automatically covert it to a nice webpage. Formatting text in Markdown does not do anything fancy like change font size, color, or type in CSS. All you have control over are displaying plaintext bold, creating headers, and organizing lists and blocks through a few symbols, such as asterisks(`*`) and backticks(`` ` ``). So once familiar with these s
 <!--more-->
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
