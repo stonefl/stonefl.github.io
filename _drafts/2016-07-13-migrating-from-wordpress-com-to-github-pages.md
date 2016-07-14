@@ -15,3 +15,4 @@ Recently, I just moved my blog from wordpress.com to Github Pages. In this post 
 changed the prose configurations in `_config.yml` file.
 
 
+It's great to code read and learn from other developers especially when you're new to developing sites on Jekyll or Prose.
