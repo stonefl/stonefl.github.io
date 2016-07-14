@@ -10,3 +10,8 @@ tags:
   - Github Pages
 ---
 Recently, I just moved my blog from wordpress.com to Github Pages. In this post describes why and how I made this change.
+
+### Learning and settings in Prose.io
+changed the prose configurations in `_config.yml` file.
+
+
