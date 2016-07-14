@@ -129,7 +129,7 @@ prose:
     - /css
     - /img
     - /js
-  siteurl: "https://stonefl.github.io/" # turns on Jekyll live preview
+  #siteurl: "https://stonefl.github.io/" # turns on Jekyll live preview
   media: 'img' # specify a media directory uploading images defaults to.
   metadata: # front matter settings
     _posts:
