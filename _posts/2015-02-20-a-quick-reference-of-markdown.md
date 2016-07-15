@@ -13,6 +13,7 @@ date: '2016-07-13'
 <!--more-->
 
 This post lists out some frequently used formatting elements syntax in Markdown. It have been used as a quick reference for my daily writing. Some of the examples I used here come from [Markdown Tutorial](http://markdowntutorial.com/) and I highly encourage you to take 5 minutes to learn how to write in markdown. 
+
 # Table of Content
 
 
