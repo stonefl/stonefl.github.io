@@ -11,7 +11,7 @@ tags: Markdown
 date: '2016-07-13'
 ---
 
-[Markdown](http://markdowntutorial.com/) is a way to write web content. You can write regular Markdown in your post and Jekyll will automatically covert it to a nice webpage. Formatting text in Markdown doesn't do anything fancy, like changing font size, color, or type in CSS, instead it only define different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``) around plaintext to display the plaintext as bold, headers, lists, blocks, etc. Therefore, Markdown is simplier than HTML and CSS to format your web content.
+[Markdown](http://markdowntutorial.com/) is a way to write web content. Formatting text in Markdown doesn't do anything fancy, like changing font size, color, or type in CSS, instead it only define different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``) around plaintext to display the plaintext as bold, headers, lists, blocks, etc. Therefore, Markdown is simplier than HTML and CSS to format your web content.
 <!--more-->
 
 This post lists out some frequently used formatting elements in Markdown. It is used as a quick reference to me.
