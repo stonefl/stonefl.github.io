@@ -11,15 +11,15 @@ tags: Markdown
 date: '2016-07-13'
 ---
 
-[Markdown](http://markdowntutorial.com/) is a way to write web content. Formatting text in Markdown doesn't do anything fancy, like changing font size, color, or type in CSS, instead it only define different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``) around plaintext to display the plaintext as bold, headers, lists, blocks, etc. Therefore, Markdown is simplier than HTML and CSS to format your web content.
+Markdown is a way to write web content. Formatting text in Markdown doesn't do anything fancy, like changing font size, color, or type in CSS, instead it only define different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``), around plaintext to display the plaintext as bold, headers, lists, code blocks, etc. Technically speaking, Markdown is simplier than HTML and CSS to format your web content. This is one of the reasons why I moved my blog from Wordpress.com to Github Pages. 
 <!--more-->
 
-This post lists out some frequently used formatting elements in Markdown. It is used as a quick reference to me.
+This post lists out some frequently used formatting elements in Markdown. It is used as a quick reference for my daily writing. Some of the examples I used here come [Markdown Tutorial](http://markdowntutorial.com/), and I highly encourage you to take 5 minutes to learn how to write in markdown. 
 
 
 
 
-I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+I strongly encourage you to [take 5 minutes to learn how to write in markdown]([http://markdowntutorial.com/](http://markdowntutorial.com/)) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
 **Here is some bold text**
 
