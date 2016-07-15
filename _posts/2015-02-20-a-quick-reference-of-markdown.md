@@ -46,7 +46,7 @@ would generate a blockquote:
   pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
   the slope of the breakwater."
 
-** Note: ** if you decide to hard-wrap text, if need to prefix each line of your quote with a > character.
+**Note:** if you decide to hard-wrap text, if need to prefix each line of your quote with a > character.
 
 
 
