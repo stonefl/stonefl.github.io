@@ -28,6 +28,13 @@ Paragraphs consist of one or more consecutive lines of text and they are separat
 
 Header work as titles and subtiles for sections. To create a header, simply prefix your header text with the number of hash marks (`#`) to specify heading depth. For example: # Header 1, ## Header 2 and ### Header 3 will be progressively smaller headers. You can end your headers with any number of hashes.
 
+<tt>
+> "In a few moments he was barefoot, his stockings folded in his pockets and his
+  canvas shoes dangling by their knotted laces over his shoulders and, picking a
+  pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
+  the slope of the breakwater."
+</tt>
+
 > "In a few moments he was barefoot, his stockings folded in his pockets and his
   canvas shoes dangling by their knotted laces over his shoulders and, picking a
   pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
