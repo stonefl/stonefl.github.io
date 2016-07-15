@@ -31,22 +31,24 @@ Header work as titles and subtiles for sections. To create a header, simply pref
 ## 1.3 Blockquotes
 
 A blockquote is a sentence or paragraph from another source that's been specially formatted to draw attention to the reader. To create a block quote, all you have to do is preface a line with the "greater than" caret ('>'). For example:
-
 <tt>
 > "In a few moments he was barefoot, his stockings folded in his pockets and his
   canvas shoes dangling by their knotted laces over his shoulders and, picking a
   pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
   the slope of the breakwater."
 </tt>
-would generate a blockquote:
+would generate a blockquote as:
 > "In a few moments he was barefoot, his stockings folded in his pockets and his
   canvas shoes dangling by their knotted laces over his shoulders and, picking a
   pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
   the slope of the breakwater."
 
-**Note:** if you decide to hard-wrap text, if need to prefix each line of your quote with a > character.
+**Note:** if you decide to hard-wrap text, you need to prefix each line of your quote with a > character.
 
-
+You can even do nested block quoting, for example
+> "This one blockquote"
+>> "This is another blockquote"
+>>> "This is one more"
 
 
 
