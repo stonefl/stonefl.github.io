@@ -2,8 +2,6 @@
 layout: post
 title: A Quick Reference of Markdown
 subtitle: A learning note of Markdown
-category: dev
-tag: markdown
 published: true
 categories:
   - Programming
