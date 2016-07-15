@@ -14,21 +14,21 @@ date: '2016-07-13'
 
 This post lists out some frequently used formatting elements syntax in Markdown. It have been used as a quick reference for my daily writing. Some of the examples I used here come from [Markdown Tutorial](http://markdowntutorial.com/) and I highly encourage you to take 5 minutes to learn how to write in markdown. 
 
-# Table of Content
+## Table of Content
 
 
 
-# 1. Block Elements
+## 1. Block Elements
 
-## 1.1 Paragraph and Line Breaks
+### 1.1 Paragraph and Line Breaks
 
 Paragraphs consist of one or more consecutive lines of text and they are separated by one or more blank lines. If a line contains only spaces, it is a blank line. Blocks of text separated by one or more blank lines will be parsed as paragraphs. If you want to create a line break, simply end a line with two or more spaces, then hit Return/Enter.
 
-## 1.2 Headers
+### 1.2 Headers
 
 Header work as titles and subtiles for sections. To create a header, simply prefix your header text with the number of hash marks (`#`) to specify heading depth. For example: # Header 1, ## Header 2 and ### Header 3 will be progressively smaller headers. You can end your headers with any number of hashes.
 
-## 1.3 Blockquotes
+### 1.3 Blockquotes
 
 A blockquote is a sentence or paragraph from another source that's been specially formatted to draw attention to the reader. To create a block quote, all you have to do is preface a line with the "greater than" caret ('>'). For example:
 <tt>
