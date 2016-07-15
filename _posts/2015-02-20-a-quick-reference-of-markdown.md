@@ -45,7 +45,8 @@ would generate a blockquote as:
 
 **Note:** if you decide to hard-wrap text, you need to prefix each line of your quote with a > character.
 
-You can even do nested block quoting, for example
+You can even do nested block quoting, for example:
+
 > "This one blockquote"
 >> "This is another blockquote"
 >>> "This is one more"
