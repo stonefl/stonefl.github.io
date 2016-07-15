@@ -28,10 +28,9 @@ Paragraphs consist of one or more consecutive lines of text and they are separat
 
 Header work as titles and subtiles for sections. To create a header, simply prefix your header text with the number of hash marks (`#`) to specify heading depth. For example: # Header 1, ## Header 2 and ### Header 3 will be progressively smaller headers. You can end your headers with any number of hashes.
 
-## 1.3 Block Quotes
+## 1.3 Blockquotes
 
-Markdown creates blockquotes email-style by prefixing each line with the >. This looks best if you decide to hard-wrap text and prefix each line with a > character, but Markdown supports just putting > before your paragraph.
-If you need to call special attention to a quote from another source, or design a pull quote for a magazine article, then Markdown's blockquote syntax will be useful. A blockquote is a sentence or paragraph that's been specially formatted to draw attention to the reader. For example:
+A blockquote is a sentence or paragraph from another source that's been specially formatted to draw attention to the reader. To create a block quote, all you have to do is preface a line with the "greater than" caret ('>'). For example:
 
 <tt>
 > "In a few moments he was barefoot, his stockings folded in his pockets and his
@@ -40,10 +39,19 @@ If you need to call special attention to a quote from another source, or design 
   the slope of the breakwater."
 </tt>
 
+would generate a blockquote:
+
 > "In a few moments he was barefoot, his stockings folded in his pockets and his
   canvas shoes dangling by their knotted laces over his shoulders and, picking a
   pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
   the slope of the breakwater."
+
+** Note: ** if you decide to hard-wrap text, if need to prefix each line of your quote with a > character.
+
+
+
+
+
   
 
 
