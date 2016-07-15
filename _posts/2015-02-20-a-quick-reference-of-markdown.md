@@ -50,6 +50,10 @@ would generate a blockquote as:
 
   
 
+### References
+
+[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+[Markdown Tutorial](http://markdowntutorial.com/)
 
   
 
