@@ -12,12 +12,25 @@ date: '2016-07-13'
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a way to write web content. Formatting text in Markdown doesn't do anything fancy, like changing font size, color, or type in CSS, instead it only define different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``), around plaintext to display the plaintext as bold, headers, lists, code blocks, etc. Technically speaking, Markdown is simplier than HTML and CSS to format your web content. This is one of the reasons why I moved my blog from Wordpress.com to Github Pages. 
 <!--more-->
 
-This post lists out some frequently used formatting elements syntax in Markdown. It have been used as a quick reference for my daily writing. Some of the examples I used here come [Markdown Tutorial](http://markdowntutorial.com/) and I highly encourage you to take 5 minutes to learn how to write in markdown. 
+This post lists out some frequently used formatting elements syntax in Markdown. It have been used as a quick reference for my daily writing. Some of the examples I used here come from [Markdown Tutorial](http://markdowntutorial.com/) and I highly encourage you to take 5 minutes to learn how to write in markdown. 
+# Table of Content
 
 
 
+# 1. Block Elements
 
-I strongly encourage you to [take 5 minutes to learn how to write in markdown]([http://markdowntutorial.com/](http://markdowntutorial.com/)) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+## 1.1 Paragraph and Line Breaks
+
+Paragraphs consist of one or more consecutive lines of text and they are separated by one or more blank lines. If a line contains only spaces, it is a blank line. Blocks of text separated by one or more blank lines will be parsed as paragraphs. If you want to create a line break, simply end a line with two or more spaces, then hit Return/Enter.
+
+## 1.2 Headers
+
+Markdown supports two header formats. The wiki editor uses the “atx’-style headers. Simply prefix your header text with the number of hash marks (`#`) to specify heading depth. For example: # Header 1, ## Header 2 and ### Header 3 will be progressively smaller headers. You can end your headers with any number of hashes.
+
+
+  
+
+
 
 **Here is some bold text**
 
