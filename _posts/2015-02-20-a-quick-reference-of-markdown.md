@@ -9,10 +9,10 @@ tags: Markdown
 date: '2016-07-13'
 ---
 
-Markdown is a way to write web content. Formatting text in Markdown doesn't do anything fancy, like changing font size, color, or type in CSS, instead it only define different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``), around plaintext to display the plaintext as bold, headers, lists, code blocks, etc. Technically speaking, Markdown is simplier than HTML and CSS to format your web content. This is one of the reasons why I moved my blog from Wordpress.com to Github Pages. 
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a way to write web content. Formatting text in Markdown doesn't do anything fancy, like changing font size, color, or type in CSS, instead it only define different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``), around plaintext to display the plaintext as bold, headers, lists, code blocks, etc. Technically speaking, Markdown is simplier than HTML and CSS to format your web content. This is one of the reasons why I moved my blog from Wordpress.com to Github Pages. 
 <!--more-->
 
-This post lists out some frequently used formatting elements syntax in [Kramdown](http://kramdown.gettalong.org/) {:target="\_blank"}. It have been used as a quick reference for my daily writing. Some of the examples I used here come [Markdown Tutorial](http://markdowntutorial.com/)[new tab] and I highly encourage you to take 5 minutes to learn how to write in markdown. 
+This post lists out some frequently used formatting elements syntax in Markdown. It have been used as a quick reference for my daily writing. Some of the examples I used here come [Markdown Tutorial](http://markdowntutorial.com/)[:target="_blank"] _and I highly encourage you to take 5 minutes to learn how to write in markdown. 
 
 
 
