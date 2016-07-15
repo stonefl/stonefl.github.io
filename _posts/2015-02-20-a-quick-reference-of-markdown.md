@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Quick Reference of Markdown
-subtitle: A learning note of Markdown
+subtitle: 'A learning note of [Kramdown]http://kramdown.gettalong.org/'
 published: true
 categories:
   - Programming
