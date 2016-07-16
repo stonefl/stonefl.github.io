@@ -125,9 +125,11 @@ ___
 
 In most of browsers, text surrounded with asterisks (` * `) or underscores (` _ `) are displayed as italics, while text surrounded by double asterisks (` ** `) or double underscores (` __ `) are rendered as bold. For example, 
 <pre>**My double emphasis text**</pre> becomes 
-**My double emphasis text**, and 
+**My double emphasis text**, 
+and 
 <pre>*My single emphasis text*</pre> becomes 
-*My single emphasis text.*
+* My single emphasis text.*
+
 
 
 
