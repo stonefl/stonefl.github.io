@@ -47,20 +47,17 @@ would generate a blockquote as:
 
 ### 1.4 Lists
 
-Markdown supports both ordered and unordered lists.To create an ordered list, simply prefix each line with a number. To create an unordered list, you can prefix each line with one of the characters `*`, `+` or `-`. One list item can contain multiple paragraphs, however each paragraph must be indented by at least 4 spaces or a tab.
-
-If the first item in a list or sublist is numbered, Markdown will interpret the entire list as ordered and will automatically number the items linearly, no matter what character you use to denote any given separate item. If you begin your list or sublist with a **`+`**, a **` - `**, or a **`*`**, then Markdown will interpret the whole list as unordered and will use bullets regardless of the characters you type before any individual list item.
-For example:
+Markdown supports both ordered and unordered lists.To create an ordered list, simply prefix each line with a number. To create an unordered list, you can prefix each line with one of the characters `*`, `+` or `-`. One list item can contain multiple paragraphs, however each paragraph must be indented by at least 4 spaces or a tab. For example:
 <pre>
 0. Fruit:
     * Pears
-    + Peaches
-    3. Plums
-    4. Apples 
-        2. Granny Smith 
-        7. Gala
+    * Peaches
+    * Plums
+    * Apples 
+        - Granny Smith 
+        - Gala
     * Oranges
-    - Bananas
+    * Bananas
 9. Bread:
     9. Whole Wheat
         0. With oats on crust
@@ -72,19 +69,18 @@ will interpret as:
 
 0. Fruit:
     * Pears
-    + Peaches
-    3. Plums
-    4. Apples 
-        2. Granny Smith 
-        7. Gala
+    * Peaches
+    * Plums
+    * Apples 
+        - Granny Smith 
+        - Gala
     * Oranges
-    - Bananas
+    * Bananas
 9. Bread:
     9. Whole Wheat
         0. With oats on crust
         0. Without oats on crust
-   - White
-    
+    - White  
 
 
 
