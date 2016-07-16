@@ -114,6 +114,7 @@ ___
 ***
 </pre>
 will create three horizontal rules:
+
 ---
 ___
 
