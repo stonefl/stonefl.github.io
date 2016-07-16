@@ -9,10 +9,10 @@ tags: Markdown
 date: '2016-07-13'
 ---
 
-[Markdown](https://en.wikipedia.org/wiki/Markdown) is a way to write web content. Formatting text in Markdown doesn't do anything fancy, like changing font size, color, or type in CSS, instead it only define different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``), around plaintext to display the plaintext as bold, headers, lists, code blocks, etc. Technically speaking, Markdown is simplier than HTML and CSS to format your web content. This is one of the reasons why I moved my blog from Wordpress.com to Github Pages. 
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a way to write web content. Formatting text in Markdown doesn't do anything fancy like changing font size, color, or type in CSS, instead it only defines different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``), around plaintext to display the plaintext as bold, headers, lists, code blocks, etc. Technically speaking, Markdown is simplier than HTML and CSS to format your web content. This is one of the reasons why I moved my blog from Wordpress.com to Github Pages. 
 <!--more-->
 
-This post lists out some frequently used formatting elements syntax in Markdown. It have been used as a quick reference for my daily writing. Some of the examples I used here come from [Markdown Tutorial](http://markdowntutorial.com/) and I highly encourage you to take 5 minutes to learn how to write in markdown. 
+In this post I listed out some frequently used formatting elements syntax in Markdown. It have been used it as a quick reference for my daily writing. Some of the examples I used here come from [Markdown Tutorial](http://markdowntutorial.com/) and I highly encourage you to take 5 minutes to learn how to write in markdown. 
 
 ## Table of Content
 
@@ -20,9 +20,9 @@ This post lists out some frequently used formatting elements syntax in Markdown.
 
 ## 1. Block Elements
 
-### 1.1 Paragraph and Line Breaks
+### 1.1 Paragraphs and Breaks
 
-Paragraphs consist of one or more consecutive lines of text and they are separated by one or more blank lines. If a line contains only spaces, it is a blank line. Blocks of text separated by one or more blank lines will be parsed as paragraphs. If you want to create a line break, simply end a line with two or more spaces, then hit Return/Enter.
+Paragraphs consist of one or more consecutive lines of text that are separated by one or more blank lines. If a line contains only spaces, it is a blank line. Blocks of text separated by one or more blank lines will be parsed as paragraphs. If you want to create a line break, simply end a line with two or more spaces, then hit Return/Enter.
 
 ### 1.2 Headers
 
