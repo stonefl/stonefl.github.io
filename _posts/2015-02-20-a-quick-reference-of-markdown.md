@@ -87,6 +87,7 @@ def plusOne(n):
 ```
 </pre>
 That will format the code-block (sometimes called "fenced code") with syntax coloring. The above code block would be rendered like:
+
 ```python
 def plusOne(n):
     return n + 1
