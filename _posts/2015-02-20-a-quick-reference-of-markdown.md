@@ -79,19 +79,7 @@ will be interpreted as:
         
 ### 1.5 Code Blocks
 
-Code can either in the middle of a paragraph, or as a block. You can use a single backtick (`` ` ``) to start and stop code in the middle of a paragraph. Here's an example:
-<pre>
-The word `function` will appear in a code-like form.
-</pre>
-The word `function` will appear in a code-like form.
-
-If you want to include a literal backtick in your code, you can suround the whole text block in double backticks like this:
-<pre>
-Look at this literal `` backtick ` ``
-</pre>
-Look at this literal `` backtick ` ``
-
-To include a complete code-block, you can use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
+Code can either in the middle of a paragraph ([Inline Code](# 2.2 Inline Code)), or as a block. To include a complete code-block, you can use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
 <pre>
 ```python
 def plusOne(n):
@@ -126,19 +114,23 @@ ___
 
 ### 2.1 Style and Emphsis
 
-In most of browsers, text surrounded with asterisks (` * `) or underscores (` _ `) are displayed as italics, while text surrounded by double asterisks (` ** `) or double underscores (` __ `) are rendered as bold. For example, 
-<pre>**My double emphasis text**</pre> 
-becomes
+In most of browsers, text surrounded with asterisks (` * `) or underscores (` _ `) are displayed as italics, while text surrounded by double asterisks (` ** `) or double underscores (` __ `) are rendered as bold. 
 
-**My double emphasis text**, 
+**Note:** There is no space between the starting asterisks and the text.
 
-and 
+### 2.2 Inline Code
 
-<pre>*My single emphasis text*</pre> 
-becomes 
+You can use a single backtick (`` ` ``) to start and stop code in the middle of a paragraph. Here's an example:
+<pre>
+The word `function` will appear in a code-like form.
+</pre>
+The word `function` will appear in a code-like form.
 
-* My single emphasis text.*
-
+If you want to include a literal backtick in your code, you can suround the whole text block in double backticks like this:
+<pre>
+Look at this literal `` backtick ` ``
+</pre>
+Look at this literal `` backtick ` ``
 
 
 
@@ -152,7 +144,3 @@ becomes
 
 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 [Markdown Tutorial](http://markdowntutorial.com/)
-
-  
-
-
