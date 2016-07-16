@@ -48,7 +48,53 @@ would generate a blockquote as:
 ### 1.4 Lists
 
 Markdown supports both ordered and unordered lists.To create an ordered list, simply prefix each line with a number. To create an unordered list, you can prefix each line with one of the characters `*`, `+` or `-`. One list item can contain multiple paragraphs, however each paragraph must be indented by at least 4 spaces or a tab. For example:
+<pre>
+1 Fruit:
+    * Pears
+    * Peaches
+    * Plums
+    * Apples 
+        + Granny Smith 
+        + Gala
+    * Oranges
+    * Berries 
+        + Strawberries 
+        + Blueberries
+        + Raspberries
+    * Bananas
+2 Dairy:
+    - Milk
+        + Whole
+        + Skim
+    - Cheese
+        + Wisconsin Cheddar
+        + Pepper Jack
+</pre>
 
+1 Fruit:
+    * Pears
+    * Peaches
+    * Plums
+    * Apples 
+        + Granny Smith 
+        + Gala
+    * Oranges
+    * Berries 
+        + Strawberries 
+        + Blueberries
+        + Raspberries
+    * Bananas
+2 Dairy:
+    - Milk
+        + Whole
+        + Skim
+    - Cheese
+        + Wisconsin Cheddar
+        + Pepper Jack
+        
+### 1.5 Code Blocks
+
+Markdown wraps code blocks in pre-formatted tags to preserve indentation in your code blocks. To create a code block, indent the entire block by at least 4 spaces or one tab. Markdown will strip the extra indentation you’ve added to the code block.
 
 
 
