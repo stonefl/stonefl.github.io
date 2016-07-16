@@ -103,7 +103,14 @@ That will format the code-block (sometimes called "fenced code") with syntax col
 def plusOne(n):
     return n + 1
 ```
+### 1.6 Section Blocks
 
+Sections can be separated by horizontal rules, which are created by placing three or more hyphens('-'), underscores(' _ ') or asterisks(' * ') on a line by themselves.
+
+---
+___
+
+***
 
 
 
