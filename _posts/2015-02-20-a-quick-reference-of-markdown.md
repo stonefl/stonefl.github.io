@@ -48,39 +48,7 @@ would generate a blockquote as:
 ### 1.4 Lists
 
 Markdown supports both ordered and unordered lists.To create an ordered list, simply prefix each line with a number. To create an unordered list, you can prefix each line with one of the characters `*`, `+` or `-`. One list item can contain multiple paragraphs, however each paragraph must be indented by at least 4 spaces or a tab. For example:
-<pre>
-0. Fruit:
-    1. Pears
-    * Peaches
-    * Plums
-    * Apples 
-        - Granny Smith 
-        - Gala
-    * Oranges
-    * Bananas
-9. Bread:
-    9. Whole Wheat
-        0. With oats on crust
-        0. Without oats on crust
-    * White    
-</pre> 
 
-will interpret as:
-
-0. Fruit:
-    1. Pears
-    * Peaches
-    * Plums
-    * Apples 
-        - Granny Smith 
-        - Gala
-    * Oranges
-    * Bananas
-9. Bread:
-    9. Whole Wheat
-        0. With oats on crust
-        0. Without oats on crust
-    * White  
 
 
 
