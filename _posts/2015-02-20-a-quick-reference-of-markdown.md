@@ -134,6 +134,7 @@ Look at this literal `` backtick ` ``
 
 ### 2.3 Links
 
+
 <http://en.wikipedia.org>
 
 Markdown has two types of links: inline and reference. For both types of links, the text you want to display to the user is placed in square brackets. For example, if you want your link to display the text “GitHub”, you write [GitHub].
