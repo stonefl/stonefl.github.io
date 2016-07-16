@@ -71,7 +71,7 @@ Markdown supports both ordered and unordered lists.To create an ordered list, si
         + Pepper Jack
 </pre>
 
-1 Fruit:
+1. Fruit:
     * Pears
     * Peaches
     * Plums
@@ -84,7 +84,7 @@ Markdown supports both ordered and unordered lists.To create an ordered list, si
         + Blueberries
         + Raspberries
     * Bananas
-2 Dairy:
+2. Dairy:
     - Milk
         + Whole
         + Skim
