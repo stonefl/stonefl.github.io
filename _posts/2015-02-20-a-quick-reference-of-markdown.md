@@ -45,6 +45,14 @@ would generate a blockquote as:
 
 **Note:** if you decide to hard-wrap text, you need to prefix each line of your quote with a > character.
 
+### 1.4 Lists
+
+Markdown supports both ordered and unordered lists. To create an ordered list, simply prefix each line with a number (any number will do — this is why the editor only uses one number.) To create an unordered list, you can prefix each line with '*', '+' or '-'.
+
+List items can contain multiple paragraphs, however each paragraph must be indented by at least 4 spaces or a tab.
+
+In Markdown, you can list items using numbers, a +, a -, or a '*'. However, if the first item in a list or sublist is numbered, Markdown will interpret the entire list as ordered and will automatically number the items linearly, no matter what character you use to denote any given separate item.
+
 
 
 
