@@ -87,9 +87,9 @@ The word `monospace` will appear in a code-like form.
 
 If you want to include a literal backtick in your code, you must suround the whole text block in double backquotes like this:
 <pre>
-`` Look at this literal backtick ` ``
+Look at this literal `` backtick ` ``
 </pre>
-`` Look at this literal backtick ` ``
+Look at this literal `` backtick ` ``
 
 To include a complete code-block inside a Markdown cell, use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
 <pre>
@@ -118,38 +118,3 @@ def plusOne(n):
   
 
 
-
-**Here is some bold text**
-
-
-## Here is a secondary heading
-
-Here's a useless table:
- 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
- 
-
-How about a yummy crepe?
-
-![Crepe](http://lafenicegelato.com/wp-content/uploads/2014/09/crepes-with-chocolate.jpg)
-
-Here's a code chunk:
-
-~~~
-x <- 5 + 10
-print(x)
-~~~
-
-And here is some code with syntax highlighting
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
