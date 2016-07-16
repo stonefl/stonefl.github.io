@@ -47,56 +47,62 @@ would generate a blockquote as:
 
 ### 1.4 Lists
 
-Markdown supports both ordered and unordered lists.To create an ordered list, simply prefix each line with a number. To create an unordered list, you can prefix each line with one of the characters `*`, `+` or `-`. One list item can contain multiple paragraphs, however each paragraph must be indented by at least 4 spaces or a tab. For example:
+Markdown supports both ordered and unordered lists.To create an ordered list, simply prefix each line with a number and a dot `.`. To create an unordered list, you can prefix each line with one of the characters `*`, `+` or `-`. One list item can contain multiple paragraphs, however each paragraph must be indented by at least 4 spaces or a tab. For example:
 <pre>
-1 Fruit:
-    * Pears
-    * Peaches
-    * Plums
-    * Apples 
-        + Granny Smith 
-        + Gala
-    * Oranges
-    * Berries 
-        + Strawberries 
-        + Blueberries
-        + Raspberries
-    * Bananas
-2 Dairy:
-    - Milk
-        + Whole
-        + Skim
-    - Cheese
-        + Wisconsin Cheddar
-        + Pepper Jack
-</pre>
-
 1. Fruit:
     * Pears
     * Peaches
-    * Plums
     * Apples 
         + Granny Smith 
         + Gala
     * Oranges
-    * Berries 
-        + Strawberries 
-        + Blueberries
-        + Raspberries
     * Bananas
 2. Dairy:
     - Milk
         + Whole
         + Skim
-    - Cheese
-        + Wisconsin Cheddar
-        + Pepper Jack
+</pre>
+will be interpreted as:
+
+1. Fruit:
+    * Pears
+    * Peaches
+    * Apples 
+        + Granny Smith 
+        + Gala
+    * Oranges
+    * Bananas
+2. Dairy:
+    - Milk
+        + Whole
+        + Skim
         
 ### 1.5 Code Blocks
 
-Markdown wraps code blocks in pre-formatted tags to preserve indentation in your code blocks. To create a code block, indent the entire block by at least 4 spaces or one tab. Markdown will strip the extra indentation you’ve added to the code block.
+Code can either in the middle of a paragraph, or as a block. You can use a single backtick (`` ` ``) to start and stop code in the middle of a paragraph. Here's an example:
+<pre>
+The word `monospace` will appear in a code-like form.
+</pre>
+The word `monospace` will appear in a code-like form.
 
+If you want to include a literal backtick in your code, you must suround the whole text block in double backquotes like this:
+<pre>
+`` Look at this literal backtick ` ``
+</pre>
+`` Look at this literal backtick ` ``
 
+To include a complete code-block inside a Markdown cell, use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
+<pre>
+```python
+def plusOne(n):
+    return n + 1
+```
+</pre>
+That will format the code-block (sometimes called "fenced code") with syntax coloring. The above code block will be rendered like:
+```python
+def plusOne(n):
+    return n + 1
+```
 
 
 
