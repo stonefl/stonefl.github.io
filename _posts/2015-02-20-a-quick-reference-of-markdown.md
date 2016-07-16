@@ -81,11 +81,11 @@ will be interpreted as:
 
 Code can either in the middle of a paragraph, or as a block. You can use a single backtick (`` ` ``) to start and stop code in the middle of a paragraph. Here's an example:
 <pre>
-The word `monospace` will appear in a code-like form.
+The word `function` will appear in a code-like form.
 </pre>
-The word `monospace` will appear in a code-like form.
+The word `function` will appear in a code-like form.
 
-If you want to include a literal backtick in your code, you can suround the whole text block in double backquotes like this:
+If you want to include a literal backtick in your code, you can suround the whole text block in double backticks like this:
 <pre>
 Look at this literal `` backtick ` ``
 </pre>
@@ -103,14 +103,34 @@ That will format the code-block (sometimes called "fenced code") with syntax col
 def plusOne(n):
     return n + 1
 ```
+
 ### 1.6 Section Blocks
 
-Sections can be separated by horizontal rules, which are created by placing three or more hyphens('-'), underscores(' _ ') or asterisks(' * ') on a line by themselves.
-
+Sections can be separated by horizontal rules, which are created by placing three or more hyphens('-'), underscores(' _ ') or asterisks(' * ') on a line by themselves, for example:
+<pre>
 ---
 ___
 
 ***
+</pre>
+will create three horizontal rules:
+---
+___
+
+***
+
+## 2. Span Elements
+
+### 2.1 Style and Emphsis
+
+In most of browsers, text surrounded with asterisks (` * `) or underscores (` _ `) are displayed as italics, while text surrounded by double asterisks (` ** `) or double underscores (` __ `) are rendered as bold. For example, 
+<pre>**My double emphasis text**</pre> becomes 
+**My double emphasis text**, and 
+<pre>*My single emphasis text*</pre> becomes 
+*My single emphasis text.*
+
+
+
 
 
 
