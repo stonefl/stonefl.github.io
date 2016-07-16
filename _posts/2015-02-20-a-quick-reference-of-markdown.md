@@ -85,20 +85,20 @@ The word `monospace` will appear in a code-like form.
 </pre>
 The word `monospace` will appear in a code-like form.
 
-If you want to include a literal backtick in your code, you must suround the whole text block in double backquotes like this:
+If you want to include a literal backtick in your code, you can suround the whole text block in double backquotes like this:
 <pre>
 Look at this literal `` backtick ` ``
 </pre>
 Look at this literal `` backtick ` ``
 
-To include a complete code-block inside a Markdown cell, use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
+To include a complete code-block, you can use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
 <pre>
 ```python
 def plusOne(n):
     return n + 1
 ```
 </pre>
-That will format the code-block (sometimes called "fenced code") with syntax coloring. The above code block will be rendered like:
+That will format the code-block (sometimes called "fenced code") with syntax coloring. The above code block would be rendered like:
 ```python
 def plusOne(n):
     return n + 1
