@@ -65,9 +65,11 @@ For example:
     9. Whole Wheat
         0. With oats on crust
         0. Without oats on crust
-    - White
+    - White    
 </pre> 
+
 will interpret as:
+
 0. Fruit:
     * Pears
     + Peaches
