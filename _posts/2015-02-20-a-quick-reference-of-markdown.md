@@ -116,7 +116,9 @@ ___
 will create three horizontal rules:
 
 ---
+
 ___
+
 
 ***
 
