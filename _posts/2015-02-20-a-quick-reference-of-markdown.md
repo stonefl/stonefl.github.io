@@ -62,7 +62,7 @@ Markdown supports both ordered and unordered lists.To create an ordered list, si
     9. Whole Wheat
         0. With oats on crust
         0. Without oats on crust
-    - White    
+    * White    
 </pre> 
 
 will interpret as:
@@ -80,7 +80,7 @@ will interpret as:
     9. Whole Wheat
         0. With oats on crust
         0. Without oats on crust
-    - White  
+    * White  
 
 
 
