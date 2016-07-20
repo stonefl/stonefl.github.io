@@ -48,7 +48,7 @@ would generate a blockquote as:
 
 ### 1.4 Lists
 
-Markdown supports both ordered and unordered lists.To create an ordered list, simply prefix each line with a number and a dot `.`. To create an unordered list, you can prefix each line with one of the characters `*`, `+` or `-`. One list item can contain multiple paragraphs, however each paragraph must be indented by at least 4 spaces or a tab. For example:
+Markdown supports both ordered and unordered lists. To create an ordered list, simply prefix each line with a number and a dot `.`. To create an unordered list, you can prefix each line with one of the characters `*`, `+` or `-`. One list item can contain multiple paragraphs, however each paragraph must be indented by at least 4 spaces or a tab. For example:
 <pre>
 1. Fruit:
     * Pears
@@ -154,5 +154,5 @@ To create a reference link, use two sets of square brackets. [my internal link][
 
 ### References
 
-[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-[Markdown Tutorial](http://markdowntutorial.com/)
+1. [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+2. [Markdown Tutorial](http://markdowntutorial.com/)
