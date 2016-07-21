@@ -81,7 +81,7 @@ will be interpreted as:
         
 ### 1.5 Code Blocks
 
-Code can either in the middle of a paragraph ([Inline Code][2.2 Inline Code]), or as a block. To include a complete code-block, you can use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
+Code can either in the middle of a paragraph ([Inline Code][#2.2-Inline-Code]), or as a block. To include a complete code-block, you can use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
 <pre>
 ```python
 def plusOne(n):
