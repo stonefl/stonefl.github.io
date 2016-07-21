@@ -138,6 +138,7 @@ Look at this literal `` backtick` ``
 Look at this literal `` backtick` ``
 
 ### 2.3 Links
+
 #### 2.3.1 Automatic Links
 Automatic link is a link that displays the actual URL. To make an automatic link, you can surround the URL with `< >`. For example, 
 <pre>
