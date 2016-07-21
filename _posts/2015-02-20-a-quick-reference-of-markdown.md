@@ -140,6 +140,7 @@ Look at this literal `` backtick` ``
 ### 2.3 Links
 
 #### 2.3.1 Automatic Links
+
 Automatic link is a link that displays the actual URL. To make an automatic link, you can surround the URL with `< >`. For example, 
 <pre>
 <http://github.com/>
@@ -149,6 +150,8 @@ would display as:
 <http://github.com/>
 
 #### 2.3.2 Standard Links
+
+
 Markdown has two types of links: inline and reference. For both types of links, the text you want to display to the user is placed in square brackets. For example, if you want your link to display the text “GitHub”, you write [GitHub].
 
 To create an inline link, create a set of parentheses immediately after the brackets and write your URL within the parentheses. (e.g., [GitHub](http://github.com/)). Relative paths are allowed in inline links.
