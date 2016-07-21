@@ -15,10 +15,10 @@ date: '2016-07-13'
 
 
 ## Table of Content
-{: .no_toc}
 
-* TOC
-{:toc}
+* [1. Block Elements](#1.-Block-Elements)
+  + [1.1 Paragraphs and Breaks](#1.1-Paragraphs-and-Breaks)
+* [2. Span Elements](#2.-Span-Elements)
 
 
 ## 1. Block Elements
@@ -148,7 +148,7 @@ To create an inline link, create a set of parentheses immediately after the brac
 
 To create a reference link, use two sets of square brackets. [my internal link][internal-ref] will link to the internal reference internal-ref.
 
-If you want to create a link that displays the actual URL, Markdown allows you to quickly wrap the URL in < and > to do so. For example, the link http://github.com/ is easily produced by writing <http://github.com/>.
+If you want to create a link that displays the actual URL, Markdown allows you to quickly wrap the URL in '<' and '>' to do so. For example, the link http://github.com/ is easily produced by writing <http://github.com/>.
 
 
 
