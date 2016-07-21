@@ -80,7 +80,7 @@ will be interpreted as:
         
 ### 1.5 Code Blocks
 
-Code can either in the middle of a paragraph ([Inline Code](# 2.2 Inline Code)), or as a block. To include a complete code-block, you can use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
+Code can either in the middle of a paragraph ([Inline Code](#2.2 Inline Code)), or as a block. To include a complete code-block, you can use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
 <pre>
 ```python
 def plusOne(n):
@@ -130,9 +130,9 @@ The word `function` will appear in a code-like form.
 
 If you want to include a literal backtick in your code, you can suround the whole text block in double backticks like this:
 <pre>
-Look at this literal `` backtick ` ``
+Look at this literal `` backtick` ``
 </pre>
-Look at this literal `` backtick ` ``
+Look at this literal `` backtick` ``
 
 ### 2.3 Links
 
@@ -145,7 +145,7 @@ To create an inline link, create a set of parentheses immediately after the brac
 
 To create a reference link, use two sets of square brackets. [my internal link][internal-ref] will link to the internal reference internal-ref.
 
-
+If you want to create a link that displays the actual URL, Markdown allows you to quickly wrap the URL in < and > to do so. For example, the link http://github.com/ is easily produced by writing <http://github.com/>.
 
 
 
