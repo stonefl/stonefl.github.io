@@ -16,7 +16,7 @@ date: '2016-07-13'
 
 ## Table of Content
 
-* [1. Block Elements](#1.-Block-Elements)
+* [1. Block Elements](#1-.-Block-Elements)
   + [1.1 Paragraphs and Breaks](#1.1-Paragraphs-and-Breaks)
 * [2. Span Elements](#span-elements)
 
