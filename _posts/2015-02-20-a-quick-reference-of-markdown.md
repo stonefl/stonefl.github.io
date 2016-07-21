@@ -155,7 +155,7 @@ If you want to create a link that displays the actual URL, Markdown allows you t
 
   
 
-### References
+## References
 
 1. [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 2. [Markdown Tutorial](http://markdowntutorial.com/)
