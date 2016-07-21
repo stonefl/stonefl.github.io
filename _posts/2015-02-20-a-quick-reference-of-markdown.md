@@ -15,6 +15,8 @@ date: '2016-07-13'
 
 
 ## Table of Content
+{: .no_toc}
+
 * TOC
 {:toc}
 
