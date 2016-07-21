@@ -15,7 +15,8 @@ date: '2016-07-13'
 
 
 ## Table of Content
-
+* TOC
+{:toc}
 
 
 ## 1. Block Elements
