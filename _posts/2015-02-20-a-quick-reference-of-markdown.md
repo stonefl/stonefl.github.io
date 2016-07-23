@@ -274,39 +274,9 @@ centered cell|regular cell|right-justified cell|centered cell|regular cell
 
 **Note:** You cannot make tables directly beneath a line of text. You must put a blank line between the end of a paragraph and the beginning of a table.
 
-## 4. LaTeX Math
-
-Jupyter Notebooks' Markdown cells support LateX for formatting mathematical equations. To tell Markdown to interpret your text as LaTex, surround your input with dollar signs like this:
-
-<pre>
-$ z=\dfrac{2x}{3y} $
-</pre>
-
-$ z=x + y $
-z = x + y
-
-An equation can be very complex:
-
-<pre>
-$F(k) = \int_{-\infty}^{\infty} f(x) e^{2\pi i k} dx$
-</pre>
-
-$F(k) = \int_{-\infty}^{\infty} f(x) e^{2\pi i k} dx$
-
-If you want your LaTex equations to be indented towards the center of the cell, surround your input with two dollar signs on each side like this: 
-
-<pre>
-$$2x+3y=z$$
-</pre>
-
-$$2x+3y=z$$
-
-For a comprehensive guide to the mathematical symbols and notations supported by Jupyter Notebooks' Markdown cells, check out [Martin Keefe's helpful reference materials on the subject][mkeefe].
-
-[mkeefe]: http://martinkeefe.com/math/mathjax1 "Martin Keefe's MathJax Guide"
 
 ## References
 
 1. [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 2. [Markdown Tutorial](http://markdowntutorial.com/)
-3. [Martin Keefe's MathJax Guide](http://martinkeefe.com/math/mathjax1)
+
