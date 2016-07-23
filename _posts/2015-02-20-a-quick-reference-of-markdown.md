@@ -82,7 +82,7 @@ will be interpreted as:
         
 ### 1.5 Code Blocks
 
-Code can either in the middle of a paragraph ([Inline Code](#inline-code)), or as a block. To include a complete code-block, you can use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backquotes, like this:
+Code can either in the middle of a paragraph ([Inline Code](#inline-code)), or as a block. To include a complete code-block, you can use triple backquotes. Optionally, you can put the name of the language that you are quoting after the starting triple backticks, like this:
 <pre>
 ```python
 def plusOne(n):
@@ -148,8 +148,10 @@ Automatic link is a link that displays the actual URL. To make an automatic link
 would dispaly the URL of GitHub:
 <http://github.com/>
 
+
 #### 2.3.2 Standard Links
 
+A standard link can be created through putting the text to display in a pair of brackets (`[]`) and the URL within parentheses. In the parentheses you can also specify the mouse-over title with double quotes. 
 <pre>
 [Click to GitHub](http://github.com/ "GitHub")
 </pre>
@@ -158,7 +160,20 @@ will display as:
 [Click to GitHub](http://github.com/ "GitHub").
 
 
+#### 2.3.2 Standard Links
 
+Instead of putting the URL immediately after a brackets, you can put a reference tag in a bracket after it and link the URL to the reference tag later on. For example,
+
+<pre>
+[Click to GitHub][ref to github]
+....
+[ref to github]:http://github.com/ "GitHub"
+</pre>
+
+will display as:
+[Click to GitHub][ref to github]
+....
+[ref to github]:http://github.com/ "GitHub"
 To create a reference link, use two sets of square brackets. [my internal link][internal-ref] will link to the internal reference internal-ref.
 
 If you want to create a link that displays the actual URL, Markdown allows you to quickly wrap the URL in '<' and '>' to do so. For example, the link http://github.com/ is easily produced by writing .
