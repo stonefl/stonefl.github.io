@@ -13,7 +13,6 @@ date: '2016-07-13'
 <!--more-->
 
 
-
 ## Table of Content
 {:.no_toc}
 
@@ -146,15 +145,19 @@ Automatic link is a link that displays the actual URL. To make an automatic link
 <http://github.com/>
 </pre>
 
-would display as:
+would dispaly the URL of GitHub:
 <http://github.com/>
 
 #### 2.3.2 Standard Links
 
+<pre>
+[Click to GitHub](http://github.com/ "GitHub")
+</pre>
 
-Markdown has two types of links: inline and reference. For both types of links, the text you want to display to the user is placed in square brackets. For example, if you want your link to display the text “GitHub”, you write [GitHub].
+will display as:
+[Click to GitHub](http://github.com/ "GitHub").
 
-To create an inline link, create a set of parentheses immediately after the brackets and write your URL within the parentheses. (e.g., [GitHub](http://github.com/)). Relative paths are allowed in inline links.
+
 
 To create a reference link, use two sets of square brackets. [my internal link][internal-ref] will link to the internal reference internal-ref.
 
