@@ -170,7 +170,9 @@ Instead of putting the URL immediately after a brackets, you can put a reference
 </pre>
 
 will display as:
+
 [Click to GitHub][ref to github]
+
 [ref to github]:http://github.com/ "GitHub"
 
 To create a reference link, use two sets of square brackets. [my internal link][internal-ref] will link to the internal reference internal-ref.
