@@ -206,6 +206,22 @@ To show a literal character, like a `*`, that has a specific function in Markdow
 
 * This is a bullet
 
+Markdown allows you to use a backslash to escape from the functions of the following characters:
+* \   backslash
+* `   backtick
+* \*   asterisk
+* _   underscore
+* {}  curly braces
+* []  square brackets
+* ()  parentheses
+* \#   hashtag
+* \+   plus sign
+* \-   minus sign (hyphen)
+* .   dot
+* !   exclamation mark
+
+
+
 
 
 
