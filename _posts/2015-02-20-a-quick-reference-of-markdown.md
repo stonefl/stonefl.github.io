@@ -164,23 +164,35 @@ Relative paths are allowed in link parentheses, for example:
 [Click to Table of Content](#table-of-content)
 
 
-
 #### 2.3.3 Reference Links
 
 Instead of putting the URL immediately after a brackets, you can put a reference tag in a bracket after it and link the URL to the reference tag later on. For example,
 
 <pre>
 [Click to GitHub][ref to github]
+...
 [ref to github]:http://github.com/ "GitHub"
 </pre>
-
-will display as:
 [Click to GitHub][ref to github]
 
 [ref to github]:http://github.com/ "GitHub"
 
+### 2.4 Images
 
+Markdown image syntax is almost the seame syntax for links. You just need to put an exclamation point (!) before the first set of brackets. For example, 
+<pre>
+![whatever you write here](http://github.com/unicorn.png "picture of unicorn")
+</pre>
+![whatever you write here](http://github.com/unicorn.png "picture of unicorn")
 
+You can also make a reference-style, for example,
+<pre>
+![][unicorn]
+[unicorn]:http://github.com/unicorn.png 
+</pre>
+![][unicorn]
+
+[unicorn]:http://github.com/unicorn.png 
 
 
 
