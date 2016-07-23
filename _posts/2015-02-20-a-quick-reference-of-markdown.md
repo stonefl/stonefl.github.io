@@ -208,10 +208,10 @@ To show a literal character, like a `*`, that has a specific function in Markdow
 
 Markdown allows you to use a backslash to escape from the functions of the following characters:
 
-* \   backslash
-* `   backtick
+* \\   backslash
+* \`   backtick
 * \*   asterisk
-* _   underscore
+* \_   underscore
 * {}  curly braces
 * []  square brackets
 * ()  parentheses
@@ -221,7 +221,46 @@ Markdown allows you to use a backslash to escape from the functions of the follo
 * .   dot
 * !   exclamation mark
 
-## 
+## 3. Tables
+
+In Markdown, you can make a table by using vertical bars and dashes to define the cell and header borders:
+<pre>
+|Header|Header|Header|Header|
+|------|------|------|------|
+|Cell  |Cell  |Cell  | Cell |
+|Cell  |Cell  |Cell  | Cell |
+|Cell  |Cell  |Cell  | Cell |
+|Cell  |Cell  |Cell  | Cell |
+</pre>
+|Header|Header|Header|Header|
+|------|------|------|------|
+|Cell  |Cell  |Cell  | Cell |
+|Cell  |Cell  |Cell  | Cell |
+|Cell  |Cell  |Cell  | Cell |
+|Cell  |Cell  |Cell  | Cell |
+
+You don't need to include all of those dashes, vertical bars, and spaces for Markdown to understand that you're making a table. Here's the bare minimum you would need to create the table above:
+<pre>
+Header|Header|Header|Header
+-|-|-|-
+Cell|Cell|Cell|Cell
+Cell|Cell|Cell|Cell
+Cell|Cell|Cell|Cell
+Cell|Cell|Cell|Cell
+</pre>
+
+You can also specify either header justification or centering, for example,
+<pre>
+centered header  |  regular header  |  right-justified header  |  centered header  |  regular header  
+:-:|-|-:|:-:|-
+centered cell|regular cell|right-justified cell|centered cell|regular cell
+centered cell|regular cell|right-justified cell|centered cell|regular cell
+</pre>
+centered header  |  regular header  |  right-justified header  |  centered header  |  regular header  
+:-:|-|-:|:-:|-
+centered cell|regular cell|right-justified cell|centered cell|regular cell
+centered cell|regular cell|right-justified cell|centered cell|regular cell
+
 
 
 ## References
