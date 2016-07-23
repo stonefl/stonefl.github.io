@@ -232,6 +232,7 @@ In Markdown, you can make a table by using vertical bars and dashes to define th
 |Cell  |Cell  |Cell  | Cell |
 |Cell  |Cell  |Cell  | Cell |
 </pre>
+
 |Header|Header|Header|Header|
 |------|------|------|------|
 |Cell  |Cell  |Cell  | Cell |
@@ -256,6 +257,7 @@ centered header  |  regular header  |  right-justified header  |  centered heade
 centered cell|regular cell|right-justified cell|centered cell|regular cell
 centered cell|regular cell|right-justified cell|centered cell|regular cell
 </pre>
+
 centered header  |  regular header  |  right-justified header  |  centered header  |  regular header  
 :-:|-|-:|:-:|-
 centered cell|regular cell|right-justified cell|centered cell|regular cell
