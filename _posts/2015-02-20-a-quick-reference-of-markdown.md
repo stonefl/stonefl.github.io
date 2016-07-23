@@ -166,14 +166,13 @@ Instead of putting the URL immediately after a brackets, you can put a reference
 
 <pre>
 [Click to GitHub][ref to github]
-....
 [ref to github]:http://github.com/ "GitHub"
 </pre>
 
 will display as:
 [Click to GitHub][ref to github]
-....
 [ref to github]:http://github.com/ "GitHub"
+
 To create a reference link, use two sets of square brackets. [my internal link][internal-ref] will link to the internal reference internal-ref.
 
 If you want to create a link that displays the actual URL, Markdown allows you to quickly wrap the URL in '<' and '>' to do so. For example, the link http://github.com/ is easily produced by writing .
