@@ -282,7 +282,7 @@ Jupyter Notebooks' Markdown cells support LateX for formatting mathematical equa
 $z=\dfrac{2x}{3y}$
 </pre>
 
-$z=\dfrac{2x}{3y}$
+$z=x + y$
 
 An equation can be very complex:
 
