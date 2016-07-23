@@ -114,7 +114,7 @@ ___
 
 ***
 
-## 2. Span Elements
+## 2 Span Elements
 
 ### 2.1 Style and Emphsis
 
@@ -221,13 +221,8 @@ Markdown allows you to use a backslash to escape from the functions of the follo
 * .   dot
 * !   exclamation mark
 
+## 
 
-
-
-
-
-
-  
 
 ## References
 
