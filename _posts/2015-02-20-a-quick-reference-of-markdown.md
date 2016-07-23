@@ -279,10 +279,10 @@ centered cell|regular cell|right-justified cell|centered cell|regular cell
 Jupyter Notebooks' Markdown cells support LateX for formatting mathematical equations. To tell Markdown to interpret your text as LaTex, surround your input with dollar signs like this:
 
 <pre>
-$z=\dfrac{2x}{3y}$
+$ z=\dfrac{2x}{3y} $
 </pre>
 
-$z=x + y$
+$ z=x + y $
 z = x + y
 
 An equation can be very complex:
