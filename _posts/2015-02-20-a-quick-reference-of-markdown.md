@@ -283,6 +283,7 @@ $z=\dfrac{2x}{3y}$
 </pre>
 
 $z=x + y$
+z = x + y
 
 An equation can be very complex:
 
