@@ -155,12 +155,17 @@ A standard link can be created through putting the text to display in a pair of 
 <pre>
 [Click to GitHub](http://github.com/ "GitHub")
 </pre>
-
-will display as:
 [Click to GitHub](http://github.com/ "GitHub").
 
+Relative paths are allowed in link parentheses, for example:
+<pre>
+[Click to Table of Content](#table-of-content)
+</pre>
+[Click to Table of Content](#table-of-content)
 
-#### 2.3.2 Standard Links
+
+
+#### 2.3.3 Reference Links
 
 Instead of putting the URL immediately after a brackets, you can put a reference tag in a bracket after it and link the URL to the reference tag later on. For example,
 
@@ -170,14 +175,13 @@ Instead of putting the URL immediately after a brackets, you can put a reference
 </pre>
 
 will display as:
-
 [Click to GitHub][ref to github]
 
 [ref to github]:http://github.com/ "GitHub"
 
-To create a reference link, use two sets of square brackets. [my internal link][internal-ref] will link to the internal reference internal-ref.
 
-If you want to create a link that displays the actual URL, Markdown allows you to quickly wrap the URL in '<' and '>' to do so. For example, the link http://github.com/ is easily produced by writing .
+
+
 
 
 
