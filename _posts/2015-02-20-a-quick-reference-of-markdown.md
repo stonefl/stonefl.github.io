@@ -277,6 +277,6 @@ centered cell|regular cell|right-justified cell|centered cell|regular cell
 
 ## 4. References
 
-1. [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-2. [Markdown Tutorial](http://markdowntutorial.com/)
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Markdown Tutorial](http://markdowntutorial.com/)
 
