@@ -196,6 +196,13 @@ You can also make a reference-style, for example,
 
 ### 2.5 Backslash Escape
 
+To show a literal character, like a `*`, that has a specific function in Markdown, you can put a backslash (`\`) before the character. For example,
+<pre>
+\* This is not a bullet
+* This is a bullet
+</pre>
+\* This is not a bullet
+* This is a bullet
 
 
 
