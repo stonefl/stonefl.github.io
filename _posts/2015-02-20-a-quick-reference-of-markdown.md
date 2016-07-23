@@ -179,7 +179,7 @@ Instead of putting the URL immediately after a brackets, you can put a reference
 
 ### 2.4 Images
 
-Markdown image syntax is almost the seame syntax for links. You just need to put an exclamation point (!) before the first set of brackets. For example, 
+Markdown image syntax is almost the seame syntax for links. You just need to put an exclamation point (`!`) before the first set of brackets. For example, 
 <pre>
 ![whatever you write here](http://github.com/unicorn.png "picture of unicorn")
 </pre>
@@ -193,6 +193,9 @@ You can also make a reference-style, for example,
 ![][unicorn]
 
 [unicorn]:http://github.com/unicorn.png 
+
+### 2.5 Backslash Escape
+
 
 
 
