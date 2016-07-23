@@ -275,7 +275,7 @@ centered cell|regular cell|right-justified cell|centered cell|regular cell
 **Note:** You cannot make tables directly beneath a line of text. You must put a blank line between the end of a paragraph and the beginning of a table.
 
 
-## 5. References
+## 4. References
 
 1. [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 2. [Markdown Tutorial](http://markdowntutorial.com/)
