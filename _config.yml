@@ -27,7 +27,7 @@ navbar-links:
   Archives:
    - Categories: "/archives/categories"
    - Tags: "/archives/tags"
-  About Me: "/about/"
+  About: "/about/"
   
   
 # where are the tags and categories pages
