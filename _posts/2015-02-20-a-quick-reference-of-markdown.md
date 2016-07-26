@@ -280,9 +280,9 @@ $$ x^2 + y^2 = z^2 $$
 
 This is another one:
 
-\[ x^2 + y^2 = z^2 \]
+\\[ x^2 + y^2 = z^2 \\]
 
-This is an inline function \( x^2 + y^2 = z^2 \), it looks good.
+This is an inline function \\( x^2 + y^2 = z^2 \\), it looks good.
 
 
 ## 4. References
