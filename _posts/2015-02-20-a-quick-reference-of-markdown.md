@@ -12,9 +12,6 @@ date: '2016-07-13'
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a way to write web content. Formatting text in Markdown doesn't do anything fancy like changing font size, color, or type in CSS, instead it only defines different formatting elements through putting a few symbols, such as asterisks(`*`) and backticks(`` ` ``), around plaintext to display the plaintext as bold, headers, lists, code blocks, etc. Technically speaking, Markdown is simplier than HTML and CSS to format your web content. This is one of the reasons why I moved my blog from Wordpress.com to Github Pages. In this post I listed out some frequently used formatting elements syntax in Markdown. It have been used it as a quick reference for my daily writing.
 <!--more-->
 
-$$ x^2 + y^2 = z^2 $$
-
-This is an inline function \( x^2 + y^2 = z^2 \), it looks good.
 
 ## Table of Content
 {:.no_toc}
@@ -276,6 +273,16 @@ centered cell|regular cell|right-justified cell|centered cell|regular cell
 centered cell|regular cell|right-justified cell|centered cell|regular cell
 
 **Note:** You cannot make tables directly beneath a line of text. You must put a blank line between the end of a paragraph and the beginning of a table.
+
+This is a block of equation:
+
+$$ x^2 + y^2 = z^2 $$
+
+This is another one:
+
+\[ x^2 + y^2 = z^2 \]
+
+This is an inline function \( x^2 + y^2 = z^2 \), it looks good.
 
 
 ## 4. References
