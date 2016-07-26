@@ -13,6 +13,8 @@ date: '2016-07-13'
 <!--more-->
 
 $$ x^2 + y^2 = z^2 $$
+This is an inline function \$$ x^2 + y^2 = z^2 &&, it looks good.
+
 ## Table of Content
 {:.no_toc}
 
