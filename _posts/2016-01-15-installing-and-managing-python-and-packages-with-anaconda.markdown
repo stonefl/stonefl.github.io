@@ -18,11 +18,11 @@ tags:
 
 As more and more Python packages I need to install for my daily work and learn, I get tired of searching and installing individual packages, especially on my Window system, like what I did in [how to install scientific Python packages on Windows](https://wordpress.com/post/leifengtechblog.wordpress.com/183). I decide to give **Anaconda** (by [Continuum Analytics](https://www.continuum.io/)) a try, what it provides far exceed my expectation and I feel guilty did not try it earlier. <!--more-->
 
+![capture.png]({{site.baseurl}}/img/post/capture.png)
 
 Anaconda is a free, cross-platform, and easy-to-install all-in-one analytic/scientific Python platform. Anaconda not only comes with various packages that I would like to use, such as NumPy, SciPy, matplotlib, pandas, scikit-learn,  and Jupyter/IPython, but also provides more functionalities, like creating and managing environments, installing and updating packages, and so on.
 
-![capture.png]({{site.baseurl}}/img/post/capture.png)
-![Capture](img/post/capture.png)
+
 
 
 In this post, I describe some basic knowledge on Anaconda I have learned through my experience. If you did not start to use it yet, I highly recommend you a try.
