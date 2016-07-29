@@ -274,19 +274,22 @@ centered cell|regular cell|right-justified cell|centered cell|regular cell
 
 **Note:** You cannot make tables directly beneath a line of text. You must put a blank line between the end of a paragraph and the beginning of a table.
 
-This is a block of equation:
+## 4. Math Equations
+
+If your Markdown supports MathJax, you can write math equaiton. For example,
+
+<pre>$$ x^2 + y^2 = z^2 $$</pre> will display a block of equation:
 
 $$ x^2 + y^2 = z^2 $$
 
-This is another one:
+<pre>\\[ x^2 + y^2 = z^2 \\]</pre> is another way to build a bock equation:
 
 \\[ x^2 + y^2 = z^2 \\]
 
-This is an inline function \\( x^2 + y^2 = z^2 \\), it looks good.
+<pre>\\( x^2 + y^2 = z^2 \\)</pre> will show an inline function \\( x^2 + y^2 = z^2 \\).
 
 
-## 4. References
+## 5. References
 
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Markdown Tutorial](http://markdowntutorial.com/)
-
