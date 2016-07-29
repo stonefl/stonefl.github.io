@@ -12,7 +12,7 @@ categories:
   - Ubuntu
 published: true
 subtitle: Some tips and tricks for Ubuntu installation
-bigimg: /img/2016-01-18/ubuntu_desktop.png
+bigimg: /img/post/ubuntu_desktop.png
 tags:
   - Java
   - Python
@@ -142,7 +142,7 @@ I used following steps to install the newest Eclipse Mars.1 (4.5.1):
 
 Then, I can open Eclipse from Unity search:
 
-![Screenshot](/img/2016-01-18/screenshot.png)
+![Screenshot](/img/post/screenshot.png)
 
 
 ## Install Python 3.5 and Packages
