@@ -180,9 +180,14 @@ prose:
           alterable: true
       - name: "tags"
         field:
-          element: "text"
-          label: "Tags"
-          placeholder: "Add Tags"
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+           - name: "Java"
+             value: "Java"
+           - name: "Python"
+             value: "Python"
           alterable: true
 gems:
   - jekyll-paginate
