@@ -10,7 +10,7 @@ title: Migrating from Windows 7 to Ubuntu
 wordpress_id: 220
 categories:
   - Ubuntu
-tags: Ubuntu
+tags: 'Java, Python'
 published: true
 subtitle: Some tips and tricks for Ubuntu installation
 bigimg: /img/2016-01-18/ubuntu_desktop.png
