@@ -10,7 +10,7 @@ title: Migrating from Windows 7 to Ubuntu
 wordpress_id: 220
 categories:
   - Ubuntu
-tags: 'Anaconda, Java, Jupyter Notebook, Python, Ubuntu'
+tags: Ubuntu
 published: true
 subtitle: Some tips and tricks for Ubuntu installation
 ---
