@@ -168,8 +168,7 @@ Follow the instructions from [post](https://blogs.fsfe.org/stefan.a/2014/09/23/s
 2. Install googlepinyin packages via Software Center or `sudo apt-get install`:
 `fcitx fcitx-googlepinyin`
 
-3. Use a terminal (Ctrl + Alt + T) to run: `im-config`
-When asked if you want to explicitly update the user preferences, select “Yes”, then select fcitx as the default input method framework.
+3. Use a terminal (Ctrl + Alt + T) to run: `im-config`. When asked if you want to explicitly update the user preferences, select “Yes”, then select fcitx as the default input method framework.
 
 4. Reboot, the a keyboard icon appears in the upper right screen corner, where the input method and skin can be managed.
 
