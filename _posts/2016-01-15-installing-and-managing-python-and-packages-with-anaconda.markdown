@@ -1,18 +1,17 @@
 ---
+layout: post
 author: stonefl
 comments: true
-date: 2016-01-15 21:45:28+00:00
-layout: post
-link: https://leifengtechblog.wordpress.com/2016/01/15/installing-and-managing-python-and-packages-with-anaconda/
+date: '2016-01-15'
+link: >-
+  https://leifengtechblog.wordpress.com/2016/01/15/installing-and-managing-python-and-packages-with-anaconda/
 slug: installing-and-managing-python-and-packages-with-anaconda
 title: Installing and Managing Python and Packages with Anaconda
 wordpress_id: 302
 categories:
-- Python
-- Tips and Tricks
-tags:
-- Anaconda
-- Python
+  - Python
+tags: Anaconda; Python
+published: true
 ---
 
 
@@ -182,9 +181,3 @@ If the **`conda install somepackage`** fails, you can try **`pip install somepa
 
 	
   * Conda FAQ: [http://conda.pydata.org/docs/faq.html](http://conda.pydata.org/docs/faq.html)
-
-
-
-
-
-
