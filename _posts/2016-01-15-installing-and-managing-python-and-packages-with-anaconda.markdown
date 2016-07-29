@@ -10,8 +10,10 @@ title: Installing and Managing Python and Packages with Anaconda
 wordpress_id: 302
 categories:
   - Python
-tags: Anaconda  Python
 published: true
+tags:
+  - Python
+  - Anaconda
 ---
 
 
