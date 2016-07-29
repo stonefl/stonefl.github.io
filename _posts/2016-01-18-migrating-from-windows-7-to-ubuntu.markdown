@@ -13,6 +13,7 @@ categories:
 tags: Ubuntu
 published: true
 subtitle: Some tips and tricks for Ubuntu installation
+bigimg: /img/2016-01-18/ubuntu_desktop.png
 ---
 
 If you get tired with Windows or Marc, like me, you might want to consider migrating to Ubuntu Trusty 14.04, which is the Long Term Support (LTS) version of the Ubuntu operating system for desktop PCs and laptops. It can be downloaded from [Ubuntu official site](http://www.ubuntu.com/download/desktop) for free and it is easy to install following the instructions there. Recently, I just downloaded and installed it on my old HP Compaq 6510b laptop. Comparing to almost 20 GBs of my old Windows 7 system, my new Ubuntu system only occupies 6.3 GBs and runs much faster.
@@ -31,7 +32,7 @@ Ubuntu has its own default web browser, Firefox, which is also very powerful. Bu
 
   2. Click **Download Chrome**
   
-  3. Choose either `32 bit .deb`(for 32bit Ubuntu) or `64 bit .deb` (for 64bit Ubuntu)
+  3. Choose either **32 bit .deb**(for 32bit Ubuntu) or **64 bit .deb** (for 64bit Ubuntu)
 
   4. Click **Accept and Install**
 
