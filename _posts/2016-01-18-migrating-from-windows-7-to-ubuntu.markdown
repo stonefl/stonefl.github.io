@@ -1,26 +1,22 @@
 ---
+layout: post
 author: stonefl
 comments: true
-date: 2016-01-18 21:25:38+00:00
-layout: post
-link: https://leifengtechblog.wordpress.com/2016/01/18/migrating-from-windows-7-to-ubuntu/
+date: '2016-01-18 '
+link: >-
+  https://leifengtechblog.wordpress.com/2016/01/18/migrating-from-windows-7-to-ubuntu/
 slug: migrating-from-windows-7-to-ubuntu
 title: Migrating from Windows 7 to Ubuntu
 wordpress_id: 220
 categories:
-- Tips and Tricks
-- Ubuntu
-tags:
-- Anaconda
-- Java
-- Jupyter Notebook
-- Python
-- Ubuntu
+  - Ubuntu
+tags: 'Anaconda, Java, Jupyter Notebook, Python, Ubuntu'
+published: true
+subtitle: Some tips and tricks for Ubuntu installation
 ---
 
-[caption id="attachment_223" align="alignright" width="365"][![Ubuntu desktop](https://leifengtechblog.files.wordpress.com/2016/01/screenshot-from-2016-01-12-220918.png?w=300)](https://leifengtechblog.files.wordpress.com/2016/01/screenshot-from-2016-01-12-220918.png) Ubuntu desktop[/caption]
-
-If you, like me, get tired with Windows 7 and cannot wait for the free update to Windows 10, you might also want to consider migrating to Ubuntu Trusty 14.04, which is the Long Term Support (LTS) version of the Ubuntu operating system for desktop PCs and laptops. It can be downloaded from [Ubuntu official site](http://www.ubuntu.com/download/desktop) for fee and it is easy to install following the instructions there. Recently I just downloaded and installed it on my old HP Compaq 6510b laptop. Comparing to almost 20 GBs of my old Windows 7 system, my new Ubuntu system only occupies 6.3 GBs,  and runs much faster.
+If you get tired with Windows or Marc you might want to consider migrating to Ubuntu Trusty 14.04, which is the Long Term Support (LTS) version of the Ubuntu operating system for desktop PCs and laptops. It can be downloaded from [Ubuntu official site](http://www.ubuntu.com/download/desktop) for free and it is easy to install following the instructions there. Recently I just downloaded and installed it on my old HP Compaq 6510b laptop. Comparing to almost 20 GBs of my old Windows 7 system, my new Ubuntu system only occupies 6.3 GBs,  and runs much faster.
+<!--more-->
 
 This post describes installation processes of some software that I have been using on a regular basis on Windows 7 and I would like to move to my fresh installed Ubuntu. Most of these processes followed instructions from Ubuntu support forums --[Ask Ubuntu](http://askubuntu.com/), where you can get nearly all answers to any technical issues you might encountered.  All processes posted here have been tested by myself and guaranteed working, well at least on my laptop. I hope you find them helpful.
 
@@ -239,6 +235,3 @@ When asked if you want to explicitly update the user preferences, select “Yes�
 
 	
   5. Go to System Settings -> Text Entry, uncheck the 'Show current input source in the menu bar', which will hide the IBus input framework.
-
-
-
