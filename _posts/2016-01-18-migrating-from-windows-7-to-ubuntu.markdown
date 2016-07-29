@@ -139,7 +139,7 @@ I used following steps to install the newest Eclipse Mars.1 (4.5.1):
 
 Then, I can open Eclipse from Unity search:
 
-[![Screenshot from 2016-01-15 23:37:00](https://leifengtechblog.files.wordpress.com/2016/01/screenshot-from-2016-01-15-233700.png?w=300)](https://leifengtechblog.files.wordpress.com/2016/01/screenshot-from-2016-01-15-233700.png)
+![Screenshot](/img/2016-01-18/screenshot.png)
 
 
 ## Install Python 3.5 and Packages
