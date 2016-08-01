@@ -33,7 +33,7 @@ The decision variable types in CP include the classical binary, integer, and con
 
 With the explicit element representation, CP allows wider types of constraints to be defined by arbitrary expressions through algebraic or logical operators. Specially, logical constraints, such as AND, OR, NOT and IF-THEN, and 'global constraints', such as FORALL, EXISTS, SUM, ALLDIFFERENT can be easily formulated in CP. Here are some example expressions:
 
-Arithmetic Expressions: \\(x^2 \bullet (y^2 - z) \ge 25 + x^2 * max(x,y,z)\\)
+Arithmetic Expressions: \\(x^2 \cdot (y^2 - z) \ge 25 + x^2 \cdot max(x,y,z)\\)
 
 Extensional Constraints('Table' Constraints): (x, y, z) in MyTupleSet
 
