@@ -37,9 +37,9 @@ Arithmetic Expressions: \\(x^2 \cdot (y^2 - z) \ge 25 + x^2 \cdot \max(x,y,z)\\)
 
 Extensional Constraints('Table' Constraints): \\((x, y, z) in MyTupleSet\\)
 
-Variables as Subscripts ('Element' Constraints):\\( y = cost(x) \\), where y and x are variables, 'cost' is an array of parameters.
+Variables as Subscripts ('Element' Constraints): \\( y = cost(x) \\), where y and x are variables, 'cost' is an array of parameters.
 
-Reasoning with meta-constraints: \\(\sum_i(x_i \gt T_i) \ge 5 \\)
+Reasoning with meta-constraints: \\(\sum_{substack(0\le i \le m)}(x_i \gt T_i) \ge 5 \\)
 
 Logical rations in which (meta-) constraints can be mixed: if ((x < y) OR (y < z)) then c = min(x, y)
 
