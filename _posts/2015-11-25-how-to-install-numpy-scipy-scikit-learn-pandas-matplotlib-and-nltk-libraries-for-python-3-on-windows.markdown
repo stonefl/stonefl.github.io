@@ -60,5 +60,4 @@ To install NLTK we need to install the Pyyaml package. Follow the steps for in
 ## References
 
 <https://www.codementor.io/numpy/tutorial/installing-numpy-64-bit-windows>
-
 <http://scikit-learn.org/stable/install.html>
