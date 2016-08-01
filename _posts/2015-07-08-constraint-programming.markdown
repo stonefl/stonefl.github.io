@@ -1,18 +1,19 @@
 ---
+layout: post
 author: stonefl
 comments: true
-date: 2015-07-08 15:30:48+00:00
-layout: post
-link: https://leifengtechblog.wordpress.com/2015/07/08/constraint-programming/
+date: 'Wed Jul 08 2015 10:30:48 GMT-0500 (Central Daylight Time)'
+link: 'https://leifengtechblog.wordpress.com/2015/07/08/constraint-programming/'
 slug: constraint-programming
 title: Solve Einstein's Logic Puzzle through Constraint Programming in AIMMS
 wordpress_id: 2
 categories:
-- Constraint Programming
-- Operations Research
+  - Operations Research
+  - Constraint Programming
 tags:
-- Constraint Programming
-- Logic Puzzle
+  - Constraint Programming
+  - Logic Puzzle
+published: false
 ---
 
 
@@ -1059,6 +1060,3 @@ Is this solution unique? Can you find out other feasible solution?
 
 
 Please feel free go leave your answers, comments or suggestions. Any feedback is welcome.
-
-
-
