@@ -8,12 +8,12 @@ link: >-
 slug: installing-and-managing-python-and-packages-with-anaconda
 title: Installing and Managing Python and Packages with Anaconda
 wordpress_id: 302
-categories:
-  - Python
 published: true
 tags:
   - Python
   - Anaconda
+categories:
+  - Programming
 ---
 
 As more and more Python packages I need to install for my daily work and learn, I get tired of searching and installing individual packages, especially on my Window system, like what I did in [how to install scientific Python packages on Windows](https://wordpress.com/post/leifengtechblog.wordpress.com/183). I decide to give **Anaconda** (by [Continuum Analytics](https://www.continuum.io/)) a try, what it provides far exceed my expectation and I feel guilty did not try it earlier. <!--more-->
