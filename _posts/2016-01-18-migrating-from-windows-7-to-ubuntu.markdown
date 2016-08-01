@@ -125,7 +125,7 @@ I used following steps to install the newest Eclipse Mars.1 (4.5.1):
 
 2. Extract the downloaded file and move it to **/opt/**
 	
-3. Create a launcher shortcut for Eclipse through running `gksudo gedit /usr/share/applications/eclipse.desktop` and paste following content in it:
+3. Create a launcher shortcut for Eclipse through running `gksudo gedit /usr/share/applications /eclipse.desktop` and paste following content in it:
 
 
                   [Desktop Entry]
