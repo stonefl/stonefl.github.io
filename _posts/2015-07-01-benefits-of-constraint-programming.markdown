@@ -43,7 +43,7 @@ Reasoning with meta-constraints: \\(\sum_{\substack{0\le i \le m}}(x_i \gt T_i) 
 
 Logical rations in which (meta-) constraints can be mixed: \\( (x \lt y) \vert (y \lt z) \rightarrow c = \min(x, y) \\)
 
-Global Constraints: \\( Alldifferent(x1, x2, ..., xn) \\)
+Global Constraints: \\( Alldifferent(x_1, x_2, ..., x_n) \\)
 
 In general, CP contraints can be non-linear, non-differentiable, and discontinuous.
 
