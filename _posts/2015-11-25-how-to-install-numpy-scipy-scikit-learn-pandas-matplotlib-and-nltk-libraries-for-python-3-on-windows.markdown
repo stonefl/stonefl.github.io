@@ -11,8 +11,6 @@ title: >-
   How to Install Numpy, SciPy, Scikit-learn, Pandas, Matplotlib, and NLTK
   libraries for Python 3 on Windows
 wordpress_id: 183
-categories:
-  - Python
 tags:
   - Matplotlib
   - NLTK
@@ -21,6 +19,8 @@ tags:
   - Scikit
   - SciPy
 published: true
+categories:
+  - Programming
 ---
 
 NumPy, SciPy, Pandas, and Matplotlib are fundamental scientific computing and visualization packages with Python. Scikit-learn is a simple and efficient package for data mining and analysis in Python. NLTK (the Natural Language Toolkit) is a leading platform for building Python programs to work with human language data. However, if you are using Python on Windows, it seems not easy to install these packages. Thanks to [Christoph Gohlke](http://www.lfd.uci.edu/~gohlke/), who provides the [non-official Python extension packages for Windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/). With these unofficial packages, there is a simple way to install these libraries on Windows.
