@@ -1,17 +1,19 @@
 ---
+layout: post
 author: stonefl
 comments: true
-date: 2015-10-28 20:09:31+00:00
-layout: post
-link: https://leifengtechblog.wordpress.com/2015/10/28/join-multiple-excel-workbooks-through-custom-sql-query-in-tableau/
+date: 'Wed Oct 28 2015 15:09:31 GMT-0500 (Central Daylight Time)'
+link: >-
+  https://leifengtechblog.wordpress.com/2015/10/28/join-multiple-excel-workbooks-through-custom-sql-query-in-tableau/
 slug: join-multiple-excel-workbooks-through-custom-sql-query-in-tableau
 title: Join Multiple Excel Workbooks through Custom SQL Query in Tableau
 wordpress_id: 150
-categories:
-- Tips and Tricks
 tags:
-- SQL
-- Tableau
+  - SQL
+  - Tableau
+published: true
+categories:
+  - Data Visualization
 ---
 
 Recently I came across the need of joining multiple excel files in Tableau. I did a hard research on how to do it. However, most of the instructions I found were about how to join two tabs in the same excel workbook. In this post, I will describe how to join multiple worksheets from different workbooks, which spent me about one hour to figure out. Please note the instructions here work for Tableau Desktop 9.0 or later.
