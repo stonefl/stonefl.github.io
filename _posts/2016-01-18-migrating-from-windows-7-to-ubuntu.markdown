@@ -158,7 +158,7 @@ Anaconda can be installed through following steps:
 3. Follow the instructions to install Anaconda and choose put Anaconda to the system path, so that Anaconda's Python will be the system default
 
 
-Anaconda comes with a package manager named conda, which helps me manage myPython packages, environments, and more, please read my another post about [installing and using Anaconda](https://leifengtechblog.wordpress.com/2016/01/15/installing-and-managing-python-and-packages-with-anaconda/).
+Anaconda comes with a package manager named conda, which helps me manage myPython packages, environments, and more, please read my another post about [installing and using Anaconda](http://leifengblog.net/2016-01-15-installing-and-managing-python-and-packages-with-anaconda/).
 
 
 ## Install Fcitx for Chinese Language Input
