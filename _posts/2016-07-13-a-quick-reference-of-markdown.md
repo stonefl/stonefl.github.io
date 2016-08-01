@@ -5,7 +5,8 @@ subtitle: A learning note of Markdown
 published: true
 categories:
   - Programming
-tags: Markdown
+tags:
+  - Markdown
 date: '2016-07-13'
 ---
 
@@ -261,16 +262,16 @@ Cell|Cell|Cell|Cell
 
 You can also specify either header justification or centering, for example,
 <pre>
-centered header  |  regular header  |  right-justified header  |  centered header  |  regular header  
-:-:|-|-:|:-:|-
-centered cell|regular cell|right-justified cell|centered cell|regular cell
-centered cell|regular cell|right-justified cell|centered cell|regular cell
+centered header  |  regular header  |  right-justified header  
+:-:|-|-:
+centered cell|regular cell|right-justified cell
+centered cell|regular cell|right-justified cell
 </pre>
 
-centered header  |  regular header  |  right-justified header  |  centered header  |  regular header  
-:-:|-|-:|:-:|-
-centered cell|regular cell|right-justified cell|centered cell|regular cell
-centered cell|regular cell|right-justified cell|centered cell|regular cell
+centered header  |  regular header  |  right-justified header  
+:-:|-|-:
+centered cell|regular cell|right-justified cell
+centered cell|regular cell|right-justified cell
 
 **Note:** You cannot make tables directly beneath a line of text. You must put a blank line between the end of a paragraph and the beginning of a table.
 
