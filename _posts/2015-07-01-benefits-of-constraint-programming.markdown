@@ -48,7 +48,7 @@ Global Constraints: \\( Alldifferent(x_1, x_2, ..., x_n) \\)
 In general, CP contraints can be non-linear, non-differentiable, and discontinuous.
 
 
-### With or Without Objective Function
+### 3. With or Without Objective Function
 
 
 Depending on with or without an objective function, constraint programming models can be categorized into two types: constraint optimization problem (COP) with an objective function and constraint satisfaction problem (CSP) without an objective function. COP aims to find an optimal solution, while CSP can provide a feasible solution or proves that no solution exists.
@@ -57,16 +57,9 @@ Depending on with or without an objective function, constraint programming model
 ## Powerful Search Strategy
 
 
-
-
 The solving process underlying CP involves a systematic search over a search space. Initially, the search space contains all combinations of the values in the domains of all decision variables. To avoid exploring the entire search space, CP first removes inconsistent values from the domains of the variables involved in each constraint. Then a search strategy (depth first, width first or multi-start) is applied to guide the search for a solution within the reduced search space. The search process can be viewed as traversing a tree, where the root is the starting point, a leaf node is a combination of values in the reduced search space and each branch represents a move (branching) within the search. Each leaf node is evaluated to determine if it will produce a feasible solution. A solution is a set of value assignments to the decision variables such that each variable is assigned to exactly one value from its domain.
 
-
-
-
-[![download](https://leifengtechblog.files.wordpress.com/2015/07/download.png?w=300)](https://leifengtechblog.files.wordpress.com/2015/07/download.png)
-
-
+![download](/img/post/serarchtree.png)
 
 
 
@@ -78,12 +71,6 @@ Constraint programming can also be used as a fast generator of feasible solution
 
 ## References
 
-
-
-
-
-	
   1. [AIMMS Language Reference - Constraint Programming ](http://www.aimms.com/aimms/download/manuals/aimms3lr_constraintprogramming.pdf)
-
 	
-  2. _Willem-Jan van Hoeve. Introduction to Constraint Programming_ and _Operations Research Techniques in Constraint Programming_. [ACP Summer School on Constraint Programming](http://www.andrew.cmu.edu/user/vanhoeve/summerschool/), 2012.
+  2. Willem-Jan van Hoeve. _Introduction to Constraint Programming_ and _Operations Research Techniques in Constraint Programming_. [ACP Summer School on Constraint Programming](http://www.andrew.cmu.edu/user/vanhoeve/summerschool/), 2012.
