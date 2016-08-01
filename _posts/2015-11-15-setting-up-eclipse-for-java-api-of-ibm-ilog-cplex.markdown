@@ -32,7 +32,7 @@ These steps have been done in Eclipse on Window 7, not sure if it works for othe
 
 * Browse to the location **‘oplall.jar’**, which is located at **C:\Program Files\IBM\ILOG\CPLEX_Studio126\opl\lib** in my case. Select this jar file and add it to the library.
 
-* Make sure the CPLEX STUDIO BINARIES is included in the PATH environmental variables. In my case the path is **C:\Program Files\IBM\ILOG\CPLEX_Studio126\opl\bin\x64_win64. **
+* Make sure the CPLEX STUDIO BINARIES is included in the PATH environmental variables. In my case the path is **C:\Program Files\IBM\ILOG\CPLEX_Studio126\ opl\bin\x64_win64. **
 
 In my case, I defined a system variable with name of **CPLEX_STUDIO_BINARIES126** and value of
 **C:\Program Files\IBM\ILOG\CPLEX_Studio126\ opl\bin\x64_win64;
