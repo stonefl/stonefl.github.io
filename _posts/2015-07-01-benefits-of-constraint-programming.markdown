@@ -22,26 +22,18 @@ Constraints Programming (CP) is a relatively new, but evolving rapidly, paradigm
 
 ## Intuitive Modeling Language
 
-
-Comparing to MP, CP allows more flexible modeling language, which is be more intuitive and closer to natural language. Virtually any expression over the variables is allowed.
-
-
-### Wide Types of Decision Variables
+Comparing to MP, CP allows more flexible modeling language, which is more intuitive and closer to natural language. Virtually any expression over the variables is allowed.
 
 
+### 1. Wide Types of Decision Variables
 
+The decision variable types in CP include the classical binary, integer, and continuous. Unlike in Integer Programming, where the range of a variable is specified and maintained as an interval, in CP the variables are maintained explicitly as a set of elements that is called _**domain**_.  In addition, CP can model special "structured" variable types. One example of this special variable types is the set variables that take a set of elements as value. Another example is activities or interval variables that are suitable to model the scheduling and sequence problem.
 
-The decision variables types include the classical binary, integer, and continuous. Unlike in integer programming, where the range of a variable is specified and maintained as an interval, in constraint programming, the variables are maintained explicitly as a set of elements that is called _**domain**_.  In addition, CP can model special "structured" variable types. One example of this special variable types is the set variables that take a set of elements as value. Another example is activities or interval variables that are suitable to model the scheduling and sequence problem.
-
-
-
-
-### Nearly All Kinds of Constraints Expressions
-
+### 2. Nearly All Kinds of Constraints Expressions
 
 With the explicit element representation, CP allows wider types of constraints to be defined by arbitrary expressions through algebraic or logical operators. Specially, logical constraints, such as AND, OR, NOT and IF-THEN, and 'global constraints', such as FORALL, EXISTS, SUM, ALLDIFFERENT can be easily formulated in CP. Here are some example expressions:
 
-Arithmetic Expressions: x²·(y²-z) ≥ 25 + x²· max(x, y, z)
+Arithmetic Expressions: \\(x^2 * (y^2 - z) >= 25 + x^2 * max(x,y,z)\\)
 
 Extensional Constraints('Table' Constraints): (x, y, z) in MyTupleSet
 
