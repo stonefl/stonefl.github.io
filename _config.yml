@@ -118,7 +118,7 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts' # restrict authoring access to a directory
+  rooturl: '' # restrict authoring access to a directory
   ignore:  # Array of files to ignore and hide in Prose
     - 404.html
     - LICENSE
