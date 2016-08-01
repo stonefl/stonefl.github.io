@@ -1,21 +1,23 @@
 ---
+layout: post
 author: stonefl
 comments: true
-date: 2015-07-14 04:12:38+00:00
-layout: post
-link: https://leifengtechblog.wordpress.com/2015/07/13/a-generic-comparator-class-for-java-collections-sort/
+date: 'Mon Jul 13 2015 23:12:38 GMT-0500 (Central Daylight Time)'
+link: >-
+  https://leifengtechblog.wordpress.com/2015/07/13/a-generic-comparator-class-for-java-collections-sort/
 slug: a-generic-comparator-class-for-java-collections-sort
 title: A Generic Comparator Class for Java Collections.sort()
 wordpress_id: 22
 categories:
-- Java
-- Programming Language
+  - Java
+  - Programming Language
 post_format:
-- Aside
+  - Aside
 tags:
-- GenericComparator
-- Generics
-- Java
+  - Java
+  - GenericComparator
+  - Generics
+published: false
 ---
 
 ### Sort A List of Objects
