@@ -59,7 +59,7 @@ Depending on with or without an objective function, constraint programming model
 
 The solving process underlying CP involves a systematic search over a search space. Initially, the search space contains all combinations of the values in the domains of all decision variables. To avoid exploring the entire search space, CP first removes inconsistent values from the domains of the variables involved in each constraint. Then a search strategy (depth first, width first or multi-start) is applied to guide the search for a solution within the reduced search space. The search process can be viewed as traversing a tree, where the root is the starting point, a leaf node is a combination of values in the reduced search space and each branch represents a move (branching) within the search. Each leaf node is evaluated to determine if it will produce a feasible solution. A solution is a set of value assignments to the decision variables such that each variable is assigned to exactly one value from its domain.
 
-![download](/img/post/serarchtree.png)
+![searchtree](/img/post/searchtree.png)
 
 
 
