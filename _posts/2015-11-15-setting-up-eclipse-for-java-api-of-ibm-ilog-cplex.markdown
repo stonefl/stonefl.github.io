@@ -25,8 +25,8 @@ These steps have been done in Eclipse on Window 7, not sure if it works for othe
 
 * Import a java file from the example folder to the ‘**src**’ folder of the built project.
 
-	* For CPLEX, in my case, they are located at: C:\Program Files\IBM\ILOG\CPLEX_Studio126\cplex\examples\src\java
-    * For CP, the examples are located at: C:\Program Files\IBM\ILOG\CPLEX_Studio126\cpoptimizer\examples\src\java
+	* For CPLEX, in my case, they are located at: C:\Program Files\IBM\ILOG\CPLEX_Studio126\ cplex\examples\src\java
+    * For CP, the examples are located at: C:\Program Files\IBM\ILOG\CPLEX_Studio126\ cpoptimizer\examples\src\java
 
 * Include the JAR library to the project, through right click on project then **Properties**** **> **Java Build Path**** **> **Libraries, **then** Add External JARs.**
 
@@ -35,10 +35,10 @@ These steps have been done in Eclipse on Window 7, not sure if it works for othe
 * Make sure the CPLEX STUDIO BINARIES is included in the PATH environmental variables. In my case the path is **C:\Program Files\IBM\ILOG\CPLEX_Studio126\opl\bin\x64_win64. **
 
 In my case, I defined a system variable with name of **CPLEX_STUDIO_BINARIES126** and value of
-**C:\Program Files\IBM\ILOG\CPLEX_Studio126\opl\bin\x64_win64;
- C:\Program Files\IBM\ILOG\CPLEX_Studio126\opl\oplide\;
- C:\Program Files\IBM\ILOG\CPLEX_Studio126\cplex\bin\x64_win64;
- C:\Program Files\IBM\ILOG\CPLEX_Studio126\cpoptimizer\bin\x64_win64**. 
+**C:\Program Files\IBM\ILOG\CPLEX_Studio126\ opl\bin\x64_win64;
+ C:\Program Files\IBM\ILOG\CPLEX_Studio126\ opl\oplide\;
+ C:\Program Files\IBM\ILOG\CPLEX_Studio126\ cplex\bin\x64_win64;
+ C:\Program Files\IBM\ILOG\CPLEX_Studio126\ cpoptimizer\bin\x64_win64**. 
  Then add **%CPLEX_STUDIO_BINARIES126%** to the PATH.
 
 * Now you can run your project through **Run As > Java Application**
