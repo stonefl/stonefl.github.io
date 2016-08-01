@@ -45,7 +45,6 @@ Drag the **New Custom SQL** table from the left pane to the join area.
 In the custom SQL query field, copy and paste a LEFT JOIN query similar to the one shown below, change and update to your use case.
 
 ``` SQL
-
 SELECT 
 a.*,
 b.[LAT] AS [OR_LAT], b.[LONG] AS [OR_LONG],
