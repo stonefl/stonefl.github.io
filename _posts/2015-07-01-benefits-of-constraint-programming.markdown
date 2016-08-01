@@ -1,24 +1,23 @@
 ---
+layout: post
 author: stonefl
 comments: true
-date: 2015-07-01 21:07:33+00:00
-layout: post
-link: https://leifengtechblog.wordpress.com/2015/07/01/benefits-of-constraint-programming/
+date: 'Wed Jul 01 2015 16:07:33 GMT-0500 (Central Daylight Time)'
+link: >-
+  https://leifengtechblog.wordpress.com/2015/07/01/benefits-of-constraint-programming/
 slug: benefits-of-constraint-programming
 title: Benefits of Constraint Programming
 wordpress_id: 95
 categories:
-- Constraint Programming
-- Operations Research
+  - Operations Research
 tags:
-- Constraint Programming
-- Optimization
+  - Constraint Programming
+  - Optimization
+published: true
 ---
 
-Constraints Programming (CP) is a relatively new, but evolving rapidly, paradigm in Operation Research. It was derived from Computer Science - Logic Programming, Graph Theory, and Artificial Intelligence. Like a Mathematical Programming (MP), such as Linear Programming, Integer Programming, or Nonlinear Program, CP works with the same concepts of decision variables, constraints, and/or objective function. Because of its flexible modeling language and powerful search strategy, CP is a powerful and easy-to-use optimization technology to solve highly combinatorial optimization problems, such as scheduling problems, timetabling problems, sequencing problems, and allocation or rostering problems. These problems might be difficult to solve for MP, due to: 1) constraints that are nonlinear in nature; 2) a con-convex solution space that contains many locally optimal solutions; 3) multiple disjunctions, which result in poor information returned by a linear relaxation of the problem. This post tries to summarize the major benefits of CP in contrast with MP models in modeling and solving standpoints.
-
-
-
+Constraints Programming (CP) is a relatively new, but evolving rapidly, paradigm in Operation Research. It was derived from Computer Science - Logic Programming, Graph Theory, and Artificial Intelligence. Like a Mathematical Programming (MP), such as Linear Programming, Integer Programming, or Nonlinear Program, CP works with the same concepts of decision variables, constraints, and/or objective function. Because of its flexible modeling language and powerful search strategy, CP is a powerful and easy-to-use optimization technology to solve highly combinatorial optimization problems, such as scheduling problems, timetabling problems, sequencing problems, and allocation or rostering problems. These problems might be difficult to solve for traditional MP, due to: 1) constraints that are nonlinear in nature; 2) a con-convex solution space that contains many locally optimal solutions; 3) multiple disjunctions, which result in poor information returned by a linear relaxation of the problem. This post tries to summarize some major benefits of CP in contrast with MP models in modeling and solving standpoints.
+<!--more-->
 
 
 ## Intuitive Modeling Language
@@ -96,5 +95,3 @@ Constraint programming can also be used as a fast generator of feasible solution
 
 	
   2. _Willem-Jan van Hoeve. Introduction to Constraint Programming_ and _Operations Research Techniques in Constraint Programming_. [ACP Summer School on Constraint Programming](http://www.andrew.cmu.edu/user/vanhoeve/summerschool/), 2012.
-
-
