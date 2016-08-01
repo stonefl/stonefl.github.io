@@ -106,14 +106,14 @@ If the **`conda install somepackage`** fails, you can try **`pip install somepa
 
 ## A list of references about Anaconda:
 	
-* Anaconda websit: [https://store.continuum.io/cshop/anaconda/](https://store.continuum.io/cshop/anaconda/)
+* [Anaconda websit](https://store.continuum.io/cshop/anaconda/)
 
-* Conda user cheet sheet [http://conda.pydata.org/docs/_downloads/conda-cheatsheet.pdf](http://conda.pydata.org/docs/_downloads/conda-cheatsheet.pdf)
+* [Conda user cheet sheet](http://conda.pydata.org/docs/_downloads/conda-cheatsheet.pdf)
 
-* List of Anaconda packages: [http://docs.continuum.io/anaconda/pkg-docs](http://docs.continuum.io/anaconda/pkg-docs)
+* [List of Anaconda packages](http://docs.continuum.io/anaconda/pkg-docs)
 
-* Conda main page: [http://conda.io/](http://conda.io/)
+* [Conda main page](http://conda.io/)
 
-* Anaconda mailing list: [https://groups.google.com/a/continuum.io/forum/#!forum/anaconda](https://groups.google.com/a/continuum.io/forum/#!forum/anaconda)
+* [Anaconda mailing list](https://groups.google.com/a/continuum.io/forum/#!forum/anaconda)
 
-* Conda FAQ: [http://conda.pydata.org/docs/faq.html](http://conda.pydata.org/docs/faq.html)
+* [Conda FAQ](http://conda.pydata.org/docs/faq.html)
