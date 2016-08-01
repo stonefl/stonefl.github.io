@@ -41,9 +41,9 @@ Variables as Subscripts ('Element' Constraints): \\( y = cost(x) \\), where y an
 
 Reasoning with meta-constraints: \\(\sum_{\substack{0\le i \le m}}(x_i \gt T_i) \ge 5 \\)
 
-Logical rations in which (meta-) constraints can be mixed: if ((x < y) OR (y < z)) then c = min(x, y)
+Logical rations in which (meta-) constraints can be mixed: \\( (x \lt y) \vert (y \lt z) \rightarrow c = \min(x, y) \\)
 
-Global Constraints: Alldifferent(x1, x2, ..., xn)
+Global Constraints: \\( Alldifferent(x1, x2, ..., xn) \\)
 
 In general, CP contraints can be non-linear, non-differentiable, and discontinuous.
 
