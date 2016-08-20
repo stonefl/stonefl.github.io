@@ -6,7 +6,7 @@ date: '2016-01-18 '
 link: >-
   https://leifengtechblog.wordpress.com/2016/01/18/migrating-from-windows-7-to-ubuntu/
 slug: migrating-from-windows-7-to-ubuntu
-title: Migrating from Windows 7 to Ubuntu
+title: Migrating from Windows to Ubuntu
 wordpress_id: 220
 categories:
   - Ubuntu
