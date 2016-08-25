@@ -92,7 +92,7 @@ Then one can use
 Collections.sort(personList, new SortPersonById()); 
 ```
 
-to sort the list ` personList ` by id in ascending order.
+to sort the list `personList` by id in ascending order.
 
 
 ### Generic Comparator
