@@ -237,12 +237,11 @@ Lisa	104	75000	4500
 -------------
 </pre>
 
-Detailed source code and implement examples are available through [GitHub](https://github.com/stonefl/GenericComparator).
+Detailed source code and implement examples are available through my [GitHub](https://github.com/stonefl/GenericComparator).
 
 
 ### Reference
 
+1. [Making a Generic Comparator Class](http://stackoverflow.com/questions/15189949/making-a-generic-comparator-class)
 
-1. Making a Generic Comparator Class: [http://stackoverflow.com/questions/15189949/making-a-generic-comparator-class](http://stackoverflow.com/questions/15189949/making-a-generic-comparator-class)
-
-2. Generic Comparator in Java: [http://myjeeva.com/generic-comparator-in-java.html](http://myjeeva.com/generic-comparator-in-java.html)
+2. [Generic Comparator in Java](http://myjeeva.com/generic-comparator-in-java.html)
