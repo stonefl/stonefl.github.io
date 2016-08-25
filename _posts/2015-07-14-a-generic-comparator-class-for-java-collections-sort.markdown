@@ -100,7 +100,7 @@ to sort the list **personList** by id in ascending order.
 What if the user wants to sort the **personList** by `name` instead of `id`, or in descending instead of ascending order, or by `id` first and then `name` second? It is tedious to write one class for each of these situations. I have built a [GenericComparator](https://github.com/stonefl/GenericComparator) class to handle these situaitons. The reflection technology is used for accessing fields in the class. This generic class can be used to sort lists of primitive as well as user defined objects.
 
 
-There are two constructors, as shown below. **Constructor 1** defines default ascending order and the sort field names. Please note, the varargs format of sort field names are used for multiple fields and multiple level of fields. Take the `Person` Class above for example, the user can define multiple fields names such as `id`, `name`, and `pay`. The user can also define a sub-fields of payment field through `pay.startSalry` or `pay.startBonus`. **Constructor 2** works in the same way, excepts the user can defined sorting order.
+There are two constructors shown below. **Constructor 1** defines default ascending order and the sort field names. The varargs format of sort field names is used for multiple fields and multiple level of fields. Take the `Person` class above for example, the user can define multiple fields names such as `id`, `name`, and `pay.StartSalary` or `pay.startBonus`. **Constructor 2** works in the same way, excepts the user can defined sorting order.
 
 **Constructor 1 **
 ```java
@@ -117,7 +117,7 @@ public GenericComparator(String... sortFieldNames) {
 			this.alFieldNameMatrix.add(tempList);
 		}
 	}
-```java
+```
 
 **Constructor 2**
 ```java
@@ -132,7 +132,7 @@ public GenericComparator(final boolean sortAscending, String... sortFieldNames) 
 			this.alFieldNameMatrix.add(tempList);
 		}
 	}
-```java
+```
 
 
 ### How to Use
