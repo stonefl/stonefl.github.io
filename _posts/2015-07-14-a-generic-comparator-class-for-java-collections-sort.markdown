@@ -70,7 +70,6 @@ public class Person {
 One possible Comparator class with above aim might be:
 
 ```java
-
 import java.util.Comparator;
 
 public class SortPersonById implements Comparator&lt;Person&gt;{
@@ -85,13 +84,13 @@ public class SortPersonById implements Comparator&lt;Person&gt;{
 		}
 	}
 }
-```java
+```
 
 Then one can use
 
 ```java
 Collections.sort(personList, new SortPersonById()); 
-```java
+```
 
 to sort the list ` personList ` by id in ascending order.
 
