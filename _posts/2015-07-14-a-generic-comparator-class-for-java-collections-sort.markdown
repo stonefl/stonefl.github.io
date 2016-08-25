@@ -64,7 +64,7 @@ public class Person {
        }
     }
 }
-```java
+```
 
 
 One possible Comparator class with above aim might be:
