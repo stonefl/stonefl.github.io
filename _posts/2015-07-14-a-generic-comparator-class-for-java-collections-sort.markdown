@@ -237,7 +237,8 @@ Lisa	104	75000	4500
 -------------
 </pre>
 
-Detailed source code and implement examples are available through my [GitHub](https://github.com/stonefl/GenericComparator).
+Detailed source code and implement examples are available through my [GitHub](https://github.com/stonefl/GenericComparator). 
+Please feel free to leave your comments.
 
 
 ### Reference
