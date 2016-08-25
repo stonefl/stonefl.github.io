@@ -102,7 +102,7 @@ What if the user wants to sort the **personList** by `name` instead of `id`, 
 
 There are two constructors shown below. **Constructor 1** defines default ascending order and the sort field names. The varargs format of sort field names is used for multiple fields and multiple level of fields. Take the `Person` class above for example, the user can define multiple fields names such as `id`, `name`, and `pay.StartSalary` or `pay.startBonus`. **Constructor 2** works in the same way, excepts the user can defined sorting order.
 
-**Constructor 1 **
+**Constructor 1**
 
 ```java
 public GenericComparator(String... sortFieldNames) {
@@ -143,6 +143,7 @@ public GenericComparator(final boolean sortAscending, String... sortFieldNames) 
 An example is posted here to illustrate how to use the GenericComparator class.
 
 ```java
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -199,7 +200,7 @@ public class TestGenericComparator {
 	}
 
 }
-```java
+```
 
 
 
