@@ -13,7 +13,7 @@ post_format:
 tags:
   - Java
   - Generics
-published: false
+published: true
 categories:
   - Programming Language
 ---
