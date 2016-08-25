@@ -92,15 +92,15 @@ Then one can use
 Collections.sort(personList, new SortPersonById()); 
 ```
 
-to sort the list `personList` by id in ascending order.
+to sort the list **personList** by id in ascending order.
 
 
 ### Generic Comparator
 
-What if the user wants to sort the `personList` by `name` instead of the `id`, or in descending order instead of ascending, or by `id` first and `name` second, or by the `startSalary`? It is tedious to write one class for each of these situation. I have built a [GenericComparator](https://github.com/stonefl/GenericComparator) class to sort any object by any declared field in any specified order. The reflection technology is used for accessing fields in the class. This generic class can be used to sort lists of primitive as well as user defined objects.
+What if the user wants to sort the **personList** by `name` instead of `id`, or in descending instead of ascending order, or by `id` first and then `name` second? It is tedious to write one class for each of these situations. I have built a [GenericComparator](https://github.com/stonefl/GenericComparator) class to handle these situaitons. The reflection technology is used for accessing fields in the class. This generic class can be used to sort lists of primitive as well as user defined objects.
 
 
-There are two constructors, as shown below. **Constructor 1 ** defines default ascending order and the sort field names. Please note, the varargs format of sort field names are used for multiple fields and multiple level of fields. Take the `Person` Class above for example, the user can define multiple fields names such as `id`, `name`, and `pay`. The user can also define a sub-fields of payment field through `pay.startSalry` or `pay.startBonus`. **Constructor 2** works in the same way, excepts the user can defined sorting order.
+There are two constructors, as shown below. **Constructor 1** defines default ascending order and the sort field names. Please note, the varargs format of sort field names are used for multiple fields and multiple level of fields. Take the `Person` Class above for example, the user can define multiple fields names such as `id`, `name`, and `pay`. The user can also define a sub-fields of payment field through `pay.startSalry` or `pay.startBonus`. **Constructor 2** works in the same way, excepts the user can defined sorting order.
 
 **Constructor 1 **
 ```java
