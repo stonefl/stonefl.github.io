@@ -203,10 +203,8 @@ public class TestGenericComparator {
 ```
 
 
-
-
 Execution results:
-`
+<pre>
 sort personList by name field: 
 Angela	102	50000	4500
 Bob	103	50000	4500
@@ -237,7 +235,8 @@ Bob	103	50000	4500
 Mike	101	65000	5500
 Lisa	104	75000	4500
 -------------
-`
+</pre>
+
 Detailed source code and implement examples are available through [GitHub](https://github.com/stonefl/GenericComparator).
 
 
