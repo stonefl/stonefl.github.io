@@ -8,16 +8,14 @@ link: >-
 slug: a-generic-comparator-class-for-java-collections-sort
 title: A Generic Comparator Class for Java Collections.sort()
 wordpress_id: 22
-categories:
-  - Java
-  - Programming Language
 post_format:
   - Aside
 tags:
   - Java
-  - GenericComparator
   - Generics
 published: false
+categories:
+  - Programming Language
 ---
 
 ### Sort A List of Objects
