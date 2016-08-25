@@ -25,8 +25,7 @@ As a Java programmer, I often need to sort a list of objects. If the object is 
 <!--more-->
 
 
-``` java
-
+```java
 public class Person {
     //fields
     private int id;
@@ -65,8 +64,7 @@ public class Person {
        }
     }
 }
-
-``` java
+```java
 
 
 One possible Comparator class with above aim might be:
