@@ -21,14 +21,10 @@ categories:
 ### Sort A List of Objects
 
 
+As a Java programmer, I often need to sort a list of objects. If the object is a primitive type, such as `String, Integer, Long, Float, Double, or Date,` it is easy to use `[Collections.sort()](https://docs.oracle.com/javase/tutorial/collections/interfaces/order.html)`. However, to sort a list of user defined objects, which do not implement the `Comparable `interface, for example, to sort a list of **Person** objects, as defined below, by id in ascending order, one might has to provide a [Comparator class](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) - an object that encapsulates the ordering.
 
 
-As a Java programmer, I often need to sort a list of objects. If the object is a primitive type, such as `String, Integer, Long, Float, Double, or Date,` it is easy to use `[Collections.sort()](https://docs.oracle.com/javase/tutorial/collections/interfaces/order.html)`. However, to sort a list of user defined objects, which do not implement the `Comparable `interface, for example, to sort a list of **Person** objects, as defined below, by id in ascending order, one has to provide a [Comparator](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) - an object that encapsulates an ordering.
-
-
-
-
-[code language="java" collapse="false" title="Person.java"]
+```java
 public class Person {
     //fields
     private int id;
@@ -67,11 +63,11 @@ public class Person {
        }
     }
 }
-[/code]
+```java
 
 One possible Comparator class with above aim might be:
 
-[code language="java" collapse="true" title="SortPersonById.java"]
+```java
 import java.util.Comparator;
 
 public class SortPersonById implements Comparator&lt;Person&gt;{
@@ -86,41 +82,55 @@ public class SortPersonById implements Comparator&lt;Person&gt;{
 		}
 	}
 }
-[/code]
+```java
 
 Then one can use
 
-[code language="java" gutter="false"] Collections.sort(personList, new SortPersonById()); [/code]
+```java
+Collections.sort(personList, new SortPersonById()); 
+```java
 
 to sort the list ` personList ` by id in ascending order.
 
 
 ### Generic Comparator
 
+What if the user wants to sort the `personList` by `name` instead of the `id`, or in descending order instead of ascending, or by `id` first and `name` second, or by the `startSalary`? It is tedious to write one class for each of these situation. I have built a [GenericComparator](https://github.com/stonefl/GenericComparator) class to sort any object by any declared field in any specified order. The reflection technology is used for accessing fields in the class. This generic class can be used to sort lists of primitive as well as user defined objects.
 
 
+There are two constructors, as shown below. **Constructor 1 ** defines default ascending order and the sort field names. Please note, the varargs format of sort field names are used for multiple fields and multiple level of fields. Take the `Person` Class above for example, the user can define multiple fields names such as `id`, `name`, and `pay`. The user can also define a sub-fields of payment field through `pay.startSalry` or `pay.startBonus`. **Constructor 2** works in the same way, excepts the user can defined sorting order.
 
-What if the user wants to sort the `personList` by `name` instead of the `id`? or in descending order instead of ascending? It is tedious to write one class for each of these situation. Is there any generic way to it? A [GenericComparator](https://github.com/stonefl/GenericComparator/blob/master/src/GenericComparator.java) class proposed in this post can be used to sort any object by any declared field in any specified order. The reflection technology is used for accessing fields in the class. This generic class can be used to sort lists of primitive as well as user defined objects.
-
-
-There are two constructors, as shown below. **Constructor 1 **defines default ascending order and the sort field names. Please note, the varargs format of sort field names are used for different level of fields. For example, in the `Person` Class above, the first level of payment field is "pay" and the second level of field names in the "pay" field are "startSalary" and "startBonus". **Constructor 2** works in the same way, excepts the user defined sorting order.
-
-[code language="java" collapse="false" title="Constructor 1"]
+**Constructor 1 **
+```java
 public GenericComparator(String... sortFieldNames) {
-    this.bAscendingOrder = true;
-    this.sfieldNames = sortFieldNames;
-}
-[/code]
+		this.bAscendingOrder = true;
+		//read sort filed names into 
+		for(String fieldName: sortFieldNames){
+			System.out.println(fieldName);
+			List<String> tempList = new ArrayList<String>();
+			for(String name : fieldName.split("\\.")){
+				System.out.println(name);
+				tempList.add(name);
+			}
+			this.alFieldNameMatrix.add(tempList);
+		}
+	}
+```java
 
-
-[code language="java" collapse="false" title="Constructor 2"]
-public GenericComparator(final boolean sortAscending, 
-                          String... sortFieldNames) {
-    this.bAscendingOrder = sortAscending;
-    this.sfieldNames = sortFieldNames;
-}
-[/code]
-
+**Constructor 2**
+```java
+public GenericComparator(final boolean sortAscending, String... sortFieldNames) {
+		this.bAscendingOrder = sortAscending;
+		//read sort filed names into 
+		for(String fieldName: sortFieldNames){
+			List<String> tempList = new ArrayList<String>();
+			for(String name : fieldName.split("\\.")){
+				tempList.add(name);
+			}
+			this.alFieldNameMatrix.add(tempList);
+		}
+	}
+```java
 
 
 ### How to Use
@@ -128,102 +138,102 @@ public GenericComparator(final boolean sortAscending, 
 
 An example is posted here to illustrate how to use the GenericComparator class.
 
-
-
-
-[code language="java" collapse="false" title="TestGenericComparator.java"]
+```java
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class TestGenericComparator {
+	
+	public static void main(String[] args) {
 
- public static void main(String[] args) {
-    // Build a list of persons with different names and ids
-    List&lt;Person&gt; personList = new ArrayList&lt;Person&gt;();
-    personList.add(new Person("Angela", 102, 50000, 5000));
-    personList.add(new Person("Mike",101, 65000, 5500));
-    personList.add(new Person("Lisa", 104, 75000,4500));
-    personList.add(new Person("Bob", 103, 58000, 4300));
-    //print initial person list
-    printPersonList(personList);
+		// Build a list of persons with different names and ids
+		List<Person> personList = new ArrayList<Person>();
+		personList.add(new Person("Angela", 102, 50000, 4500));
+		personList.add(new Person("Mike",101, 65000, 5500));
+		personList.add(new Person("Lisa", 104, 75000,4500));
+		personList.add(new Person("Bob", 103, 50000, 4500));
+		
+		//sort personList by name field 
+		printInfo("sort personList by name field: ");
+		Collections.sort(personList, new GenericComparator("name"));
+		printPersonList(personList);
+		
+		//sort personList by id field in ascending order
+		printInfo("sort personList by id field in ascending order:");
+		Collections.sort(personList, new GenericComparator(true,"id"));
+		printPersonList(personList);
+		
+		//sort personList by id field in descending order
+		printInfo("sort personList by id field in descending order:");
+		Collections.sort(personList, new GenericComparator(false,"id"));
+		printPersonList(personList);
+		
+		//sort personList by pay field's start salary
+		printInfo("sort personList by pay field's start salary:");
+		Collections.sort(personList, new GenericComparator("pay.startSalary"));
+		printPersonList(personList);
+		
+		//sort personList by pay field's start salary first, and then by id
+		printInfo("sort personList by pay field's start salary and id");
+		Collections.sort(personList, new GenericComparator("pay.startSalary", "id"));
+		printPersonList(personList);
+		
+	}
 
-    //sort personList by name field
-    Collections.sort(personList, new GenericComparator("name"));
-    printPersonList(personList);
-    //sort personList by id field in ascending order
-    Collections.sort(personList, new GenericComparator(true,"id"));
-    printPersonList(personList);
-    //sort personList by id field in descending order
-    Collections.sort(personList, new GenericComparator(false,"id"));
-    printPersonList(personList);
-    //sort personList by pay field's start salary
-    Collections.sort(personList, new GenericComparator("pay","startSalary"));
-    printPersonList(personList);
-
-    //test primitive list
-    List&lt;Integer&gt; iList = new ArrayList&lt;Integer&gt;();
-    iList.add(12);
-    iList.add(15);
-    iList.add(13);
-    iList.add(20);
-    System.out.println(iList);
-
-    //sort iList in descending order
-   Collections.sort(iList, new GenericComparator(false));
-    System.out.println(iList);
- }
-
- /**
- * Print person list.
- * @param personList
- */
- private static void printPersonList(List&lt;Person&gt; personList) {
-    for(Person p: personList){
-        System.out.println(p.getName() + "\t" + p.getId() + "\t"
-                       + p.getStartSalary() + "\t" +p.getStartBonus());
-    }
-    System.out.println("-------------");
- }
+	/**
+	 * @param personList
+	 */
+	private static void printPersonList(List<Person> personList) {
+		for(Person p: personList){
+			System.out.println(p.getName() + "\t" + p.getId() + "\t" + p.getStartSalary() + "\t" +p.getStartBonus());
+		}
+		System.out.println("-------------");
+	}
+	private static void printInfo(String info){
+		System.out.println(info);
+	}
 
 }
-
-[/code]
+```java
 
 
 
 
 Execution results:
 `
-Angela 102 50000 5000
-Mike 101 65000 5500
-Lisa 104 75000 4500
-Bob 103 58000 4300
+sort personList by name field: 
+Angela	102	50000	4500
+Bob	103	50000	4500
+Lisa	104	75000	4500
+Mike	101	65000	5500
 -------------
-Angela 102 50000 5000
-Bob 103 58000 4300
-Lisa 104 75000 4500
-Mike 101 65000 5500
+sort personList by id field in ascending order:
+Mike	101	65000	5500
+Angela	102	50000	4500
+Bob	103	50000	4500
+Lisa	104	75000	4500
 -------------
-Mike 101 65000 5500
-Angela 102 50000 5000
-Bob 103 58000 4300
-Lisa 104 75000 4500
+sort personList by id field in descending order:
+Lisa	104	75000	4500
+Bob	103	50000	4500
+Angela	102	50000	4500
+Mike	101	65000	5500
 -------------
-Lisa 104 75000 4500
-Bob 103 58000 4300
-Angela 102 50000 5000
-Mike 101 65000 5500
+sort personList by pay field's start salary:
+Bob	103	50000	4500
+Angela	102	50000	4500
+Mike	101	65000	5500
+Lisa	104	75000	4500
 -------------
-Angela 102 50000 5000
-Bob 103 58000 4300
-Mike 101 65000 5500
-Lisa 104 75000 4500
+sort personList by pay field's start salary and then by id: 
+Angela	102	50000	4500
+Bob	103	50000	4500
+Mike	101	65000	5500
+Lisa	104	75000	4500
 -------------
-[12, 15, 13, 20]
-[20, 15, 13, 12]
 `
-Detailed source code and implement examples are available through [GitHub](https://github.com/stonefl/GenericComparator.git).
+Detailed source code and implement examples are available through [GitHub](https://github.com/stonefl/GenericComparator).
 
 
 ### Reference
