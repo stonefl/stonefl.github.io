@@ -21,8 +21,7 @@ categories:
 ### Sort A List of Objects
 
 
-
-As a Java programmer, I often need to sort a list of objects. If the object is a primitive type, such as `String, Integer, Long, Float, Double, or Date,` it is easy to use [Collections.sort()](https://docs.oracle.com/javase/tutorial/collections/interfaces/order.html). However, to sort a list of user defined objects, which do not implement the `Comparable `interface, for example, to sort a list of **Person** objects, as defined below, by id in ascending order, one might has to provide a [Comparator class](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) - an object that encapsulates the ordering.
+As a Java programmer, I often need to sort a list of objects. If the object is a primitive type, such as `String, Integer, Long, Float, Double, or Date,` it is easy to use [**Collections.sort()**](https://docs.oracle.com/javase/tutorial/collections/interfaces/order.html). However, to sort a list of user defined objects, which do not implement the `Comparable `interface, for example, to sort a list of **Person** objects, as defined below, by `id` in ascending order, one might has to provide a [**Comparator class**](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) - an object that encapsulates the ordering. Instead a generic comparator class is defined in this post to sort lists of primitive as well as user defined objects, in any specified order and by any specified field(s). 
 <!--more-->
 
 ```java
