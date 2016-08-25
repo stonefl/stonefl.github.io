@@ -15,7 +15,7 @@ tags:
   - Generics
 published: true
 categories:
-  - Programming Language
+  - Programming
 ---
 
 ### Sort A List of Objects
