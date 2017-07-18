@@ -68,7 +68,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "Lei Feng's Blog"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "leifengblog.net"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -192,5 +192,3 @@ prose:
 gems:
   - jekyll-paginate
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
