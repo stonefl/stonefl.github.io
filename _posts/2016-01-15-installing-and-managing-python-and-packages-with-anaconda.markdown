@@ -63,7 +63,8 @@ Then the new environment can be activated through
 
 `source deactivate py2` on **Linux or Mac OSX**
 
-**NOTE:** For Windows system, the activate and deactivate commands do not work in PowerShell, but work in cmd. Here is one potential solution, if you want to keep using your PowerShell: [Powershell activate and deactivate #626](https://github.com/conda/conda/issues/626)
+**NOTE:** For Windows system, the activate and deactivate commands do not work in PowerShell, but work in cmd. Here is one potential solution, if you want to keep using your PowerShell: [Powershell activate and deactivate #626](https://github.com/conda/conda/issues/626). You can also try another work around way:
+1) type `cmd` in Powershell to switch to cmd line; 2) run activate or deactivate command; 3) type `powershell` to change back to Powershell.
 
 
 ## Common Commands
