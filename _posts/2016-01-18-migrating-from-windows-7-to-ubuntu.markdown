@@ -18,7 +18,7 @@ tags:
   - Python
 ---
 
-If you get tired with Windows or Marc, like me, you might want to consider migrating to Ubuntu Trusty 14.04, which is the Long Term Support (LTS) version of the Ubuntu operating system for desktop PCs and laptops. It can be downloaded from [Ubuntu official site](http://www.ubuntu.com/download/desktop) for free and it is easy to install following the instructions there. Recently, I just downloaded and installed it on my old HP Compaq 6510b laptop. Comparing to almost 20 GBs of my old Windows 7 system, my new Ubuntu system only occupies 6.3 GBs and runs much faster.
+If you get tired with Windows or Mac, like me, you might want to consider migrating to Ubuntu Trusty 14.04, which is the Long Term Support (LTS) version of the Ubuntu operating system for desktop PCs and laptops. It can be downloaded from [Ubuntu official site](http://www.ubuntu.com/download/desktop) for free and it is easy to install following the instructions there. Recently, I just downloaded and installed it on my old HP Compaq 6510b laptop. Comparing to almost 20 GBs of my old Windows 7 system, my new Ubuntu system only occupies 6.3 GBs and runs much faster.
 <!--more-->
 
 This post describes installation processes of some software that I have been using in Windows 7 and I would like to move to my fresh installed Ubuntu. Most of these processes followed instructions from Ubuntu support forums, [Ask Ubuntu](http://askubuntu.com/), where you can get nearly all answers to any technical issues you might encounter.  All processes posted here have been tested by myself and guaranteed working, at least on my laptop. I hope you find them helpful.
