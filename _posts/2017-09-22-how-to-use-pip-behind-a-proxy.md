@@ -11,6 +11,7 @@ tags:
   - pip
 ---
 We often need to use the python package manager `pip` to install a python package on my office computer that is behind a proxy. Without specifying the proxy info, it always pop up `Connection refused`errors. Following commands can be used to make 'pip install' work smoothly.
+<!--more-->
 
 ## On Windows
 You can set up the proxy first through
@@ -31,4 +32,3 @@ Set up the proxy fist through
 or
 
 `sudo pip install --proxy=https://[username:password@]proxyserver:port somepackage`
-
