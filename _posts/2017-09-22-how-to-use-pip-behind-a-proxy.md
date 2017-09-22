@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: How to use pip behind a proxy
+title: How to Use pip behind a Proxy
 date: '2017-08-15'
 categories:
   - Tips and Tricks
