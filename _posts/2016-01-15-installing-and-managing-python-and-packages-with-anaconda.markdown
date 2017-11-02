@@ -35,7 +35,7 @@ Installing Anaconda is as easy as 1-2-3:
 	
 3. Follow the instructions to install Anaconda
 
-You might want to put Anaconda to your system path, so it will use Anaconda's Python as the default python distribution. On Windows, you are recommended not automatically add Anaconda to your system path, instead you can manually add **ANACONDA_HOME** with value of 'C:\User\\*your_user_name*\ AppData\Local\Continuum\anacondX' to the user varaibles and **%ANACONDA_HOME%; %ANACONDA_HOME%\Scripts; %ANACONDA_HOME%\ Library\bin; ** to the user path variable.
+You might want to put Anaconda to your system path, so it will use Anaconda's Python as the default python distribution. On Windows, you are recommended not automatically add Anaconda to your system path, instead you can manually add **ANACONDA_HOME** with value of 'C:\User\\*your_user_name*\ AppData\Local\Continuum\anacondX' to the user varaibles and ** %ANACONDA_HOME%; %ANACONDA_HOME%\Scripts; %ANACONDA_HOME%\ Library\bin; ** to the user path variable.
 
 Anaconda comes with a package manager named **conda**, which lets you manage your Python distributions and install new packages.
 
