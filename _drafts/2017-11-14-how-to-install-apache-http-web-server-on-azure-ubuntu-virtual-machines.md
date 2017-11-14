@@ -8,6 +8,5 @@ tags:
   - 'Azure '
   - Cloud Service
 ---
-## A New Post
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+The Apache HTTP Server is the most used web server software in the world and public cloud service makes hosting a web application
