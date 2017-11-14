@@ -7,6 +7,8 @@ categories:
 tags:
   - 'Azure '
   - Cloud Service
+  - Flask
+subtitle: Serving Flask Application with WSGI
 ---
 
 The Apache HTTP Server is the most used web server software in the world and public cloud service makes hosting a web application
