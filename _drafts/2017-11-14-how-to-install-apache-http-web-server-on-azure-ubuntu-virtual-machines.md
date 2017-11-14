@@ -12,9 +12,15 @@ tags:
 subtitle: Serving Python 3 Flask Application with WSGI
 ---
 
-Apache HTTP Server is the most used web server software in the world and public cloud services, such as Microsoft Azure and Amazon Web Services, make setting up a virtual server hosting your web applications a lot easier than traditional way. As many traditional web hosts are configured to run PHP and/or .NET applications, in this post I will go through the steps of installing and configuring Apache HTTP Web Server on an Azure Ubuntu Virtual Machine to make it a server for Flask Web applications.
+Apache HTTP Server is the most used web server software in the world and public cloud services, such as Microsoft Azure and Amazon Web Services, make setting up a virtual server hosting web applications a lot easier than traditional way. As many traditional web hosts are configured to run PHP and/or .NET applications, in this post I will go through the steps of installing and configuring Apache HTTP Web Server on an Azure Ubuntu Virtual Machine to a server for Flask Web applications writtern in Python 3. <!--more-->
 
 ## Set up Linux Virtual Machines on Azure
+You can follow the steps from [Azure Linux Virtual Machines Quickstarts](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/) to create a virtual machine running Ubuntu. The quickstart also provide steps of installing a NGINX webserver on the virtual machine. The steps of creating a virtual machine through Azure portal can be summarized below:
+* Step 1: Create SSH key pair, if you don't have an existing one, through running  
+
+The following steps simplified from the Quickstarts page, 
+
+
 
 
 
