@@ -22,7 +22,6 @@ You can follow the steps from [Azure Linux Virtual Machines Quickstarts](https:/
 ssh-keygen -t rsa -b 2048
 ```
 
-
 ![Create VM through Azure Portal]({{site.baseurl}}/img/post/create-vm-portal-basic-blade.png)
 
 
