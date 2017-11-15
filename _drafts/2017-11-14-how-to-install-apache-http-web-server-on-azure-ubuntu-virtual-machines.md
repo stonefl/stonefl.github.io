@@ -24,7 +24,7 @@ ssh-keygen -t rsa -b 2048
 
 
 
-![Create VM through Azure Portal]({{site.baseurl}}/img/post/capture.png/image/post/create-vm-portal-basic-blade.png  "Hadoop Ecosystem")
+![Create VM through Azure Portal]( {{site.baseurl}}/img/post/post/create-vm-portal-basic-blade.png )
 
 
 
