@@ -23,60 +23,12 @@ ssh-keygen -t rsa -b 2048
 ```
 
 ## Settings for Connection
-After deloyment of virtual machine there are two things you need to set in order to connect to the virtual machine.
+After deloyment of virtual machine, there are two things you need to set in order to connect to the virtual machine.
 * Reset password through the **Reset password** tab on the left-hand menu
 * Open port 80 for web traffic. Click **Networking** tab on the left-hand menu, and then **Add inbound port rule**, select type **http** from the **Service** dropbox.
 
-You can run `ssh lei@xx.xxx.xxx.xxx` in your bash shell to connect to your virtual machine. You can also use WinSCP to connect to your virutal machine. You might need to set the proxy if you behind a proxy server. Note: there is no http:// in the proxy host name.
+You can run `ssh lei@xx.xxx.xxx.xxx` in your bash shell to connect to your virtual machine. If you are using Windows, you will have to dowload WinSCP and/or PuTTYY. Refer to [https://winscp.net/eng/download.php](https://winscp.net/eng/download.php) to download WinSCP and PuTTY. You might need to set the proxy in the WinSCP, if you behind a proxy server. Note: there is no http:// in the proxy host name.
 
-## Install Python Virtual Environment
-
-After login to your virtual machine, you can check your python versions and pip version through running following commands. 
-
-```
-python --version
-python3 --version
-```
-You might have both python2.7 and python 3.x pre-installed. 
-
-If you want to use python 2.7, you have to check the pip version through running 
-```
-pip --version
-```
-If `pip` is not currently installed yet, you can run following commands to install pip for python 2.7.
-```
-sudo apt-get update
-sudo apt-get install python-pip
-```
-You can install and use `virtualenv` for python 2.7 thorugh
-```
-sudo pip install virtualenv
-virtualenv <DIR>
-source <DIR>/bin/activate
-```
-
-If you want to use python 3, since both `pip` and `virtualenv` are bundled with python > 3.4. So you can run 
-```
-python3 -m pip install [package_to install]
-```
-to install packages. And run 
-```
-python3 -m venv <DIR>
-source  <DIR>/bin/activate
-```
-to create and activate virtual environments for python 3.
-
-
- `python3 -m venv <DIR>` to create a virtual environment. You might need to install the python3-venv package using following command.
- ```
- sudo apt-get install python3-venv
- ```
- You can use following commands to activate and deactivate the built virutal environment.
- ```
-source  <DIR>/bin/activate
-deactivate
-```
- 
 
 ## References
 
