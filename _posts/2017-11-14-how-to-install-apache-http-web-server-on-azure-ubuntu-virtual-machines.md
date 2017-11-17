@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Deploy Flask Application to Azure Virtual Machine Running Apache Web Server
 categories:
   - Web Application
