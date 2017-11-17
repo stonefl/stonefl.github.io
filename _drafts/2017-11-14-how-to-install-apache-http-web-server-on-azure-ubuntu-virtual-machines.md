@@ -114,15 +114,28 @@ python3 -m venv env # for python 3.x
 The command tells `virtualenv` or `venv` to store all dependent packages into the `env` folder. Then you can use following commands to activate and deactivate the built virutal environment.
  ```
 source  env/bin/activate
-# you can use pip or pip3 to install packages for the activaged environment
+# you can use `pip` (no matter python 2 or 3) to install packages for the activaged environment
 deactivate
 ```
 
 
-## Install Flask
+## Deploy Flask Application
 
-
-
+* Copy the project folder to `/var/www`. If get get a `permission denied` error, then you need to tak ownership of the `/var/www` directory for the Linux user that you're using, through running:
+```
+sudo chown -R <USERNAME> /var/www
+```
+* Copy the `.conf` file to `/etc/apache2/sites-available`
+* Run following commands to start serve new Flask application;
+```
+sudo a2dissite 000-default.conf
+sudo a2ensite hello.conf
+sudo service apache2 reload
+```
+* If get error run following command to find what went wrong:
+```
+sudo tail –f /var/log/apache2/error.log
+```
 
 
 
