@@ -11,3 +11,8 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 https://stackoverflow.com/questions/21797372/django-errno-13-permission-denied-var-www-media-animals-user-uploads
 
 http://www.onlineconversion.com/html_chmod_calculator.htm
+
+get group members
+```
+getent group <groupname>;
+```
