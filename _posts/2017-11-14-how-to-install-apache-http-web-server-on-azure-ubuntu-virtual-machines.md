@@ -89,7 +89,10 @@ This list can be created with pip by running this:
 ```
 pip freeze > requirements.txt
 ```
-
+To install all packages from this file, you can run:
+```
+pip install -r requirements.txt
+```
 ### Sandbox dependency with virtualenv
 [Virtualenv](https://virtualenv.pypa.io/en/stable/) is a tool to create isolated Python environments. The secret to virtualenv is tricking your computer into looking for and installing packages in the project directory rather than in the main Python directory, which allows you to keep them completely separate.
 
