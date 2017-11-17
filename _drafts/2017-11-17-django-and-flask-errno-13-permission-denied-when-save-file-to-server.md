@@ -16,3 +16,5 @@ get group members
 ```
 getent group <groupname>;
 ```
+check folder owner, group and permission info:
+ls -al <dir>
