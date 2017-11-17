@@ -121,11 +121,11 @@ deactivate
 
 ## Deploy Flask Application
 
-* Copy the project folder to `/var/www`. If get get a `permission denied` error, then you need to tak ownership of the `/var/www` directory for the Linux user that you're using, through running:
+* Copy the project folder to `//var//www`. If get get a `permission denied` error, then you need to tak ownership of the `//var//www` directory for the Linux user that you're using, through running:
 ```
-sudo chown -R <USERNAME> /var/www
+sudo chown -R <USERNAME> //var//www
 ```
-* Copy the `.conf` file to `/etc/apache2/sites-available`
+* Copy the `.conf` file to `//etc//apache2//sites-available`
 * Run following commands to start serve new Flask application;
 ```
 sudo a2dissite 000-default.conf
@@ -134,7 +134,7 @@ sudo service apache2 reload
 ```
 * If get error run following command to find what went wrong:
 ```
-sudo tail –f /var/log/apache2/error.log
+sudo tail –f //var//log//apache2//error.log
 ```
 
 
