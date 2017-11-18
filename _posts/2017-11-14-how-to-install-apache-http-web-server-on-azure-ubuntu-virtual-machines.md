@@ -45,9 +45,9 @@ Once the Apache server installed successfully, you can enter the public IP adres
 
 The remaining part of this post focuses on settings for Flask applications deployment.  
 
-## Install WSGI
+## Install mod_wsgi
 
-As our application is [Flask](http://flask.pocoo.org/), we also need to install **[WSGI (Web Server Gateway Interface)](http://wsgi.readthedocs.io/en/latest/index.html)**, which is a common interface between web servers and Flask applications, which allows Apache to talk to application and vice versa.
+As our application is [Flask](http://flask.pocoo.org/), we also need to install **[mod_wsgi](http://modwsgi.readthedocs.io/en/develop/index.html)**, which is a common interface between web servers and Flask applications, which allows Apache to talk to application and vice versa.
 ```
 sudo apt-get update
 sudo apt-get install libapache2-mod-wsgi   # for python 2.7
