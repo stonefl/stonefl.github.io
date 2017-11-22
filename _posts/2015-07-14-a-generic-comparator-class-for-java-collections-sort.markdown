@@ -27,7 +27,7 @@ Instead, a generic comparator class is defined in this post to sort lists of pri
 <!--more-->
 
 
-```java
+```
 public class Person {
     //fields
     private int id;
