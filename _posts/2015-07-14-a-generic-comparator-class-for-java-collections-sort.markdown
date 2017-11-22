@@ -27,7 +27,7 @@ Instead, a generic comparator class is defined in this post to sort lists of pri
 <!--more-->
 
 
-```
+{% highlight java %}
 public class Person {
     //fields
     private int id;
@@ -66,7 +66,7 @@ public class Person {
        }
     }
 }
-```
+{% endhighlight %}
 
 
 One possible Comparator class with above aim might be:
