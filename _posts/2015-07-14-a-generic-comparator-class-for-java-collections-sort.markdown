@@ -26,8 +26,7 @@ As a Java programmer, I often need to sort a list of objects. If the object is 
 Instead, a generic comparator class is defined in this post to sort lists of primitive as well as user defined objects, in any specified order and by any specified field(s). 
 <!--more-->
 
-
-{% highlight java %}
+```java
 public class Person {
     //fields
     private int id;
@@ -66,7 +65,7 @@ public class Person {
        }
     }
 }
-{% endhighlight %}
+```
 
 
 One possible Comparator class with above aim might be:
