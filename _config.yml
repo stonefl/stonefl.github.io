@@ -82,14 +82,15 @@ google_analytics: "UA-81659112-1"
 
 # Output options (more information on Jekyll's site)
 markdown: kramdown
-highlighter: rouge
+#highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 excerpt_separator: <!--more-->
 
-# turning on recognition of GitHub Flavored Markdown 
+# turning on recognition of GitHub Flavored Markdown and syntx highlighting
 kramdown:
-  input: GFM 
+  input: GFM
+  syntax_highlighter: rouge
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
