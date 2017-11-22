@@ -82,7 +82,8 @@ google_analytics: "UA-81659112-1"
 
 # Output options (more information on Jekyll's site)
 markdown: kramdown
-highlighter: rouge
+#highlighter: rouge
+highlighter: coderay
 permalink: /:year-:month-:day-:title/
 paginate: 5
 excerpt_separator: <!--more-->
