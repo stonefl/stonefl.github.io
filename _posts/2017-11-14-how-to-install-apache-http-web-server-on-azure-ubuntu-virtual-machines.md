@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Install Apache Web Server on Azure Virtual Machine
 tags:
   - 'Azure '
