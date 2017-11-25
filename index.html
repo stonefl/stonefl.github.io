@@ -25,7 +25,7 @@ subtitle: For the things we have to learn before we can do them, we learn by doi
       {% else %}
           {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
       {% endif %}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more"><i class="fa fa-plus-circle" aria-hidden="true"></i>[Read&nbsp;More]</a>
+	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>[Read&nbsp;More]</a>
     </div>
 
    </article>
