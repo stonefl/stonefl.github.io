@@ -1,6 +1,14 @@
 <div class="social-icons">
      <span>
-	     <Strong>Share:</Strong>
+	     <Strong>Share via </Strong>
+	  <!--Email-->
+        
+		  <a href="mailto:?subject={{ page.title }}&amp;body=Article: {{ site.url }}{{ page.url }}" class="social-icons"  target="_blank" title="Share via Email"> 
+			 <span class="fa-stack fa-lg">
+				  <i class="fa fa-square-o fa-stack-2x"></i>
+				  <i class="fa fa-envelope fa-stack-1x"></i>
+			  </span>
+		  </a>
          <!--twitter-->
         
 		  <a href="https://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.author.twitter }}" class="social-icons"  target="_blank" title="Share on twitter"> 
@@ -36,7 +44,14 @@
 				  <i class="fa fa-facebook fa-stack-1x"></i> 
 			  </span>
 		  </a>
+          <!--Pinterest-->
          
+		   <a href=""https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&amp;description={{ page.title }}" class="social-icons"  target="_blank" title="Pin on Pinterest">
+			 <span class="fa-stack fa-lg">
+				  <i class="fa fa-square-o fa-stack-2x"></i>
+				  <i class="fa fa-pinterestk fa-stack-1x"></i> 
+			  </span>
+		  </a>
           <!--Pocket-->
          
 		   <a href="https://getpocket.com/edit?url={{ site.url }}{{ page.url }}"  class="social-icons" class="social-icons"  target="_blank" title="Save to Pocket">
