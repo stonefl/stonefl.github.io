@@ -12,6 +12,11 @@ categories:
 ---
 
 [Flask](http://flask.pocoo.org/) is a micro framework for Python and based on Werkzeug and Jinja2 template engine for developing web applications. With the Azure VPS that has been configured in [last post](http://leifengblog.net/2017-11-14-how-to-install-apache-http-web-server-on-azure-ubuntu-virtual-machines/), in this post I will go through steps to deploy a flask application on the VPS.<!--more-->
+## Table of Content
+{:.no_toc}
+
+* TOC
+{:toc}
 
 ## Step 1: Install WSGI
 
