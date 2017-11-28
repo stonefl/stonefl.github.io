@@ -15,7 +15,14 @@ tags:
 
 Apache HTTP Server is the most used web server software in the world and public cloud services, such as Amazon Web Services and Microsoft Azure, make setting up a Virtual Private Server(VPS) hosting web applications a lot easier than traditional way that using physical servers. Unlinke many other tutorials that focus on traditional web hosts and configurations for running PHP and/or .NET applications, this post presents steps of installing and configuring Apache HTTP Web Server on an Azure Ubuntu Virtual Machine to host Flask Web applications. <!--more-->
 
+## Install WSGI
 
+As we are going to use this VPS to host [Flask](http://flask.pocoo.org/) applications, we need to install **[mod_wsgi](http://modwsgi.readthedocs.io/en/develop/index.html)**, which is a common interface between web servers and Flask applications, which allows Apache to talk to application and vice versa.
+```
+sudo apt-get update
+sudo apt-get install libapache2-mod-wsgi   # for python 2.7
+sudo apt-get install libapache2-mod-wsgi-py3  #for python 3
+```
  
 ## Install Python Environment and Flask
 
