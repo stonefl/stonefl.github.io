@@ -1,32 +1,30 @@
 ---
 layout: post
 published: false
-title: Deploy Flask Application to Azure VPS
-categories:
-  - Web Application
+title: Deploy a Flask Application on an Azure VPS
 tags:
   - Python
   - 'Azure '
-  - Cloud Service
   - Flask
-  - Ubuntu
   - Apache Web Server
+categories:
+  - Tutorial
 ---
 
-Apache HTTP Server is the most used web server software in the world and public cloud services, such as Amazon Web Services and Microsoft Azure, make setting up a Virtual Private Server(VPS) hosting web applications a lot easier than traditional way that using physical servers. Unlinke many other tutorials that focus on traditional web hosts and configurations for running PHP and/or .NET applications, this post presents steps of installing and configuring Apache HTTP Web Server on an Azure Ubuntu Virtual Machine to host Flask Web applications. <!--more-->
+[Flask](http://flask.pocoo.org/) is a micro framework for Python and based on Werkzeug and Jinja2 template engine for developing web applications. With the Azure VPS that has been configured in [last post](http://leifengblog.net/2017-11-14-how-to-install-apache-http-web-server-on-azure-ubuntu-virtual-machines/), in this post I will go through steps to deploy a flask application on the VPS.<!--more-->
 
-## Install WSGI
+## Step 1: Install WSGI
 
-As we are going to use this VPS to host [Flask](http://flask.pocoo.org/) applications, we need to install **[mod_wsgi](http://modwsgi.readthedocs.io/en/develop/index.html)**, which is a common interface between web servers and Flask applications, which allows Apache to talk to application and vice versa.
+As we are going to use this VPS to host [Flask](http://flask.pocoo.org/) applications, in the first step, we need to install **[mod_wsgi](http://modwsgi.readthedocs.io/en/develop/index.html)**, which is a common interface between web servers and Flask applications, which allows Apache to talk to application and vice versa.
 ```
 sudo apt-get update
 sudo apt-get install libapache2-mod-wsgi   # for python 2.7
 sudo apt-get install libapache2-mod-wsgi-py3  #for python 3
 ```
  
-## Install Python Environment and Flask
+## Step 2: Install Python Environment and Flask
 
-Final step is to set up Python environment and dependent libraries for our Flask application. After login to the virtual machine, you can check your python version and pip version through running following commands. You might have both python2.7 and python 3.x are pre-installed. 
+This step is to set up Python environment and dependent libraries for our Flask applications. After login to the VPS, you can check your python version and pip version through running following commands. You might have both python2.7 and python 3.x are pre-installed. 
 
 ```
 python --version   # for python 2.7
@@ -111,4 +109,4 @@ sudo tail –f //var//log//apache2//error.log
 
 ## References
 
-* [Azure Linux Virtual Machines Quickstarts](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/)
+* [Flask](http://flask.pocoo.org/)
