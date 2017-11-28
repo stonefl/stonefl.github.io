@@ -51,14 +51,14 @@ To install a package with pip, simply run:
 pip install <package-name> # for python 2.7
 pip3 install <package-name> # for python 3.x
 ```
-To install Flask, simply run this:
+for example, to install Flask, simply run this:
 ```
 pip install flask # for python 2.7
 pip3 install flask # for python 3.x
 ```
 After installing a set of packages, it is common courtesy in the Python community to create a list of packages that are required to run the program, so others can quickly install every thing required. This also has the added benefit that any new member of your project will be able to run your code quickly.
 
-This list can be created with pip by running this:
+This list can be created with pip by running:
 ```
 pip freeze > requirements.txt
 ```
@@ -87,12 +87,28 @@ python3 -m venv env # for python 3.x
 The command tells `virtualenv` or `venv` to store all dependent packages into the `env` folder. Then you can use following commands to activate and deactivate the built virutal environment.
  ```
 source  env/bin/activate
-# you can use `pip` (no matter python 2 or 3) to install packages for the activaged environment
+# you can use `pip` (no matter python 2 or 3) to install packages for the activated environment
 deactivate
 ```
 
-
 ## Deploy Flask Application
+
+The directory of a hello-world Flask application looks something like:
+~~~
+|-----helloworld
+|--------helloworld.py
+|--------helloworld.wsgi
+~~~
+The `helloworld.py` reads as:
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+```
+
 
 * Copy the project folder to `//var//www`. If get get a `permission denied` error, then you need to tak ownership of the `//var//www` directory for the Linux user that you're using, through running:
 ```
@@ -115,3 +131,4 @@ sudo tail –f //var//log//apache2//error.log
 ## References
 
 * [Flask](http://flask.pocoo.org/)
+* [Virtualenv](https://virtualenv.pypa.io/en/stable/) 
