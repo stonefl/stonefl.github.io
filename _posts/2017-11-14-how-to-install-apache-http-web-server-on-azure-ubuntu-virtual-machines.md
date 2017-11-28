@@ -48,14 +48,6 @@ The `apache2` in the command is the web server. It will listen for web requests 
 
 Once the Apache server installed successfully, you can enter the public IP adress of your virtual machine in your browser's address bar, and you should see a page saying "**Apache2 Ubuntu Default Page: It Works!**" or something similar.
 
-## Install WSGI
-
-As we are going to use this VPS to host [Flask](http://flask.pocoo.org/) applications, we need to install **[mod_wsgi](http://modwsgi.readthedocs.io/en/develop/index.html)**, which is a common interface between web servers and Flask applications, which allows Apache to talk to application and vice versa.
-```
-sudo apt-get update
-sudo apt-get install libapache2-mod-wsgi   # for python 2.7
-sudo apt-get install libapache2-mod-wsgi-py3  #for python 3
-```
 Congratulations, you've successfully set up a VPS running Apache HTTP Web Server for hosting Flask Applications. 
 
 ## References
