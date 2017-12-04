@@ -57,6 +57,6 @@ Set up the proxy through
 and then install package:
 `pip install somepackage`
 
-or
+or specify proxy in `pip` command:
 
 `sudo pip install --proxy=https://[username:password@]proxyserver:port somepackage`
