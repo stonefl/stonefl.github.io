@@ -32,15 +32,18 @@ You can manually set up proxy environment variables through right-click on **Thi
     - Value: https://proxyserver:port
 
 You can also set up the proxy through comand lines:
+
 ~~~
 set http_proxy=http://[username:password@]proxyserver:port
 set http_proxy=https://[username:password@]proxyserver:port
 ~~~
 
 After setting up proxies, then you can install packages through running:
+
 `pip install somepackage`
 
 Alternativelly, you can also specify proxy settings in the `pip` command:
+
 `pip install --proxy=https://[username:password@]proxyserver:port somepackage`
 
 ## On Linux
