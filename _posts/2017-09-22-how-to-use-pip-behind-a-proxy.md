@@ -52,11 +52,18 @@ pip install --proxy=https://[username:password@]proxyserver:port somepackage
 ## On Linux
 Set up the proxy through
 
-`export https_proxy=https://[username:password@]proxyserver:port` 
+~~~
+export https_proxy=https://[username:password@]proxyserver:port
+~~~
 
 and then install package:
-`pip install somepackage`
+
+~~~
+pip install somepackage
+~~~
 
 or specify proxy in `pip` command:
 
-`sudo pip install --proxy=https://[username:password@]proxyserver:port somepackage`
+~~~
+sudo pip install --proxy=https://[username:password@]proxyserver:port somepackage
+~~~
