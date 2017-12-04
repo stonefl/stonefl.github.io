@@ -16,7 +16,7 @@ I often need to use the python package manager `pip` to install a python package
 ## On Windows
 You can manually set up proxy environment variables through right-click on **This PC** (Windows 10) or **Computer** (Widnows 7) --> **Proporties** --> **Advanced system settings** --> **Environment variables** then add environment variables:
 
-1.User variable(only for current login user):
+1. User variable(only for current login user):
 
     - Variable: HTTP_PROXY
     - Value: http://proxyserver:port
