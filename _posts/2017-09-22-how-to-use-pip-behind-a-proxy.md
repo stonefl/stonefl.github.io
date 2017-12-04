@@ -39,12 +39,15 @@ set http_proxy=https://[username:password@]proxyserver:port
 ~~~
 
 After setting up proxies, then you can install packages through running:
-
-`pip install somepackage`
+~~~
+pip install somepackage
+~~~
 
 Alternativelly, you can also specify proxy settings in the `pip` command:
 
-`pip install --proxy=https://[username:password@]proxyserver:port somepackage`
+~~~
+pip install --proxy=https://[username:password@]proxyserver:port somepackage
+~~~
 
 ## On Linux
 Set up the proxy through
