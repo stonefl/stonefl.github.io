@@ -35,7 +35,7 @@ You can also set up the proxy through comand lines:
 After setting up proxies, then you can install packages through running:
 `pip install somepackage`
 
-You can also specify proxy settings in the `pip` command:
+Alternativelly, you can also specify proxy settings in the `pip` command:
 `pip install --proxy=https://[username:password@]proxyserver:port somepackage`
 
 ## On Linux
