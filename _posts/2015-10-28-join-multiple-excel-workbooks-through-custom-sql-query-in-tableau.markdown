@@ -13,7 +13,7 @@ tags:
   - Tableau
 published: true
 categories:
-  - Data Visualization
+  - Data Science
 ---
 
 Recently I came across the need of joining multiple excel files in Tableau. I did a hard research on how to do it. However, most of the instructions I found were about how to join two tabs(worksheets) in the same excel workbook. In this post, I will describe how to join multiple worksheets from different workbooks, which spent me about one hour to figure out. Please note the instructions here work for Tableau Desktop 9.0 or later.
