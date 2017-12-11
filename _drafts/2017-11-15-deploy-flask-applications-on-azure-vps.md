@@ -44,7 +44,9 @@ sudo apt-get update
 sudo apt-get install python-pip  #for python 2.7
 sudo apt-get install python3-pip #for python 3.x
 ```
-### Python package management with pip
+There are 2 ways to do the package management, I personally prefere the second way:
+
+### Way 1: Python package management with pip
 
 To install a package with pip, simply run:
 ```
@@ -53,17 +55,11 @@ pip3 install <package-name> # for python 3.x
 ```
 for example, to install Flask, simply run this:
 ```
-pip install flask # for python 2.7
-pip3 install flask # for python 3.x
-```
-After installing a set of packages, it is common courtesy in the Python community to create a list of packages that are required to run the program, so others can quickly install every thing required. This also has the added benefit that any new member of your project will be able to run your code quickly.
-
-This list can be created with pip by running:
-```
-pip freeze > requirements.txt
+pip install --user flask # for python 2.7
+pip3 install --user flask # for python 3.x
 ```
 
-### Sandbox dependency with virtualenv
+### Way 2: Sandbox dependency with virtualenv
 [Virtualenv](https://virtualenv.pypa.io/en/stable/) is a tool to create isolated Python environments. The secret to virtualenv is tricking your computer into looking for and installing packages in the project directory rather than in the main Python directory, which allows you to keep them completely separate.
 
 You can install `virtualenv` for python 2.7 thorugh
@@ -84,21 +80,35 @@ To create the environment for your project, simply run:
 virtualenv env # for python 2.7
 python3 -m venv env # for python 3.x
 ```
-The command tells `virtualenv` or `venv` to store all dependent packages into the `env` folder. Then you can use following commands to activate and deactivate the built virutal environment.
+The command tells `virtualenv` or `venv` to store all dependent packages into the `env` folder. 
+
+Then you can use following commands to activate and deactivate the built virutal environment.
  ```
-source  env/bin/activate
-# you can use `pip` (no matter python 2 or 3) to install packages for the activated environment
-deactivate
+source  env/bin/activate  # to activate environment
+deactivate # to deactiate current environment
+```
+After activating an evironment, you can use `pip` (no matter python 2 or 3) to install packages for the activated environment, for example,
+```
+pip install --user flask
+```
+After installing a set of packages, it is common courtesy in the Python community to create a list of packages that are required to run the program, so others can quickly install every thing required. This also has the added benefit that any new member of your project will be able to run your code quickly.
+
+This list can be created with pip by running:
+```
+pip freeze > requirements.txt
 ```
 
 ## Deploy Flask Application
 
-The directory of a hello-world Flask application looks something like:
+Built a directory of a hello-world Flask application using the structure looks something like:
 ~~~
 |-----helloworld
 |--------helloworld.py
 |--------helloworld.wsgi
+|--------env
+|-----------requirements.txt
 ~~~
+
 The `helloworld.py` reads as:
 ```python
 from flask import Flask
@@ -109,6 +119,12 @@ def hello_world():
     return 'Hello, World!'
 ```
 
+The content of `helloworld.wsgi` is:
+```python
+import sys
+sys.path.insert(0, "/var/www/helloworld")
+from helloworld import app as application
+```
 
 * Copy the project folder to `//var//www`. If get get a `permission denied` error, then you need to tak ownership of the `//var//www` directory for the Linux user that you're using, through running:
 ```
@@ -131,4 +147,4 @@ sudo tail –f //var//log//apache2//error.log
 ## References
 
 * [Flask](http://flask.pocoo.org/)
-* [Virtualenv](https://virtualenv.pypa.io/en/stable/) 
+* [Virtualenv](https://virtualenv.pypa.io/en/stable/)
