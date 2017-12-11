@@ -127,20 +127,39 @@ sys.path.insert(0, "/var/www/helloworld")
 from helloworld import app as application
 ```
 
+And the `hello.conf` looks like:
+```python
+<VirtualHost *>
+    ServerName example.com
+    WSGIScriptAlias / /var/www/helloworld/hello.wsgi
+    WSGIDaemonProcess hello python-home=/var/www/helloworld/env
+    <Directory /var/www/helloworld>
+       WSGIProcessGroup hello
+       WSGIApplicationGroup %{GLOBAL}
+        Order deny,allow
+        Allow from all
+    </Directory>
+</VirtualHost>
+```
 
 
 * Copy the project folder to `//var//www` on the VPS. If get get a `permission denied` error, then you need to tak ownership of the `//var//www` directory for the Linux user that you're using, through running:
 ```
 sudo chown -R <USERNAME> //var//www
 ```
-* Then cd to `//etc//apache2//sites-available` 
+* Build an evironment using instructions in Step 2 and activate the env. Then move to the env folder and install required packages through running:
+```
+pip install --user -r requirements.txt
+```
+* Copy `hello.conf` to `//etc//apache2//sites-available` 
 * Run following commands to start serve new Flask application;
 ```
 sudo a2dissite 000-default.conf
 sudo a2ensite hello.conf
 sudo service apache2 reload
 ```
-* If get error run following command to find what went wrong:
+
+If get get any errors run following command to find what went wrong:
 ```
 sudo tail –f //var//log//apache2//error.log
 ```
