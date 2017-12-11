@@ -8,14 +8,14 @@ link: >-
 slug: migrating-from-windows-7-to-ubuntu
 title: Migrating from Windows to Ubuntu
 wordpress_id: 220
-categories:
-  - Ubuntu
 published: true
 subtitle: Some tips and tricks for Ubuntu installation
 bigimg: /img/post/ubuntu_desktop.png
 tags:
   - Java
   - Python
+categories:
+  - Tutorial
 ---
 
 If you get tired with Windows or Mac, like me, you might want to consider migrating to Ubuntu Trusty 14.04, which is the Long Term Support (LTS) version of the Ubuntu operating system for desktop PCs and laptops. It can be downloaded from [Ubuntu official site](http://www.ubuntu.com/download/desktop) for free and it is easy to install following the instructions there. Recently, I just downloaded and installed it on my old HP Compaq 6510b laptop. Comparing to almost 20 GBs of my old Windows 7 system, my new Ubuntu system only occupies 6.3 GBs and runs much faster.
