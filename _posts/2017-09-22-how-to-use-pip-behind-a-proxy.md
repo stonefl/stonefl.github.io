@@ -3,12 +3,12 @@ layout: post
 published: true
 title: How to Use pip behind a Proxy
 date: '2017-08-15'
-categories:
-  - Tips and Tricks
 tags:
   - Python
   - Proxy
   - pip
+categories:
+  - Tutorial
 ---
 I often need to use the python package manager `pip` to install a python package on my office computer that is behind a proxy. Without specifying the proxy info, it always pop up `Connection refused`errors. Following settings and commands can be used to make 'pip install' work smoothly.
 <!--more-->
