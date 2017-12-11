@@ -98,13 +98,14 @@ This list can be created with pip by running:
 pip freeze > requirements.txt
 ```
 
-## Deploy Flask Application
+## Step 3: Deploy Flask Application
 
 Built a directory of a hello-world Flask application using the structure looks something like:
 ~~~
 |-----helloworld
 |--------helloworld.py
-|--------helloworld.wsgi
+|--------hello.wsgi
+|--------hello.conf
 |--------env
 |-----------requirements.txt
 ~~~
@@ -119,18 +120,20 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-The content of `helloworld.wsgi` is:
+The content of `hello.wsgi` is:
 ```python
 import sys
 sys.path.insert(0, "/var/www/helloworld")
 from helloworld import app as application
 ```
 
-* Copy the project folder to `//var//www`. If get get a `permission denied` error, then you need to tak ownership of the `//var//www` directory for the Linux user that you're using, through running:
+
+
+* Copy the project folder to `//var//www` on the VPS. If get get a `permission denied` error, then you need to tak ownership of the `//var//www` directory for the Linux user that you're using, through running:
 ```
 sudo chown -R <USERNAME> //var//www
 ```
-* Copy the `.conf` file to `//etc//apache2//sites-available`
+* Then cd to `//etc//apache2//sites-available` 
 * Run following commands to start serve new Flask application;
 ```
 sudo a2dissite 000-default.conf
