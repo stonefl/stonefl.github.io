@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Deploy a Flask Application on an Azure VPS
 tags:
   - Python
