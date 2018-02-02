@@ -59,7 +59,7 @@ pip install --user flask # for python 2.7
 pip3 install --user flask # for python 3.x
 ```
 
-### Way 2: Sandbox dependency with virtualenv
+### Way 2: Manage dependency with virtualenv
 [Virtualenv](https://virtualenv.pypa.io/en/stable/) is a tool to create isolated Python environments. The secret to virtualenv is tricking your computer into looking for and installing packages in the project directory rather than in the main Python directory, which allows you to keep them completely separate.
 
 You can install `virtualenv` for python 2.7 thorugh
