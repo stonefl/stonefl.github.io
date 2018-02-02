@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Deploy a Flask Application on an Azure VPS
+title: Deploy a Flask Application on an Azure Virtual Machine
 tags:
   - Python
   - 'Azure '
