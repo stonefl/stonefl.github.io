@@ -52,7 +52,7 @@ All these stuff can be realized through **conda** command. For example, a new en
 
 Then the new environment can be activated through
 
-`activate py2` on ** Windows**
+`activate py2` on **Windows**
 
 `source activate py2` on **Linux or Mac OSX**
 
