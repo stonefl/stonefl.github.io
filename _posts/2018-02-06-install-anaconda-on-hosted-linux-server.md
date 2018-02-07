@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: Install Anaconda Python Distribution on Linux Server as Non-Sudo User
 date: '2018-02-06'
 categories:
