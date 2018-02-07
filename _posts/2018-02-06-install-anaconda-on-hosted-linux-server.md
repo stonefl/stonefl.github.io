@@ -21,8 +21,9 @@ As a developer and data scientist, I often need to run Python scripts on Linux s
 Chances are Python is already installed on your Linux server, you can use following commands to check which version of Python has been installed:
 
 ```
-$ python --version   or
+$ python --version   
 ```
+or
 ```
 $ python -V
 ```
@@ -45,10 +46,11 @@ Once the downloading process is done, you can verify the data integrity of the i
 ```
 $ md5sum Anaconda3-5.0.1-Linux-x86_64.sh
 ```
+or
 ```
 $ sha256sum Anaconda3-5.0.1-Linux-x86_64.sh
 ```
-You should check the output against the hashes available for your appropriate Anaconda version at the page of [Anaconda with Python 3 on 64-bit Linux](https://docs.anaconda.com/anaconda/install/hashes/lin-3-64). If the MD5 or SHA-256 hash that you generate does not match the one there, the file may not have downloaded completely. Please download it again and re-check.
+You can check the output against the hashes available for your appropriate Anaconda version at the page of [Anaconda with Python 3 on 64-bit Linux](https://docs.anaconda.com/anaconda/install/hashes/lin-3-64). If the MD5 or SHA-256 hash that you generate does not match the one there, the file may not have downloaded completely, you might need to download it again and re-check.
 
 ### Install
 
@@ -68,14 +70,13 @@ agreement.
 Please, press ENTER to continue
 ```
 
-Press ENTER to continue and then continue press ENTER to review the license. Once you’re done reading the license, you’ll be prompted to approve the license terms:
+Press ENTER to continue and then continue press ENTER to review the license. Once you’re done reading the license, you’ll be prompted to agree to license terms:
 ```
 Output
 Do you approve the license terms? [yes|no] 
 ```
-Type `yes` to agree the licence terms.
 
-Then you’ll be prompted to choose the location of the installation. 
+After type `yes`, you’ll be prompted to choose the location of the installation. 
 ```
 Output
 Anaconda3 will now be installed into this location:
@@ -106,7 +107,7 @@ Once you are finished, you can verify the installation by running:
 ```
 conda --version
 ```
-You’ll receive the version number of the isntalled conda. Now that Anaconda is installed, you can check my another post([Managing Python Environments and Packages with Anaconda](http://leifengblog.net/blog/installing-and-managing-python-and-packages-with-anaconda/)) for setting and mangeing Python environments and packages.
+You’ll receive the version number of the isntalled conda. Now the Anaconda is installed, you can check my another post([Managing Python Environments and Packages with Anaconda](http://leifengblog.net/blog/installing-and-managing-python-and-packages-with-anaconda/)) for setting and mangeing Python environments and packages.
 
 ## Uninstalling Anaconda
 If for any reason you need to uninstall Anaconda, you should start with the `anaconda-clean` module:
@@ -135,6 +136,4 @@ Then delete or comment out the following lines:
 # added by Anaconda3 5.0.1 installer
 export PATH="/home/lf/anaconda3/bin:$PATH"
 ```
-When you’re done editing the file, type CTRL + X to exit and y to save changes.
-
-Anaconda is now removed from your server.
+When you’re done editing the file, type CTRL + X to exit and y to save changes. Then Anaconda is now removed from your server.
