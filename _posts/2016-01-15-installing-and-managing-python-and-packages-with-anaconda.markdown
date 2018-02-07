@@ -6,7 +6,7 @@ date: '2016-01-15'
 link: >-
   https://leifengtechblog.wordpress.com/2016/01/15/installing-and-managing-python-and-packages-with-anaconda/
 slug: installing-and-managing-python-and-packages-with-anaconda
-title: Managing Python and Packages with Anaconda
+title: Managing Python Environments and Packages with Anaconda
 wordpress_id: 302
 published: true
 tags:
