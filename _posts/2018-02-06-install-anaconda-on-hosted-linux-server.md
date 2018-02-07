@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: Install Python 3 Distribution on Linux Server
 date: '2018-02-06'
 categories:
