@@ -20,7 +20,7 @@ As more and more Python packages I need to install for my daily work and learn, 
 
 ![capture.png]({{site.baseurl}}/img/post/capture.png)
 
-Anaconda is a free, cross-platform, and easy-to-install all-in-one analytic/scientific Python platform. Anaconda not only comes with various packages that I would like to use, such as NumPy, SciPy, matplotlib, pandas, scikit-learn,  and Jupyter/IPython, but also provides more functionalities, like creating and managing environments, installing and updating packages, and so on.
+Anaconda is a free, cross-platform, and easy-to-install all-in-one analytic/scientific Python platform. Anaconda not only comes with various packages that I would like to use, such as NumPy, SciPy, matplotlib, pandas, scikit-learn, and Jupyter/IPython, but also provides more functionalities, like creating and managing environments, installing and updating packages, and so on.
 
 In this post, I describe some basic knowledge on Anaconda I have learned through my experience. If you did not start to use it yet, I highly recommend you a try.
 
