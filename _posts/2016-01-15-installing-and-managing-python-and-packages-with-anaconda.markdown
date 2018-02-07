@@ -104,6 +104,32 @@ Here is a list of frequently used **conda** commands, and you can see a longer 
 
 If the **`conda install somepackage`** fails, you can try **`pip install somepackage`** instead, which uses the **PyPI** instead of Anaconda. Many scientific Anaconda packages are easier to install than the corresponding PyPI packages because they are pre-compiled for your platform. However, many packages are available on PyPI but not on Anaconda.
 
+## Uninstalling Anaconda
+If for any reason you need to uninstall Anaconda, you should start with the `anaconda-clean` module:
+```
+conda install anaconda-clean
+```
+Once it is installed, you can run the following command to do the uninstallation:
+```
+anaconda-clean --yes
+```
+This will also create a backup folder called `.anaconda_backup` in your home directory:
+
+You can now remove your entire Anaconda directory by entering the following command:
+```
+rm -rf ~/anaconda3 # on Linux
+```
+Finally, you can remove the PATH line from your ``.bashrc`` file that Anaconda added:
+```
+nano ~/.bashrc
+```
+Then delete or comment out the following lines:
+```
+# added by Anaconda3 installer
+export PATH="/home/username/anaconda3/bin:$PATH"
+```
+When you’re done editing the file, type CTRL + X to exit and y to save changes. Then Anaconda is now removed from your server.
+
 
 ## A list of references about Anaconda:
 	
