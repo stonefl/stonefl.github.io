@@ -13,7 +13,7 @@ As a developer and data scientist, I often need to run Python scripts on Linux s
 
 This post is a step-by-step instructions on installing  Python 3.6 through both [Anaconda](https://docs.anaconda.com/) and [Python Gzipped source tarball file](https://www.python.org/downloads/release/python-364/) on a CentOS/RHEL-based  Linux server.<!--more-->
 
-Anaconda is 
+Anaconda is the most popular Python distribution platform with a collection of more than 1,000 open source packages, which will be included almost any package you are going to need for data sceince and development. The included environment and package management funcitons make the benefits obvious. However, the big volume (ususally more than 4G) of the installation makes it impossible to install on some servers that you are not allowed to save such big volume files. In these cases, you might want to install Python 3 with only limited necessary packages. Then the Python Tarball file approach described below will do the work.  
 
 ## Table of Content
 {:.no_toc}
@@ -90,7 +90,7 @@ Anaconda3 will now be installed into this location:
   - Press CTRL-C to abort the installation
   - Or specify a different location below
 ```
-You can press ENTER to accept the default location, or specify a different location to modify it.The installation process will start copying files and installing required modules to your specified location. 
+You can press ENTER to accept the default location, or specify a different location to modify it.This the tricky part, because you are installing on a server you have to choose a place where you have appropriate permissions and volume capacity. The the installation process will start copying files and installing required modules to your specified location. 
 
 Once it’s complete you’ll receive the following output:
 ```
@@ -179,15 +179,27 @@ Now the Python 3 has been installed. You can verify the installation through run
 $python3 --version
 ```
 
-Wait, why juse `python3` not just `python`? 
-If you just run “python,” the executable will show the version number for the default Python for your version of Linux — not your newly installed version of Python. Confusing, I know. You will now have two versions of one language on your server.
-
-The best way to handle this is to use Python’s virtualenv module to create a virtual Python environment. Inside this container-like environment, you can use your newer version of Python — such as Python 3.4.3 or 2.7.2. — without interfering with the preexisting Python.
+Wait, why use `python3` not just `python`? 
+If you try the command with `python` the output will be the version number for the default Python on your Linux server, but the newly installed version of Python. Because you now have two versions of Python on your server. The best way to handle this is to use Python’s virtualenv module, [Virtualenv](https://virtualenv.pypa.io/en/stable/), to create a virtual Python environment. Virtualenv is a tool to create isolated Python environments. The secret to virtualenv is tricking your computer into looking for and installing packages in the project directory rather than in the main Python directory, which allows you to keep them completely separate.
 
 ### Create Virtual Python Environment
 
+For python 3, since virtualenv are bundled with pythons with 3.4 and after. So you can run
+```
+python3 -m venv myPy3Env
+```
+to create the environment.
 
-For more on the basics of using virtualenv, see Python Guide’s Virtual Environments. 
+Then you can use following commands to activate and deactivate the built virutal environment.
+```
+source  env/bin/activate  # to activate environment
+deactivate # to deactiate current environment
+```
+After activating an evironment, you can use `pip` to install packages for the activated environment, for example,
+```
+pip install --user numpy
+```
+For more on the basics of using virtualenv, see the tutorial on [Python Virtual Environments](https://docs.python.org/3/tutorial/venv.html). 
 
 
 ## References
