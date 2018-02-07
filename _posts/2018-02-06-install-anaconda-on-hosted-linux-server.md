@@ -1,7 +1,7 @@
 ---
 layout: post
-published: false
-title: Install Anaconda on Linux Server
+published: true
+title: Install Python 3 Distribution on Linux Server
 date: '2018-02-06'
 categories:
   - Tutorial
