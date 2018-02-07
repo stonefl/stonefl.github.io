@@ -17,7 +17,7 @@ As a developer and data scientist, I often need to run Python scripts on Linux s
 * TOC
 {:toc}
 
-## Check Installed Python Version
+## Check Python Version
 Chances are Python is already installed your Linux server, you can use following command to chech which version of Python you are woring with. 
 
 ```
