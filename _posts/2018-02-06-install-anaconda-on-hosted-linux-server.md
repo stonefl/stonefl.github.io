@@ -29,16 +29,16 @@ Most of the cases, Python 2.x is installed. Then you can install Python 3 by tak
 ## Installing Anaconda
 
 ### Download
-The best way to install Anaconda for Python 3 is to download the latest Anaconda installer from [Anaconda Download page](https://www.anaconda.com/download/#linux). At the time of writing, the latest version is 5.0.1 for Python 3.6.
+You can download the latest Anaconda installer from [Anaconda Download page](https://www.anaconda.com/download/#linux). At the time of writing, the latest version is 5.0.1 for Python 3.6.
 
 From the folder where you want to save the installer, you can use `curl` to download the link that you copied from the Anaconda website:
 ```
 $ curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
 ```
-It will take a while. The istaller can be deleted after running it.
+It will take a while to download.
 
 ### Verify(Optional)
-Once the downloading process is done, you can verify the data integrity of the installer with `MD5` or `SHA-256`cryptographic hashes.
+Once the downloading process is done, you can verify the data integrity of the installer with `MD5` or `SHA-256`cryptographic hashes:
 ```
 $ md5sum Anaconda3-5.0.1-Linux-x86_64.sh
 ```
