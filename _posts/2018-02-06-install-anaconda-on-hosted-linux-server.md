@@ -21,7 +21,7 @@ As a developer and data scientist, I often need to run Python scripts on Linux s
 Chances are Python is already installed on your Linux server, you can use following commands to check which version of Python has been installed:
 
 ```
-$ python --version
+$ python --version   or
 ```
 ```
 $ python -V
