@@ -137,3 +137,10 @@ Then delete or comment out the following lines:
 export PATH="/home/lf/anaconda3/bin:$PATH"
 ```
 When you’re done editing the file, type CTRL + X to exit and y to save changes. Then Anaconda is now removed from your server.
+
+## References
+
+https://www.godaddy.com/garage/how-to-install-and-configure-python-on-a-hosted-server/
+https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04
+https://hostpresto.com/community/tutorials/how-to-install-anaconda-python-on-ubuntu-16-04/
+https://www.digitalocean.com/community/tutorial_series/how-to-install-and-set-up-a-local-programming-environment-for-python-3
