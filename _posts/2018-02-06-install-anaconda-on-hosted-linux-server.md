@@ -116,37 +116,79 @@ You’ll receive the version number of the isntalled conda. Now the Anaconda is 
 
 
 ## Install through Tarball File
+You can install pure Python 3 distribution through following steps.
+
+### Download Tarball File to Your Server
+Go to the folder where you want to save the file (e.g./home/lf/) and run:
+```
+$ wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tgz
+```
+It will download the tarbile from [Python's download page](https://www.python.org/downloads/release/python-364/).
+
+### Verfiy (optional)
+After download, you can verify the data integrity through running `MD5` hash
+```
+$ md5sum Python-3.6.4.tgz
+```
+You should compare the output to the result on the [download page](https://www.python.org/downloads/release/python-364/). As long as you get the same result, you are good to move ahead.
+
+### Install
+
+Decompress the file with the following command, which will create a directory `/home/lf/Python-3.6.4` and automatically copy all files into this directory. After decompression, the `Python-3.6.4.tgz` file can be deleted. 
+```
+$ tar xvzf Python-3.6.4.tgz
+```
+When the decompression is done, go into the created folder(`/home/lf/Python-3.6.4`) and install the new version of Python:
+```
+$ ./configure --prefix=$HOME/.local
+```
+This step sets up your configuration and makes files.
+
+Then run the command:
+```
+$ make
+```
+and follow that up with:
+```
+$ make install
+```
+The last command will install two of the most useful Python utilities:
+
+* [pip](https://pip.pypa.io/en/stable/): Python’s recommended tool for installing Python packages.
+* [setuptools](https://pypi.python.org/pypi/setuptools): Enables you to download, build, install, and uninstall Python packages.
+
+### Add Path to Evironment
+
+Go back to your home folder and open the `.bashrc` file:
+```
+$ cd $HOME
+$ nano .bashrc
+```
+with the editor open, add the following lines, and save the file:
+```
+# Python 3.6.4 
+export PATH="$HOME/.local/bin:$PATH"
+```
+Run the following to get your environment up to date:
+```
+$ source ~/.bashrc
+```
+
+Now the Python 3 has been installed. You can verify the installation through running:
+```
+$python3 --version
+```
+
+Wait, why juse `python3` not just `python`? 
+If you just run “python,” the executable will show the version number for the default Python for your version of Linux — not your newly installed version of Python. Confusing, I know. You will now have two versions of one language on your server.
+
+The best way to handle this is to use Python’s virtualenv module to create a virtual Python environment. Inside this container-like environment, you can use your newer version of Python — such as Python 3.4.3 or 2.7.2. — without interfering with the preexisting Python.
+
+### Create Virtual Python Environment
 
 
+For more on the basics of using virtualenv, see Python Guide’s Virtual Environments. 
 
-## Uninstalling Anaconda
-If for any reason you need to uninstall Anaconda, you should start with the `anaconda-clean` module:
-```
-conda install anaconda-clean
-```
-Once it is installed, you can run the following command to do the uninstallation:
-```
-anaconda-clean --yes
-```
-This will also create a backup folder called `.anaconda_backup` in your home directory:
-```
-Output
-Backup directory: /home/lf/.anaconda_backup/2018-02-05T301831
-```
-You can now remove your entire Anaconda directory by entering the following command:
-```
-rm -rf ~/anaconda3
-```
-Finally, you can remove the PATH line from your ``.bashrc`` file that Anaconda added:
-```
-nano ~/.bashrc
-```
-Then delete or comment out the following lines:
-```
-# added by Anaconda3 5.0.1 installer
-export PATH="/home/lf/anaconda3/bin:$PATH"
-```
-When you’re done editing the file, type CTRL + X to exit and y to save changes. Then Anaconda is now removed from your server.
 
 ## References
 
