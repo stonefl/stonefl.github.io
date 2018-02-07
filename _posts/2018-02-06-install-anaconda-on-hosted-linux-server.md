@@ -18,14 +18,10 @@ As a developer and data scientist, I often need to run Python scripts on Linux s
 {:toc}
 
 ## Check Python Version
-Chances are Python is already installed your Linux server, you can use following command to chech which version of Python you are woring with. 
+Chances are Python is already installed on your Linux server, you can use following commands to check which version of Python has been installed:
 
 ```
-$ python -V
-```
-or
-```
-$ python --version
+$ python -version
 ```
 Most of the cases, Python 2.x is installed. Then you can install Python 3 by taking following steps.
 
