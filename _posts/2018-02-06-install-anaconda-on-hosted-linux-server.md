@@ -32,7 +32,7 @@ $ python -V
 Most of the cases, Python 2.x is installed. Then you can install Python 3 by taking following steps.
 
 
-## Installing Anaconda
+## Installing Python 3 through Anaconda
 
 ### Download
 You can download the latest Anaconda installer from [Anaconda Download page](https://www.anaconda.com/download/#linux). At the time of writing, the latest version is 5.0.1 for Python 3.6.
