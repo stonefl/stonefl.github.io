@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Install Python 3 Distribution on Linux Server
 date: '2018-02-06'
 categories:
@@ -12,6 +12,8 @@ tags:
 As a developer and data scientist, I often need to run Python scripts on Linux servers. The vast majority of CentOS/RHEL-based Linux servers use Python 2.6.6, while most of my Python applications are written in Python 3. In additoin, on most of the servers, I don't have the `sudo` priviledge, so it needs a little trick to install Python 3 on those servers. 
 
 This post is a step-by-step instructions on installing  Python 3.6 through both [Anaconda](https://docs.anaconda.com/) and [Python Gzipped source tarball file](https://www.python.org/downloads/release/python-364/) on a CentOS/RHEL-based  Linux server.<!--more-->
+
+Anaconda is 
 
 ## Table of Content
 {:.no_toc}
@@ -32,9 +34,9 @@ $ python -V
 Most of the cases, Python 2.x is installed. Then you can install Python 3 by taking following steps.
 
 
-## Installing Python 3 through Anaconda
+## Instal through Anaconda
 
-### Download
+### Download Anaconda
 You can download the latest Anaconda installer from [Anaconda Download page](https://www.anaconda.com/download/#linux). At the time of writing, the latest version is 5.0.1 for Python 3.6.
 
 From the folder where you want to save the installer, you can use `curl` to download the link that you copied from the Anaconda website:
@@ -54,7 +56,7 @@ $ sha256sum Anaconda3-5.0.1-Linux-x86_64.sh
 ```
 You can check the output against the hashes available for your appropriate Anaconda version at the page of [Anaconda with Python 3 on 64-bit Linux](https://docs.anaconda.com/anaconda/install/hashes/lin-3-64). If the MD5 or SHA-256 hash that you generate does not match the one there, the file may not have downloaded completely, you might need to download it again and re-check.
 
-### Install
+### Install Anaconda
 
 Now you can run the script to install:
 ```
@@ -110,6 +112,12 @@ Once you are finished, you can verify the installation by running:
 conda --version
 ```
 You’ll receive the version number of the isntalled conda. Now the Anaconda is installed, you can check my another post([Managing Python Environments and Packages with Anaconda](http://leifengblog.net/blog/installing-and-managing-python-and-packages-with-anaconda/)) for setting and mangeing Python environments and packages.
+
+
+
+## Install through Tarball File
+
+
 
 ## Uninstalling Anaconda
 If for any reason you need to uninstall Anaconda, you should start with the `anaconda-clean` module:
