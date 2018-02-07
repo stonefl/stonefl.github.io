@@ -59,7 +59,7 @@ Then the new environment can be activated through
 
 , and be deactivated by:
 
-`deactivate py2` on ** Windows**
+`deactivate py2` on **Windows**
 
 `source deactivate py2` on **Linux or Mac OSX**
 
@@ -81,7 +81,7 @@ Here is a list of frequently used **conda** commands, and you can see a longer 
 	
 * `conda env list`: Displays the list of environments installed and the currently active one is marked by a star `*`.
 
-* `conda serarch _somepackage_`: search for a package to see if it is available.
+* `conda search _somepackage_`: search for a package to see if it is available.
 
 * `conda install _somepackage_`: Installs a Python package_._
 
