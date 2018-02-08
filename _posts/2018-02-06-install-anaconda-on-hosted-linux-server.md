@@ -98,10 +98,10 @@ Output
 ...
 installation finished.
 Do you wish the installer to prepend the Anaconda3 install location
-to PATH in your /home/sammy/.bashrc ? [yes|no]
+to PATH in your /home/lf/.bashrc ? [yes|no]
 [no] >>>
 ```
-Type yes so that you can use the `conda` commandline. 
+Type `yes` so that you can use the `conda` commandline. 
 
 Next, run following activate the installation:
 ```
