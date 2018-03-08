@@ -19,4 +19,9 @@ comments: true
 As Spark's local mode is fully compatible with cluster modes, thus the local mode is very useful for prototyping, developing, debugging, and testing. Programs written and tested locally can be run on a cluster with just a few additional steps. In addition, the standalone mode can also be used in real-world scenarios to perform parallel computating across multiple cores on a single computer. In this post, I will walk through the process of setting up Spark in a standalone mode on Windows. 
 <!--more-->
 
+## Table of Content
+{:.no_toc}
+
+* TOC
+{:toc}
 
