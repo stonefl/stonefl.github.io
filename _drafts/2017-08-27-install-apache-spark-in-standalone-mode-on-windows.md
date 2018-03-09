@@ -25,31 +25,49 @@ As Spark's local mode is fully compatible with cluster modes, thus the local mod
 * TOC
 {:toc}
 
-## Install Java
+## Installations
 
-Spark process runs in JVM. Java hsould be installed on the machines on which you are about to run Spark job. You can run following command to check if Java is already installed.
+### Install Java
+
+Spark process runs in JVM. Java hsould be installed on the machines on which you are about to run Spark job. 
+download Java 8 JDK from the Oracle [download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and keep track of where you installed the JDK (e.g. `C:\Program Files\Java\jdk1.8.0_161`). You will need it later. 
+
+### Set JAVA_HOME Variables
+Set environmental variables:
+- Varaiable: JAVA_HOME
+- Value: C:\Program Files\Java\jdk1.8.0_161  (or your installation path)
+Add `%JAVA_HOME%\bin` to `PATH` variable.
+
+After the installation, you can run following command to check if Java is installed correctly:
 ```
 java -version
 ```
-If Java is alrady installed you will get response below:
+If everything is fine, you will get response below:
 ```
 java version "1.8.0_161"
 Java(TM) SE Runtime Environment (build 1.8.0_161-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 ```
-otherwise, you can download Java 8 JDK from the Oracle [download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and keep track of where you installed the JDK (e.g. `C:\Program Files\Java\jdk1.8.0_161`). You will need it later. 
 
-### Set JAVA_HOME Enrironment Variable
-Set user environmental variables:
-- Varaiable: JAVA_HOME
-- Value: C:\Program Files\Java\jdk1.8.0_161  (or your installation path)
+### Install Scala
 
-## Install Scala
-
-## Install Hadoop
+Download the Scala(2.10.x or above) binary for windows from the [download page of scala](http://www.scala-lang.org/download/2.10.5.html) and keep track where you isntalled (e.g.`C:\Program Files (x86)\scala`).
 
 
-## Install Spark
+You can check the installation with (you might need to restart your `cmd`):
+```
+scala -version
+```
+
+### Install Hadoop
+
+
+### Install Spark
+
+
+-Variable:SCALA
+
+
 
 
 
