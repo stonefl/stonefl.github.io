@@ -40,13 +40,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 otherwise, you can download Java 8 JDK from the Oracle [download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and keep track of where you installed the JDK (e.g. `C:\Program Files\Java\jdk1.8.0_161`). You will need it later. 
 
 ### Set JAVA_HOME Enrironment Variable
-Set environmental variables:
-i. User variable:
- Variable: JAVA_HOME
- Value: C:\Program Files\Java\jdk1.8.0_91
-ii. System variable:
- Variable: PATH
- Value: C:\Program Files\Java\jdk1.8.0_91\bin
+Set user environmental variables:
+- Varaiable: JAVA_HOME
+- Value: C:\Program Files\Java\jdk1.8.0_161  (or your installation path)
 
 ## Install Scala
 
