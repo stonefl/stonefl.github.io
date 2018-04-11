@@ -70,6 +70,8 @@ If neccessary, download and install WinRAR from [http://www.rarlab.com/download.
 
 Extract Spark archive to C drive, such as `C:\spark-1.6.1-bin-hadoop2.6`
 
+Optional: open the `C:\spark-1.6.1-bin-hadoop2.6\conf` folder, and make sure "File Name Extensions" is checked in the "view" tab of Windows Explorer. Rename the `log4j.properties.template` to `log4j.properties`. Open the new file and change the error level from **INFO** to **ERROR** for `log4j.rootCategory` .
+
 **Set SPARK_HOME Variables**
 Set environmental variables:
 - Varaiable: SPARK_HOME
