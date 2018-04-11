@@ -63,10 +63,31 @@ You can check the installation with (you might need to restart your `cmd`):
 scala -version
 ```
 
-### Install Hadoop
-
-
 ### Install Spark
+Download a pre-built version of Apache Spark from [Spark Download page](http://spark.apache.org/downloads.html) . The version I downloaded is 1.6.1, you can download newer version from the drop down list, the package type will change automatically. 
 
+If neccessary, download and install WinRAR from [http://www.rarlab.com/download.htm](http://www.rarlab.com/download.htm), so you can extract the `.tgs` file downloaded.
+
+Extract Spark archive to C drive, such as `C:\spark-1.6.1-bin-hadoop2.6`
+
+**Set SPARK_HOME Variables**
+Set environmental variables:
+- Varaiable: SPARK_HOME
+- Value: C:\spark-1.6.1-bin-hadoop2.6  (or your installation path)
+Add `%SPARK_HOME%\bin` to `PATH` variable.
+
+
+### Download Windows Utilities for Hadoop
+Download `winutils.exe` file from [https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe) and copy it to into  folder `C:\hadoop\bin`.
+
+**Note:**
+1) this is for a 64-bit system. If you are on a 32-bit version of Windows, you will need to search for a 32-bit build of winutils.exe for Hadoop.
+2) If you are using `spark-2.0.0-bin-hadoop2.7` or newer, you will need the winutils.exe for hadoop-2.7.1, which can be downloaded from [https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe) 
+
+**Set HADOOP_HOME Variables**
+Set environmental variables:
+- Varaiable: HADOOP_HOME
+- Value: C:\hadoop  (or your installation path)
+Add `%HADOOP_HOME%\bin` to `PATH` variable.
 
 
