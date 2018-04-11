@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: Install Apache Spark in a standalone mode on Windows
+title: Install Apache Spark in a Standalone Mode on Windows
 subtitle: Learning Apache Spark Tutorial
 tags:
   - Apache Spark
@@ -25,17 +25,16 @@ As Spark's local mode is fully compatible with cluster modes, thus the local mod
 * TOC
 {:toc}
 
-## Installations
 
-### Install Java
+### Step 1. Install Java (7 or above)
 
-Spark process runs in JVM. Java hsould be installed on the machines on which you are about to run Spark job. 
-download Java 8 JDK from the Oracle [download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and keep track of where you installed the JDK (e.g. `C:\Program Files\Java\jdk1.8.0_161`). You will need it later. 
+Spark process runs in JVM. Java should be installed on the machines on which you are about to run Spark job. 
+Download Java 8 JDK from the Oracle [download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and keep track of where you installed the JDK (e.g. `C:\Program Files\Java\jdk1.8.0_161`). You will need it later. 
 
-### Set JAVA_HOME Variables
+**Set JAVA_HOME Variables**
 Set environmental variables:
 - Varaiable: JAVA_HOME
-- Value: C:\Program Files\Java\jdk1.8.0_161  (or your installation path)
+- Value: C:\Program Files\Java\jdk1.8.0_151  (or your installation path)
 Add `%JAVA_HOME%\bin` to `PATH` variable.
 
 After the installation, you can run following command to check if Java is installed correctly:
@@ -66,8 +65,3 @@ scala -version
 
 
 -Variable:SCALA
-
-
-
-
-
