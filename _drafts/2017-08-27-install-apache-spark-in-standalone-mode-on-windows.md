@@ -34,24 +34,29 @@ Download Java 8 JDK from the Oracle [download page](http://www.oracle.com/techne
 **Set JAVA_HOME Variables**
 Set environmental variables:
 - Varaiable: JAVA_HOME
-- Value: C:\Program Files\Java\jdk1.8.0_151  (or your installation path)
+- Value: C:\Program Files\Java\jdk1.8.0_161  (or your installation path)
 Add `%JAVA_HOME%\bin` to `PATH` variable.
 
 After the installation, you can run following command to check if Java is installed correctly:
 ```
 java -version
 ```
-If everything is fine, you will get response below:
+If everything is fine, you will get similar response below:
 ```
 java version "1.8.0_161"
 Java(TM) SE Runtime Environment (build 1.8.0_161-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 ```
 
-### Install Scala
+### Install Scala (2.10.x or above)
 
-Download the Scala(2.10.x or above) binary for windows from the [download page of scala](http://www.scala-lang.org/download/2.10.5.html) and keep track where you isntalled (e.g.`C:\Program Files (x86)\scala`).
+Download the Scala(2.10.5) binary for windows from the [download page of scala](http://www.scala-lang.org/download/2.10.5.html) and keep track where you isntalled (e.g.`C:\Program Files (x86)\scala`).
 
+**Set SCALA_HOME Variables**
+Set environmental variables:
+- Varaiable: SCALA_HOME
+- Value: C:\Program Files (x86)\scala  (or your installation path)
+Add `%SCALA_HOME%\bin` to `PATH` variable.
 
 You can check the installation with (you might need to restart your `cmd`):
 ```
@@ -64,4 +69,4 @@ scala -version
 ### Install Spark
 
 
--Variable:SCALA
+
