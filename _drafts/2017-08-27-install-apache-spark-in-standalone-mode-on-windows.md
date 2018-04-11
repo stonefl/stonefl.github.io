@@ -78,7 +78,7 @@ Add `%SPARK_HOME%\bin` to `PATH` variable.
 
 
 ### Download Windows Utilities for Hadoop
-Download `winutils.exe` file from [https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe) and copy it to into  folder `C:\hadoop\bin`.
+Download `winutils.exe` file from [https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe) and copy it to into  folder `C:\hadoop-2.6.0\bin`.
 
 **Note:**
 1) this is for a 64-bit system. If you are on a 32-bit version of Windows, you will need to search for a 32-bit build of winutils.exe for Hadoop.
@@ -87,7 +87,7 @@ Download `winutils.exe` file from [https://github.com/stonefl/winutils/raw/maste
 **Set HADOOP_HOME Variables**
 Set environmental variables:
 - Varaiable: HADOOP_HOME
-- Value: C:\hadoop  (or your installation path)
+- Value: C:\hadoop-2.6.0  (or your installation path)
 Add `%HADOOP_HOME%\bin` to `PATH` variable.
 
 
