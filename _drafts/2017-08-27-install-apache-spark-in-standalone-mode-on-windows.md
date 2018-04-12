@@ -25,8 +25,9 @@ As Spark's local mode is fully compatible with cluster modes, thus the local mod
 * TOC
 {:toc}
 
+## Installation
 
-### Step 1. Install Java (7 or above)
+### Install Java (7 or above)
 
 Spark process runs in JVM. Java should be installed on the machines on which you are about to run Spark job. 
 Download Java 8 JDK from the Oracle [download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and keep track of where you installed the JDK (e.g. `C:\Program Files\Java\jdk1.8.0_161`). You will need it later. 
@@ -92,4 +93,9 @@ Set environmental variables:
 - Value: C:\hadoop-2.6.0  (or your installation path)
 Add `%HADOOP_HOME%\bin` to `PATH` variable.
 
+## Common Errors
 
+**Common Error 1** 
+`The root scratch dir: /tmp/hive on HDFS should be writable. Current permissions are: rw-rw-rw-`
+First, make sure you are using correct winutils for your OS.
+Second, check 
