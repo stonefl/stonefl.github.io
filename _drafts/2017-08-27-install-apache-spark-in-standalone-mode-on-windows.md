@@ -124,7 +124,8 @@ ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\MyU
 java.io.IOException: Failed to delete: C:\Users\MyUserName\AppData\Local\Temp\spark-76bd7db7-25fa-4096-8aa9-4e8dc02fcb67
 ...
 ```
-currently, I just ignore the error, since it seems no work around approach. Please refer to these posts on this issue: 
+currently, I just ignore the error, since it seems no work around approach. I just keep deleting the temporary files from time to time. Please refer to following posts for more details on this issue and let me know if you find any solution to it.
+
 [https://stackoverflow.com/questions/41825871/exception-while-deleting-spark-temp-dir-in-windows-7-64-bit](https://stackoverflow.com/questions/41825871/exception-while-deleting-spark-temp-dir-in-windows-7-64-bit)
 
 [https://stackoverflow.com/questions/30093676/apache-spark-does-not-delete-temporary-directories](https://stackoverflow.com/questions/30093676/apache-spark-does-not-delete-temporary-directories)
