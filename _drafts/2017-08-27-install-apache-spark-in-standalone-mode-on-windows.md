@@ -114,8 +114,15 @@ All the commands must be executed in a command-line (`cmd`) or `Powershell` ran 
 The root scratch dir: /tmp/hive on HDFS should be writable. Current permissions are: rw-rw-rw-
 ```
 First, make sure you are using correct winutils for your OS.
-Second, check your computer domain through running `C:\hadoop-2.6.0\bin\winutils.exe ls -F C:\tmp\hive`in cmd with Administrator. If this command returns access denied or `FindFileOwnerAndPermission error`, it means that your computer domain controller is not reachable, possible reason could be you are not one the same VPN as your system domain controller. Connect to your VPN and try again.
-Finally, run this command, again as Administrator, to give permission:`C:\hadoop-2.6.0\bin\winutils.exe chmod -R 777 C:\tmp\hive`
+Second, check your computer domain through running `C:\hadoop-2.6.0\bin\winutils.exe ls -F C:\tmp\hive`in `cmd` or `PowerShell` with **Run as administrator** option. If this command returns access denied or `FindFileOwnerAndPermission error`, it means that your computer domain controller is not reachable, possible reason could be you are not one the same VPN as your system domain controller. Connect to your VPN and try again.
+Finally, run this command, again in `cmd` or `PowerShell` with **Run as administrator** option, to grant access permission:`C:\hadoop-2.6.0\bin\winutils.exe chmod -R 777 C:\tmp\hive`
 
-
+**Common Error 3**
+When stop spark context,
+```
+ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\MyUserName\AppData\Local\Temp\spark-76bd7db7-25fa-4096-8aa9-4e8dc02fcb67
+java.io.IOException: Failed to delete: C:\Users\MyUserName\AppData\Local\Temp\spark-76bd7db7-25fa-4096-8aa9-4e8dc02fcb67
+...
+```
+currently, I just ignore the error, since it seems no work around approach. Please refer to this [StackOverFlow post on this issue](https://stackoverflow.com/questions/41825871/exception-while-deleting-spark-temp-dir-in-windows-7-64-bit). 
 
