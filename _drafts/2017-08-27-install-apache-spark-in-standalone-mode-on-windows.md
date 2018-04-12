@@ -93,9 +93,26 @@ Set environmental variables:
 - Value: C:\hadoop-2.6.0  (or your installation path)
 Add `%HADOOP_HOME%\bin` to `PATH` variable.
 
+You can run `spark-shell` to test the installation. But it is very likely you will get one or more following errors.
+
 ## Common Errors
 
 **Common Error 1** 
-`The root scratch dir: /tmp/hive on HDFS should be writable. Current permissions are: rw-rw-rw-`
+```
+The root scratch dir: /tmp/hive on HDFS should be writable. Current permissions are: rw-rw-rw-
+```
 First, make sure you are using correct winutils for your OS.
-Second, check 
+Second, check your computer domain through running `C:\hadoop-2.6.0\bin\winutils.exe ls -F C:\tmp\hive`. If this command returns access denied or `FindFileOwnerAndPermission error`, it means that your computer domain controller is not reachable, possible reason could be you are not one the same VPN as your system domain controller. Connect to your VPN and try again.
+Finally, run this command to give permission:`C:\hadoop-2.6.0\bin\winutils.exe chmod -R 777 C:\tmp\hive`
+
+**Common Error 2**
+```
+<console>:16: error: not found: value sqlContext
+import sqlContext.implicits._
+^
+<console>:16: error: not found: value sqlContext
+import sqlContext.sql
+^
+```
+
+
