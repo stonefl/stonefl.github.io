@@ -93,7 +93,7 @@ Set environmental variables:
 - Value: C:\hadoop-2.6.0  (or your installation path)
 Add `%HADOOP_HOME%\bin` to `PATH` variable.
 
-You can run `spark-shell` to test the installation. But it is very likely you will get one or more following errors.
+You can run `spark-shell` in the `cmd` or `PowerShell` (**run as administrator**) to test the installation. If you can see the scala console, you are good to go. But it is very likely you will get one or more following errors.
 
 ## Common Errors
 
@@ -107,7 +107,7 @@ import sqlContext.implicits._
 import sqlContext.sql
 ^
 ```
-All the commands must be executed in a command-line (`cmd`) or `Powershell` ran as Administrator, i.e. using **Run as administrator** option.
+All the commands must be executed in a command-line (`cmd`) or `Powershell` which run as Administrator, i.e. using **Run as administrator** option.
 
 **Common Error 2** 
 ```
@@ -130,4 +130,3 @@ currently, I just ignore the error, since it seems no work around approach. Plea
 [https://stackoverflow.com/questions/30093676/apache-spark-does-not-delete-temporary-directories](https://stackoverflow.com/questions/30093676/apache-spark-does-not-delete-temporary-directories)
 
 [https://issues.apache.org/jira/browse/SPARK-7439](https://issues.apache.org/jira/browse/SPARK-7439)
-
