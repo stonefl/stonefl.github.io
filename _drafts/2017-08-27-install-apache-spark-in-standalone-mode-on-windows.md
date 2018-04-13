@@ -131,3 +131,9 @@ currently, I just ignore the error, since it seems no work around approach. I ju
 [https://stackoverflow.com/questions/30093676/apache-spark-does-not-delete-temporary-directories](https://stackoverflow.com/questions/30093676/apache-spark-does-not-delete-temporary-directories)
 
 [https://issues.apache.org/jira/browse/SPARK-7439](https://issues.apache.org/jira/browse/SPARK-7439)
+
+
+## References
+[https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-tips-and-tricks-running-spark-windows.html](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-tips-and-tricks-running-spark-windows.html)
+
+[http://nishutayaltech.blogspot.com/2015/04/how-to-run-apache-spark-on-windows7-in.html](http://nishutayaltech.blogspot.com/2015/04/how-to-run-apache-spark-on-windows7-in.html)
