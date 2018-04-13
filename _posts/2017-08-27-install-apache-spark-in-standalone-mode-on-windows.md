@@ -11,13 +11,14 @@ author: stonefl
 comments: true
 ---
 **Apache Spark** is a cluster comuting framework for large-scale data processing, which aims to run programs in parallel across many nodes in a cluster of computers or virtual machines. It comibnes a stack of libraries including **SQL and DataFrames**, **MLlib**, **GraphX**, and **Spark Streaming**. Spark can run in four modes:
+<!--more-->
 - The standalone local mode, where all Spark processes run within the same JVM process.
 - The standalone cluster mode, which uses Spark's own built-in, job-scheduling framework.
 - [Apache Mesos](https://mesos.apache.org/), where driver runs on the master node while work nodes run on separat machines.
 - [Hadoop YARN](https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html), where the underlying storage is HDFS. Driver runs inside an application master process which is managed by YARN on the cluster and work nodes run on different data nodes.
 
 As Spark's local mode is fully compatible with cluster modes, thus the local mode is very useful for prototyping, developing, debugging, and testing. Programs written and tested locally can be run on a cluster with just a few additional steps. In addition, the standalone mode can also be used in real-world scenarios to perform parallel computating across multiple cores on a single computer. In this post, I will walk through the stpes of setting up Spark in a standalone mode on Windows 10. 
-<!--more-->
+
 
 ## Table of Content
 {:.no_toc}
