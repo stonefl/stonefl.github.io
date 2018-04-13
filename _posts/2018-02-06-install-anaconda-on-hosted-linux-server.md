@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Install Python 3 Distribution on a Linux Server
+title: Install Python 3 Distributions on a Linux Server
 date: '2018-02-06'
 categories:
   - Tutorial
