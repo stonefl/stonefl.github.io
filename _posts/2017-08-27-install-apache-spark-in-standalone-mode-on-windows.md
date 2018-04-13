@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Install Apache Spark in a Standalone Mode on Windows
 subtitle: Learning Apache Spark Tutorial
 tags:
