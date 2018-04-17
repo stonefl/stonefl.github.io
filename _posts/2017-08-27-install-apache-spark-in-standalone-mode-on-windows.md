@@ -50,20 +50,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_161-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 ```
 
-### Install Scala (2.10.x or above)
 
-Download the Scala(2.10.5) binary for windows from the [download page of scala](http://www.scala-lang.org/download/2.10.5.html) and keep track where you isntalled (e.g.`C:\Program Files (x86)\scala`).
-
-**Set SCALA_HOME Variables**
-Set environmental variables:
-- Varaiable: SCALA_HOME
-- Value: C:\Program Files (x86)\scala  (or your installation path)
-Add `%SCALA_HOME%\bin` to `PATH` variable.
-
-You can check the installation with (you might need to restart your `cmd`):
-```
-scala -version
-```
 
 ### Install Spark
 Download a pre-built version of Apache Spark from [Spark Download page](http://spark.apache.org/downloads.html) . The version I downloaded is 1.6.1, you can download newer version from the drop down list, the package type will change accordingly. 
@@ -87,6 +74,7 @@ Download `winutils.exe` file from [https://github.com/stonefl/winutils/raw/maste
 **Note:**
 1) this is for a 64-bit system. If you are on a 32-bit version of Windows, you will need to search for a 32-bit build of winutils.exe for Hadoop.
 2) If you are using `spark-2.0.0-bin-hadoop2.7` or newer, you will need the winutils.exe for hadoop-2.7.1, which can be downloaded from [https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe) 
+
 
 **Set HADOOP_HOME Variables**
 Set environmental variables:
