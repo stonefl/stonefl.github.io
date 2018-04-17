@@ -50,36 +50,34 @@ Java(TM) SE Runtime Environment (build 1.8.0_161-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 ```
 
-
-
 ### Install Spark
-Download a pre-built version of Apache Spark from [Spark Download page](http://spark.apache.org/downloads.html) . The version I downloaded is 1.6.1, you can download newer version from the drop down list, the package type will change accordingly. 
+Download a pre-built version of Apache Spark from [Spark Download page](http://spark.apache.org/downloads.html) . The version I downloaded is 2.2.0, which is newest version avialable at the time of this post is written. You can download older version from the drop down list, but note that before 2.0.0, Spark was pre-built for Apache Hadoop 2.6. You might need to choose corresponding package type.   
 
 If neccessary, download and install WinRAR from [http://www.rarlab.com/download.htm](http://www.rarlab.com/download.htm), so you can extract the `.tgs` file downloaded.
 
-Extract Spark archive to C drive, such as `C:\spark-1.6.1-bin-hadoop2.6`. Note: **The folder name cannot have space!**
+Extract Spark archive to C drive, such as `C:\spark-2.2.0-bin-hadoop2.7`. Note: **The folder name cannot have space!**
 
-Optional: open the `C:\spark-1.6.1-bin-hadoop2.6\conf` folder, and make sure "File Name Extensions" is checked in the "view" tab of Windows Explorer. Rename the `log4j.properties.template` to `log4j.properties`. Open the new file and change the error level from **INFO** to **ERROR** for `log4j.rootCategory` .
+Optional: open the `C:\spark-2.2.0-bin-hadoop2.7\conf` folder, and make sure "File Name Extensions" is checked in the "view" tab of Windows Explorer. Rename the `log4j.properties.template` to `log4j.properties`. Open the new file and change the error level from **INFO** to **ERROR** for `log4j.rootCategory` .
 
 **Set SPARK_HOME Variables**
 Set environmental variables:
 - Varaiable: SPARK_HOME
-- Value: C:\spark-1.6.1-bin-hadoop2.6  (or your installation path)
+- Value: C:\spark-2.2.0-bin-hadoop2.7  (or your installation path)
 Add `%SPARK_HOME%\bin` to `PATH` variable.
 
 
 ### Download Windows Utilities for Hadoop
-Download `winutils.exe` file from [https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe) and copy it to into  folder `C:\hadoop-2.6.0\bin`.
+Download `winutils.exe` file from [https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe) and copy it into folder `C:\hadoop-2.7.1\bin`.
 
 **Note:**
-1) this is for a 64-bit system. If you are on a 32-bit version of Windows, you will need to search for a 32-bit build of winutils.exe for Hadoop.
-2) If you are using `spark-2.0.0-bin-hadoop2.7` or newer, you will need the winutils.exe for hadoop-2.7.1, which can be downloaded from [https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe) 
+1) This is for a 64-bit system. If you are on a 32-bit version of Windows, you will need to search for a 32-bit build of winutils.exe for Hadoop.
+2) If you are using Spark versions that is lower than 2.0, for example `spark-1.6.1-bin-hadoop2.6`, you will need the winutils.exe for hadoop-2.6.0, which can be downloaded from [https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe) 
 
 
 **Set HADOOP_HOME Variables**
 Set environmental variables:
 - Varaiable: HADOOP_HOME
-- Value: C:\hadoop-2.6.0  (or your installation path)
+- Value: C:\hadoop-2.7.1  (or your installation path)
 Add `%HADOOP_HOME%\bin` to `PATH` variable.
 
 You can run `spark-shell` in the `cmd` or `PowerShell` (**run as administrator**) to test the installation. If you can see the scala console, you are good to go. But it is very likely you will get one or more following errors.
