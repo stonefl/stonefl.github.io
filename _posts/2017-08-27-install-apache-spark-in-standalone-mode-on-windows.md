@@ -135,6 +135,9 @@ currently, I just ignore the error, since it seems no work around approach. I ju
 
 
 ## References
+
+Learning Spark O'Reilly [http://shop.oreilly.com/product/0636920028512.do](http://shop.oreilly.com/product/0636920028512.do)
+
 [https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-tips-and-tricks-running-spark-windows.html](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-tips-and-tricks-running-spark-windows.html)
 
 [http://nishutayaltech.blogspot.com/2015/04/how-to-run-apache-spark-on-windows7-in.html](http://nishutayaltech.blogspot.com/2015/04/how-to-run-apache-spark-on-windows7-in.html)
