@@ -104,8 +104,8 @@ All the commands must be executed in a command-line (`cmd`) or `Powershell` whic
 The root scratch dir: /tmp/hive on HDFS should be writable. Current permissions are: rw-rw-rw-
 ```
 First, make sure you are using correct winutils for your OS.
-Second, check your computer domain through running `C:\hadoop-2.6.0\bin\winutils.exe ls -F C:\tmp\hive`in `cmd` or `PowerShell` with **Run as administrator** option. If this command returns access denied or `FindFileOwnerAndPermission error`, it means that your computer domain controller is not reachable, possible reason could be you are not one the same VPN as your system domain controller. Connect to your VPN and try again.
-Finally, run this command, again in `cmd` or `PowerShell` with **Run as administrator** option, to grant access permission:`C:\hadoop-2.6.0\bin\winutils.exe chmod -R 777 C:\tmp\hive`
+Second, check your computer domain through running `C:\hadoop-2.7.1\bin\winutils.exe ls -F C:\tmp\hive`in `cmd` or `PowerShell` with **Run as administrator** option. If this command returns access denied or `FindFileOwnerAndPermission error`, it means that your computer domain controller is not reachable, possible reason could be you are not one the same VPN as your system domain controller. Connect to your VPN and try again.
+Finally, run this command, again in `cmd` or `PowerShell` with **Run as administrator** option, to grant access permission:`C:\hadoop-2.7.1\bin\winutils.exe chmod -R 777 C:\tmp\hive`
 
 **Common Error 3**
 When stop spark context,
