@@ -80,8 +80,8 @@ Set environmental variables:
 - Value: C:\hadoop-2.7.1  (or your installation path)
 Add `%HADOOP_HOME%\bin` to `PATH` variable.
 
-You can run `spark-shell` in the `cmd` or `PowerShell` (**run as administrator**) to test the installation. If you can see the scala console, you are good to go. 
-
+You can run `spark-shell` in the `cmd` or `PowerShell` (**run as administrator**) to test the installation. If you can see the scala console shown as below, then you are good to go, Congratulations! 
+![Spark.PNG]({{site.baseurl}}/img/post/Spark.PNG)
 
 But it is very likely you will get one or more following errors.
 
