@@ -30,7 +30,7 @@ As Spark's local mode is fully compatible with cluster modes, thus the local mod
 
 ### Install Java (7 or above)
 
-Spark process runs in JVM. Java has to be installed on the machines on which you are about to run Spark job. 
+Spark itslef is written in Scala, and runs on the Java Virtual Machine(JVM). Java has to be installed on the machines on which you are about to run Spark job. 
 Download Java JDK from the Oracle [download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and keep track of where you installed it (e.g. `C:\Program Files\Java\jdk1.8.0_161`). 
 
 **Set JAVA_HOME Variables**
@@ -66,11 +66,11 @@ scala -version
 ```
 
 ### Install Spark
-Download a pre-built version of Apache Spark from [Spark Download page](http://spark.apache.org/downloads.html) . The version I downloaded is 1.6.1, you can download newer version from the drop down list, the package type will change automatically. 
+Download a pre-built version of Apache Spark from [Spark Download page](http://spark.apache.org/downloads.html) . The version I downloaded is 1.6.1, you can download newer version from the drop down list, the package type will change accordingly. 
 
 If neccessary, download and install WinRAR from [http://www.rarlab.com/download.htm](http://www.rarlab.com/download.htm), so you can extract the `.tgs` file downloaded.
 
-Extract Spark archive to C drive, such as `C:\spark-1.6.1-bin-hadoop2.6`
+Extract Spark archive to C drive, such as `C:\spark-1.6.1-bin-hadoop2.6`. Note: **The folder name cannot have space!**
 
 Optional: open the `C:\spark-1.6.1-bin-hadoop2.6\conf` folder, and make sure "File Name Extensions" is checked in the "view" tab of Windows Explorer. Rename the `log4j.properties.template` to `log4j.properties`. Open the new file and change the error level from **INFO** to **ERROR** for `log4j.rootCategory` .
 
