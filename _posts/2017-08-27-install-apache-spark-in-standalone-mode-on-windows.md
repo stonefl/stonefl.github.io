@@ -71,7 +71,7 @@ Download `winutils.exe` file from [https://github.com/stonefl/winutils/raw/maste
 
 **Note:**
 1) This is for a 64-bit system. If you are on a 32-bit version of Windows, you will need to search for a 32-bit build of winutils.exe for Hadoop.
-2) If you are using Spark versions that is lower than 2.0, for example `spark-1.6.1-bin-hadoop2.6`, you will need the winutils.exe for hadoop-2.6.0, which can be downloaded from [https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.7.1/bin/winutils.exe) 
+2) If you are using Spark versions that is lower than 2.0, for example `spark-1.6.1-bin-hadoop2.6`, you will need the winutils.exe for hadoop-2.6.0, which can be downloaded from [https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe](https://github.com/stonefl/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe)
 
 
 **Set HADOOP_HOME Variables**
@@ -80,7 +80,10 @@ Set environmental variables:
 - Value: C:\hadoop-2.7.1  (or your installation path)
 Add `%HADOOP_HOME%\bin` to `PATH` variable.
 
-You can run `spark-shell` in the `cmd` or `PowerShell` (**run as administrator**) to test the installation. If you can see the scala console, you are good to go. But it is very likely you will get one or more following errors.
+You can run `spark-shell` in the `cmd` or `PowerShell` (**run as administrator**) to test the installation. If you can see the scala console, you are good to go. 
+
+
+But it is very likely you will get one or more following errors.
 
 ## Common Errors
 
