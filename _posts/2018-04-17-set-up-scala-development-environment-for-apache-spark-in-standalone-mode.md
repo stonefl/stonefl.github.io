@@ -80,7 +80,7 @@ Then go click the **User Settings**, browser to corresponding *settings.xml* fil
 
 ![MavenSettings02.PNG]({{site.baseurl}}/img/post/MavenSettings02.PNG)
 
-If you are behind proxy, you might need to set the proxies through **open file** link:
+If you are behind proxy, you might need to set the proxies through the **open file** link:
 
 ![MavenSettings03.PNG]({{site.baseurl}}/img/post/MavenSettings03.PNG)
 
