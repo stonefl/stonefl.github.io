@@ -76,7 +76,7 @@ Open the installed Scal IDE, navigate to **Window** -> **Preference** and open *
 
 ![MavenSettings01.PNG]({{site.baseurl}}/img/post/MavenSettings01.PNG)
 
-Then go click the **User Settings** browser to corresponding *settings.xml* files for Global and User settings:
+Then go click the **User Settings**, browser to corresponding *settings.xml* files for Global and User settings:
 
 ![MavenSettings02.PNG]({{site.baseurl}}/img/post/MavenSettings02.PNG)
 
