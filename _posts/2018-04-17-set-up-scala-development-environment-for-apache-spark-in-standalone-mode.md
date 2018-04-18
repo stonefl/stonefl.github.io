@@ -132,8 +132,8 @@ Major steps to build the application in Scala IDE:
 
 ### SBT
 
-1. Copy the above `WordCount.scala` to a path of `src/main/scala/com/learningspark/example/` in a project directory. 
-2. Make a file of `.sbt` file with settings similar to below:
+-. Copy the above `WordCount.scala` to a path of `src/main/scala/com/learningspark/example/` in a project directory. 
+-. Make a file of `.sbt` file with settings similar to below:
 
 ```
 name := "Spark Sample"
@@ -150,8 +150,8 @@ libraryDependencies ++= Seq(
 )
 ```
 
-3. In the project folder where the `.sbt` file located, run command `sbt package`
-4. With successful build (there is a `classes` folder in `target`), run command to submit application locally:
+-. In the project folder where the `.sbt` file located, run command `sbt package`
+-. With successful build (there is a `classes` folder in `target`), run command to submit application locally:
 ```
 spark-submit \
 --class com.learningspark.example.WordCount \
