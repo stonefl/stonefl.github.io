@@ -23,15 +23,13 @@ Althrough Spark can be linked in applications through either Java, Scala, or Pyt
 
 ## Installation and Settings
 
-### Install Scala IDE
+### Install Scala IDE for Eclipse
 
-You can download the lastest version from [http://scala-ide.org/download/sdk.html](http://scala-ide.org/download/sdk.html) and extract it into `C:\eclipse`
+You can download the lastest version from [http://scala-ide.org/download/sdk.html](http://scala-ide.org/download/sdk.html). At the time of this writing, the latest version is 4.7.0 which is based on the Eclipse 4.7(Oxygen) with Scala 2.12. After download, simply extract it into a folder, such as `C:\eclipse`.
 
 ### Install Scala (optional)
 
-Although we are going to set up Scala development environment, Scala is an optional to install locally, because the Scala IDE has included it. 
-
-You can download the latest Scala binary for windows from the [download page of scala](http://www.scala-lang.org/download) and keep track where you isntalled (e.g.`C:\Program Files (x86)\scala`).
+Because the Scala IDE includes Scala versions, it is optional to install Scala programming language locally. But if you want to try Scala in an interactive way, you can download the latest Scala binary for windows from the [download page of scala](http://www.scala-lang.org/download) and keep track where you isntalled (e.g.`C:\Program Files (x86)\scala`).
 
 **Set SCALA_HOME Variables**
 Set environmental variables:
@@ -64,3 +62,6 @@ Open the installed Scal IDE, go to `Window` --> `Preferences` --> `Maven` --> `I
 
 
 ### Install SBT
+
+
+
