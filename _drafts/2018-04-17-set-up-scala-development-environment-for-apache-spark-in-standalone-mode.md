@@ -47,6 +47,9 @@ scala -version
 
 SBT is a build tool for Scala, Java, and others. You can download the latest `.msi` for Windows from [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html) After download, doouble-click to install. 
 
+To use SBT behind proxy, check:
+https://stackoverflow.com/questions/27127687/how-to-use-sbt-from-behind-proxy-in-windows-7/29005026
+
 
 ### Install Maven
 
@@ -126,6 +129,50 @@ Major steps to build the application in Scala IDE:
 
 ### SBT
 
+1. Copy the above `WordCount.scala` to a path of `src/main/scala/com/learningspark/example/` in a project directory. 
+2. Make a file of `.sbt` file with settings similar to below:
+
+```
+name := "Spark Sample"
+ 
+version := "1.0"
+ 
+scalaVersion := "2.11.8"
+ 
+libraryDependencies ++= Seq(
+  "org.apache.spark" %% "spark-core" % "2.2.0" % "provided",
+  "org.apache.spark" %% "spark-sql" % "2.2.0",
+  "org.apache.spark" %% "spark-mllib" % "2.2.0"
+  
+)
+```
+3. In the project folder where the `.sbt` file located, run command `sbt package`
+4. With successful build (there is a `classes` folder in `target`), run command to submit application locally:
+```
+spark-submit \
+--class com.learningspark.example.WordCount \
+--master local[*] \
+./target/scala-2.11/spark-sample_2.11-1.0.jar
+
+```
+
+### Maven in Eclipse
+
+1. Build a new maven project with all default values;
+2. Use **Refactor** to change source folder `src/main/java` to `src/main/scala` and `src/test/java` to `src/test/scala`;
+3. Open the `pom.xml` file add the dependency from the [Maven Repository](https://mvnrepository.com/), for example, below is the dependency for `spark-core_2.11`:
+```
+<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-core_2.11</artifactId>
+    <version>2.2.0</version>
+</dependency>
+```
+4. Specify a package with the name as the combination of `groupId` and `artifactId` specified in the `pom.xml`;
+5. Add the `WordCount.scala` as scala object to the package;
+6. Right-click and selct **Run As** -> **Run Configuration..**, then right-click on **Maven Build** ->**New**. Once the configuration window appears, fill the details as shown in the following screenshot.
+For the **Base Directory**, click on **Browse Workspace...** and choose the project from the pop-up list.
 
 
 
