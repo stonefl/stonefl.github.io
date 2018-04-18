@@ -126,7 +126,7 @@ object WordCount {
 Major steps to build the application in Scala IDE:
 1. Build a new scala project through **New** -> **Project** menu;
 2. Specify a package under the **src** folder;
-3. Add a new **Scala Object** with the name of `WordCount` and above source code;
+3. Add a new **Scala Object** with the name of `WordCount` and the above source code;
 4. Add the `.jar` files from the `Spark Home` directory to the **Java Build Path** 
 5. Right-click on the scala object and run as scala application
 
