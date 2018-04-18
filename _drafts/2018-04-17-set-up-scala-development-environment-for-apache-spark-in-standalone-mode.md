@@ -9,6 +9,7 @@ categories:
 tags:
   - Apache Spark
 ---
-## A New Post
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+With the Apache Spark installed through the steps described in [last post](http://leifengblog.net/blog/install-apache-spark-in-standalone-mode-on-windows/), this post instroduces the steps to set up a Scala development environment for  Spark and builds a word count application through Scala IDE, Maven, and SBT. 
+
+Althrough Spark can be linked in applications through either Java, Scala, or Python, this post focuses on Scala.  
