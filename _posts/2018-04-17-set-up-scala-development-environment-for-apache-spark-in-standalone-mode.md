@@ -21,7 +21,7 @@ Althrough Spark can be programmed with either Java, Scala, or Python, this post 
 * TOC
 {:toc}
 
-## Installations and Settings
+## Installation and Settings
 
 ### Install Scala IDE for Eclipse
 
