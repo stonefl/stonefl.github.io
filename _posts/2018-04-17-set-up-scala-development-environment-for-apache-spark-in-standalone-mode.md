@@ -36,6 +36,7 @@ Because the Scala IDE includes Scala versions, it is optional to install Scala p
 Set environmental variables:
 - Varaiable: SCALA_HOME
 - Value: C:\Program Files (x86)\scala  (or your installation path)
+
 Add `%SCALA_HOME%\bin` to `PATH` variable.
 
 You can check the installation with following command in `cmd`:
