@@ -163,9 +163,10 @@ spark-submit \
 
 ### Maven in Eclipse
 
-1. Build a new maven project with all default values;
-2. Use **Refactor** to change source folder `src/main/java` to `src/main/scala` and `src/test/java` to `src/test/scala`;
-3. Open the `pom.xml` file add the dependency from the [Maven Repository](https://mvnrepository.com/), for example, below is the dependency for `spark-core_2.11`:
+- Build a new maven project with all default values;
+- Use **Refactor** to change source folder `src/main/java` to `src/main/scala` and `src/test/java` to `src/test/scala`;
+- Open the `pom.xml` file add the dependency from the [Maven Repository](https://mvnrepository.com/), for example, below is the dependency for `spark-core_2.11`:
+
 ```
 <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
 <dependency>
@@ -174,14 +175,16 @@ spark-submit \
     <version>2.2.0</version>
 </dependency>
 ```
-4. Specify a package with the name as the combination of `groupId` and `artifactId` specified in the `pom.xml`;
-5. Add the `WordCount.scala` as scala object to the package;
-6. Right-click and selct **Run As** -> **Run Configuration..**, then right-click on **Maven Build** ->**New**. Once the configuration window appears, fill the details as shown in the following screenshot.
+
+- Specify a package with the name as the combination of `groupId` and `artifactId` specified in the `pom.xml`;
+- Add the `WordCount.scala` as scala object to the package;
+- Right-click and selct **Run As** -> **Run Configuration..**, then right-click on **Maven Build** ->**New**. Once the configuration window appears, fill the details as shown in the following screenshot.
 For the **Base Directory**, click on **Browse Workspace...** and choose the project from the pop-up list.
 
 ![Maven_Settings.PNG]({{site.baseurl}}/img/post/Maven_Settings.PNG)
 
-7. After successful build, run command to submit application locally:
+- After successful build, run command to submit application locally:
+
 ```
 spark-submit \
 --class com.learningspark.example.WordCount \
