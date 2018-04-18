@@ -94,7 +94,7 @@ Now, you can run `spark-shell` in the `cmd`(**run as administrator**)  or `Power
 
 ![Spark.PNG]({{site.baseurl}}/img/post/Spark.PNG)
 
-But it is very likely you will get one or more following errors.
+But it is very likely that you will get one or more following errors.
 
 ## Common Errors
 
