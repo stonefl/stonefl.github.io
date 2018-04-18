@@ -58,6 +58,7 @@ mvn -version
 ```
 
 **Set Maven in Eclipse**
+
 Open the installed Scal IDE, go to `Window` --> `Preferences` --> `Maven` --> `Installations`, shown as below:
 
 
