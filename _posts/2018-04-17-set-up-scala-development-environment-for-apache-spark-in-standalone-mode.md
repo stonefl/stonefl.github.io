@@ -86,7 +86,7 @@ If you are behind proxy, you might need to set the proxies through the **open fi
 
 ## Build WordCount Application
 
-In this section, we are going build WordCount applications through Scala IDE, sbt, and MAVEN. The three applications are shared through [Github repository](https://github.com/stonefl/SparkExamples).
+In this section, we are going build WordCount applications through Scala IDE, sbt, and MAVEN. The three applications are shared at [Github repository](https://github.com/stonefl/SparkExamples).
 
 The source code for `WordCount` scala object is shown as below:
 ```scala
