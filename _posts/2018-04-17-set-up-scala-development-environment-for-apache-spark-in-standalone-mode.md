@@ -25,7 +25,7 @@ Althrough Spark can be programmed with either Java, Scala, or Python, this post 
 
 ### Install Scala IDE for Eclipse
 
-You can download the lastest version from [http://scala-ide.org/download/sdk.html](http://scala-ide.org/download/sdk.html). At the time of this writing, the latest version is 4.7.0 which is based on the Eclipse 4.7(Oxygen) with Scala 2.12. After download, simply extract it into a folder, such as `C:\eclipse`.
+You can download the lastest version of Scala IDE from [http://scala-ide.org/download/sdk.html](http://scala-ide.org/download/sdk.html). At the time of this writing, the latest version is 4.7.0 which is based on the Eclipse 4.7(Oxygen) with Scala 2.12. After download, simply extract it into a folder, such as `C:\eclipse`.
 
 ### Install Scala (optional)
 
