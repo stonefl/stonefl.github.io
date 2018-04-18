@@ -121,7 +121,8 @@ Second, check your computer domain through running `C:\hadoop-2.7.1\bin\winutils
 Finally, run following command, again in `cmd` or `PowerShell` with **Run as administrator** option, to grant access permission:`C:\hadoop-2.7.1\bin\winutils.exe chmod -R 777 C:\tmp\hive`
 
 **Common Error 3**
-When stop spark context,
+
+When stop spark context, following error might pops up:
 ```
 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\MyUserName\AppData\Local\Temp\spark-76bd7db7-25fa-4096-8aa9-4e8dc02fcb67
 java.io.IOException: Failed to delete: C:\Users\MyUserName\AppData\Local\Temp\spark-76bd7db7-25fa-4096-8aa9-4e8dc02fcb67
