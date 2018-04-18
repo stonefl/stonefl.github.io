@@ -45,12 +45,15 @@ scala -version
 
 ### Install SBT
 
+SBT is a build tool for Scala, Java, and others. You can download the latest `.msi` for Windows from [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html) After download, doouble-click to install. 
+
 
 ### Install Maven
 
 You can download Maven from [http://maven.apache.org/download.cgi](http://maven.apache.org/download.cgi). CLick and downlaod the latest version  `apache-maven-x.x.x-bin.zip`. At the time of this writing, the latest version is `apache-maven-3.5.3-bin.zip`. Extract the downloaded zip file to C drive, such as `C:\apache-maven-3.5.3`.
 
 **Set MAVEN_HOME Variables**
+
 Set environmental variables:
 - Varaiable: MAVEN_HOME
 - Value: C:\apache-maven-3.5.3  (or your installation path)
@@ -74,8 +77,3 @@ Then go click the **User Settings** browser to corresponding *settings.xml* file
 If you are behind proxy, you might need to set the proxies through **open file** link:
 
 ![MavenSettings03.PNG]({{site.baseurl}}/img/post/MavenSettings03.PNG)
-
-
-
-
-
