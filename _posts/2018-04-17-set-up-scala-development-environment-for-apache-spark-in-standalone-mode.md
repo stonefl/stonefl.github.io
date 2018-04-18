@@ -149,6 +149,7 @@ libraryDependencies ++= Seq(
   
 )
 ```
+
 3. In the project folder where the `.sbt` file located, run command `sbt package`
 4. With successful build (there is a `classes` folder in `target`), run command to submit application locally:
 ```
