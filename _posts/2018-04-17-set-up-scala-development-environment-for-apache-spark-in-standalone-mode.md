@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Set Up Scala Development Environment for Apache Spark in Standalone Mode '
 subtitle: Learning Apache Spark Tutorial
 date: '2017-08-28'
