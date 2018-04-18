@@ -29,7 +29,7 @@ You can download the lastest version of Scala IDE from [http://scala-ide.org/dow
 
 ### Install Scala (optional)
 
-Because the Scala IDE includes Scala versions, it is optional to install Scala programming language locally. But if you want to try Scala in an interactive way, you can download the latest Scala binary for windows from the [download page of scala](http://www.scala-lang.org/download) and keep track where you isntalled (e.g.`C:\Program Files (x86)\scala`).
+Because the Scala IDE includes Scala versions, it is optional to install Scala programming language locally. But if you want to try Scala in an interactive way, you can download the latest Scala binary for Windows from the [download page of scala](http://www.scala-lang.org/download) and keep track where you installed it (e.g.`C:\Program Files (x86)\scala`).
 
 **Set SCALA_HOME Variables**
 
