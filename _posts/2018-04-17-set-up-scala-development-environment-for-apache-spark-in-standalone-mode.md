@@ -61,6 +61,7 @@ You can download Maven from [http://maven.apache.org/download.cgi](http://maven.
 Set environmental variables:
 - Varaiable: MAVEN_HOME
 - Value: C:\apache-maven-3.5.3  (or your installation path)
+
 Add `%MAVEN_HOME%\bin` to `PATH` variable.
 
 You can check the installation with following command in `cmd`:
