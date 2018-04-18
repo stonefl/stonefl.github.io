@@ -67,6 +67,7 @@ You can check the installation with following command in `cmd`:
 mvn -version
 ```
 
+
 **Set Maven in Eclipse**
 
 Open the installed Scal IDE, navigate to **Window**|**Preference** in Eclipse and open **Maven** in the left pane of the **Preference** window. Click on the **Installations** and then click on the **Add** button to select the lcoation of the Maven directory (e.g.`C:\apache-maven-3.5.3`). Then select the added installation  to launch Maven, as shwon in following screenshot:
