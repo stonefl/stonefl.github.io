@@ -57,14 +57,18 @@ Download a pre-built version of Apache Spark from [Spark Download page](http://s
 
 If neccessary, download and install WinRAR from [http://www.rarlab.com/download.htm](http://www.rarlab.com/download.htm), so you can extract the `.tgs` file downloaded.
 
-Extract Spark archive to C drive, such as `C:\spark-2.2.0-bin-hadoop2.7`. Note: **The folder name cannot have space!**
+Extract Spark archive to C drive, such as `C:\spark-2.2.0-bin-hadoop2.7`. 
+
+Note: **The folder name cannot have space!**
 
 Optional: open the `C:\spark-2.2.0-bin-hadoop2.7\conf` folder, and make sure "File Name Extensions" is checked in the "view" tab of Windows Explorer. Rename the `log4j.properties.template` to `log4j.properties`. Open the new file and change the error level from **INFO** to **ERROR** for `log4j.rootCategory` .
 
 **Set SPARK_HOME Variables**
+
 Set environmental variables:
 - Varaiable: SPARK_HOME
 - Value: C:\spark-2.2.0-bin-hadoop2.7  (or your installation path)
+
 Add `%SPARK_HOME%\bin` to `PATH` variable.
 
 
