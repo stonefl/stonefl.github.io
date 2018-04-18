@@ -54,7 +54,7 @@ https://stackoverflow.com/questions/27127687/how-to-use-sbt-from-behind-proxy-in
 
 ### Install Maven
 
-You can download Maven from [http://maven.apache.org/download.cgi](http://maven.apache.org/download.cgi). CLick and downlaod the latest version  `apache-maven-x.x.x-bin.zip`. At the time of this writing, the latest version is `apache-maven-3.5.3-bin.zip`. Extract the downloaded zip file to C drive, such as `C:\apache-maven-3.5.3`.
+You can download Maven from [http://maven.apache.org/download.cgi](http://maven.apache.org/download.cgi). At the time of this writing, the latest version is `apache-maven-3.5.3-bin.zip`. Extract the downloaded zip file to C drive, such as `C:\apache-maven-3.5.3`.
 
 **Set MAVEN_HOME Variables**
 
