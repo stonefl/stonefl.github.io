@@ -46,7 +46,7 @@ scala -version
 
 ### Install SBT
 
-SBT is a build tool for Scala, Java, and others. You can download the latest `.msi` for Windows from [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html) After download, doouble-click to install. 
+SBT is a **S**imple **B**uild **T**ool for Scala, Java, and other languagues. You can download the latest `.msi` for Windows from [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html) After download, doouble-click to install. 
 
 To use SBT behind proxy, check:
 https://stackoverflow.com/questions/27127687/how-to-use-sbt-from-behind-proxy-in-windows-7/29005026
