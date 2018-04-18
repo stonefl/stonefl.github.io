@@ -10,7 +10,7 @@ tags:
   - Apache Spark
 ---
 
-With the Apache Spark installed through the steps described in [last post](http://leifengblog.net/blog/install-apache-spark-in-standalone-mode-on-windows/), this post will instroduce the steps to set up a Scala development environment for Spark and build a WrodCount application through Scala IDE, Maven, and SBT. 
+With the Apache Spark installed through the steps described in [last post](http://leifengblog.net/blog/install-apache-spark-in-standalone-mode-on-windows/), this post will instroduce the steps to set up a Scala development environment for Spark and build a WrodCount application through Maven and SBT. 
 
 Althrough Spark can be linked in applications through either Java, Scala, or Python, this post will focus on Scala, which has couple of reasons: 1) Spark itself is written in Scala; 2) Scala's functional programming model is a good fit for distributed processing, which has less code and boilerplate stuff than Java; 3) Scala compiles to Java bytecode, which gives faster performance than Python.  
 <!--more-->
@@ -60,9 +60,9 @@ mvn -version
 **Set Maven in Eclipse**
 
 Open the installed Scal IDE, navigate to **Window**|**Preference** in Eclipse and open **Maven** in the left pane of the **Preference** window. Click on the **Installations** and then click on the **Add** button to select the lcoation of the Maven directory (e.g.`C:\apache-maven-3.5.3`). Then select the added installation  to launch Maven, as shwon in following screenshot:
+
 ![MavenSettings01.PNG]({{site.baseurl}}/img/post/MavenSettings01.PNG)
 
-to `Window` --> `Preferences` --> `Maven` --> `Installations`, shown as below:
 
 
 
