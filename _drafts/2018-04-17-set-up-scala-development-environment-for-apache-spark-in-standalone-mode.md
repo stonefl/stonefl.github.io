@@ -84,7 +84,7 @@ In this section, we are going build WordCount applications through Scala IDE, sb
 
 The source code for `WordCount` scala object is shown as below:
 ```scala
-package com.learningspark.example.WordCount
+package com.learningspark.example
 import org.apache.spark._
 import org.apache.spark.SparkContext._
 import org.apache.log4j._
@@ -114,5 +114,25 @@ object WordCount {
  
 }
 ```
+
+### Scala IDE
+
+Major steps to build the application in Scala IDE:
+1. Build a new scala project through new project menu;
+2. Specify a package under the **src** folder;
+3. Add a new **Scala Object** with the name of `WordCount` and above source code;
+4. Add the `.jar` files from the `Spark Home` directory to the **Java Build Path** 
+5. Right-click on the scala object and run as scala application
+
+### SBT
+
+
+
+
+
+
+
+
+
 
 
