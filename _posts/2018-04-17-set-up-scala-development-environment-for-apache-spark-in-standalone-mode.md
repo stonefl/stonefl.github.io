@@ -165,7 +165,7 @@ spark-submit \
 
 - Build a new maven project with all default values;
 - Use **Refactor** to change source folder `src/main/java` to `src/main/scala` and `src/test/java` to `src/test/scala`;
-- Open the `pom.xml` file add the dependency from the [Maven Repository](https://mvnrepository.com/), for example, below is the dependency for `spark-core_2.11`:
+- Open the `pom.xml` file and add the dependency from the [Maven Repository](https://mvnrepository.com/). For example, below is the dependency for `spark-core_2.11`:
 
 ```
 <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
