@@ -90,7 +90,7 @@ Set environmental variables:
 
 Add `%HADOOP_HOME%\bin` to `PATH` variable.
 
-Now, you can run `spark-shell` in the `cmd` or `PowerShell` (**run as administrator**) to test the installation. If you can see the scala console shown as below, then you are good to go, Congratulations!
+Now, you can run `spark-shell` in the `cmd`(**run as administrator**)  or `PowerShell` (**run as administrator**) to test the installation. If you can see the scala console shown as below, then you are good to go, Congratulations!
 
 ![Spark.PNG]({{site.baseurl}}/img/post/Spark.PNG)
 
