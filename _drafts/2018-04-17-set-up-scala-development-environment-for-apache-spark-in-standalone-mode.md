@@ -44,12 +44,12 @@ scala -version
 ```
 ### Install Maven
 
-You can download Maven from [http://maven.apache.org/download.cgi](http://maven.apache.org/download.cgi). CLick and downlaod the latest version  `apache-maven-x.x.x-bin.zip`. At the time of this writing, the latest version is `apache-maven-3.3.9-bin.zip`. Extract the downloaded zip file to C drive, such as `C:\apache-maven-3.3.9`.
+You can download Maven from [http://maven.apache.org/download.cgi](http://maven.apache.org/download.cgi). CLick and downlaod the latest version  `apache-maven-x.x.x-bin.zip`. At the time of this writing, the latest version is `apache-maven-3.5.3-bin.zip`. Extract the downloaded zip file to C drive, such as `C:\apache-maven-3.5.3`.
 
 **Set MAVEN_HOME Variables**
 Set environmental variables:
 - Varaiable: MAVEN_HOME
-- Value: C:\apache-maven-3.3.9  (or your installation path)
+- Value: C:\apache-maven-3.5.3  (or your installation path)
 Add `%MAVEN_HOME%\bin` to `PATH` variable.
 
 You can check the installation with following command in `cmd`:
@@ -59,7 +59,10 @@ mvn -version
 
 **Set Maven in Eclipse**
 
-Open the installed Scal IDE, go to `Window` --> `Preferences` --> `Maven` --> `Installations`, shown as below:
+Open the installed Scal IDE, navigate to **Window**|**Preference** in Eclipse and open **Maven** in the left pane of the **Preference** window. Click on the **Installations** and then click on the **Add** button to select the lcoation of the Maven directory (e.g.`C:\apache-maven-3.5.3`). Then select the added installation  to launch Maven, as shwon in following screenshot:
+![MavenSettings01.PNG]({{site.baseurl}}/img/post/MavenSettings01.PNG)
+
+to `Window` --> `Preferences` --> `Maven` --> `Installations`, shown as below:
 
 
 
