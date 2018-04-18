@@ -34,9 +34,11 @@ Spark itslef is written in Scala, and runs on the Java Virtual Machine(JVM). Jav
 Download Java JDK from the Oracle [download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and keep track of where you installed it (e.g. `C:\Program Files\Java\jdk1.8.0_161`). 
 
 **Set JAVA_HOME Variables**
+
 Set environmental variables:
 - Varaiable: JAVA_HOME
 - Value: C:\Program Files\Java\jdk1.8.0_161  (or your installation path)
+
 Add `%JAVA_HOME%\bin` to `PATH` variable.
 
 After the installation, you can run following command to check if Java is installed correctly:
