@@ -179,7 +179,7 @@ spark-submit \
 - Specify a package with the name as the combination of `groupId` and `artifactId` specified in the `pom.xml`;
 - Add the `WordCount.scala` as scala object to the package;
 - Right-click and selct **Run As** -> **Run Configuration..**, then right-click on **Maven Build** ->**New**. Once the configuration window appears, fill the details as shown in the following screenshot.
-For the **Base Directory**, click on **Browse Workspace...** and choose the project from the pop-up list.
+For the **Base Directory**, click on **Workspace...** and choose the project from the pop-up list.
 
 ![Maven_Settings.PNG]({{site.baseurl}}/img/post/Maven_Settings.PNG)
 
