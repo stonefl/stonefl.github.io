@@ -43,6 +43,9 @@ You can check the installation with following command in `cmd`:
 ```
 scala -version
 ```
+### Install Maven
+
+You can download Maven from [http://maven.apache.org/download.cgi](http://maven.apache.org/download.cgi). CLick and downlaod the latest version  `apache-maven-x.x.x-bin.zip`. At the time of this writing, the latest version is `apache-maven-3.3.9-bin.zip`. Extract the downloaded zip file to C drive, such as `C:\apache-maven-3.3.9`.
 
 
 
