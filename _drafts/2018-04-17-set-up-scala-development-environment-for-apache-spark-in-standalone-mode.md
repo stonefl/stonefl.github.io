@@ -174,12 +174,13 @@ spark-submit \
 6. Right-click and selct **Run As** -> **Run Configuration..**, then right-click on **Maven Build** ->**New**. Once the configuration window appears, fill the details as shown in the following screenshot.
 For the **Base Directory**, click on **Browse Workspace...** and choose the project from the pop-up list.
 
+![Maven_Settings.PNG]({{site.baseurl}}/img/post/Maven_Settings.PNG)
 
+7. After successful build, run command to submit application locally:
+```
+spark-submit \
+--class com.learningspark.example.WordCount \
+--master local[*] \
+./target/WordCount-0.0.1-SNAPSHOT.jar
 
-
-
-
-
-
-
-
+```
