@@ -42,6 +42,10 @@ You can check the installation with following command in `cmd`:
 ```
 scala -version
 ```
+
+### Install SBT
+
+
 ### Install Maven
 
 You can download Maven from [http://maven.apache.org/download.cgi](http://maven.apache.org/download.cgi). CLick and downlaod the latest version  `apache-maven-x.x.x-bin.zip`. At the time of this writing, the latest version is `apache-maven-3.5.3-bin.zip`. Extract the downloaded zip file to C drive, such as `C:\apache-maven-3.5.3`.
@@ -71,7 +75,7 @@ If you are behind proxy, you might need to set the proxies through **open file**
 
 ![MavenSettings03.PNG]({{site.baseurl}}/img/post/MavenSettings03.PNG)
 
-### Install SBT
+
 
 
 
