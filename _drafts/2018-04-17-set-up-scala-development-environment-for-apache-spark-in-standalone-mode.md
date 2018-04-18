@@ -21,7 +21,7 @@ Althrough Spark can be linked in applications through either Java, Scala, or Pyt
 * TOC
 {:toc}
 
-## Installation and Settings
+## Installations and Settings
 
 ### Install Scala IDE for Eclipse
 
@@ -32,6 +32,7 @@ You can download the lastest version from [http://scala-ide.org/download/sdk.htm
 Because the Scala IDE includes Scala versions, it is optional to install Scala programming language locally. But if you want to try Scala in an interactive way, you can download the latest Scala binary for windows from the [download page of scala](http://www.scala-lang.org/download) and keep track where you isntalled (e.g.`C:\Program Files (x86)\scala`).
 
 **Set SCALA_HOME Variables**
+
 Set environmental variables:
 - Varaiable: SCALA_HOME
 - Value: C:\Program Files (x86)\scala  (or your installation path)
