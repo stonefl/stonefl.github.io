@@ -63,5 +63,5 @@ Open the installed Scal IDE, go to `Window` --> `Preferences` --> `Maven` --> `I
 
 
 
-
+### Install SBT
 
