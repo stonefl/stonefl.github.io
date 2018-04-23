@@ -200,16 +200,9 @@ You can use `spark-sumbit` to run your Spark applicaiton on cluster, but need to
 
 * Make sure there is no paths of input files pointing to your local file system in your script
 * Package up your Scala project into a `Jar` file through **Export** in Scala IDE, build from SBT or Maven
-* The format of the command is similar to the local version:
-
-```
-spark-submit \
---class <class object that contains the main function> \
---master yarn \
---jars <papths to any dependencies>
---files <files you want placed alongside your application>
-<your java file>
-
-```
+* The format of the command is similar to the local version, but might have other parameters:
+   - --master 
+       - yarn - for running a YARN/Hadoop cluster
+       - hostname:port - 
 
 
