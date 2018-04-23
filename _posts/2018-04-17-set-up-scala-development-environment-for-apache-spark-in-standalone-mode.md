@@ -206,5 +206,10 @@ You can use `spark-sumbit` to run your Spark applicaiton on cluster, but need to
        - hostname:port - for connecting to a master on a Spark standalone cluster
        - mesos://masternode:port
        - **Note: a master configureed in SparkConf in the driver script will override this!!!**
+  - --num-executors
+       - must set explicitly with YARN, only 2 by default
+  - --executor-memory
+       - make sure don't use more memory than available
+  - --total-executor-cores
 
 
