@@ -201,15 +201,16 @@ You can use `spark-sumbit` to run your Spark applicaiton on cluster, but need to
 * Make sure there is no paths of input files pointing to your local file system in your script
 * Package up your Scala project into a `Jar` file through **Export** in Scala IDE, build from SBT or Maven
 * The format of the command is similar to the local version, but might have other parameters to consider:
-   - --master 
+   - `--master` 
        - yarn - for running a YARN/Hadoop cluster
        - hostname:port - for connecting to a master on a Spark standalone cluster
        - mesos://masternode:port
        - **Note: a master configureed in SparkConf in the driver script will override this!!!**
-  - --num-executors
+  - `--num-executors`
        - must set explicitly with YARN, only 2 by default
-  - --executor-memory
+  - `--executor-memory`
        - make sure don't use more memory than available
-  - --total-executor-cores
+  - `--total-executor-cores`
+       - how many cores your application can use
 
 
