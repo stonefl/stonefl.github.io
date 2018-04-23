@@ -203,6 +203,8 @@ You can use `spark-sumbit` to run your Spark applicaiton on cluster, but need to
 * The format of the command is similar to the local version, but might have other parameters:
    - --master 
        - yarn - for running a YARN/Hadoop cluster
-       - hostname:port - 
+       - hostname:port - for connecting to a master on a Spark standalone cluster
+       - mesos://masternode:port
+       - **Note: a master configureed in SparkConf in the driver script will override this!!!**
 
 
