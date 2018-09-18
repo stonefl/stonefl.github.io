@@ -10,9 +10,9 @@ tags:
   - Apache Spark
 ---
 
-With the Apache Spark installed through the steps described in [last post](http://leifengblog.net/blog/install-apache-spark-in-standalone-mode-on-windows/), this post will introduce you the steps to set up a Scala development environment for Spark and build a WrodCount application through Maven and SBT. 
+With the Apache Spark installed through the steps described in [last post](http://leifengblog.net/blog/install-apache-spark-in-standalone-mode-on-windows/), this post will introduce you the steps to set up a Scala development environment for Spark and build a WordCount application through Maven and SBT. 
 
-Althrough Spark can be programmed with either Java, Scala, or Python, this post will focus on Scala. It has couple of reasons: 1) Spark itself is written in Scala; 2) Scala's functional programming model is a good fit for distributed processing, which has less code and boilerplate stuff than Java; 3) Scala compiles to Java bytecode, which gives faster performance than Python.  
+Althrough Spark can be programmed with either Java, Scala, or Python, this post will focus on Scala. There are a couple of reasons: 1) Spark itself is written in Scala; 2) Scala's functional programming model is a good fit for distributed processing, thus has less code and boilerplate stuff than Java; 3) Scala compiles to Java bytecode, which gives faster performance than Python.  
 <!--more-->
 
 ## Table of Content
@@ -25,11 +25,11 @@ Althrough Spark can be programmed with either Java, Scala, or Python, this post 
 
 ### Install Scala IDE for Eclipse
 
-You can download the lastest version of Scala IDE from [http://scala-ide.org/download/sdk.html](http://scala-ide.org/download/sdk.html). At the time of this writing, the latest version is 4.7.0 which is based on the Eclipse 4.7(Oxygen) with Scala 2.12. After download, simply extract it into a folder, such as `C:\eclipse`.
+You can download the lastest version of Scala IDE from [http://scala-ide.org/download/sdk.html](download page). At the time of this writing, the latest version is 4.7.0 which is based on the Eclipse 4.7(Oxygen) with Scala 2.12. After download, simply extract it into a folder, such as `C:\eclipse`.
 
 ### Install Scala (optional)
 
-Because the Scala IDE includes Scala versions, it is optional to install Scala programming language locally. But if you want to try Scala in an interactive way, you can download the latest Scala binary for Windows from the [download page of scala](http://www.scala-lang.org/download) and keep track where you installed it (e.g.`C:\Program Files (x86)\scala`).
+Because the Scala IDE includes Scala versions, it is optional to install Scala programming language locally. But if you want to try Scala in an interactive way, you can download the latest Scala binary for Windows from the [download page of scala](http://www.scala-lang.org/download) and keep track where you installed it, such as `C:\Program Files (x86)\scala`.
 
 **Set SCALA_HOME Variables**
 
@@ -46,7 +46,7 @@ scala -version
 
 ### Install SBT
 
-SBT is a **S**imple **B**uild **T**ool for Scala, Java, and other languagues. You can download the latest `.msi` for Windows from [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html) After download, doouble-click it to install. 
+SBT is a **S**imple **B**uild **T**ool for Scala, Java, and other languagues. You can download the latest `.msi` file for Windows from [https://www.scala-sbt.org/download.html](SBT Download). After download, doouble-click it to install. 
 
 To use SBT behind proxy, check following post out:
 https://stackoverflow.com/questions/27127687/how-to-use-sbt-from-behind-proxy-in-windows-7/29005026
@@ -126,7 +126,7 @@ object WordCount {
 Major steps to build the application in Scala IDE:
 - Build a new scala project through **New** -> **Project** menu;
 - Specify a package under the **src** folder;
-- Add a new **Scala Object** with the name of `WordCount` and the above source code;
+- Add a new **Scala Object** with the name of `WordCount` and copy paste the above source code;
 - Add the `.jar` files from the `SPARK_HOME` directory to the **Java Build Path** 
 - Right-click on the scala object and run as scala application
 
@@ -152,7 +152,7 @@ libraryDependencies ++= Seq(
 )
 ```
 
-- In the project folder where the `.sbt` file located, run command `sbt package`
+- In the project folder where the `.sbt` file located, run command `sbt clean package`
 - With successful build (there is a `classes` folder in `target`), run command to submit application to local node:
 
 ```
@@ -212,5 +212,3 @@ You can use `spark-sumbit` to run your Spark applicaiton on cluster, but need to
        - make sure don't use more memory than available
   - `--total-executor-cores`
        - how many cores your application can use
-
-
