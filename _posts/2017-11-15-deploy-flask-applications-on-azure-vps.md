@@ -146,7 +146,7 @@ And the `hello.conf` looks like:
 * Copy the project folder to `/var/www` on the VPS. If get get a `permission denied` error, then you need to tak ownership of the `/var/www` directory for the Linux user that you're using, through running:
 ```
 sudo adduser <username> www-data
-sudo chown -R www-data:www-data /var/www
+sudo chown -R www-data: www-data /var/www
 sudo chmod -R g+rwX /var/www
 
 ```
