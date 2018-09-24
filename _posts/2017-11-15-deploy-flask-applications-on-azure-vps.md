@@ -145,11 +145,14 @@ And the `hello.conf` looks like:
 
 * Copy the project folder to `/var/www` on the VPS. If get get a `permission denied` error, then you need to tak ownership of the `/var/www` directory for the Linux user that you're using, through running:
 ```
-sudo chown -R <USERNAME> /var/www
+sudo adduser <username> www-data
+sudo chown -R www-data:www-data /var/www
+sudo chmod -R g+rwX /var/www
+
 ```
 * Build an evironment using instructions in Step 2 and activate the env. Then move to the env folder and install required packages through running:
 ```
-pip install --user -r requirements.txt
+pip install -r requirements.txt
 ```
 * Copy `hello.conf` to `/etc/apache2/sites-available` 
 * Run following commands to start serve new Flask application;
