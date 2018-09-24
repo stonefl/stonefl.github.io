@@ -148,12 +148,14 @@ And the `hello.conf` looks like:
 sudo adduser <username> www-data
 sudo chown -R www-data: www-data /var/www
 sudo chmod -R g+rwX /var/www
-
 ```
+
 * Build an evironment using instructions in Step 2 and activate the env. Then move to the env folder and install required packages through running:
+
 ```
 pip install -r requirements.txt
 ```
+
 * Copy `hello.conf` to `/etc/apache2/sites-available` 
 * Run following commands to start serve new Flask application;
 ```
