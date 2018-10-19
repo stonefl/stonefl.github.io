@@ -128,10 +128,18 @@ Major steps to build the application in Scala IDE:
 - Specify a package `com.learningspark.example` under the **src** folder;
 - Add a new **Scala Object** with the name of `WordCount` and copy paste the above source code;
 - Add all `.jar` files from `SPARK_HOME/jars` directory to the **Java Build Path** 
-- Right-click on the scala object and run as scala application
+- Right-click on the scala object and **Run As** ->**Run Configurations..**, use following settings to build a new Scala application.
+![IDE_run.PNG]({{site.baseurl}}/img/post/IDE_run.PNG)
 
-After testing and debugging, you can export the project into **.jar** file and use `spark-submit` command described below to run the application in spark.
+After testing and debugging, you can export the project into **.jar** file and use `spark-submit` command run the application in spark.
 
+```
+spark-submit \
+--class com.learningspark.example.WordCount \
+--master local[*] \
+./target/WrodCount.jar
+
+```
 ### SBT
 
 - Copy the above `WordCount.scala` to a path of `src/main/scala/com/learningspark/example/` in a project directory. 
