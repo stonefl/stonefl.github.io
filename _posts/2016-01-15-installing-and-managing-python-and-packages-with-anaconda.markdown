@@ -48,7 +48,9 @@ Anaconda comes with a graphical launcher that you can use to  manage environme
 
 All these stuff can be realized through **conda** command. For example, a new environment for Python 2 (named py2, with Python 2.7) can be created through following command:
 
-`conda create -n py2 anaconda python=2.7`
+`conda create -n py2 anaconda python=2.7` 
+or
+`conda create -n myenv scipy python = 3.5`
 
 Then the new environment can be activated through
 
