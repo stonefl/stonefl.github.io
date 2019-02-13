@@ -68,6 +68,23 @@ Then the new environment can be activated through
 **NOTE:** For Windows system, the activate and deactivate commands do not work in PowerShell, but work in cmd. Here is one potential solution, if you want to keep using your PowerShell: [Powershell activate and deactivate #626](https://github.com/conda/conda/issues/626). You can also try another work around way:
 1) type `cmd` in Powershell to switch to cmd line; 2) run activate or deactivate command; 3) type `powershell` to change back to Powershell.
 
+## Use IPython Kernels for Different Environments
+
+If you want to have multiple IPython kernels for different virtualenvs or conda environments, you will need to specify unique names for the kernelspecs.
+
+Make sure you have ipykernel installed in your environment. If you are using `pip` to install `ipykernel` in a conda env, make sure `pip` is installed:
+```
+source activate myenv
+conda install pip
+conda install ipykernel # or pip install ipykernel
+```
+
+For example, using conda environments, install a `Python (myenv)` Kernel in a first environment:
+
+```
+source activate myenv
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+```
 
 ## Common Commands
 
