@@ -5,18 +5,23 @@ title: Install Hortonworks HDP 3.1.0 on Cluster of VMWare Virtual Machines
 subtitle: Hortonworks Tutorials
 date: '2019-03-19'
 categories:
-  - Big Data
+  - Tutorial
 tags:
   - Hadoop
-  - Spark
+  - Big Data
 ---
 This post describes the process that I followed to install Hortontworks HDP 3.1.0 on a cluster with three VMWare virtual Hosts. This process followes three major steps: 1) set up the cluster environemnt; 2) set up a local repository for both Ambari and HDP stacks; 3) install HDP stacks through Ambari server. You can follow this process to install other versions, you can check product versions through Hortonworks support matrix: https://supportmatrix.hortonworks.com/
+
+
 
 <!--more-->
 
 # Table of Content
 
-[TOC]
+{:.no_toc}
+
+* TOC
+{:toc}
 
 # Virtual Nodes Info
 
