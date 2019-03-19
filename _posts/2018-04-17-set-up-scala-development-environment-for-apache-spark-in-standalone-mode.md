@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: 'Set Up Scala Development Environment for Apache Spark in Standalone Mode '
-subtitle: Apache Spark Tutorial
+subtitle: Apache Spark Tutorials
 date: '2018-04-17'
 categories:
   - Tutorial
