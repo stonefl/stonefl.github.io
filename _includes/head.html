@@ -80,6 +80,8 @@
   <meta property="og:image" content="{{ page.fb-img }}" />
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+   {% elsif page.img %}
+  <meta property="og:image" content="{{ page.img }}" />
   {% else %}
   <meta property="og:image" content="" />
   {% endif %}
