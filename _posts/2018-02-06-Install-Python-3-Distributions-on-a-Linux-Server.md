@@ -9,7 +9,7 @@ tags:
   - Python
 ---
 
-As a developer and data scientist, I often need to run Python scripts on Linux servers. The vast majority of CentOS/RHEL-based Linux servers use Python 2.6.6, while most of my Python applications are written in Python 3. In additoin, on most of the servers, I don't have the `sudo` priviledge, so it needs a little trick to install Python 3 on those servers. 
+As a data scientist, I often need to run Python scripts on Linux servers. The vast majority of CentOS/RHEL-based Linux servers use Python 2.6.6, while most of my Python applications are written in Python 3. In additoin, on most of the servers, I don't have the `sudo` priviledge, so it needs a little trick to install Python 3 on those servers. 
 
 This post is a step-by-step instructions on installing  Python 3.6 through both [Anaconda](https://docs.anaconda.com/) and [Python Gzipped source tarball file](https://www.python.org/downloads/release/python-364/) on a CentOS/RHEL-based  Linux server.<!--more-->
 
