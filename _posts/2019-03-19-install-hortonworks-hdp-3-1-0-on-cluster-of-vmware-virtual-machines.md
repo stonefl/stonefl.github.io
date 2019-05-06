@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Install Hortonworks HDP 3.1.0 on Cluster of VMWare Virtual Machines
+title: Install Hortonworks HDP 3.1.0 on A Cluster of VMWare Virtual Machines
 subtitle: Hortonworks Tutorials
 date: '2019-03-19'
 bigimg: /img/post/Hortonworks.jpg
