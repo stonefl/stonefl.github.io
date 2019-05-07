@@ -27,7 +27,7 @@ This post describes the process of installing Hortontworks HDP 3.1.0 on a cluste
 
 # Virtual Nodes Info
 
-First thing I did is set up three virtual hosts in VMWare with following info:
+First thing is to set up virtual hosts. I setted up three virtual machines in VMWare with following info:
 
 
 |   Host Name   |   Host IP      | Configuration|
