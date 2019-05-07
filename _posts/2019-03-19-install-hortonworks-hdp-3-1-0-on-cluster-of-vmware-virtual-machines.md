@@ -12,7 +12,7 @@ tags:
   - Hadoop
   - Big Data
 ---
-This post describes the process of installing Hortontworks HDP 3.1.0 on a cluster of three VMWare virtual machines. The process includes three major steps: 1) set up the cluster environemnt; 2) set up a local repository for both Ambari and HDP stacks; 3) install HDP stacks through Ambari server. You can follow this process to install other versions. Please check product versions through Hortonworks support matrix: https://supportmatrix.hortonworks.com/
+This post describes the process of installing Hortontworks HDP 3.1.0 on a cluster of three VMWare virtual machines. The process includes four major steps: 1) set up the cluster environemnt; 2) set up a local repository for both Ambari and HDP stacks; 3) Install Ambari server and agent; 4) install, configure and deploy the cluster. You can follow this process to install other versions. Please check product versions through Hortonworks support matrix: https://supportmatrix.hortonworks.com/
 
 
 
@@ -230,7 +230,7 @@ The URL's can be obtained from [Ambari Repositories](https://docs.hortonworks.co
   ```
   tar zxvf ambari-2.7.3.0-centos7.tar.gz -C /var/www/html/
   ```
-- Then record the base URL's which are needed for installing the cluster:
+- Then record the local base URL's which are needed for installing the cluster:
 
    ```
    Ambari: http://146.xxx.xxx.75/ambari/centos7/2.7.3.0-139/
@@ -244,25 +244,27 @@ The URL's can be obtained from [Ambari Repositories](https://docs.hortonworks.co
 * make sure you can browser in the web browser;
 * The path where you can see the `repodata` directory.
 
-# Installing Ambari Server and Agent
 
-## 1. Download Ambari Repository
+# 3. Installing Ambari Server and Agent
+
+## 3.1. Download Ambari repository
 
 - Login to the `hadoop-master` host as `root`
 - Check the repository URL from [Ambari Repository Links](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/ambari_repositories.html)
-- Download Ambari repository file to the directory`/etc/yum.repos.d/`, through following command:
+- Download Ambari repository file to the directory`/etc/yum.repos.d/`, through the following command:
 
 ```
-wget -nv http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0/ambari.repo -O /etc/yum.repos.d/ambari.repo
+	wget -nv http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0/ambari.repo -O 		/etc/yum.repos.d/ambari.repo
 ```
 
-- Edit the `ambari.repo` file and change the `baseurl` and `gpgkey` to the local repository obtained above.
-- Run `yum repolist` to confirm that the repository has been configured successfully. You should see `ambari-2.7.3.0-xxx` on the list.
-  See [Download Ambari Repository](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/download_the_ambari_repo_lnx7.html) for more information.
+- Edit the `ambari.repo` file and change the `baseurl` and `gpgkey` to the local repository obtained in step 2.2.
+- Run `yum repolist` to confirm that the repository has been configured successfully. You should see `ambari-2.7.3.0-xxx` on the list. 
 
-## 2. Install Ambari Server
+See [Download Ambari Repository](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/download_the_ambari_repo_lnx7.html) for more information.
 
-Install the Ambari server on the master node through command:
+## 3.2. Install Ambari server
+
+Install Ambari server on the master node through command:
 
 ```
 yum install -y ambari-server
@@ -270,11 +272,12 @@ yum install -y ambari-server
 
 See [Install Ambari Server](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/install-ambari-server-rhel7.html) for more information.
 
-## 3. Set up Ambari Server
+## 3.3. Set up Ambari server
 
 Set 
 `-Dhttp.proxyHost=<yourProxyHost> -Dhttp.proxyPort=<yourProxyPort> -Dhttps.proxyHost=<yourProxyHost> -Dhttps.proxyPort=<yourProxyPort>`
 in the file `/var/lib/ambari-server/ambari-env.sh`
+
 Run following command on the Ambari server host to start the setup process:
 
 ```
@@ -283,28 +286,27 @@ ambari-server setup
 
 See [Set Up Ambari Server](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/set_up_the_ambari_server.html) for more information.
 
-# Install, Configure and Deploy the Cluster
+# 4. Install, Configure and Deploy the Cluster
 
-## 1. Start the Ambari Server
+## 4.1. Start the Ambari server
 
 ```
 ambari-server start
 ```
 
-After the server starts successfully, you can login to the server with default user/name `admin/admin` at:
-`http://146.xxx.xxx.75:8080/`
+After the server starts successfully, you can login to the server with default username/password `admin/admin` at: `http://146.xxx.xxx.75:8080/`
 
-## 2. Installing HDP through Installation Wizard
+## 4.2. Install HDP through installation wizard
 
 Follow the steps of the Wizard intall HDP:
 
-- Step 0 Get Started: give a name to your cluster, for example, `InfoSecHadoop`
+- Step 0 - Get Started: give a name to your cluster, for example, `InfoSecHadoop`
 
-- Step 1 Select Version: Select `HDP-3.1`, `Use Local Repository`. Delete all other OS, leave readhat7 only. Copy the Base URL to the places.
+- Step 1 - Select Version: select `HDP-3.1`, `Use Local Repository`. Delete all other OS, leave readhat7 only. Copy the local base URL to the places.
 
-- Step 2 Install Options:
+- Step 2 - Install Options:
 
-  ![step2.png](../img/post/Step2.JPG)
+  ![step2.png](/img/post/Step2.JPG)
 
 - Step 3 Confirm Hosts: it will automatically do the regiestration with the setting in Step 2.
 
