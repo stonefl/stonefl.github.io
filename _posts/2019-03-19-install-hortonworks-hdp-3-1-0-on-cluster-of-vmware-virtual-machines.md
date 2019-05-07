@@ -230,7 +230,7 @@ The URL's can be obtained from [Ambari Repositories](https://docs.hortonworks.co
   ```
   tar zxvf ambari-2.7.3.0-centos7.tar.gz -C /var/www/html/
   ```
-  Then record the base URL's which are needed for installing the cluster:
+- Then record the base URL's which are needed for installing the cluster:
 
    ```
    Ambari: http://146.xxx.xxx.75/ambari/centos7/2.7.3.0-139/
