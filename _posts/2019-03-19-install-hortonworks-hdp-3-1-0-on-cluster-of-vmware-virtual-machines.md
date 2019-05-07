@@ -27,7 +27,7 @@ This post describes the process of installing Hortontworks HDP 3.1.0 on a cluste
 
 # Virtual Nodes Info
 
-First thing is to set up virtual hosts. I setted up three virtual machines in VMWare with following info:
+I have set up three virtual machines in VMWare with following settings. RedHat Enterprise 7.6 has been installed on each node.
 
 
 |   Host Name   |   Host IP      | Configuration|
@@ -36,7 +36,7 @@ First thing is to set up virtual hosts. I setted up three virtual machines in VM
 | hadoop-node-1 | 146.xxx.xxx.76 |4 x cpu, 16 GB Ram, 100 GB disk |
 |hadoop-node-2  | 146.xxx.xxx.77 |4 x cpu, 16 GB Ram, 100 GB disk |
 
-for each host, `yum` has been setup.
+
 
 # Prepare the Cluster Environment
 
