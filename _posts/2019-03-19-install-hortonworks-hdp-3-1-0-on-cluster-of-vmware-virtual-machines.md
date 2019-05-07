@@ -306,7 +306,7 @@ Follow the steps of the Wizard intall HDP:
 
 - Step 2 - Install Options:
 
-  ![step2.png](/img/post/Step2.JPG)
+  ![step2.png]({{site.baseurl}}/img/post/Step2.JPG)
 
 - Step 3 Confirm Hosts: it will automatically do the regiestration with the setting in Step 2.
 
