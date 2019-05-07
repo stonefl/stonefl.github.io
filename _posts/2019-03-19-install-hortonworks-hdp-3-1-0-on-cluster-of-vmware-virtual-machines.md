@@ -254,7 +254,7 @@ The URL's can be obtained from [Ambari Repositories](https://docs.hortonworks.co
 - Download Ambari repository file to the directory`/etc/yum.repos.d/`, through the following command:
 
 ```
-	wget -nv http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0/ambari.repo -O 		/etc/yum.repos.d/ambari.repo
+wget -nv http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0/ambari.repo -O 		/etc/yum.repos.d/ambari.repo
 ```
 
 - Edit the `ambari.repo` file and change the `baseurl` and `gpgkey` to the local repository obtained in step 2.2.
