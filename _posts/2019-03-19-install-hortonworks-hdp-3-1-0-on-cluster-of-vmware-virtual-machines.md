@@ -32,9 +32,9 @@ I have set up three virtual machines in VMWare with following settings. RedHat E
 
 |   Host Name   |   Host IP      | Configuration|
 | ------------- | -------------  |------------- |
-| hadoop-master | 146.xxx.xxx.75 | 4 x cpu, 16 GB Ram, 100 GB disk|
-| hadoop-node-1 | 146.xxx.xxx.76 |4 x cpu, 16 GB Ram, 100 GB disk |
-|hadoop-node-2  | 146.xxx.xxx.77 |4 x cpu, 16 GB Ram, 100 GB disk |
+| hadoop-master | 146.xxx.xxx.75 | 4 x cpu, 16 GB Ram, 100 GB disk |
+| hadoop-node-1 | 146.xxx.xxx.76 | 4 x cpu, 16 GB Ram, 100 GB disk |
+| hadoop-node-2 | 146.xxx.xxx.77 | 4 x cpu, 16 GB Ram, 100 GB disk |
 
 
 
@@ -68,6 +68,7 @@ systemctl set-default multi-user.target
 ## 1.3. Check and set hostnames.
 
 **Set Hostnames**
+
 For each host in the cluster, confirm that the hostname is set to a Fully Qualified Domain Name ([FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)) name by running the following command:
 
 ```bash
@@ -82,6 +83,7 @@ hostname hadoop-master.qualified.doman.name
 ```
 
 **Edit Network Configuration File**
+
 For each host in the cluster, open the network configuration file through 
 
 ```bash
@@ -96,6 +98,7 @@ HOSTNAME=fully.qualified.doman.name
 ```
 
 **Edit Hosts File**
+
 For each host in the cluster, open the hosts file through running `vi /etc/hosts` add a line to each file. For example:
 
 ```
