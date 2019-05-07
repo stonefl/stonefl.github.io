@@ -38,9 +38,9 @@ I have set up three virtual machines in VMWare with following settings. RedHat E
 
 
 
-# Prepare the Cluster Environment
+# 1. Prepare the Cluster Environment
 
-## 0. Setting Proxy
+## 1.1. Setting Proxy
 
 If you're behind a proxy, you need to specify your proxy server information, because many repositories, including `yum` repository, are accessed through the proxy servers. For each host, you can set up proxy server info through adding
 
@@ -51,7 +51,7 @@ export http_proxy=http://<your.http-proxy.address>:<port#>
 
 to the `/root/.bashrc`. Remember to run `source .bashrc` to refresh.
 
-## 1. Make sure the run level is multi-user text mode. 
+## 1.2. Make sure the run level is multi-user text mode. 
 
 Run following command to check the run level:
 
@@ -59,21 +59,21 @@ Run following command to check the run level:
 systemctl get-default
 ```
 
-It is expected to see the response of `multi-user.target`. If not, run following command to change:
+It is expected to see the response of `multi-user.target`. If not, run the following command to set:
 
 ```bash
 systemctl set-default multi-user.target
 ```
 
-## 2. Check and set hostnames.
+## 1.3. Check and set hostnames.
 
-- For each host in the cluster, confirm that the hostname is set to a `FQDN` name by running following command:
+For each host in the cluster, confirm that the hostname is set to a fully qualified domain name ([FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name))`FQDN` name by running following command:
 
 ```bash
 hostname -f
 ```
 
-This should return a a fully qualified domain name ([FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)), which has a format like `fully.qualified.doman.name` 
+This should return a a , which has a format like `fully.qualified.doman.name` 
 You can use `hostname` command to set the hostname on each host in the cluster. For example:
 
 ```bash
