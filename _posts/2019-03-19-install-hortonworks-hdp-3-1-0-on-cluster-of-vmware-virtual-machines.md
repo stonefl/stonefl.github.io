@@ -42,14 +42,14 @@ I have set up three virtual machines in VMWare with following settings. RedHat E
 
 ## 0. Setting Proxy
 
-If you're behind proxy, then many repositories, including `yum` repository, are accessed through proxy servers. For each host, you can set up proxy server info through adding
+If you're behind a proxy, you need to specify your proxy server information, because many repositories, including `yum` repository, are accessed through the proxy servers. For each host, you can set up proxy server info through adding
 
 ```
 export https_proxy=https://<your.https-proxy.address>:<port#>
 export http_proxy=http://<your.http-proxy.address>:<port#>
 ```
 
-to the `/root/.bashrc`. And run `source .bashrc` to refresh.
+to the `/root/.bashrc`. Remember to run `source .bashrc` to refresh.
 
 ## 1. Make sure the run level is multi-user text mode. 
 
