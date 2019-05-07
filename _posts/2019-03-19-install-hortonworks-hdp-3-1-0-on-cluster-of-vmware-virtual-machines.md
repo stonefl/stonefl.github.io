@@ -304,17 +304,21 @@ Follow the steps of the Wizard intall HDP:
 
 - Step 1 - Select Version: select `HDP-3.1`, `Use Local Repository`. Delete all other OS, leave readhat7 only. Copy the local base URL to the places.
 
-- Step 2 - Install Options:
+- Step 2 - Install Options settings:
 
   ![step2.png]({{site.baseurl}}/img/post/Step2.JPG)
 
-- Step 3 Confirm Hosts: it will automatically do the regiestration with the setting in Step 2.
+- Step 3 - Confirm Hosts: it will automatically do the regiestration with the setting in Step 2.
 
-- Step 4 Choose Services: choose basic ones, you can add more later.
+- Step 4 - Choose Services: choose basic ones, you can add more later.
 
-- Step 5 Assign Masters: keep default
+- Step 5 - Assign Masters: keep default
 
-- Step 6: Select all for the `Client` option.
+- Step 6 - Select all for the `Client` option.
+
+# Known Errors
+
+There are the four errors I encountered during the installation process.
 
 **Error 1:** emtpty HDP Url: https://community.hortonworks.com/articles/231020/ambari-273-ambari-writes-empty-baseurl-values-writ.html
 
@@ -362,5 +366,5 @@ https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/
 Check Hortonworks Support Matrix to make sure product versions:
 <https://supportmatrix.hortonworks.com/>
 
-Using yum with a Proxy server
+Using yum with a Proxy server:
 https://docs.fedoraproject.org/en-US/Fedora_Core/3/html/Software_Management_Guide/sn-yum-proxy-server.html
