@@ -67,46 +67,50 @@ systemctl set-default multi-user.target
 
 ## 1.3. Check and set hostnames.
 
-For each host in the cluster, confirm that the hostname is set to a fully qualified domain name ([FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name))`FQDN` name by running following command:
+**Set Hostnames**
+For each host in the cluster, confirm that the hostname is set to a Fully Qualified Domain Name ([FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)) name by running the following command:
 
 ```bash
 hostname -f
 ```
 
-This should return a a , which has a format like `fully.qualified.doman.name` 
-You can use `hostname` command to set the hostname on each host in the cluster. For example:
+This should return a host name that has a format like `fully.qualified.doman.name` 
+You can use `hostname` command to set the hostname, for example:
 
 ```bash
 hostname hadoop-master.qualified.doman.name
 ```
 
-- Edit Network Configuration File. For each host in the cluster, open the network configuration file through 
+**Edit Network Configuration File**
+For each host in the cluster, open the network configuration file through 
 
 ```bash
 vi /etc/sysconfig/network
 ```
 
-Modify the HOSTNAME property to FQDN:
+Modify the `HOSTNAME` property to its FQDN:
 
 ```
 NETWORK=yes
 HOSTNAME=fully.qualified.doman.name
 ```
 
-- Edit the hosts file. Open the hosts file on each host in the cluster through `vi /etc/hosts` add a line to each file. For example:
+**Edit Hosts File**
+For each host in the cluster, open the hosts file through running `vi /etc/hosts` add a line to each file. For example:
 
 ```
 146.xxx.xxx.75 hadoop-master.qualified.doman.name hadoop-master
-146.xxx.xxx.76 hadoop-master.qualified.doman.name hadoop-node-1
-146.xxx.xxx.77 hadoop-master.qualified.doman.name hadoop-node-2
+146.xxx.xxx.76 hadoop-node-1.qualified.doman.name hadoop-node-1
+146.xxx.xxx.77 hadoop-node-2.qualified.doman.name hadoop-node-2
 ```
 
-After made these changes. It needs reboot through running `reboot`.
+It needs reboot to make these changes effective.
 
-## 3. Set up password-less SSH:
+## 1.4. Set up password-less SSH:
 
+**For the master host**
 - Login to the `hadoop-master` host with `root` user and generate SSH keys using `ssh-keygen -t rsa`. Press enter for all prompts and accept all default values.	
-- Run following command to copy ssh identification for localhost. Enter password when prompted for the password:
+- Run the following command to copy ssh identification for localhost. Enter password when prompted for the password:
 
 ```
 ssh-copy-id localhost
@@ -125,7 +129,7 @@ scp -pr /root/.ssh root@hadoop-node-1.qualified.doman.name:/root/
 - Upload the generated `id_rsa.pub` to the `root`'s **.ssh** directory as a file with name **authorized_keys**, for example:
 
 ```
- cat .ssh/id_rsa.pub | ssh root@hadoop-node-1.qualified.doman.name 'cat >> .ssh/authorized_keys'
+cat .ssh/id_rsa.pub | ssh root@hadoop-node-1.qualified.doman.name 'cat >> .ssh/authorized_keys'
 ```
 
 - Set permissions for **.ssh** directory and **authorized_keys** file:
@@ -134,7 +138,7 @@ scp -pr /root/.ssh root@hadoop-node-1.qualified.doman.name:/root/
 ssh root@hadoop-node-1.qualified.doman.name; chmod 700 .ssh; chmod 640 .ssh/authorized_keys
 ```
 
-From the `hadoop-master` host, run following commands in sequence, to make sure inter-node connection using SSH without password:
+From the `hadoop-master` host, run following commands to make sure inter-node connection using SSH without password:
 
 ```
 ssh hadoop-node-1
@@ -145,7 +149,7 @@ ssh hadoop-node-1
 ssh hadoop-master
 ```
 
-## 4. Enable NTP
+## 1.5. Enable NTP
 
 Run following commands on each host to install and enable NTP service:
 
@@ -155,24 +159,24 @@ systemctl enable ntpd
 systemctl start ntpd
 ```
 
-After that run `timedatectl status` and look for following lines to verfiy that NTP is running
+Run `timedatectl status` and look for following lines to verfiy that NTP is running
 
 ```
 NTP enabled: yes
 NTP synchronized: yes
 ```
 
-To synchronze:
+To force synchronze:
 
-- stop ntp serivce: `systemctl stop ntpd`
-- add `server your.ntp.server.address` to the `/etc/ntp.conf` 's servers part.
+- Stop ntp serivce: `systemctl stop ntpd`
+- Add `server your.ntp.server.address` to the `/etc/ntp.conf` 's servers part.
 - Force time synchronize: `ntpdate your.ntp.server.address`
 - Restart ntp: `systemctl start ntpd`
 - Run `systemctl enable ntpdate` to make sure running the `ntpdate` at boot time.
 
-## 5. Configuring Firewall
+## 1.6. Configure firewall
 
-Run following commands to disable firewall on each host in the cluster:
+Run the following commands to disable firewall on each host in the cluster:
 
 ```
 systemctl disable firewalld
@@ -181,7 +185,7 @@ service firewalld stop
 
 Run `systemctl status firewalld` to make sure firewall is disabled.
 
-## 6. Disable SElinux
+## 1.7. Disable SElinux
 
 For each host in the cluster, change SELINUX value from **enhancing** to **disabled** in `/etc/selinux/config`
 
@@ -193,9 +197,9 @@ Install `wget` on all nodes:
 yum install -y wget
 ```
 
-# Set up a Local Repository for Ambari and HDP Stack
+# 2. Set up a Local Repository for Ambari and HDP Stack
 
-## 1.  Create and start an HTTP sever on the master host: 
+## 2.1.  Create and start an HTTP sever on the master host: 
 
 ```
 yum install -y httpd
@@ -203,11 +207,11 @@ service httpd restart
 chkconfig httpd on
 ```
 
-Make sure there is the repository `/var/www/html`has been created on the host.
+Make sure the directory `/var/www/html` has been created on the host.
 
-## 2. Set up the local repository
+## 2.2. Set up the local repository
 
-- Download the tarball files for Ambari and HDP stacks through following commands:
+- Download the tarball files for Ambari and HDP stacks through the following commands:
 
 ```
 wget http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0/ambari-2.7.3.0-centos7.tar.gz
@@ -223,20 +227,22 @@ wget http://public-repo-1.hortonworks.com/HDP-GPL/centos7/3.x/updates/3.1.0.0/HD
 The URL's can be obtained from [Ambari Repositories](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/ambari_repositories.html) and [HDP 3.1.0 Repositories](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/hdp_31_repositories.html)
 
 - Untar and copy the files to `/var/www/html/`. For example, 
-  `tar zxvf ambari-2.7.3.0-centos7.tar.gz -C /var/www/html/`
+  ```
+  tar zxvf ambari-2.7.3.0-centos7.tar.gz -C /var/www/html/
+  ```
   Then record the base URL's which are needed for installing the cluster:
 
-```
-Ambari: http://146.xxx.xxx.75/ambari/centos7/2.7.3.0-139/
-HDP: http://146.xxx.xxx.75/HDP/centos7/3.1.0.0-78/
-HDP-GPL: http://146.xxx.xxx.75/HDP-GPL/centos7/3.1.0.0-78/
-HDP-UTILS: http://146.xxx.xxx.75/HDP-UTILS/centos7/1.1.0.22/
-```
+   ```
+   Ambari: http://146.xxx.xxx.75/ambari/centos7/2.7.3.0-139/
+   HDP: http://146.xxx.xxx.75/HDP/centos7/3.1.0.0-78/
+   HDP-GPL: http://146.xxx.xxx.75/HDP-GPL/centos7/3.1.0.0-78/
+   HDP-UTILS: http://146.xxx.xxx.75/HDP-UTILS/centos7/1.1.0.22/
+   ```
 
-**Tips**:
+**_Tips_**:
 
-1. make sure you can browser in the web browser;
-2. The path where you can see the `repodata` directory.
+* make sure you can browser in the web browser;
+* The path where you can see the `repodata` directory.
 
 # Installing Ambari Server and Agent
 
