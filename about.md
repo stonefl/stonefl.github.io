@@ -13,4 +13,4 @@ My name is Lei Feng. I passionate about Operation Research, Machine Learning, Ar
 
 ## About This Website
 
-This website is built on top of [Jekyll](http://jekyllrb.com/) and the theme is forked and updated from [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll) built by [Dean Attali](http://deanattali.com/aboutme#contact). 
+This website is built on top of [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll).
