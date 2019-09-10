@@ -286,6 +286,7 @@ See [Set Up Ambari Server](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.
 # 4. Install, Configure and Deploy the Cluster
 
 ## 4.1. Start the Ambari server
+You can start the Ambari server through running:
 
 ```
 ambari-server start
@@ -295,17 +296,17 @@ After the server starts successfully, you can login to the server with default u
 
 ## 4.2. Install HDP through installation wizard
 
-Follow the steps of the Wizard intall HDP:
+Follow the steps of the Wizard to intall HDP:
 
-- Step 0 - Get Started: give a name to your cluster, for example, `InfoSecHadoop`
+- Step 0 - Get Started: give a name to your cluster, for example, `MyHadoop`
 
-- Step 1 - Select Version: select `HDP-3.1`, `Use Local Repository`. Delete all other OS, leave readhat7 only. Copy the local base URL to the places.
+- Step 1 - Select Version: select `HDP-3.1`, `Use Local Repository`. Delete all other OS, leave Redhat7 only. Copy the local base URL to the places.
 
 - Step 2 - Install Options settings:
 
   ![step2.png]({{site.baseurl}}/img/post/Step2.jpg)
 
-- Step 3 - Confirm Hosts: it will automatically do the regiestration with the setting in Step 2.
+- Step 3 - Confirm Hosts: it will automatically do the regiestration with the settings from Step 2.
 
 - Step 4 - Choose Services: choose basic ones, you can add more later.
 
@@ -319,7 +320,7 @@ There are the four errors I encountered during the installation process.
 
 **Error 1:** emtpty HDP Url: https://community.hortonworks.com/articles/231020/ambari-273-ambari-writes-empty-baseurl-values-writ.html
 
-**Error 2:** Requires: libtirpc-devel: https://community.hortonworks.com/idea/107386/libtirpc-devel-required.html
+**Error 2:** Requires libtirpc-devel: https://community.hortonworks.com/idea/107386/libtirpc-devel-required.html
 Run following commands on all hosts:
 
 ```
