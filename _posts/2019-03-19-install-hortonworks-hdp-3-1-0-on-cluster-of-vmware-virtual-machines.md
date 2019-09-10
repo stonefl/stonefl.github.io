@@ -12,7 +12,9 @@ tags:
   - Hadoop
   - Big Data
 ---
-This post describes the process of installing Hortontworks HDP 3.1.0 on a cluster of three VMWare virtual machines. The process includes four major steps: 1) set up the cluster environemnt; 2) set up a local repository for both Ambari and HDP stacks; 3) Install Ambari server and agent; 4) install, configure and deploy the cluster. You can follow this process to install other versions. Please check product versions through Hortonworks support matrix: https://supportmatrix.hortonworks.com/
+This post describes the process to install Hortontworks HDP 3.1.0 on a cluster of three VMWare virtual machines. The process includes four major steps: 1) set up the cluster environemnt; 2) set up a local repository for both Ambari and HDP stacks; 3) Install Ambari server and agent; 4) install, configure and deploy the cluster. 
+
+This installation process might work for other versions too. Please check the product versions through Hortonworks support matrix: https://supportmatrix.hortonworks.com/
 
 
 
@@ -27,7 +29,7 @@ This post describes the process of installing Hortontworks HDP 3.1.0 on a cluste
 
 # Virtual Nodes Info
 
-I have set up three virtual machines in VMWare with following settings. RedHat Enterprise 7.6 has been installed on each node.
+Three virtual machines in VMWare with following settings. RedHat Enterprise 7.6 has been installed on each node.
 
 
 |   Host Name   |   Host IP      | Configuration|
@@ -42,7 +44,7 @@ I have set up three virtual machines in VMWare with following settings. RedHat E
 
 ## 1.1. Setting Proxy
 
-If you're behind a proxy, you need to specify your proxy server information, because many repositories, including `yum` repository, are accessed through the proxy servers. For each host, you can set up proxy server info through adding
+If you're behind a proxy, you need to specify your proxy server information, because many repositories, including `yum`, are accessed through the proxy servers. For each host, you can set up proxy server info through adding
 
 ```
 export https_proxy=https://<your.https-proxy.address>:<port#>
@@ -51,7 +53,7 @@ export http_proxy=http://<your.http-proxy.address>:<port#>
 
 to the `/root/.bashrc`. Remember to run `source .bashrc` to refresh.
 
-## 1.2. Make sure the run level is multi-user text mode. 
+## 1.2. Make sure run level is multi-user text mode
 
 Run following command to check the run level:
 
@@ -59,13 +61,13 @@ Run following command to check the run level:
 systemctl get-default
 ```
 
-It is expected to see the response of `multi-user.target`. If not, run the following command to set:
+It is expected to see the response of `multi-user.target`. If not, run the following command to set the run level to multi-user text mode:
 
 ```bash
 systemctl set-default multi-user.target
 ```
 
-## 1.3. Check and set hostnames.
+## 1.3. Check and set hostnames
 
 **Set Hostnames**
 
@@ -109,27 +111,23 @@ For each host in the cluster, open the hosts file through running `vi /etc/hosts
 
 It needs reboot to make these changes effective.
 
-## 1.4. Set up password-less SSH:
+## 1.4. Set up password-less SSH
 
 **For the master host**
 - Login to the `hadoop-master` host with `root` user and generate SSH keys using `ssh-keygen -t rsa`. Press enter for all prompts and accept all default values.	
-- Run the following command to copy ssh identification for localhost. Enter password when prompted for the password:
+- Run the following command `ssh-copy-id localhost`to copy ssh identification for localhost. Enter password when prompted for the password:
 
-```
-ssh-copy-id localhost
-```
-
-Then run command `ssh hadoop-master` to make sure no password needed.
+- Then run command `ssh hadoop-master` to make sure no password needed.
 
 **For each of other hosts in the cluster:**
 
-- Copy the SSH file from `hadoop-master` to every other hosts in the cluster, for example:
+- Copy the SSH file from `hadoop-master` to every other hosts in the cluster, through running:
 
 ```
 scp -pr /root/.ssh root@hadoop-node-1.qualified.doman.name:/root/
 ```
 
-- Upload the generated `id_rsa.pub` to the `root`'s **.ssh** directory as a file with name **authorized_keys**, for example:
+- Upload the generated `id_rsa.pub` to the `root`'s **.ssh** directory as a file with name **authorized_keys**, through running:
 
 ```
 cat .ssh/id_rsa.pub | ssh root@hadoop-node-1.qualified.doman.name 'cat >> .ssh/authorized_keys'
@@ -169,7 +167,7 @@ NTP enabled: yes
 NTP synchronized: yes
 ```
 
-To force synchronze:
+Otherwise, you need to force NTP synchronze through the following steps:
 
 - Stop ntp serivce: `systemctl stop ntpd`
 - Add `server your.ntp.server.address` to the `/etc/ntp.conf` 's servers part.
@@ -192,17 +190,13 @@ Run `systemctl status firewalld` to make sure firewall is disabled.
 
 For each host in the cluster, change SELINUX value from **enhancing** to **disabled** in `/etc/selinux/config`
 
-## 7. Install `wget` 
 
-Install `wget` on all nodes:
-
-```
-yum install -y wget
-```
 
 # 2. Set up a Local Repository for Ambari and HDP Stack
 
 ## 2.1.  Create and start an HTTP sever on the master host: 
+
+Install and start Apache Server through the following commands:
 
 ```
 yum install -y httpd
@@ -214,7 +208,7 @@ Make sure the directory `/var/www/html` has been created on the host.
 
 ## 2.2. Set up the local repository
 
-- Download the tarball files for Ambari and HDP stacks through the following commands:
+- Download the tarball files for Ambari and HDP stacks through running the following commands:
 
 ```
 wget http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0/ambari-2.7.3.0-centos7.tar.gz
@@ -227,13 +221,13 @@ wget http://public-repo-1.hortonworks.com/HDP-GPL/centos7/3.x/updates/3.1.0.0/HD
 
 ```
 
-The URL's can be obtained from [Ambari Repositories](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/ambari_repositories.html) and [HDP 3.1.0 Repositories](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/hdp_31_repositories.html)
+The URLs can be obtained from [Ambari Repositories](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/ambari_repositories.html) and [HDP 3.1.0 Repositories](https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/hdp_31_repositories.html)
 
 - Untar and copy the files to `/var/www/html/`. For example, 
   ```
   tar zxvf ambari-2.7.3.0-centos7.tar.gz -C /var/www/html/
   ```
-- Then record the local base URL's which are needed for installing the cluster:
+- Then record the local base URLs which are needed for installing the cluster:
 
    ```
    Ambari: http://146.xxx.xxx.75/ambari/centos7/2.7.3.0-139/
@@ -248,7 +242,7 @@ The URL's can be obtained from [Ambari Repositories](https://docs.hortonworks.co
 * The path where you can see the `repodata` directory.
 
 
-# 3. Installing Ambari Server and Agent
+# 3. Install Ambari Server and Agent
 
 ## 3.1. Download Ambari repository
 
