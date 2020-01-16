@@ -9,7 +9,9 @@ tags:
   - Dataflow
 ---
 
-Data
+[Google Cloud Dataflow](https://cloud.google.com/dataflow/#benefits) is a fully managed unified stream and batch data processing service running Apache Beam on Google's infrastructures. With its serverless approach to resource provisioning and horizontal autoscaling, you have access to virtually unlimited capacity and optimized price-to-performance to solve your data processing challenges.
+
+
 
 
 
