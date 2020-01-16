@@ -10,12 +10,12 @@ tags:
 ---
 
 [Google Cloud Dataflow](https://cloud.google.com/dataflow/#benefits) is a fully managed unified stream and batch data processing service running Apache Beam on Google's infrastructures. With its serverless approach to resource provisioning and horizontal autoscaling, you have access to virtually unlimited capacity and optimized price-to-performance to solve your data processing challenges.
-
-[Shared Virtual Private Network (VPC)](https://cloud.google.com/vpc/docs/shared-vpc) allows an organization to connect resources from multiple projects to a common VPC newtork. This allows 
-
-
-
 <!--more-->
+
+[Shared Virtual Private Network (VPC)](https://cloud.google.com/vpc/docs/shared-vpc) allows an organization to connect resources from multiple projects to a common VPC network. This allows the resources to communicate with each other securely and efficiently using internal IP adresses from that network. When you use shared VPC, you designates a project as a **host project** and attach one or more **service projects** to it. The common VPC network shared accross host and service projects is called the **shared VPC network**. Share VPC is a good practice for Organization Admins keep centralized control over network resources, while delegating administrative resposibilities to Servcie Project Admins.
+
+Because Google Cloud Dataflow service needs to use the network shared by the host project, there are some consigurations neccessary to run the Dataflow jobs. This post sepecify the settings need to make on both host and service projects and describes the steps to run a sample WordCount job with the Dataflow service.
+
 
 # Table of Content
 
