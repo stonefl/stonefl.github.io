@@ -24,4 +24,55 @@ Because Google Cloud Dataflow service needs to use the network shared by the hos
 * TOC
 {:toc}
 
-# Host
+# Background Information
+
+
+# Settings in Host Project
+
+
+
+# Setting in Service Project
+
+
+
+
+# Specifying Execution Paramters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
