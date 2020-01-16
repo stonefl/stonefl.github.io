@@ -6,7 +6,7 @@ comments: false
 ---
 
 ## About Me
-My name is Lei Feng. I passionate about Operation Research, Machine Learning, Artificial Intelligence, Web Application developments, and Big Data and other technological things. I enjoy learning and applying these knowledge in my daily work and learning. In my spare time, I read all kinds of books, play soccer, body building, and explore the outdoors. 
+My name is Lei Feng. I passionate about Operation Research, Machine Learning, Big Data, Cloud Computing. I enjoy applying these knowledge in my daily work and learning. In my spare time, I read all kinds of books, play soccer, go to gym, and explore the outdoors. 
 
 
 ---
