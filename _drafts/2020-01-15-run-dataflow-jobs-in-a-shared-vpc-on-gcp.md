@@ -25,7 +25,8 @@ Because Google Cloud Dataflow service needs to use the network shared by the hos
 {:toc}
 
 # Background Information
-The host and service projects 
+The host and service projects get involved are shown as below:
+
 
 
 # Settings in Host Project
