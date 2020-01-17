@@ -28,14 +28,14 @@ Because Google Cloud Dataflow service needs to use the network shared by the hos
 
 # Background Information
 
-The involved host and service projects that are shown in Figure 1. They are two projects under the organization of `leifengblog.net`. The
-
+The involved host and service projects that are shown below.
 ![org_structure.JPG]({{site.baseurl}}/img/org_structure.JPG)
-Figure 1. Host and Service Projects
+
+They are two projects under the organization of `leifengblog.net`. The
 
 
 ![shared-vpc.JPG]({{site.baseurl}}/img/shared-vpc.JPG)
-Figure 2. Shared VPC
+
 
 
 # Settings in Host Project
