@@ -25,7 +25,9 @@ Because Google Cloud Dataflow service needs to use the network shared by the hos
 {:toc}
 
 # Background Information
-The host and service projects get involved are shown as below:
+
+The host and service projects that involved are shown as below. They are 
+![org_structure.JPG]({{site.baseurl}}/img/org_structure.JPG)
 
 
 
