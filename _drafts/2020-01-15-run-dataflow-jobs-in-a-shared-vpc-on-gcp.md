@@ -28,17 +28,23 @@ Because Google Cloud Dataflow service needs to use the network shared by the hos
 
 # Background Information
 
-The involved host and service projects that are shown below. They are two projects under the organization of `leifengblog.net`.
+The organization structure is shown as the following picture. The Organization node(`leifengblog.net`) has two projects, as the their names tell: `my-service-project` is the service project, in which the Dataflow project runs and `my-host-project` is the host project, from which the shared VPC comes. 
+
 ![org_structure.JPG]({{site.baseurl}}/img/org_structure.JPG)
 
-The
+For the best practices, before creating the two projects, I have  disabled public IP addresses for VM instances through setting `Define allowed external IPs for VM instances` of the organization policies to `Deny All` and 
+
+
+
+
+
 
 
 ![shared-vpc.JPG]({{site.baseurl}}/img/shared-vpc.JPG)
 
 
 
-# Settings in Host Project
+# Settings on Host Project
 
 
 
