@@ -45,7 +45,7 @@ The VPC shared to the service project is shown in the following table. There are
 
 In addition, the following firewalls are applied to all instances in the shared VPC networks.
 
-![shared-vpc.JPG]({{site.baseurl}}/img/post/firewall-rules.JPG)
+![firewall-rules.JPG]({{site.baseurl}}/img/post/firewall-rules.JPG)
 
 
 
