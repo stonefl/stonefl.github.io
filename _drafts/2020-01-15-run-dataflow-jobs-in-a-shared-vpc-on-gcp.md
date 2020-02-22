@@ -32,7 +32,7 @@ The organization structure is shown as the following table. The Organization nod
 
 ![org_structure.JPG]({{site.baseurl}}/img/post/org_structure.JPG)
 
-For the best practices, I have setup the following constraints in the `Organization Policies` page under the organization's `IAM & Admin` menu. 
+For the best practices, the Organiztion Admin has setup the following constraints in the `Organization Policies` page under the organization's `IAM & Admin` menu. 
 
 |   Constraint   |   Configuration      |  Exaplanation |
 | ------------- | -------------  |------------- |
@@ -51,7 +51,8 @@ In addition, the following firewalls are applied to all instances in the shared 
 
 # Settings on Host Project
 
-
+The following settings might need the roles of `Shared VPC Admin` or `Network Admin` from the Organization or Host Project:
+1. Add the user account or group that runs Dataflow in the Service project to the shared VPC with `Compute Network User` role, otherwise, the user cannot see the `Network shared to my project` tab on the `VPC network` page in the Service project.
 
 # Setting in Service Project
 
