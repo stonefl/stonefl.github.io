@@ -42,6 +42,7 @@ For the best practices, I have setup the following constraints in the `Organizat
 The VPC shared to the service project is shown in the following table. There are three custom subnets with `Private Google access` on.
 ![shared-vpc.JPG]({{site.baseurl}}/img/post/shared-vpc.JPG)
 
+In addition, the following firewalls are applied to all instances in the shared VPC networks.
 
 ![shared-vpc.JPG]({{site.baseurl}}/img/post/firewall-rules.JPG)
 
