@@ -67,14 +67,14 @@ The following settings might need the roles of `Owner` or `Editor` from the Serv
 
 - In the **IAM & admin** page, make sure that
 
-   * 1) The **Cloud Dataflow Service Account** has the role of `Cloud Dataflow Service Agent`. Otherwise, you can run the following command to add it:
+   1) The **Cloud Dataflow Service Account** has the role of `Cloud Dataflow Service Agent`. Otherwise, you can run the following command to add it:
    ```
    gcloud projects add-iam-policy-binding [PROJECT-ID] \
   --member serviceAccount: service-[PROJECT-NUMBER]@dataflow-service-producer-prod.iam.gserviceaccount.com \
   --role roles/dataflow.serviceAgent
 
    ```
-   * 2) The **Compute Engine Service Agent** has roles of `Compute Network User` and `Compute Engine Service Agent`. Otherwise, use the following command to add them:
+   2) The **Compute Engine Service Agent** has roles of `Compute Network User` and `Compute Engine Service Agent`. Otherwise, use the following command to add them:
    ```
    gcloud projects add-iam-policy-binding [PROJECT-ID] \
   --member serviceAccount: service-[PROJECT-NUMBER]@ compute-system.iam.gserviceaccount.com \
