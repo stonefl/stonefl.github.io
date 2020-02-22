@@ -40,6 +40,7 @@ For the best practices, I have setup the following constraints in the `Organizat
 | `Skip default network creation` | Pick `Customize` and turn on `Enforcement` | Don't create default network when create new project |
 
 The VPC shared to the service project is shown in the following table. There are three custom subnets with `Private Google access` on.
+
 ![shared-vpc.JPG]({{site.baseurl}}/img/post/shared-vpc.JPG)
 
 In addition, the following firewalls are applied to all instances in the shared VPC networks.
