@@ -48,18 +48,26 @@ In addition, the following firewalls are applied to all instances in the shared 
 ![firewall-rules.JPG]({{site.baseurl}}/img/post/firewall-rules.JPG)
 
 
+# Setting in Service Project
 
-# Settings on Host Project
+The following settings might need the roles of `Owner` or `Editor` from the Service Project:
 
-The following settings might need the roles of `Shared VPC Admin` or `Network Admin` from the Organization or Host Project:
+- Enbale the Cloud Dataflow, Compute Engine, and Cloud Storage APIs. After the Cloud Dataflow API is enbaled, the **Cloud Dataflow Service Account** with format of `service-<PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com` should be created.
+
+- Create authentication key file following the process described by [set up authentication](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-java-maven#before-you-begin).
+
+
+
+# Settings in Host Project
+
+The following settings need the roles of `Shared VPC Admin` or `Network Admin` from the Organization or Host Project:
 
 - Add the user account or group that runs Dataflow in the Service Project to the shared VPC with `Compute Network User` role, otherwise, the user cannot see the `Network shared to my project` tab on the `VPC network` page in the Service project.
 
-- Add the Dataflow service account from the Service Project, `service-[PROJECT_NUMBER]@dataflow-service-producer-prod.iam.gserviceaccount.com`, to the Shared VPC with the `Compute Network User` role.
+- Add the Dataflow service account from the Service Project, `service-<SERVICE_PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com`, to the Shared VPC with the `Compute Network User` role.
 
 
 
-# Setting in Service Project
 
 
 
