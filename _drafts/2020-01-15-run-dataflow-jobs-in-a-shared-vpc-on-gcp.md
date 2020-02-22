@@ -32,12 +32,12 @@ The organization structure is shown as the following picture. The Organization n
 
 ![org_structure.JPG]({{site.baseurl}}/img/org_structure.JPG)
 
-For the best practices, I have setup the following constraints in the organization policies. 
+For the best practices, I have setup the following constraints in the `Organization Policies` page under the organization's `IAM & Admin`. 
 
 |   Constraint   |   Configuration      |  Exaplanation |
 | ------------- | -------------  |------------- |
-| Define allowed external IPs for VM instances | Set `Policy values` to `Deny All` | All VM instances are not allowed to use external IP address |
-| Skip default network creation | Pick `Customize` and turn on `Enforcement` | Don't create default network when create new project |
+| `Define allowed external IPs for VM instances` | Set `Policy values` to `Deny All` | All VM instances are not allowed to use external IP address |
+| `Skip default network creation` | Pick `Customize` and turn on `Enforcement` | Don't create default network when create new project |
 
 
 
