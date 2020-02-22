@@ -26,28 +26,24 @@ Because Google Cloud Dataflow service needs to use the network shared by the hos
 * TOC
 {:toc}
 
-# Background Information
+# Orgnization and Shared VPC
 
-The organization structure is shown as the following picture. The Organization node(`leifengblog.net`) has two projects, as the their names tell: `my-service-project` is the service project, in which the Dataflow project runs and `my-host-project` is the host project, from which the shared VPC comes. 
+The organization structure is shown as the following table. The Organization node(`leifengblog.net`) has two projects: `my-service-project` is the service project where the Dataflow program runs and `my-host-project` is the host project that hosts the shared VPC. 
 
-![org_structure.JPG]({{site.baseurl}}/img/org_structure.JPG)
+![org_structure.JPG]({{site.baseurl}}/img/post/org_structure.JPG)
 
-For the best practices, I have setup the following constraints in the `Organization Policies` page under the organization's `IAM & Admin`. 
+For the best practices, I have setup the following constraints in the `Organization Policies` page under the organization's `IAM & Admin` menu. 
 
 |   Constraint   |   Configuration      |  Exaplanation |
 | ------------- | -------------  |------------- |
 | `Define allowed external IPs for VM instances` | Set `Policy values` to `Deny All` | All VM instances are not allowed to use external IP address |
 | `Skip default network creation` | Pick `Customize` and turn on `Enforcement` | Don't create default network when create new project |
 
+The VPC shared to the service project is shown in the following table. There are three custom subnets with `Private Google access` on.
+![shared-vpc.JPG]({{site.baseurl}}/img/post/shared-vpc.JPG)
 
 
-
-
-
-
-
-
-![shared-vpc.JPG]({{site.baseurl}}/img/shared-vpc.JPG)
+![shared-vpc.JPG]({{site.baseurl}}/img/post/firewall-rules.JPG)
 
 
 
