@@ -32,14 +32,14 @@ The organization structure is shown as the following picture. The Organization n
 
 ![org_structure.JPG]({{site.baseurl}}/img/org_structure.JPG)
 
-For the best practices, before creating the two projects, I have updated setup the constraints in the organization policies. 
+For the best practices, I have setup the following constraints in the organization policies. 
 
 |   Constraint   |   Configuration      |  Exaplanation |
 | ------------- | -------------  |------------- |
-| Define allowed external IPs for VM instances | Deny All | 4 x cpu, 16 GB Ram, 100 GB disk |
-| hadoop-node-1 | 146.xxx.xxx.76 | 4 x cpu, 16 GB Ram, 100 GB disk |
+| Define allowed external IPs for VM instances | Set `Policy values` to `Deny All` | All VM instances are not allowed to use external IP address |
+| Skip default network creation | Pick `Customize` and turn on `Enforcement` | Don't create default network when create new project |
 
-disabled public IP addresses for VM instances through setting `Define allowed external IPs for VM instances` of the organization policies to `Deny All` and 
+
 
 
 
