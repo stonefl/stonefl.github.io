@@ -16,7 +16,9 @@ thumbnail: /img/post/Google-Cloud-Logo.png
 
 [Shared Virtual Private Network (VPC)](https://cloud.google.com/vpc/docs/shared-vpc) allows an organization to connect resources from multiple projects to a common VPC network. This allows the resources to communicate with each other securely and efficiently using internal IP adresses from that network. When you use shared VPC, you designates a project as a **Host Project** and attach one or more **Service Projects** to it. The common VPC network shared accross host and service projects is called **Shared VPC Network**. Shared VPC is a good practice for organization admins keep centralized control over network resources, while delegating administrative resposibilities to servcie project admins.
 
-Because Google Cloud Dataflow service needs to use the network shared by the host project, there are some consigurations are neccessary to be set up on both host and serive projects to run the Dataflow jobs. This post describes the settings steps need to setup to run a sample `WordCount` job with the Dataflow service.
+[Dataflow regional endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) store and handle metadata about Dataflow jobs, and deploy and control Dataflow workers. However, Dataflow regional endpoints are not yet available in all all Google Cloud regions. 
+
+If the Shared VPC does not have any subnet in the region that provides the Dataflow regional endpoints, you need more settings. In addition, because Google Cloud Dataflow service needs to use the network shared by the host project, there are some consigurations are neccessary to be set up on both Host and Serive projects. This post describes the settings and steps to run a Dataflow sample `WordCount` job in a Shared VPC without the Dataflow regional endpoints.
 
 
 # Table of Content
