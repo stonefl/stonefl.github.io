@@ -41,7 +41,7 @@ For the best practices, the Organiztion Admin has setup the following constraint
 | `Define allowed external IPs for VM instances` | Set `Policy values` to `Deny All` | All VM instances are not allowed to use external IP address |
 | `Skip default network creation` | Pick `Customize` and turn on `Enforcement` | Don't create default network when create new project |
 
-The following table shows the Shared VPC from the Service Project. There are three custom subnets with `Private Google access` on.
+The following table shows the Shared VPC from the Host Project. There are three custom subnets with `Private Google access` on.
 
 ![shared-vpc.JPG]({{site.baseurl}}/img/post/shared-vpc.JPG)
 
@@ -86,7 +86,9 @@ The following settings might need the roles of `Owner` or `Editor` from the Serv
    ```
 
 
+Some VPC networks, like the automatically created default network, include a default-allow-internal rule that meets the firewall requirement for Dataflow.
 
+Because all worker VMs have a network tag with the value dataflow, you can create a more specific firewall rule for Dataflow. A project owner, editor, or Security Admin can use the following gcloud command to create an ingress allow rule that permits traffic on TCP ports 12345 and 12346 from VMs with the network tag dataflow to VMs with the same tag:
 
 
 
