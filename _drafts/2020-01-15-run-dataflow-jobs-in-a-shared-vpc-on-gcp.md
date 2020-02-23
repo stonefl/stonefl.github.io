@@ -26,7 +26,7 @@ Because Google Cloud Dataflow service needs to use the network shared by the hos
 * TOC
 {:toc}
 
-# Orgnization and Shared VPC
+# Background Information
 
 The organization structure is shown as the following table. The Organization node(`leifengblog.net`) has two projects: `my-service-project` is the service project where the Dataflow program runs and `my-host-project` is the host project that hosts the shared VPC. 
 
@@ -57,7 +57,7 @@ The following settings need the roles of `Shared VPC Admin` or `Network Admin` f
 - Add the Dataflow service account from the Service Project, `service-<SERVICE_PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com`, to the Shared VPC with the `Compute Network User` role.
 
 
-# Setting in Service Project
+# Settings in Service Project
 
 The following settings might need the roles of `Owner` or `Editor` from the Service Project:
 
