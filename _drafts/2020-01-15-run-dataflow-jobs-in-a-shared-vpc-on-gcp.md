@@ -26,9 +26,9 @@ Because Google Cloud Dataflow service needs to use the network shared by the hos
 * TOC
 {:toc}
 
-# Background Information
+# Organization and Shared VPC
 
-The organization structure is shown as the following table. The Organization node(`leifengblog.net`) has two projects: `my-service-project` is the service project where the Dataflow program runs and `my-host-project` is the host project that hosts the shared VPC. 
+The organization structure is shown as the following table. The Organization node(`leifengblog.net`) has two projects: `my-service-project` is the Service Project where the Dataflow program runs, and `my-host-project` is the Host Project that hosts the shared VPC. 
 
 ![org_structure.JPG]({{site.baseurl}}/img/post/org_structure.JPG)
 
@@ -39,7 +39,7 @@ For the best practices, the Organiztion Admin has setup the following constraint
 | `Define allowed external IPs for VM instances` | Set `Policy values` to `Deny All` | All VM instances are not allowed to use external IP address |
 | `Skip default network creation` | Pick `Customize` and turn on `Enforcement` | Don't create default network when create new project |
 
-The VPC shared to the service project is shown in the following table. There are three custom subnets with `Private Google access` on.
+The following table shows the Shared VPC from the Service Project. There are three custom subnets with `Private Google access` on.
 
 ![shared-vpc.JPG]({{site.baseurl}}/img/post/shared-vpc.JPG)
 
@@ -94,6 +94,20 @@ The following settings might need the roles of `Owner` or `Editor` from the Serv
 
 # Specifying Execution Paramters
 
+
+
+
+
+
+
+# References
+
+https://cloud.google.com/dataflow/docs/guides/specifying-networks
+https://cloud.google.com/dataflow/docs/concepts/security-and-permissions#cloud-dataflow-service-account
+
+https://cloud.google.com/dataflow/docs/guides/routes-firewall
+https://cloud.google.com/dataflow/docs/concepts/regional-endpoints
+https://cloud.google.com/dataflow/docs/guides/specifying-exec-params
 
 
 
