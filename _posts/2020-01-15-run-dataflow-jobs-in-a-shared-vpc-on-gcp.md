@@ -158,7 +158,7 @@ If you use Eclipse, you can set the above parameters in the **Arguments** tab of
 ![dataflow_eclispe.JPG]({{site.baseurl}}/img/post/dataflow_eclispe.JPG)
 
 
-Hope this post helps. Please feel free to leave your commennts below. Any comments are welcomed.
+I hope this post is helpful. If I missed anything, please let me know.
 
 
 # References
