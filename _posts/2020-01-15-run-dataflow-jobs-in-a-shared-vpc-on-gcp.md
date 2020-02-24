@@ -11,7 +11,6 @@ bigimg: /img/post/Google-Cloud-Logo-black.JPG
 thumbnail: /img/post/Google-Cloud-Logo-black.JPG
 ---
 
-![Google-Cloud-Logo-black.JPG]({{site.baseurl}}/img/post/Google-Cloud-Logo-black.JPG)
 
 [Google Cloud Dataflow](https://cloud.google.com/dataflow/#benefits) is a serverless platform running Apache Beam for unified stream and batch data processing service. With its serverless approach on resource provisioning and horizontal autoscaling, you have access to virtually unlimited capacity and optimized price-to-performance to solve your data pipeline processing challenges.
 <!--more-->
