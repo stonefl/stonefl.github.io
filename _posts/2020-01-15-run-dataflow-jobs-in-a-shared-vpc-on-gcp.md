@@ -65,11 +65,11 @@ The following settings might need the role of `Shared VPC Admin` or `Network Adm
 
 The following settings might need the role of `Owner` or `Editor` from the Service Project:
 
-- Enbale the Cloud Dataflow, Compute Engine, and Cloud Storage APIs. After the Cloud Dataflow API is enbaled, the **Cloud Dataflow Service Account** with format of `service-<PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com` should be created. Now you can contact the shared VPC admin to add the Dataflow service account to the shared VPC with the `Compute Network User` role.
+- Enbale the Cloud Dataflow, Compute Engine, and Cloud Storage APIs. After the Cloud Dataflow API is enbaled, the **Cloud Dataflow Service Account** with format of `service-<PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com` should be created. Now you can contact the shared VPC admin or Host Project Owner to add the Dataflow service account to the shared VPC with `Compute Network User` role.
 
 - In the **IAM & admin** page, make sure that
 
-   1) the **Cloud Dataflow Service Account** has the role of `Cloud Dataflow Service Agent`. Otherwise, you can run the following command to add it:
+   1) the **Cloud Dataflow Service Account** has a role of `Cloud Dataflow Service Agent`, or you can run the following command to add it:
    ```
    gcloud projects add-iam-policy-binding [PROJECT-ID] \
   --member serviceAccount: service-[PROJECT-NUMBER]@dataflow-service-producer-prod.iam.gserviceaccount.com \
@@ -85,6 +85,7 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
 
    ```
 - Create a VPC network in the Service Project. The subnets of the local VPC can be either Custom or Automatic mode, but need to satisfy that:
+
    1) at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
    
    2) the **Private Google Access** has been enabled in the subnet where the Dataflow jobs run. The following figure shows an example settings for a custom mode VPC network.
