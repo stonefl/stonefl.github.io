@@ -86,43 +86,82 @@ The following settings might need the roles of `Owner` or `Editor` from the Serv
    ```
 - Create a VPC network in the Service Project. The subnets of the local VPC can be either Custom or Automatic mode, but need to satisfy that:
    1) at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
+   
    2) the **Private Google Access** has been enabled in the subnet where the Dataflow jobs run. The following figure shows an example settings for a custom mode VPC network.
+   
    ![local_vpc.png]({{site.baseurl}}/img/post/local_vpc.png)
+   
    3) a firewall rule that allows ingress TCP traffic for all Dataflow worker VMs. Because all worker VMs have a network tag with the value dataflow, the project owner, editor, or Security Admin can use the following gcloud command to create an ingress allow firewall rule that permits traffic on TCP ports 12345 and 12346 from Dataflow VMs:
    ```
-   gcloud compute firewall-rules create FIREWALL_RULE_NAME \
-    --network NETWORK \
+   gcloud compute firewall-rules create [FIREWALL_RULE_NAME] \
+    --network [NETWORK] \
     --action allow \
     --direction ingress \
     --target-tags dataflow \
     --source-tags dataflow \
-    --priority 0 \
+    --priority 1000 \
     --rules tcp:12345-12346
    ```
    
-
-
-
-
-
-
-
-
-
-
 # Specifying Execution Paramters
 
+This section describes the settings for the Java SDK 2.x, you can use the settings here for Python following the [Python pipeline options](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-python#setting-other-cloud-dataflow-pipeline-options).
 
+If you use Java and Apache Maven, you need to run Maven command to create the Maven project containing the Apache Beam WordCount example. Note, you only need the last four line if you are behind a proxy, otherwise, feel free to skip it.
 
+```
+$ mvn archetype:generate \
+      -DarchetypeGroupId=org.apache.beam \
+      -DarchetypeArtifactId=beam-sdks-java-maven-archetypes-examples \
+      -DarchetypeVersion=2.19.0 \
+      -DgroupId=org.example \
+      -DartifactId=word-count-beam \
+      -Dversion="0.1" \
+      -Dpackage=org.apache.beam.examples \
+      -DinteractiveMode=false \
+      -Dhttp.proxyHost=[YOUR-PROXY-HOST]
+	  -Dhttp.proxyPort=[YOUR-PROXY-PORT]
+      -Dhttps.proxyHost=[YOUR-PROXY-HOST]
+      -Dhttps.proxyPort=[YOUR-PROXY-PORT]
+```
 
+Once the Maven project created, you can use the following scripts to run the Apache Beam job to Dataflow:
 
+```
+# load the application credential file
+export GOOGLE_APPLICATION_CREDENTIALS="[path-to-authentication-key-file]"
+echo $GOOGLE_APPLICATION_CREDENTIALS
 
+# submit job
+mvn -Pdataflow-runner compile exec:java \
+      -Dexec.mainClass=org.apache.beam.examples.WordCount \
+      -Dhttp.proxyHost=[YOUR-PROXY-HOST] \
+      -Dhttp.proxyPort=[YOUR-PROXY-PORT] \
+      -Dhttps.proxyHost=[YOUR-PROXY-HOST] \
+      -Dhttps.proxyPort=[YOUR-PROXY-PORT] \
+      -Dexec.args="--project=[SERVICE_PROJECT_ID] \
+      --stagingLocation=gs://[CLOUD_STORAGE_BUCKET]/staging/ \
+      --output=gs://[CLOUD_STORAGE_BUCKET]/output/ \
+      --gcpTempLocation=gs://[CLOUD_STORAGE_BUCKET]/temp/ \
+      --runner=DataflowRunner \
+      --usePublicIps=false \
+      --region=us-west1 \
+      --zone=us-west1-a \
+      --subnetwork=https://www.googleapis.com/compute/v1/projects/[SERVICE_PROJECT_ID]/regions/us-west1/subnetworks/[SUBNET_NAME]"
+```
+
+If you use Eclipse, you can set the above parameters in the **Arguments** tab of **Run Configurations**, see below for an example:
+
+![local_vpc.png]({{site.baseurl}}/img/post/local_vpc.png)
 
 # References
 
 https://cloud.google.com/dataflow/docs/guides/specifying-networks
+
 https://cloud.google.com/dataflow/docs/concepts/security-and-permissions#cloud-dataflow-service-account
 
 https://cloud.google.com/dataflow/docs/guides/routes-firewall
+
 https://cloud.google.com/dataflow/docs/concepts/regional-endpoints
+
 https://cloud.google.com/dataflow/docs/guides/specifying-exec-params
