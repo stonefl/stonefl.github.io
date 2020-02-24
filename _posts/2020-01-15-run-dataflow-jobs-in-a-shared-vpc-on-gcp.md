@@ -54,7 +54,7 @@ In addition, the following firewalls are applied to all instances in the shared 
 
 The following settings might need the roles of `Shared VPC Admin` or `Network Admin` from the Organization or Host Project:
 
-- Add the user account or user group that runs Dataflow in the Service Project to the shared VPC with `Compute Network User` role, otherwise, the user/group cannot see the `Network shared to my project` tab on the `VPC network` page in the Service project.
+- Add the user account or user group that runs Dataflow in the Service Project to the shared VPC with `Compute Network User` role, otherwise, the user/group cannot see the `Network shared to my project` tab on the `VPC network` page in the Service project. See below for an example.
 
 ![shared-vpc-service.JPG]({{site.baseurl}}/img/post/shared-vpc-service.JPG)
 
