@@ -52,20 +52,18 @@ In addition, the following firewalls are applied to all instances in the shared 
 
 # Settings in Host Project
 
-The following settings might need the roles of `Shared VPC Admin` or `Network Admin` from the Organization or Host Project:
+The following settings might need the role of `Shared VPC Admin` or `Network Admin` from the Organization or Host Project:
 
 - Add the user account or user group that runs Dataflow in the Service Project to the shared VPC with `Compute Network User` role, otherwise, the user/group cannot see the `Network shared to my project` tab on the `VPC network` page in the Service project. See below for an example.
 
 ![shared-vpc-service.JPG]({{site.baseurl}}/img/post/shared-vpc-service.JPG)
 
-- Add the Dataflow service account from the Service Project, `service-<SERVICE_PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com`, to the Shared VPC with the `Compute Network User` role.
+- Add the Dataflow service account from the Service Project, `service-<SERVICE_PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com`, to the Shared VPC with the `Compute Network User` role. The Dataflow service account would be created once you enable the Dataflow API, which is one of the settings in Service Project below.
 
 
 # Settings in Service Project
 
-The following settings might need the roles of `Owner` or `Editor` from the Service Project:
-
-- Create authentication key file following the process described in [set up authentication](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-java-maven#before-you-begin).
+The following settings might need the role of `Owner` or `Editor` from the Service Project:
 
 - Enbale the Cloud Dataflow, Compute Engine, and Cloud Storage APIs. After the Cloud Dataflow API is enbaled, the **Cloud Dataflow Service Account** with format of `service-<PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com` should be created. Now you can contact the shared VPC admin to add the Dataflow service account to the shared VPC with the `Compute Network User` role.
 
@@ -104,6 +102,8 @@ The following settings might need the roles of `Owner` or `Editor` from the Serv
     --priority 1000 \
     --rules tcp:12345-12346
    ```
+ 
+- Create authentication key file following the process described in [set up authentication](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-java-maven#before-you-begin).
    
 # Specifying Execution Paramters
 
