@@ -63,20 +63,20 @@ The following settings need the roles of `Shared VPC Admin` or `Network Admin` f
 
 The following settings might need the roles of `Owner` or `Editor` from the Service Project:
 
-- Create authentication key file following the process described by [set up authentication](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-java-maven#before-you-begin).
+- Create authentication key file following the process described in [set up authentication](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-java-maven#before-you-begin).
 
 - Enbale the Cloud Dataflow, Compute Engine, and Cloud Storage APIs. After the Cloud Dataflow API is enbaled, the **Cloud Dataflow Service Account** with format of `service-<PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com` should be created. Now you can contact the shared VPC admin to add the Dataflow service account to the shared VPC with the `Compute Network User` role.
 
 - In the **IAM & admin** page, make sure that
 
-   1) The **Cloud Dataflow Service Account** has the role of `Cloud Dataflow Service Agent`. Otherwise, you can run the following command to add it:
+   1) the **Cloud Dataflow Service Account** has the role of `Cloud Dataflow Service Agent`. Otherwise, you can run the following command to add it:
    ```
    gcloud projects add-iam-policy-binding [PROJECT-ID] \
   --member serviceAccount: service-[PROJECT-NUMBER]@dataflow-service-producer-prod.iam.gserviceaccount.com \
   --role roles/dataflow.serviceAgent
 
    ```
-   2) The **Compute Engine Service Agent** has roles of `Compute Network User` and `Compute Engine Service Agent`. Otherwise, use the following command to add them:
+   2) the **Compute Engine Service Agent** has roles of `Compute Network User` and `Compute Engine Service Agent`. Otherwise, use the following command to add them:
    ```
    gcloud projects add-iam-policy-binding [PROJECT-ID] \
   --member serviceAccount: service-[PROJECT-NUMBER]@ compute-system.iam.gserviceaccount.com \
@@ -84,11 +84,16 @@ The following settings might need the roles of `Owner` or `Editor` from the Serv
   --role roles/compute.serviceAgent
 
    ```
+- Create a VPC network in the Service Project. The subnets of the local VPC can be either Custom or Automatic mode, but need to satisfy that:
+   1) at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
+   2) the **Private Google Access** has been enabled in the subnet where the Dataflow jobs run. The following figure shows an example settings for a custom mode VPC network.
+   ![local_vpc.JPG]({{site.baseurl}}/img/post/local_vpc.JPG)
+   3) a firewall rule that allows ingress TCP traffic for all Dataflow worker VMs. Because all worker VMs have a network tag with the value dataflow, the project owner, editor, or Security Admin can use the following gcloud command to create an ingress allow firewall rule that permits traffic on TCP ports 12345 and 12346 from Dataflow VMs:
+   
+   
 
 
-Some VPC networks, like the automatically created default network, include a default-allow-internal rule that meets the firewall requirement for Dataflow.
 
-Because all worker VMs have a network tag with the value dataflow, you can create a more specific firewall rule for Dataflow. A project owner, editor, or Security Admin can use the following gcloud command to create an ingress allow rule that permits traffic on TCP ports 12345 and 12346 from VMs with the network tag dataflow to VMs with the same tag:
 
 
 
@@ -112,9 +117,3 @@ https://cloud.google.com/dataflow/docs/concepts/security-and-permissions#cloud-d
 https://cloud.google.com/dataflow/docs/guides/routes-firewall
 https://cloud.google.com/dataflow/docs/concepts/regional-endpoints
 https://cloud.google.com/dataflow/docs/guides/specifying-exec-params
-
-
-
-
-
-
