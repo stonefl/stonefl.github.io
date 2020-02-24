@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Run Dataflow Jobs in a Shared VPC without Regional Endpoints on GCP
-date: '2019-12-14'
+date: '2020-01-14'
 categories:
   - Google Cloud Platform
 tags:
