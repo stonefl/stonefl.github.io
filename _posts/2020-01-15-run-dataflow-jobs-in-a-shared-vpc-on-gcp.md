@@ -108,9 +108,9 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
    
 # Specifying Execution Paramters
 
-This section describes the settings for the Java SDK 2.x, you can use the settings here for Python following the [Python pipeline options](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-python#setting-other-cloud-dataflow-pipeline-options).
+This section describes the settings for Java SDK 2.x, you can do the same settings here for Python following the [Python pipeline options](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-python#setting-other-cloud-dataflow-pipeline-options).
 
-If you use Java and Apache Maven, you need to run Maven command to create the Maven project containing the Apache Beam WordCount example. Note, you only need the last four line if you are behind a proxy, otherwise, feel free to skip it.
+If you use Java and Apache Maven, you need to run the following command to create the Maven project containing the Apache Beam WordCount source code. Note, you only need the last four lines if you are behind a proxy, otherwise, feel free to skip them.
 
 ```
 $ mvn archetype:generate \
@@ -155,7 +155,7 @@ mvn -Pdataflow-runner compile exec:java \
 
 If you use Eclipse, you can set the above parameters in the **Arguments** tab of **Run Configurations**, see below for an example:
 
-![local_vpc.png]({{site.baseurl}}/img/post/local_vpc.png)
+![dataflow_eclispe.JPG]({{site.baseurl}}/img/post/dataflow_eclispe.JPG)
 
 # References
 
