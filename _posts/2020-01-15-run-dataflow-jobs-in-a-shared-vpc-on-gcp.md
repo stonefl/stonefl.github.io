@@ -86,7 +86,7 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
    ```
 - Create a VPC network in the Service Project. The subnets of the local VPC can be either Custom or Automatic mode, but need to satisfy that:
 
-   1) at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
+   1) include at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
    
    2) the **Private Google Access** has been enabled in the subnet where the Dataflow jobs run. The following figure shows an example settings for a custom mode VPC network.
    
