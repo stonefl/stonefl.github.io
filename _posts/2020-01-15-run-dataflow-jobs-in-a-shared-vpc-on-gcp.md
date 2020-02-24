@@ -155,9 +155,9 @@ mvn -Pdataflow-runner compile exec:java \
 
 Please refer to the [Document of Specifying execution parameters](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params) for detailed explanation on each of the parameters. I want to highlight couple of important details here:
 
-- for the [PROJECT-ID], make sure to use the project id, rather than the project name
-- keep the [REGION-NAME] and [SUBNET-NAME] consistent to the VPC you’ve created. In MY example, they are `us-west1` and `my-subnet-1`, respectively.
-3.	Don’t forget the parameter `--usePublicIps=false` if your organization don't allow to use external IP address.
+- For the [PROJECT-ID], make sure to use the project id, rather than the project name
+- Keep the [REGION-NAME] and [SUBNET-NAME] consistent to the VPC you’ve created. In MY example, they are `us-west1` and `my-subnet-1`, respectively.
+- Don’t forget the parameter `--usePublicIps=false`, if your organization don't allow to use external IP address.
 
 
 If you would like to use Eclipse, you can set the above parameters in the **Arguments** tab of **Run Configurations**, see below for an example:
