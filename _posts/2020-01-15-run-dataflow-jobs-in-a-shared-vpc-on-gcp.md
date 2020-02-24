@@ -84,15 +84,15 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
   --role roles/compute.serviceAgent
 
    ```
-- Create a VPC network in the Service Project. The subnets of the local VPC can be either Custom or Automatic mode, but need to satisfy that:
+- Create a VPC network in the Service Project. The local VPC can be either Custom or Automatic, but needs to:
 
-   1) include at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
+   1) includes at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
    
-   2) the **Private Google Access** has been enabled in the subnet where the Dataflow jobs run. The following figure shows an example settings for a custom mode VPC network.
+   2) enables **Private Google Access** in the subnet where the Dataflow jobs run. The following figure shows an example settings for a custom mode VPC network.
    
    ![local_vpc.png]({{site.baseurl}}/img/post/local_vpc.png)
    
-   3) a firewall rule that allows ingress TCP traffic for all Dataflow worker VMs. Because all worker VMs have a network tag with the value dataflow, the project owner, editor, or Security Admin can use the following gcloud command to create an ingress allow firewall rule that permits traffic on TCP ports 12345 and 12346 from Dataflow VMs:
+   3) has a firewall rule that allows ingress TCP traffic for all Dataflow worker VMs. Because all Dataflow worker VMs have a network tag of `dataflow`, the Project Owner/Editor, or Security Admin can use the following gcloud command to create an ingress allow firewall rule that permits traffic on TCP ports 12345 and 12346 from Dataflow VMs:
    ```
    gcloud compute firewall-rules create [FIREWALL_RULE_NAME] \
     --network [NETWORK] \
