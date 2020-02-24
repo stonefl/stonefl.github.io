@@ -157,6 +157,10 @@ If you use Eclipse, you can set the above parameters in the **Arguments** tab of
 
 ![dataflow_eclispe.JPG]({{site.baseurl}}/img/post/dataflow_eclispe.JPG)
 
+
+Hope this post helps. Please feel free to leave your commennts below. Any comments are welcomed.
+
+
 # References
 
 https://cloud.google.com/dataflow/docs/guides/specifying-networks
