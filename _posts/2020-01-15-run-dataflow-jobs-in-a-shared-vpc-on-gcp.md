@@ -30,18 +30,18 @@ If the Shared VPC does not have any subnet in the region that provides the Dataf
 
 # Organization and Shared VPC
 
-The organization structure is shown as the following table. The Organization node(`leifengblog.net`) has two projects: `my-service-project` is the Service Project where the Dataflow program runs, and `my-host-project` is the Host Project that hosts the shared VPC. 
+The organization structure used in the experiment is shown in the following table. The Organization node(`leifengblog.net`) has two projects: `my-service-project` is the Service Project where the Dataflow job runs, and `my-host-project` is the Host Project that hosts the shared VPC. 
 
 ![org_structure.JPG]({{site.baseurl}}/img/post/org_structure.JPG)
 
-For the best practices, the Organiztion Admin has setup the following constraints in the `Organization Policies` page under the organization's `IAM & Admin` menu. 
+For the best practice, the Organiztion Admin has setup the following constraints in the `Organization Policies` page under the organization's `IAM & Admin` menu. 
 
 |   Constraint   |   Configuration      |  Exaplanation |
 | ------------- | -------------  |------------- |
 | `Define allowed external IPs for VM instances` | Set `Policy values` to `Deny All` | All VM instances are not allowed to use external IP address |
-| `Skip default network creation` | Pick `Customize` and turn on `Enforcement` | Don't create default network when create new project |
+| `Skip default network creation` | Pick `Customize` and turn on `Enforcement` | Don't create default network when create a new project |
 
-The following table shows the Shared VPC from the Host Project. There are three custom subnets with `Private Google access` on.
+The following table shows the Shared VPC from the Host Project. There is only one subnet in region `us-west2` with `Private Google access` on, unfortunately there is no Dataflow regional endpoint available in this region.
 
 ![shared-vpc.JPG]({{site.baseurl}}/img/post/shared-vpc.JPG)
 
