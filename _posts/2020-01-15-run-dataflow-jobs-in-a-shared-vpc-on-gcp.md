@@ -84,7 +84,7 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
   --role roles/compute.serviceAgent
 
    ```
-- Create a VPC network in the Service Project. The local VPC can be either Custom or Automatic, but needs to:
+- This is the most tricky part, you need to create a VPC network in the Service Project. The local VPC can be either Custom or Automatic, but needs to:
 
    1) includes at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
    
@@ -128,7 +128,7 @@ $ mvn archetype:generate \
       -Dhttps.proxyPort=[YOUR-PROXY-PORT]
 ```
 
-Once the Maven project created, you can use the following scripts to run the Apache Beam job to Dataflow:
+Once the Maven project created, you can use the following scripts to run the Apache Beam job to Dataflow: 
 
 ```
 # load the application credential file
@@ -148,12 +148,19 @@ mvn -Pdataflow-runner compile exec:java \
       --gcpTempLocation=gs://[CLOUD_STORAGE_BUCKET]/temp/ \
       --runner=DataflowRunner \
       --usePublicIps=false \
-      --region=us-west1 \
-      --zone=us-west1-a \
+      --region=[REGION-NAME] \
+      --zone=us-[ZONE-NAME] \
       --subnetwork=https://www.googleapis.com/compute/v1/projects/[SERVICE_PROJECT_ID]/regions/us-west1/subnetworks/[SUBNET_NAME]"
 ```
 
-If you use Eclipse, you can set the above parameters in the **Arguments** tab of **Run Configurations**, see below for an example:
+Please refer to the [Document of Specifying execution parameters](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params) for detailed explanation on each of the parameters. I want to highlight couple of important details here:
+
+- for the [PROJECT-ID], make sure to use the project id, rather than the project name
+- keep the [REGION-NAME] and [SUBNET-NAME] consistent to the VPC you’ve created. In MY example, they are `us-west1` and `my-subnet-1`, respectively.
+3.	Don’t forget the parameter `--usePublicIps=false` if your organization don't allow to use external IP address.
+
+
+If you would like to use Eclipse, you can set the above parameters in the **Arguments** tab of **Run Configurations**, see below for an example:
 
 ![dataflow_eclispe.JPG]({{site.baseurl}}/img/post/dataflow_eclispe.JPG)
 
