@@ -109,8 +109,9 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
    
 # Specifying Execution Paramters
 
-This section describes the settings for Java SDK 2.x, you can do the same settings here for Python following the [Python pipeline options](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params).
+This section describes the settings for Java SDK 2.x and Python 3.x. Check the [quickstarts](https://cloud.google.com/dataflow/docs/quickstarts) for more information.
 
+## Java and Maven
 If you use Java and Apache Maven, you need to run the following command to create the Maven project containing the Apache Beam WordCount source code. Note, you only need the last four lines if you are behind a proxy, otherwise, feel free to skip them.
 
 ```
@@ -160,10 +161,34 @@ Please refer to the [Document of Specifying execution parameters](https://cloud.
 - Keep the [REGION-NAME] and [SUBNET-NAME] consistent to the VPC you’ve created. In MY example, they are `us-west1` and `my-subnet-1`, respectively.
 - Don’t forget the parameter `--usePublicIps=false`, if your organization don't allow to use external IP address.
 
+## Java and Eclipse
 
-If you would like to use Eclipse, you can set the above parameters in the **Arguments** tab of **Run Configurations**, see below for an example:
+If you would use Eclipse, you can set the above parameters in the **Arguments** tab of **Run Configurations**, see below for an example:
 
 ![dataflow_eclispe.JPG]({{site.baseurl}}/img/post/dataflow_eclispe.JPG)
+
+## Python
+
+If you use Python, use the following scripts to run the dataflow job in the Service Project decribed in this post.
+```
+export GOOGLE_APPLICATION_CREDENTIALS="[path-to-authentication-key-file]"
+echo $GOOGLE_APPLICATION_CREDENTIALS
+
+PROJECT=[SERVICE_PROJECT_ID] 
+BUCKET=gs://[CLOUD_STORAGE_BUCKET]
+
+
+python -m apache_beam.examples.wordcount \
+  --input gs://dataflow-samples/shakespeare/kinglear.txt \
+  --output $BUCKET/outputs \
+  --temp_location $BUCKET/tmp \
+  --runner DataflowRunner \
+  --project $PROJECT \
+  --region 'us-west1' \
+  --subnetwork 'https://www.googleapis.com/compute/v1/projects/[SERVICE_PROJECT_ID] /regions/us-west1/subnetworks/my-subnet-1' \
+  --no_use_public_ips True
+
+```
 
 
 I hope this post is helpful. If I missed anything, please let me know.
