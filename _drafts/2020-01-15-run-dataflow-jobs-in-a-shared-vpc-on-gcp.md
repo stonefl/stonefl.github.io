@@ -89,7 +89,16 @@ The following settings might need the roles of `Owner` or `Editor` from the Serv
    2) the **Private Google Access** has been enabled in the subnet where the Dataflow jobs run. The following figure shows an example settings for a custom mode VPC network.
    ![local_vpc.JPG]({{site.baseurl}}/img/post/local_vpc.JPG)
    3) a firewall rule that allows ingress TCP traffic for all Dataflow worker VMs. Because all worker VMs have a network tag with the value dataflow, the project owner, editor, or Security Admin can use the following gcloud command to create an ingress allow firewall rule that permits traffic on TCP ports 12345 and 12346 from Dataflow VMs:
-   
+   ```
+   gcloud compute firewall-rules create FIREWALL_RULE_NAME \
+    --network NETWORK \
+    --action allow \
+    --direction ingress \
+    --target-tags dataflow \
+    --source-tags dataflow \
+    --priority 0 \
+    --rules tcp:12345-12346
+   ```
    
 
 
