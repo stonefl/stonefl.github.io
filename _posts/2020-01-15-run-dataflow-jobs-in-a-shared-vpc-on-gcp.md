@@ -109,7 +109,7 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
    
 # Specifying Execution Paramters
 
-This section describes the settings for Java SDK 2.x, you can do the same settings here for Python following the [Python pipeline options](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-python#setting-other-cloud-dataflow-pipeline-options).
+This section describes the settings for Java SDK 2.x, you can do the same settings here for Python following the [Python pipeline options](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params).
 
 If you use Java and Apache Maven, you need to run the following command to create the Maven project containing the Apache Beam WordCount source code. Note, you only need the last four lines if you are behind a proxy, otherwise, feel free to skip them.
 
