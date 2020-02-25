@@ -85,7 +85,7 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
   --role roles/compute.serviceAgent
 
    ```
-- This is the most tricky part, you need to create a VPC network in the Service Project. The local VPC can be either Custom or Automatic, but needs to:
+- This is the trickiest part, you need to create a VPC network in the Service Project. The local VPC can be either Custom or Automatic, but needs to:
 
    1) includes at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
    
