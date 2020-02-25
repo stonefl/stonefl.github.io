@@ -35,7 +35,7 @@ You can also set up the proxy through comand lines:
 
 ~~~
 set http_proxy=http://[username:password@]proxyserver:port
-set http_proxy=https://[username:password@]proxyserver:port
+set https_proxy=https://[username:password@]proxyserver:port
 ~~~
 
 After setting up proxies, then you can install packages through running:
