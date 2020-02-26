@@ -155,7 +155,7 @@ mvn -Pdataflow-runner compile exec:java \
       --subnetwork=https://www.googleapis.com/compute/v1/projects/[SERVICE_PROJECT_ID]/regions/us-west1/subnetworks/[SUBNET_NAME]"
 ```
 
-Please refer to the [Document of Specifying execution parameters](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params) for detailed explanation on each of the parameters. I want to highlight couple of important details here:
+Please refer to the [Document of Specifying execution parameters](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params) for detailed explanation on each of the parameters. There are a few points worth highlighting here:
 
 - For the [PROJECT-ID], make sure to use the project id, rather than the project name
 - Keep the [REGION-NAME] and [SUBNET-NAME] consistent to the VPC you’ve created. In MY example, they are `us-west1` and `my-subnet-1`, respectively.
