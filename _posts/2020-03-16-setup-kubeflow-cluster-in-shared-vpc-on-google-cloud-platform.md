@@ -7,6 +7,8 @@ categories:
   - Google Cloud Platform
 tags:
   - Kubeflow
+bigimg: /img/post/Google-Cloud-Logo-black.JPG
+thumbnail: /img/post/Google-Cloud-Logo-black.JPG
 ---
 [Kubeflow](https://www.kubeflow.org/) is an open-source project which aims to make running ML workloads on Kubernetes simple, portable and scalable. However, setting up a Kubeflow cluster in a shared VPC on Google Cloud Platform can not be done through the web console yet. This post tries to describe the steps you need to follow to set up a Kubeflow using a Shared VPC through command line. 
 <!--more-->
