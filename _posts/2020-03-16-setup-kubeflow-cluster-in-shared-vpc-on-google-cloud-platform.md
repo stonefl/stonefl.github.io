@@ -94,7 +94,7 @@ cluster:
   initialClusterVersion: "{{ properties['cluster-version'] }}"
 ```
 5. In `${KF_DIR}/gcp_config/cluster.jinja`, disable subnetwork creation and specify secondary IP ranges by name (ipAllocationPolicy section may have to be moved out of the IF block if you aren't setting private cluster = true)
-```
+```jinja
 {% if properties['securityConfig']['privatecluster'] %}
 ipAllocationPolicy:
   createSubnetwork: false
