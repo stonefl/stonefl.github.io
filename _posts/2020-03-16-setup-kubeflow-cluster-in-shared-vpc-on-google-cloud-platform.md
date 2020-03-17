@@ -71,28 +71,32 @@ export KF_DIR=${BASE_DIR}/${KF_NAME}
 
 ## Deploy Kubeflow with Customization
 
-1. Download the KFDef file to your local directory to allow modifications
+- Download the KFDef file to your local directory to allow modifications
+
 ```
 export CONFIG_FILE="kfdef.yaml"
 mkdir -p ${KF_DIR}
 cd ${KF_DIR}
 curl -L -o ${CONFIG_FILE} https://raw.githubusercontent.com/kubeflow/manifests/v1.0-branch/kfdef/kfctl_gcp_iap.v1.0.0.yaml
 ```
-**CONFIG_FILE** should be the name you would like to use for your local config file; e.g. “kfdef.yaml”
+* **CONFIG_FILE** should be the name you would like to use for your local config file; e.g. “kfdef.yaml”
 
-2. Edit the KFDef spec in the yaml file. The following snippet shows you how to set values in the configuration file using yq:
+- Edit the KFDef spec in the yaml file. The following snippet shows you how to set values in the configuration file using yq:
 
 ```
 yq w -i ${CONFIG_FILE} 'spec.plugins[0].spec.project' ${PROJECT}
 yq w -i ${CONFIG_FILE} 'spec.plugins[0].spec.zone' ${ZONE}
 yq w -i ${CONFIG_FILE} 'metadata.name' ${KF_NAME}
 ```
-3. Run the kfctl build command to generate kustomize and GCP Deployment manager configuration files for your deployment:
+- Run the kfctl build command to generate kustomize and GCP Deployment manager configuration files for your deployment:
+
 ```
 cd ${KF_DIR}
 kfctl build -V -f ${CONFIG_FILE}
 ```
-4. Then update the `${KF_DIR}/gcp_config/cluster.jinja` file created from step 3 to specify the network and subnetwork:
+
+- Then update the `${KF_DIR}/gcp_config/cluster.jinja` file created from step 3 to specify the network and subnetwork:
+
 ```
 cluster:
   name: {{ CLUSTER_NAME }}
@@ -100,7 +104,7 @@ cluster:
   subnetwork: projects/<host project ID>/regions/<region>/subnetworks/<subnet name>
   initialClusterVersion: "{{ properties['cluster-version'] }}"
 ```
-5. In `${KF_DIR}/gcp_config/cluster.jinja`, disable subnetwork creation and specify secondary IP ranges by name (ipAllocationPolicy section may have to be moved out of the IF block if you aren't setting private cluster = true)
+- In `${KF_DIR}/gcp_config/cluster.jinja`, disable subnetwork creation and specify secondary IP ranges by name (ipAllocationPolicy section may have to be moved out of the IF block if you aren't setting private cluster = true)
 ```jinja
 { if properties['securityConfig']['privatecluster'] }
 ipAllocationPolicy:
@@ -109,12 +113,14 @@ ipAllocationPolicy:
   clusterSecondaryRangeName: <name of secondary ip range for pods>
   servicesSecondaryRangeName: <name of secondary ip range for services>
 ```
-6. Enable private clusters by editing `${KF_DIR}/gcp_config/cluster-kubeflow.yaml` and updating the following two parameters:
+- Enable private clusters by editing `${KF_DIR}/gcp_config/cluster-kubeflow.yaml` and updating the following two parameters:
 ```
+
 privatecluster: true
 gkeApiVersion: v1beta1
 ```
-7. After above changes, run the kfctl apply command to deploy Kubeflow:
+
+After above changes, run the kfctl apply command to deploy Kubeflow:
 
 ```
 cd ${KF_DIR}
@@ -129,31 +135,37 @@ While it is running, you can view instantiation of the following objects in the 
 In **Deployment Manager**, two deployment objects will appear:
 * {KF_NAME}-storage
 * {KF_NAME}kubeflow-qwiklab
+
 In **Kubernetes Engine**, a cluster named as {KF_NAME} will appear:
 * In the Workloads section, a number of Kubeflow components
 * In the Services section, a number of Kubeflow services
 
 When the deployment finishes, check the resources installed in the namespace kubeflow in your new cluster. To do this from the command line, first set your kubectl credentials to point to the new cluster:
+
 ```
 gcloud container clusters get-credentials ${KF_NAME} --zone ${ZONE} --project ${PROJECT}
 ```
+
 Then see what’s installed in the `kubeflow` namespace of your GKE cluster:
 ```
 kubectl -n kubeflow get all
 ```
 
 ## Delete Kubeflow Deployment
-Once you done your job, you use the following commands to delete the deployment:
+Once you done your job, you can use the following commands to delete the deployment:
 
 If you want to delete all the resources, including storage:
+
 ```
 kfctl delete -f ${CONFIG_FILE} --delete_storage
 ```
 
 If you want to preserve storage, which contains metadata and information
+
 ```
 kfctl delete -f ${CONFIG_FILE}
 ```
+
 If you want to do it from the web console, go the `Deployment Manager` page and delete the deployments with names of `${KF_NAME}` and `${KF_NAME}_strorage`.
 
 ## References
