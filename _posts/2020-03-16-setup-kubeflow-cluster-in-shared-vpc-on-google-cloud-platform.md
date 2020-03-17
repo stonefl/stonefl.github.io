@@ -51,7 +51,7 @@ export CONFIG_URI="https://raw.githubusercontent.com/kubeflow/manifests/v1.0-bra
 export CLIENT_ID=<CLIENT_ID from OAuth page>
 export CLIENT_SECRET=<CLIENT_SECRET from OAuth page>
 ```
-The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** -- **Credentials**
+The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** -> **Credentials**
 
 8. Pick a name `KF_NAME` for your Kubeflow deployment and directory for your configuration.
 ```
@@ -94,7 +94,7 @@ cluster:
   initialClusterVersion: "{{ properties['cluster-version'] }}"
 ```
 5. In `${KF_DIR}/gcp_config/cluster.jinja`, disable subnetwork creation and specify secondary IP ranges by name (ipAllocationPolicy section may have to be moved out of the IF block if you aren't setting private cluster = true)
-```
+```yaml
 {% if properties['securityConfig']['privatecluster'] %}
 ipAllocationPolicy:
   createSubnetwork: false
