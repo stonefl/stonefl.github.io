@@ -59,7 +59,8 @@ export CLIENT_SECRET=<CLIENT_SECRET from OAuth page>
 
 The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** -> **Credentials**
 
-8. Pick a name `KF_NAME` for your Kubeflow deployment and directory for your configuration.
+- Pick names for your Kubeflow deployment and directory for your configuration:
+
 ```
 export KF_NAME=<your choice of name for the Kubeflow deployment>
 export BASE_DIR=<path to a base directory>
