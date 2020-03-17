@@ -12,15 +12,15 @@ tags:
 <!--more-->
 
 ## Prepare the Environment
-1. Install [Google SDK](https://cloud.google.com/sdk/), if you use Cloud Shell, enable the [boost mode](https://cloud.google.com/shell/docs/features#boost_mode). The following steps are tested in Cloud Shell. 
-2. Run this command in the service project to check if subnet and secondary ranges are usable
+- Install [Google SDK](https://cloud.google.com/sdk/), if you use Cloud Shell, enable the [boost mode](https://cloud.google.com/shell/docs/features#boost_mode). The following steps are tested in Cloud Shell. 
+- Run this command in the service project to check if subnet and secondary ranges are usable
 ```
 gcloud container subnets list-usable \                 
 --project <service project ID> \  
 --network-project <Host Project ID>
 ```
-3. Follow this guide to [set up OAuth for Cloud IAP](https://www.kubeflow.org/docs/gke/deploy/oauth-setup/).
-4. Download and install `kfctl` from [kfctl releases page](https://github.com/kubeflow/kfctl/releases/tag/v1.0):
+- Follow this guide to [set up OAuth for Cloud IAP](https://www.kubeflow.org/docs/gke/deploy/oauth-setup/).
+- Download and install `kfctl` from [kfctl releases page](https://github.com/kubeflow/kfctl/releases/tag/v1.0):
 
 ```
 # make a bin folder to contain the kfctl
@@ -32,7 +32,8 @@ tar -xvf /tmp/kfctl_v1.0-0-g94c35cf_linux.tar.gz -C ~/bin
 # add the kfctl binary to the PATH
 export PATH=$PATH:~/bin
 ```
-5. Configure gcloud default values for zone and project:
+- Configure gcloud default values for zone and project:
+
 ```
 # Set your GCP project ID and the zone where you want to create 
 # the Kubeflow deployment:
@@ -42,15 +43,20 @@ export ZONE=<your GCP zone>
 gcloud config set project ${PROJECT}    
 gcloud config set compute/zone ${ZONE}
 ```
-6. Select the KFDef spec to use as the basis for your deployment
+
+- Select the KFDef spec to use as the basis for your deployment
+
 ```
 export CONFIG_URI="https://raw.githubusercontent.com/kubeflow/manifests/v1.0-branch/kfdef/kfctl_gcp_iap.v1.0.0.yaml"
 ```
-7. Create environment variables containing the OAuth client ID and secret that you created earlier
+
+- Create environment variables containing the OAuth client ID and secret that you created earlier
+
 ```
 export CLIENT_ID=<CLIENT_ID from OAuth page>
 export CLIENT_SECRET=<CLIENT_SECRET from OAuth page>
 ```
+
 The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** -> **Credentials**
 
 8. Pick a name `KF_NAME` for your Kubeflow deployment and directory for your configuration.
