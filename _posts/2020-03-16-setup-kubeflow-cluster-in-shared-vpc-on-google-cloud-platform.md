@@ -51,15 +51,15 @@ export CONFIG_URI="https://raw.githubusercontent.com/kubeflow/manifests/v1.0-bra
 export CLIENT_ID=<CLIENT_ID from OAuth page>
 export CLIENT_SECRET=<CLIENT_SECRET from OAuth page>
 ```
-The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** --> **Credentials**
+The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** -- **Credentials**
 
-8. Pick a name KF_NAME for your Kubeflow deployment and directory for your configuration.
+8. Pick a name `KF_NAME` for your Kubeflow deployment and directory for your configuration.
 ```
 export KF_NAME=<your choice of name for the Kubeflow deployment>
 export BASE_DIR=<path to a base directory>
 export KF_DIR=${BASE_DIR}/${KF_NAME}
 ```
-*  For example, your kubeflow deployment name might be ‘my-kubeflow’ or ‘kf-test’.
+* For example, your kubeflow deployment name might be ‘my-kubeflow’ or ‘kf-test’.
 * Set base directory where you want to store one or more Kubeflow deployments. For example, ${HOME}/kf_deployments.
 
 ## Deploy Kubeflow with Customization
