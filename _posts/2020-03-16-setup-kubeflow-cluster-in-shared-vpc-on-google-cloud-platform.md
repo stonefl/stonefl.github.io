@@ -51,7 +51,7 @@ export CONFIG_URI="https://raw.githubusercontent.com/kubeflow/manifests/v1.0-bra
 export CLIENT_ID=<CLIENT_ID from OAuth page>
 export CLIENT_SECRET=<CLIENT_SECRET from OAuth page>
 ```
-The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting** APIs & Services** -> **Credentials**
+The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** --> **Credentials**
 
 8. Pick a name KF_NAME for your Kubeflow deployment and directory for your configuration.
 ```
