@@ -61,8 +61,7 @@ Step 7: Create environment variables containing the OAuth client ID and secret t
 export CLIENT_ID=<CLIENT_ID from OAuth page>
 export CLIENT_SECRET=<CLIENT_SECRET from OAuth page>
 ```
-
-The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** -> **Credentials**
+* The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** -> **Credentials**
 
 - Pick names for your Kubeflow deployment and directory for your configuration:
 
