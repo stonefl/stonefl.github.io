@@ -135,6 +135,7 @@ Cluster creation will take 3 to 5 minutes to complete. Do not proceed until the 
 Note: You may notice warnings in the console related to ... **Encountered error applying application cert-manager** ... and ... **Default user namespace pending creation** ... these are advisory and will not affect completion of the cluster.
 
 While it is running, you can view instantiation of the following objects in the GCP Console:
+
 In **Deployment Manager**, two deployment objects will appear:
 * {KF_NAME}-storage
 * {KF_NAME}kubeflow-qwiklab
