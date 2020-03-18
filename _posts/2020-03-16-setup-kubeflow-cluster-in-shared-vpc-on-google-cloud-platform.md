@@ -14,15 +14,19 @@ thumbnail: /img/post/Google-Cloud-Logo-black.JPG
 <!--more-->
 
 ## Prepare the Environment
-- Install [Google SDK](https://cloud.google.com/sdk/), if you use Cloud Shell, enable the [boost mode](https://cloud.google.com/shell/docs/features#boost_mode). The following steps are tested in Cloud Shell. 
-- Run this command in the service project to check if subnet and secondary ranges are usable
+1. Install [Google SDK](https://cloud.google.com/sdk/), if you use Cloud Shell, enable the [boost mode](https://cloud.google.com/shell/docs/features#boost_mode). The following steps are tested in Cloud Shell.
+
+2. Run this command in the service project to check if any subnet and secondary ranges are usable:
+
 ```
 gcloud container subnets list-usable \                 
 --project <service project ID> \  
 --network-project <Host Project ID>
 ```
-- Follow this guide to [set up OAuth for Cloud IAP](https://www.kubeflow.org/docs/gke/deploy/oauth-setup/).
-- Download and install `kfctl` from [kfctl releases page](https://github.com/kubeflow/kfctl/releases/tag/v1.0):
+
+3. Follow this guide to [set up OAuth for Cloud IAP](https://www.kubeflow.org/docs/gke/deploy/oauth-setup/).
+
+4. Download and install `kfctl` from [kfctl releases page](https://github.com/kubeflow/kfctl/releases/tag/v1.0) through the following commands:
 
 ```
 # make a bin folder to contain the kfctl
