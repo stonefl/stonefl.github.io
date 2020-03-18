@@ -49,13 +49,13 @@ gcloud config set project ${PROJECT}
 gcloud config set compute/zone ${ZONE}
 ```
 
-Step 6: Select the KFDef spec to use as the basis for your deployment
+Step 6: Select the **KFDef** spec to use as the basis for your deployment
 
 ```
 export CONFIG_URI="https://raw.githubusercontent.com/kubeflow/manifests/v1.0-branch/kfdef/kfctl_gcp_iap.v1.0.0.yaml"
 ```
 
-- Create environment variables containing the OAuth client ID and secret that you created earlier
+Step 7: Create environment variables containing the OAuth client ID and secret that you created earlier
 
 ```
 export CLIENT_ID=<CLIENT_ID from OAuth page>
