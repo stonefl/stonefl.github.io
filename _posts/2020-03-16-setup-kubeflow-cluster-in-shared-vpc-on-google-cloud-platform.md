@@ -63,7 +63,7 @@ export CLIENT_SECRET=<CLIENT_SECRET from OAuth page>
 ```
 * The CLIENT_ID and CLIENT_SECRET can be obtained from the Cloud Console by selecting **APIs & Services** -> **Credentials**
 
-- Pick names for your Kubeflow deployment and directory for your configuration:
+Step 8: Pick names for your Kubeflow deployment and directory for your configuration:
 
 ```
 export KF_NAME=<your choice of name for the Kubeflow deployment>
@@ -73,16 +73,17 @@ export KF_DIR=${BASE_DIR}/${KF_NAME}
 * For example, your kubeflow deployment name might be ‘my-kubeflow’ or ‘kf-test’.
 * Set base directory where you want to store one or more Kubeflow deployments. For example, ${HOME}/kf_deployments.
 
+
 ## Deploy Kubeflow with Customization
 
-- Download the KFDef file to your local directory to allow modifications
-
+Step 1: Download the **KFDef** file to your local directory to allow modification:
 ```
 export CONFIG_FILE="kfdef.yaml"
 mkdir -p ${KF_DIR}
 cd ${KF_DIR}
 curl -L -o ${CONFIG_FILE} https://raw.githubusercontent.com/kubeflow/manifests/v1.0-branch/kfdef/kfctl_gcp_iap.v1.0.0.yaml
 ```
+
 * **CONFIG_FILE** should be the name you would like to use for your local config file; e.g. “kfdef.yaml”
 
 - Edit the KFDef spec in the yaml file. The following snippet shows you how to set values in the configuration file using yq:
