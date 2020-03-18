@@ -17,7 +17,6 @@ thumbnail: /img/post/Google-Cloud-Logo-black.JPG
 Step 1: Install [Google SDK](https://cloud.google.com/sdk/), if you use Cloud Shell, enable the [boost mode](https://cloud.google.com/shell/docs/features#boost_mode). The following steps are tested in Cloud Shell.
 
 Step 2: Run this command in the service project to check if any subnet and secondary ranges are usable:
-
 ```
 gcloud container subnets list-usable \                 
 --project <service project ID> \  
@@ -38,6 +37,7 @@ tar -xvf /tmp/kfctl_v1.0-0-g94c35cf_linux.tar.gz -C ~/bin
 # add the kfctl binary to the PATH
 export PATH=$PATH:~/bin
 ```
+
 - Configure gcloud default values for zone and project:
 
 ```
