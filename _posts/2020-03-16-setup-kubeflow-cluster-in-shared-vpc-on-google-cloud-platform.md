@@ -99,8 +99,7 @@ cd ${KF_DIR}
 kfctl build -V -f ${CONFIG_FILE}
 ```
 
-- Then update the `${KF_DIR}/gcp_config/cluster.jinja` file created from step 3 to specify the network and subnetwork:
-
+Step 4: Then update the `${KF_DIR}/gcp_config/cluster.jinja` file created from step 3 to specify the network and subnetwork:
 ```
 cluster:
   name: {{ CLUSTER_NAME }}
@@ -108,7 +107,8 @@ cluster:
   subnetwork: projects/<host project ID>/regions/<region>/subnetworks/<subnet name>
   initialClusterVersion: "{{ properties['cluster-version'] }}"
 ```
-- In `${KF_DIR}/gcp_config/cluster.jinja`, disable subnetwork creation and specify secondary IP ranges by name (ipAllocationPolicy section may have to be moved out of the IF block if you aren't setting private cluster = true)
+
+Step 5: In `${KF_DIR}/gcp_config/cluster.jinja`, disable subnetwork creation and specify secondary IP ranges by name (ipAllocationPolicy section may have to be moved out of the IF block if you aren't setting private cluster = true)
 ```jinja
 { if properties['securityConfig']['privatecluster'] }
 ipAllocationPolicy:
@@ -117,19 +117,19 @@ ipAllocationPolicy:
   clusterSecondaryRangeName: <name of secondary ip range for pods>
   servicesSecondaryRangeName: <name of secondary ip range for services>
 ```
-- Enable private clusters by editing `${KF_DIR}/gcp_config/cluster-kubeflow.yaml` and updating the following two parameters:
-```
 
+Step 6: Enable private clusters by editing `${KF_DIR}/gcp_config/cluster-kubeflow.yaml` and updating the following two parameters:
+```
 privatecluster: true
 gkeApiVersion: v1beta1
 ```
 
 After above changes, run the kfctl apply command to deploy Kubeflow:
-
 ```
 cd ${KF_DIR}
 kfctl apply -V -f ${CONFIG_FILE}
 ```
+
 Cluster creation will take 3 to 5 minutes to complete. Do not proceed until the command prompt is returned in the console.
 
 Note: You may notice warnings in the console related to ... **Encountered error applying application cert-manager** ... and ... **Default user namespace pending creation** ... these are advisory and will not affect completion of the cluster.
