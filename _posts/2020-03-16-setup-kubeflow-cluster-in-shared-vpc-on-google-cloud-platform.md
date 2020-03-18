@@ -37,7 +37,7 @@ tar -xvf /tmp/kfctl_v1.0-0-g94c35cf_linux.tar.gz -C ~/bin
 export PATH=$PATH:~/bin
 ```
 
-Step5: Configure gcloud default values for zone and project:
+Step 5: Configure gcloud default values for zone and project:
 
 ```
 # Set your GCP project ID and the zone where you want to create 
@@ -49,7 +49,7 @@ gcloud config set project ${PROJECT}
 gcloud config set compute/zone ${ZONE}
 ```
 
-- Select the KFDef spec to use as the basis for your deployment
+Step 6: Select the KFDef spec to use as the basis for your deployment
 
 ```
 export CONFIG_URI="https://raw.githubusercontent.com/kubeflow/manifests/v1.0-branch/kfdef/kfctl_gcp_iap.v1.0.0.yaml"
