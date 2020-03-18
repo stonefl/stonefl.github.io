@@ -70,8 +70,8 @@ export KF_NAME=<your choice of name for the Kubeflow deployment>
 export BASE_DIR=<path to a base directory>
 export KF_DIR=${BASE_DIR}/${KF_NAME}
 ```
-* For example, your kubeflow deployment name might be ‘my-kubeflow’ or ‘kf-test’.
-* Set base directory where you want to store one or more Kubeflow deployments. For example, ${HOME}/kf_deployments.
+* For example, your kubeflow deployment name can be ‘my-kubeflow’ or ‘kf-test’.
+* Set base directory where you want to store one or more Kubeflow deployments. For example, `${HOME}/kf_deployments`.
 
 
 ## Deploy Kubeflow with Customization
