@@ -26,7 +26,6 @@ gcloud container subnets list-usable \
 Step 3: Follow this guide to [set up OAuth for Cloud IAP](https://www.kubeflow.org/docs/gke/deploy/oauth-setup/).
 
 Step 4: Download and install `kfctl` from [kfctl releases page](https://github.com/kubeflow/kfctl/releases/tag/v1.0) through the following commands:
-
 ```
 # make a bin folder to contain the kfctl
 mkdir ~/bin
@@ -38,7 +37,7 @@ tar -xvf /tmp/kfctl_v1.0-0-g94c35cf_linux.tar.gz -C ~/bin
 export PATH=$PATH:~/bin
 ```
 
-- Configure gcloud default values for zone and project:
+Step5: Configure gcloud default values for zone and project:
 
 ```
 # Set your GCP project ID and the zone where you want to create 
