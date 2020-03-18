@@ -124,7 +124,7 @@ privatecluster: true
 gkeApiVersion: v1beta1
 ```
 
-After above changes, run the kfctl apply command to deploy Kubeflow:
+Step 7: with above changes, run the kfctl apply command to deploy Kubeflow:
 ```
 cd ${KF_DIR}
 kfctl apply -V -f ${CONFIG_FILE}
