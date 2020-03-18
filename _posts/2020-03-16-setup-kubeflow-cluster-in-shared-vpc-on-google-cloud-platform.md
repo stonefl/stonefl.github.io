@@ -156,21 +156,20 @@ kubectl -n kubeflow get all
 ```
 
 ## Delete Kubeflow Deployment
-Once you done your job, you can use the following commands to delete the deployment:
+
+Once you done your job or someething goes wrong, you can use the following commands to delete the deployment:
 
 If you want to delete all the resources, including storage:
-
 ```
 kfctl delete -f ${CONFIG_FILE} --delete_storage
 ```
 
 If you want to preserve storage, which contains metadata and information
-
 ```
 kfctl delete -f ${CONFIG_FILE}
 ```
 
-If you want to do it from the web console, go the `Deployment Manager` page and delete the deployments with names of `${KF_NAME}` and `${KF_NAME}_strorage`.
+If you want to do it from the web console, go the `Deployment Manager` page and delete the deployments with names of `${KF_NAME}` and `${KF_NAME}_strorage`. You might also need to check the `Instance groups` under the `Compute Engine` page, and to delete the instance groups, you might need to delete the backend service in the `Backends` tab under `Load balancing` of `Network Services` page.
 
 ## References
 
