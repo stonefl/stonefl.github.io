@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Setup Kubeflow Cluster in Shared VPC on Google Cloud Platform
-date: '2020-03-21'
+date: '2020-03-14'
 categories:
   - Google Cloud Platform
 tags:
