@@ -83,17 +83,16 @@ mkdir -p ${KF_DIR}
 cd ${KF_DIR}
 curl -L -o ${CONFIG_FILE} https://raw.githubusercontent.com/kubeflow/manifests/v1.0-branch/kfdef/kfctl_gcp_iap.v1.0.0.yaml
 ```
-
 * **CONFIG_FILE** should be the name you would like to use for your local config file; e.g. “kfdef.yaml”
 
-- Edit the KFDef spec in the yaml file. The following snippet shows you how to set values in the configuration file using yq:
-
+Step 2: Edit the **KFDef** spec in the yaml file. The following commands shows you how to set values in the configuration file using yq:
 ```
 yq w -i ${CONFIG_FILE} 'spec.plugins[0].spec.project' ${PROJECT}
 yq w -i ${CONFIG_FILE} 'spec.plugins[0].spec.zone' ${ZONE}
 yq w -i ${CONFIG_FILE} 'metadata.name' ${KF_NAME}
 ```
-- Run the kfctl build command to generate kustomize and GCP Deployment manager configuration files for your deployment:
+
+Step 3: Run the `kfctl build` command to generate kustomize and GCP deployment manager configuration files for your deployment:
 
 ```
 cd ${KF_DIR}
