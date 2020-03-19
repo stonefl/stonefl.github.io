@@ -174,13 +174,13 @@ python -m apache_beam.examples.wordcount \
   --runner DataflowRunner \
   --project $PROJECT \
   --region 'us-west1' \
-  --subnetwork 'https://www.googleapis.com/compute/v1/projects/[HOST_PROJECT_ID] /regions/us-west2/subnetworks/subnet-us-west-2' \
-  --no_use_public_ips True
+  --no_use_public_ips True \
+  --subnetwork 'https://www.googleapis.com/compute/v1/projects/[HOST_PROJECT_ID] /regions/us-west2/subnetworks/subnet-us-west-2'
 
 ```
 
 
-I hope this post is helpful. If I missed anything, please let me know.
+I hope this post is helpful. If I missed anything, please let me know in the comments.
 
 
 # References
