@@ -42,7 +42,7 @@ For the best practice, the Organiztion Admin has setup the following constraints
 | `Define allowed external IPs for VM instances` | Set `Policy values` to `Deny All` | All VM instances are not allowed to use external IP address |
 | `Skip default network creation` | Pick `Customize` and turn on `Enforcement` | Don't create default network when create a new project |
 
-The following table shows the Shared VPC from the Host Project. There is only one subnet in region `us-west2` with `Private Google access` on, unfortunately there is no Dataflow regional endpoint available in this region.
+The following table shows the Shared VPC from the Host Project. There is only one subnet in region `us-west2` with `Private Google access` on, unfortunately, there is no Dataflow regional endpoint available in this region.
 
 ![shared-vpc.JPG]({{site.baseurl}}/img/post/shared-vpc.JPG)
 
