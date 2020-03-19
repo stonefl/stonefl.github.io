@@ -120,7 +120,7 @@ $ mvn archetype:generate \
 **Note**: you need the last four lines only if you are behind a proxy, otherwise, feel free to skip them.
 
 
-Once the Maven project created, you can use the following scripts to run the Apache Beam job to Dataflow: 
+Once the Maven project created, you can use the following scripts to run the Apache Beam job on Dataflow: 
 
 ```
 # load the application credential file
@@ -140,15 +140,15 @@ mvn -Pdataflow-runner compile exec:java \
       --gcpTempLocation=gs://[CLOUD_STORAGE_BUCKET]/temp/ \
       --runner=DataflowRunner \
       --usePublicIps=false \
-      --region=[REGION-NAME] \
-      --zone=us-[ZONE-NAME] \
-      --subnetwork=https://www.googleapis.com/compute/v1/projects/[SERVICE_PROJECT_ID]/regions/us-west1/subnetworks/[SUBNET_NAME]"
+      --region=us-west1 \
+      --zone=us-us-west2-a \
+      --subnetwork=https://www.googleapis.com/compute/v1/projects/[HOST_PROJECT_ID]/regions/us-west2/subnetworks/subnet-us-west-2"
 ```
 
-Please refer to the [Document of Specifying execution parameters](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params) for detailed explanation on each of the parameters. There are a few points worth highlighting here:
+Please refer to the [document of Specifying execution parameters](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params) for detailed explanation on each of the parameters. I would a few points worth highlighting here:
 
-- For the [PROJECT-ID], make sure to use the project id, rather than the project name
-- Keep the [REGION-NAME] and [SUBNET-NAME] consistent to the VPC you’ve created. In MY example, they are `us-west1` and `my-subnet-1`, respectively.
+- For the [SERVICE_PROJECT-ID] and [HOST_PROJECT_ID], make sure to use the project id's, rather than the project names.
+- The `subnetwork` is the shared subnet comes from the host project. Because there is no Dataflow regional endpoint in region `us-west2`, I need to specify the `region` to `us-west1` or any other regions that have the Dataflow regional endpoint. But I still need to set the `zone` to one of the zones in `us-west2' 
 - Don’t forget the parameter `--usePublicIps=false`, if your organization don't allow to use external IP address.
 
 ## Java and Eclipse
