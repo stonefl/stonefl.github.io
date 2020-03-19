@@ -100,7 +100,7 @@ You will need the the path of the file to set the environment variable **GOOGLE_
 This section describes the settings for Java SDK 2.x and Python 3.x. Check the [quickstarts](https://cloud.google.com/dataflow/docs/quickstarts) for more information.
 
 ## Java and Maven
-If you use Java and Apache Maven, you need to run the following command to create the Maven project containing the Apache Beam WordCount source code. Note, you only need the last four lines if you are behind a proxy, otherwise, feel free to skip them.
+If you use Java and Apache Maven, you need to run the following command to create the Maven project containing the Apache Beam WordCount source code.
 
 ```
 $ mvn archetype:generate \
@@ -117,6 +117,8 @@ $ mvn archetype:generate \
       -Dhttps.proxyHost=[YOUR-PROXY-HOST]
       -Dhttps.proxyPort=[YOUR-PROXY-PORT]
 ```
+**Note**: you need the last four lines only if you are behind a proxy, otherwise, feel free to skip them.
+
 
 Once the Maven project created, you can use the following scripts to run the Apache Beam job to Dataflow: 
 
