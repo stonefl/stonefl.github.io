@@ -59,7 +59,8 @@ The following settings might need the role of `Shared VPC Admin` or `Network Adm
 
 ![shared-vpc-service.JPG]({{site.baseurl}}/img/post/shared-vpc-service.JPG)
 
-- Add the Dataflow service account from the Service Project, `service-<SERVICE_PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com`, to the Shared VPC with the `Compute Network User` role. The Dataflow service account would be created once you enable the Dataflow API, which is one of the settings in Service Project below.
+- Add the Dataflow service account from the Service Project, in the format of `service-<SERVICE_PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com`, to the shared subnet with the `Compute Network User` role. The Dataflow service account would be created once you enable the Dataflow API, which is one of the settings in Service Project below.
+**Note**: Depending on which mode, e.g. project permission or individual subnet permission, you are using to share the VPC. You need to make sure the Dataflow account from the Service project has the `Compute Network User` role in the shared Subnet.
 
 
 # Settings in Service Project
@@ -85,27 +86,14 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
   --role roles/compute.serviceAgent
 
    ```
-- This is the trickiest part, you need to create a VPC network in the Service Project. The local VPC can be either Custom or Automatic, but needs to:
 
-   1) includes at least one subnet from the list of regions that have the [Dataflow Regional Endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints);
-   
-   2) enables **Private Google Access** in the subnet where the Dataflow jobs run. The following figure shows an example settings for a custom mode VPC network.
-   
-   ![local_vpc.png]({{site.baseurl}}/img/post/local_vpc.png)
-   
-   3) has a firewall rule that allows ingress TCP traffic for all Dataflow worker VMs. Because all Dataflow worker VMs have a network tag of `dataflow`, the Project Owner/Editor, or Security Admin can use the following gcloud command to create an ingress allow firewall rule that permits traffic on TCP ports 12345 and 12346 from Dataflow VMs:
-   ```
-   gcloud compute firewall-rules create [FIREWALL_RULE_NAME] \
-    --network [NETWORK] \
-    --action allow \
-    --direction ingress \
-    --target-tags dataflow \
-    --source-tags dataflow \
-    --priority 1000 \
-    --rules tcp:12345-12346
-   ```
- 
-- Create authentication key file following the process described in [set up authentication](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-java-maven#before-you-begin).
+- Create authentication key file following the process described in [set up authentication](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-java-maven#before-you-begin):
+    a. From Cloud Console go to **IAM & Admin** page, and then **Service Accouts**
+    b. From the page select **New service account**
+    c. Enter a name for the **Service account name** and select **Project > Owner** as the **Role**
+    d. Click **Create**. Save the JSON file that contains your key to your local folder.
+    
+You will need the the path of the file to set the environment variable **GOOGLE_APPLICATION_CREDENTIALS** in the following scripts.
    
 # Specifying Execution Paramters
 
