@@ -175,7 +175,7 @@ python -m apache_beam.examples.wordcount \
   --project $PROJECT \
   --region 'us-west1' \
   --no_use_public_ips True \
-  --subnetwork 'https://www.googleapis.com/compute/v1/projects/[HOST_PROJECT_ID] /regions/us-west2/subnetworks/subnet-us-west-2'
+  --subnetwork 'https://www.googleapis.com/compute/v1/projects/[HOST_PROJECT_ID]/regions/us-west2/subnetworks/subnet-us-west-2'
 
 ```
 
