@@ -159,14 +159,13 @@ If you would use Eclipse, you can set the above parameters in the **Arguments** 
 
 ## Python
 
-If you use Python, use the following scripts to run the dataflow job in the Service Project decribed in this post.
+If you use Python, use the following settings to run the dataflow job in the Service Project decribed in this post.
 ```
 export GOOGLE_APPLICATION_CREDENTIALS="[path-to-authentication-key-file]"
 echo $GOOGLE_APPLICATION_CREDENTIALS
 
 PROJECT=[SERVICE_PROJECT_ID] 
 BUCKET=gs://[CLOUD_STORAGE_BUCKET]
-
 
 python -m apache_beam.examples.wordcount \
   --input gs://dataflow-samples/shakespeare/kinglear.txt \
@@ -175,7 +174,7 @@ python -m apache_beam.examples.wordcount \
   --runner DataflowRunner \
   --project $PROJECT \
   --region 'us-west1' \
-  --subnetwork 'https://www.googleapis.com/compute/v1/projects/[SERVICE_PROJECT_ID] /regions/us-west1/subnetworks/my-subnet-1' \
+  --subnetwork 'https://www.googleapis.com/compute/v1/projects/[HOST_PROJECT_ID] /regions/us-west2/subnetworks/subnet-us-west-2' \
   --no_use_public_ips True
 
 ```
