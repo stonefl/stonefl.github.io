@@ -36,11 +36,13 @@ These steps have been done in Eclipse on Windows 7 and 10, not sure if it works 
 * Step 4: Browse to the location **oplall.jar**, which is located at **C:\Program Files\IBM\ILOG\CPLEX_Studio126\opl\lib** in my case. Select this jar file and add it to the library.
 
 * Step 5: Make sure the CPLEX STUDIO BINARIES is included in the PATH environmental variables. You can follow the processes below on Windows:
-     - Open **Enrironment Variables** settings, create a new User Variable and set to  `CPLEX_STUDIO_BINARIES126` and value to
+     - Open **Enrironment Variables** settings, create a new user variable. Set name to  `CPLEX_STUDIO_BINARIES126` and value as
+     ```
      C:\Program Files\IBM\ILOG\CPLEX_Studio126\opl\bin\x64_win64;    
      C:\Program Files\IBM\ILOG\CPLEX_Studio126\opl\oplide\; 
      C:\Program Files\IBM\ILOG\CPLEX_Studio126\cplex\bin\x64_win64;
      C:\Program Files\IBM\ILOG\CPLEX_Studio126\cpoptimizer\bin\x64_win64**
+     ```
 ![cplex_studio_variable.JPG]({{site.baseurl}}/img/cplex_studio_variable.JPG)
 
      - Double click on the `PATH`in the user variables. Create a new item with the value as **%CPLEX_STUDIO_BINARIES126%**
