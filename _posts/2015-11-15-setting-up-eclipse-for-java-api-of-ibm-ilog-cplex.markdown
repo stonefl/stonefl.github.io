@@ -45,7 +45,7 @@ These steps have been done in Eclipse on Windows 7 and 10, not sure if it works 
      ```
 ![cplex_studio_variable.JPG]({{site.baseurl}}/img/cplex_studio_variable.JPG)
 
-     - Double click on the `PATH`in the user variables. Create a new item with the value as **%CPLEX_STUDIO_BINARIES126%**
+     - Double click on the `PATH` in the user variables. Create a new item with the value as `%CPLEX_STUDIO_BINARIES126%`
 
 
 Now you can run your project through **Run As > Java Application**
