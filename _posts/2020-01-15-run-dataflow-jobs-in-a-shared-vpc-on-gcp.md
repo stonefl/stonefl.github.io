@@ -60,7 +60,8 @@ The following settings might need the role of `Shared VPC Admin` or `Network Adm
 ![shared-vpc-service.JPG]({{site.baseurl}}/img/post/shared-vpc-service.JPG)
 
 - Add the Dataflow service account from the Service Project, in the format of `service-<SERVICE_PROJECT_NUMBER>@dataflow-service-producer-prod.iam.gserviceaccount.com`, to the shared subnet with the `Compute Network User` role. The Dataflow service account would be created once you enable the Dataflow API, which is one of the settings in Service Project below.
-**Note**: Depending on which mode, e.g. project permission or individual subnet permission, you are using to share the VPC. You need to make sure the Dataflow account from the Service project has the `Compute Network User` role in the shared Subnet.
+
+**Note**: Depending on which mode (e.g. project permission or individual subnet permission) you are using to share the VPC, you need to make sure the Dataflow account from the Service project has the `Compute Network User` role in the shared **Subnet**.
 
 
 # Settings in Service Project
