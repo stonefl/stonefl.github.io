@@ -12,14 +12,14 @@ thumbnail: /img/post/Google-Cloud-Logo-black.JPG
 ---
 
 
-[Google Cloud Dataflow](https://cloud.google.com/dataflow/#benefits) is a fully managed platform running Apache Beam for unified stream and batch data processing service. With its fully managed approach on resource provisioning and horizontal autoscaling, you have access to virtually unlimited capacity and optimized price-to-performance to solve your data pipeline processing challenges.
+[Google Cloud Dataflow](https://cloud.google.com/dataflow/#benefits) is a fully managed platform running Apache Beam for unified stream and batch data processing services. With its fully managed approach on resource provisioning and horizontal autoscaling, you have access to virtually unlimited capacity and optimized price-to-performance to solve your data pipeline processing challenges.
 <!--more-->
 
 [Shared Virtual Private Network (VPC)](https://cloud.google.com/vpc/docs/shared-vpc) allows an organization to connect resources from multiple projects to a common VPC network. This allows cloud resources to communicate with each other securely and efficiently using internal IP adresses from that network. When you use shared VPC, you designates a project as a **Host Project** and attach one or more **Service Projects** to it. The common VPC network shared accross the Host and Service projects is called **Shared VPC Network**. Using Shared VPC is a good practice for Organization Admins to keep centralized control over network resources, while delegating administrative resposibilities to Servcie Project Admins.
 
-[Dataflow regional endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) store and handle metadata about Dataflow jobs, and deploy and control Dataflow workers. However, Dataflow regional endpoints are not yet available in all all Google Cloud regions. 
+[Dataflow regional endpoints](https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) store and handle metadata about Dataflow jobs, and deploy and control Dataflow workers. However, Dataflow regional endpoints are not yet available in all Google Cloud regions. 
 
-If the Shared VPC does not have any subnet in the region that provides the Dataflow regional endpoints, you need a tricky way to run your Dataflow jobs. In addition, because Dataflow service needs to use the network shared by the host project, there are some consigurations are neccessary to be set up on both Host and Serive projects. This post describes these steps and settings to run a Dataflow sample `WordCount` job in a Shared VPC that does not have any Dataflow regional endpoints.
+If the Shared VPC does not have any subnet in the region that provides the Dataflow regional endpoints, you need a tricky way to run your Dataflow jobs. In addition, because Dataflow service needs to use the network shared by the host project, there are some neccesary consigurations need to be set up on both Host and Serive projects. This post describes these steps and settings to run a Dataflow sample `WordCount` job in a Shared VPC that does not have any Dataflow regional endpoints.
 
 
 # Table of Content
@@ -42,7 +42,7 @@ For the best practice, the Organiztion Admin has setup the following constraints
 | `Define allowed external IPs for VM instances` | Set `Policy values` to `Deny All` | All VM instances are not allowed to use external IP address |
 | `Skip default network creation` | Pick `Customize` and turn on `Enforcement` | Don't create default network when create a new project |
 
-The following table shows the Shared VPC from the Host Project. There is only one subnet in region `us-west2` with `Private Google access` on, unfortunately, there is no Dataflow regional endpoint available in this region.
+The following table shows the Shared VPC from the Host Project. There is only one subnet in region `us-west2` with `Private Google Access` on.  Unfortunately, there is no Dataflow regional endpoint available in the region `us-west2`.
 
 ![shared-vpc.JPG]({{site.baseurl}}/img/post/shared-vpc.JPG)
 
@@ -90,8 +90,11 @@ The following settings might need the role of `Owner` or `Editor` from the Servi
 
 - Create authentication key file following the process described in [set up authentication](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-java-maven#before-you-begin):
     a. From Cloud Console go to **IAM & Admin** page, and then **Service Accouts**
+    
     b. From the page select **New service account**
+    
     c. Enter a name for the **Service account name** and select **Project > Owner** as the **Role**
+    
     d. Click **Create**. Save the JSON file that contains your key to your local folder.
     
 You will need the the path of the file to set the environment variable **GOOGLE_APPLICATION_CREDENTIALS** in the following scripts.
