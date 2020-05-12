@@ -150,10 +150,10 @@ mvn -Pdataflow-runner compile exec:java \
       --subnetwork=https://www.googleapis.com/compute/v1/projects/[HOST_PROJECT_ID]/regions/us-west2/subnetworks/subnet-us-west-2"
 ```
 
-Please refer to the [document of Specifying execution parameters](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params) for detailed explanation on each of the parameters. I would a few points worth highlighting here:
+Please refer to the [document of Specifying execution parameters](https://cloud.google.com/dataflow/docs/guides/specifying-exec-params) for detailed explanation on each of the parameters. I would list a few points worth highlighting here:
 
 - For the [SERVICE_PROJECT-ID] and [HOST_PROJECT_ID], make sure to use the project id's, rather than the project names.
-- The `subnetwork` is the shared subnet comes from the host project. Because there is no Dataflow regional endpoint in region `us-west2`, I need to specify the `region` to `us-west1` or any other regions that have the Dataflow regional endpoint. But I still need to set the `zone` to one of the zones in `us-west2`.
+- The `subnetwork` is the shared subnet comes from the host project. Because there is no Dataflow regional endpoint in region `us-west2`, it needs to specify the `region` to `us-west1` or any other regions that have the Dataflow regional endpoint. But it still needs to set the `zone` to one of the zones in `us-west2`.
 - Don’t forget the parameter `--usePublicIps=false`, if your organization don't allow to use external IP address.
 
 ## Java and Eclipse
