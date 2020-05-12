@@ -13,9 +13,9 @@ thumbnail: /img/post/Google-Cloud-Logo-black.JPG
 <!--more-->
 
 ## Prepare the Environment
-Step 1: Install [Google SDK](https://cloud.google.com/sdk/), if you use Cloud Shell, enable the [boost mode](https://cloud.google.com/shell/docs/features#boost_mode). The following steps are tested in Cloud Shell.
+Step 1: Install [Google SDK](https://cloud.google.com/sdk/). If you use Cloud Shell, enable the [boost mode](https://cloud.google.com/shell/docs/features#boost_mode). The following steps have been tested in Cloud Shell.
 
-Step 2: Run this command in the service project to check if any subnet and secondary ranges are usable:
+Step 2: Run the following command in the service project to check if any subnet and secondary ranges are usable:
 ```
 gcloud container subnets list-usable \                 
 --project <service project ID> \  
@@ -156,7 +156,7 @@ kubectl -n kubeflow get all
 
 ## Delete Kubeflow Deployment
 
-Once you done your job or someething goes wrong, you can use the following commands to delete the deployment:
+Once you have done your job or someething goes wrong, you can use the following commands to delete the deployment:
 
 If you want to delete all the resources, including storage:
 ```
