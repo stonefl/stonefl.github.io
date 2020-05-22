@@ -27,6 +27,8 @@ For classification problems in ML, you want to minimize the False Positive Rate 
 
 ### F-Score
 
+### log_loss
+
 ### ROC Curves
 
 
