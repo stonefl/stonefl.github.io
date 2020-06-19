@@ -1,12 +1,12 @@
-# Installing Google Cloud SDK to Use Python from Anaconda
 
+--
 category: Google Cloud Platform
 date: 2020/06/07
 layout: post
 published: true
 tags: Cloud SDK
 title: Installing Google Cloud SDK to Use Python from Anaconda
-
+--
 As a power user of GCP you definately need to use gcloud, gsutil and bq
 
 You will need `gcloud` to login into and do a lot things on GCP. The following is the process you can follow to install Google Cloud SDK on your local computer.
