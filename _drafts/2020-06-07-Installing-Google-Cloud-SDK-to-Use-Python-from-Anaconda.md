@@ -23,7 +23,7 @@ Google Cloud SDK needs Python and its bundled Python package is still 2.7, howev
 
 If you are still using Python2, I highly recommend you to change now. If you have not used Anaconda yet, I also highly recommend you to try it out. You can follow this [post](http://leifengblog.net/blog/installing-and-managing-python-and-packages-with-anaconda/) to install and quick start Anaconda.
 
-### **2. Set up `CLOUDSDK_PYTHON` Environmental Variable**
+### 2. Set up `CLOUDSDK_PYTHON` Environmental Variable
 
 - If you are using Windows, add the following to your Environmental Variables:
     - Variable name: `CLOUDSDK_PYTHON`
@@ -49,7 +49,7 @@ and run `source .bashrc` to refressh your change.
         - manually add `export PATH="/path/to/google-cloud-sdk/bin:$PATH"` to `.bashrc`
 - Run `gcloud init` to initialize the SDK.
 
-### **4. Potential Error**
+### 4. Potential Error
 
 After finishing above three steps, you might have the error message shown below, if you run `gcloud --help` in CMD prompt on Windows.
 
