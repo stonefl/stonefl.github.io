@@ -17,11 +17,11 @@ Installing through versioned archives might be the best way for non-itneractive 
 
 Google Cloud SDK needs Python, however, its bundled Python package is still 2.7 and, since version 274.0.0, most of its components already switch to Python 3. In order to use the existing Python on your systems, especially, if you have already installed Python through Anaconda and want the Cloud SDK to use it, you need the process described in this post to make it works.
 
-### 1. Install Python
+## 1. Install Python
 
 If you are still using Python2, I highly recommend you to change Python 3 now. If you have not used Anaconda yet, I also highly recommend you to try it out. You can follow this [post](http://leifengblog.net/blog/installing-and-managing-python-and-packages-with-anaconda/) to install and quick start Anaconda.
 
-### 2. Set up `CLOUDSDK_PYTHON` Environmental Variable
+## 2. Set up `CLOUDSDK_PYTHON` Environmental Variable
 
 - If you are using Windows, add the following  variables to your **Environmental Variables**:
     - Variable name: `CLOUDSDK_PYTHON`
@@ -34,7 +34,7 @@ export CLOUDSDK_PYTHON="/home/username/anaconda3/bin/python"
 
 and don't froget to run `source .bashrc` to refressh your change.
 
-### 3. Download and Install Google Cloud SDK
+## 3. Download and Install Google Cloud SDK
 
 - Download the appropriate archive compatible with your version from the [download page](https://cloud.google.com/sdk/docs/downloads-versioned-archives).
 - Extract the contents of the file to any location on your file system.
@@ -47,13 +47,17 @@ and don't froget to run `source .bashrc` to refressh your change.
         - manually add `export PATH="/path/to/google-cloud-sdk/bin:$PATH"` to `.bashrc`
 - Run `gcloud init` to initialize the SDK.
 
-### 4. Potential Error
+## 4. Potential Error
 
-After finishing above three steps, you might have the error message shown below, if you run `gcloud --help` in CMD prompt on Windows.
+After finishing above three steps, you run `gcloud --help` to make sure everything works. You might see the error message as shown below:
 
-This is causes by the Anaconda environment initialization. You need to run `activate base` to activate your base environment before run the gcloud commands:
+![gcloud_error.png]({{site.baseurl}}/img/post/gcloud_error.png)
 
-![Installing%20Google%20Cloud%20SDK%20to%20Use%20Python%20from%20Ana%20c6defef438f04c98b6b92112fd1db7cd/gcloud_error.png](Installing%20Google%20Cloud%20SDK%20to%20Use%20Python%20from%20Ana%20c6defef438f04c98b6b92112fd1db7cd/gcloud_error.png)
+
+This is causes by the Anaconda environment initialization. You need to run `activate base` to activate your base environment before run the gcloud commands.
+
+
+### Reference
 
 [Installing from versioned archives](https://cloud.google.com/sdk/docs/downloads-versioned-archives)
 
