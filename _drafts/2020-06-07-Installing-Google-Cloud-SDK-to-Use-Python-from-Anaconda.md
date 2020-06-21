@@ -40,10 +40,10 @@ and don't froget to run `source .bashrc` to refressh your change.
 - Extract the contents of the file to any location on your file system.
 - Add the Cloud SDK `bin` folder to your PATH environment:
     - On Windows:
-        - run the command `.\google-cloud-sdk\install.bat` or
+        - run the command `.\google-cloud-sdk\install.bat` **or**
         - manually add `path\to\google-cloud-sdk\bin` to the `PATH` environmental variable.
     - On Linux or macOS:
-        - run the command `./google-cloud-sdk/install.sh` or
+        - run the command `./google-cloud-sdk/install.sh` **or**
         - manually add `export PATH="/path/to/google-cloud-sdk/bin:$PATH"` to `.bashrc`
 - Run `gcloud init` to initialize the SDK.
 
