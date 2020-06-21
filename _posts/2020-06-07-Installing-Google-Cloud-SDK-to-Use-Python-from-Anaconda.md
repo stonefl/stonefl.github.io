@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Installing Google Cloud SDK to Use Python from Anaconda
 date: '2020-06-07'
 categories:
