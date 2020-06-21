@@ -10,16 +10,16 @@ tags:
 ---
 
 
-As a power user, you definately need to use `gcloud`, `gsutil` and `bq` commands to work with Google Cloud Platform, which means you need to install Google Cloud SDK on your local computer. You can install the Google Cloud SDK through many options, including versioned archives, installer, apt-get/yum for Linux distro, even Docker image. This post describes the process of installing SDK through versioned archive for both Windows 10 and Ubuntu 18.04 Linux operating systems that have already installed Python through Anaconda.
+As a power user, you definately need to use `gcloud`, `gsutil` and `bq` commands to work with Google Cloud Platform, which means you need to install Google Cloud SDK on your local computer. You can install the Google Cloud SDK through many options, including versioned archives, installer, apt-get/yum for Linux distro, and even Docker image. This post describes the process of installing SDK through versioned archive that have already installed Python through Anaconda, which has been tested on both Windows 10 and Ubuntu 18.04 Linux operating systems.
 <!--more-->
 
-Installing through versioned archives might be the best way for non-itneractive installation of a specific version of the Cloud SDK. Each of the versioned archive has a self-contained Cloud SDK packages in a directory that can be copied to any location on your file system. Thus you don't need to run any installer on your system.
+Installing through versioned archives might be the best way for non-interactive installation of a specific version of the Cloud SDK. Each of the versioned archive has a self-contained Cloud SDK packages in a directory that can be copied to any location on your file system. Thus you don't need to run any installer on your system.
 
-Google Cloud SDK needs Python, however, its bundled Python package is still 2.7 and, since version 274.0.0, most of its components already switch to Python 3. In order to use the existing Python on your systems, especially, if you have already installed Python through Anaconda and want the Cloud SDK to use it, you need the process described in this post to make it works.
+Google Cloud SDK needs Python, however, its bundled Python package is still 2.7 and, since version 274.0.0, most of the Cloud SDK components already switch to Python 3. In order to use existing Python on your systems, especially, if you have already installed Python through Anaconda and want the Cloud SDK to use it, you need the process described in this post to make things work.
 
 ## 1. Install Python
 
-If you are still using Python2, I highly recommend you to change Python 3 now. If you have not used Anaconda yet, I also highly recommend you to try it out. You can follow this [post](http://leifengblog.net/blog/installing-and-managing-python-and-packages-with-anaconda/) to install and quick start Anaconda.
+If you are still using Python2, I highly recommend you to change to Python3 now. If you have not used Anaconda yet, I also highly recommend you to try it out. You can follow this [post](http://leifengblog.net/blog/installing-and-managing-python-and-packages-with-anaconda/) to install and quick start Anaconda.
 
 ## 2. Set up `CLOUDSDK_PYTHON` Environmental Variable
 
