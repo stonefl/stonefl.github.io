@@ -47,6 +47,16 @@ and don't froget to run `source .bashrc` to refressh your change.
         - manually add `export PATH="/path/to/google-cloud-sdk/bin:$PATH"` to `.bashrc`
 - Run `gcloud init` to initialize the SDK.
 
+You can run the following command to make sure that the components of the SDK are up to date:
+```
+glcoud components update
+```
+
+Enter this command to install the beta components:
+```
+gcloud components install beta
+```
+
 ## 4. Potential Error
 
 After finishing above three steps, you run `gcloud --help` to make sure everything works. You might see the error message as shown below:
