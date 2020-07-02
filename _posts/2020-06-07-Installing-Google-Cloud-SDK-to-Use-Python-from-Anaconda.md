@@ -29,14 +29,14 @@ If you are still using Python2, I highly recommend you to change to Python3 now.
 - If you are using Linux or macOS, add the following line to the `.bashrc` file.
 
 ```
-export CLOUDSDK_PYTHON="/home/username/anaconda3/bin/python"
+export CLOUDSDK_PYTHON="/path/to/anaconda3/bin/python"
 ```
 
 and don't froget to run `source .bashrc` to refressh your change.
 
 ## 3. Download and Install Google Cloud SDK
 
-- Download the appropriate archive compatible with your version from the [download page](https://cloud.google.com/sdk/docs/downloads-versioned-archives).
+- Download the appropriate versioned archive compatible with your system from the [download page](https://cloud.google.com/sdk/docs/downloads-versioned-archives).
 - Extract the contents of the file to any location on your file system.
 - Add the Cloud SDK `bin` folder to your PATH environment:
     - On Windows:
