@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: 'Install, Setup and Manage Google Cloud SDK'
+title: 'Install, Setup and Manage Google Cloud SDK to Use Python From Anaconda'
 date: '2020-06-07'
 categories:
   - Google Cloud Platform
@@ -123,6 +123,20 @@ gcloud config set compute/zone us-west2-a  # set zone of current active configur
 gcloud config set compute/zone us-west2-a --configuration=[CONFIGURATION_NAME] # set zone of specified configuration to us-west2-a
 ```
 
+
+### Managing Components
+
+The default components of the Cloud SDK are `gcloud`, `bq`, `gsutil` and `core`. 
+
+You use the following command to check components installed:
+```
+gcloud components list
+```
+
+If you want to install additional component you can run the following command:
+```
+gcloud components install [COMPONENT_ID]
+```
 
 You can run the following command to make sure that the components of the SDK are up to date:
 ```
