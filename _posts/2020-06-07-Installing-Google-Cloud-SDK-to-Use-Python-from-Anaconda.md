@@ -128,7 +128,7 @@ gcloud config set compute/zone us-west2-a --configuration=[CONFIGURATION_NAME]
 
 The default components of the Cloud SDK are `gcloud`, `bq`, `gsutil` and `core`. 
 
-You use the following command to check components installed:
+You can use the following command to check the components installed:
 ```
 gcloud components list
 ```
@@ -138,12 +138,12 @@ If you want to install additional component you can run the following command:
 gcloud components install [COMPONENT_ID]
 ```
 
-You can run the following command to make sure that the components of the SDK are up to date:
+You can run the following command to make sure that all components of the SDK are up to date:
 ```
 glcoud components update
 ```
 
-Enter this command to install the beta components:
+and run the following command to install the beta components:
 ```
 gcloud components install beta
 ```
