@@ -60,16 +60,16 @@ This is causes by the Anaconda environment initialization. You need to run `acti
 ## 5. Setup and Manage SDK
 
 ### Initializing SDK
-With the fresh installation of SDK, the first step is typically to run the `gcloud init` command to authorize access to GCP project and create a new configuration with a base set of setings.
+With a fresh installation of SDK, the first step is typically to run the `gcloud init` command to authorize access to GCP project and create a new configuration with a set of base setings.
 
 If required, you can use the following command to prevent the command from lauching a browser-based authorization flow:
 ```
 gcloud init --console-only
 ```
 
-The `gcloud init` command typically creates a new configuration with the name of `default`. Please note that there is nothing special about the intitial `default` configuration and you can name it with whatever name you want.
+The `gcloud init` command usually creates a new configuration with the name of `default`. Please note that there is nothing special about the intitial `default` configuration and you can name it with whatever name you want.
 
-You can use the `gcloud config set` command to set the properties of the `default` configuration. For example:
+You can use the `gcloud config set` command to set the properties of this configuration. For example:
 ```
 gcloud config set project myProject   # set project to myProject
 gcloud config set compute/zone us-west2-b  # set zone to us-west2-b
@@ -89,7 +89,7 @@ gcloud auth activate-service-account
 ```
 
 ### Managing Configurations
-If you are using multiple projects with multiple authorization accounts, you would like to create multiple configurations - one configuration for each project. 
+If you are using multiple projects with multiple authorization accounts, you would like to create multiple configurations - one for each project. 
 
 You can use the following command to create a configuration:
 ```
@@ -108,19 +108,19 @@ gcloud config configurations list
 
 You can use the following command to delete a configruation:
 ```
-gcloud config configurations activate [CONFIGURATION_NAME]
+gcloud config configurations delete [CONFIGURATION_NAME]
 ```
 
 You can use the following command to check properties of a configuration:
 ```
-gcloud config list   # show properties of current active configuration
-gcloud config list --configuration=[CONFIGURATION_NAME] # shwo properties of specified configuration
+gcloud config list   
+gcloud config list --configuration=[CONFIGURATION_NAME] 
 ```
 
 You can use the following command to set properties of a configuration:
 ```
-gcloud config set compute/zone us-west2-a  # set zone of current active configuration to us-west2-a
-gcloud config set compute/zone us-west2-a --configuration=[CONFIGURATION_NAME] # set zone of specified configuration to us-west2-a
+gcloud config set compute/zone us-west2-a  
+gcloud config set compute/zone us-west2-a --configuration=[CONFIGURATION_NAME] 
 ```
 
 
