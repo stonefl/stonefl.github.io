@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Installing Google Cloud SDK to Use Python from Anaconda
+title: 'Install, Setup and Manage Google Cloud SDK'
 date: '2020-06-07'
 categories:
   - Google Cloud Platform
@@ -45,17 +45,7 @@ and don't froget to run `source .bashrc` to refressh your change.
     - On Linux or macOS:
         - run the command `./google-cloud-sdk/install.sh` **or**
         - manually add `export PATH="/path/to/google-cloud-sdk/bin:$PATH"` to `.bashrc`
-- Run `gcloud init` to initialize the SDK.
 
-You can run the following command to make sure that the components of the SDK are up to date:
-```
-glcoud components update
-```
-
-Enter this command to install the beta components:
-```
-gcloud components install beta
-```
 
 ## 4. Potential Error
 
@@ -67,8 +57,92 @@ After finishing above three steps, you run `gcloud --help` to make sure everythi
 This is causes by the Anaconda environment initialization. You need to run `activate base` to activate your base environment before run the gcloud commands.
 
 
+## 5. Setup and Manage SDK
+
+### Initializing SDK
+With the fresh installation of SDK, the first step is typically to run the `gcloud init` command to authorize access to GCP project and create a new configuration with a base set of setings.
+
+If required, you can use the following command to prevent the command from lauching a browser-based authorization flow:
+```
+gcloud init --console-only
+```
+
+The `gcloud init` command typically creates a new configuration with the name of `default`. Please note that there is nothing special about the intitial `default` configuration and you can name it with whatever name you want.
+
+You can use the `gcloud config set` command to set the properties of the `default` configuration. For example:
+```
+gcloud config set project myProject   # set project to myProject
+gcloud config set compute/zone us-west2-b  # set zone to us-west2-b
+```
+
+
+### Authorizing SDK
+If you just need to authorize with a user account without setting up a configuration, you can run:
+
+```
+gcloud auth login
+```
+
+If you need to authorize with a service account instead of a user account, you can run:
+```
+gcloud auth activate-service-account
+```
+
+### Managing Configurations
+If you are using multiple projects with multiple authorization accounts, you would like to create multiple configurations - one configuration for each project. 
+
+You can use the following command to create a configuration:
+```
+gcloud config configurations create [CONFIGURATION_NAME]
+```
+
+You can use the following command to activate a configuration:
+```
+gcloud config configurations activate [CONFIGURATION_NAME]
+```
+
+You can use the following command to list all configurations:
+```
+gcloud config configurations list
+```
+
+You can use the following command to delete a configruation:
+```
+gcloud config configurations activate [CONFIGURATION_NAME]
+```
+
+You can use the following command to check properties of a configuration:
+```
+gcloud config list   # show properties of current active configuration
+gcloud config list --configuration=[CONFIGURATION_NAME] # shwo properties of specified configuration
+```
+
+You can use the following command to set properties of a configuration:
+```
+gcloud config set compute/zone us-west2-a  # set zone of current active configuration to us-west2-a
+gcloud config set compute/zone us-west2-a --configuration=[CONFIGURATION_NAME] # set zone of specified configuration to us-west2-a
+```
+
+
+You can run the following command to make sure that the components of the SDK are up to date:
+```
+glcoud components update
+```
+
+Enter this command to install the beta components:
+```
+gcloud components install beta
+```
+
+
 ### Reference
 
 [Installing from versioned archives](https://cloud.google.com/sdk/docs/downloads-versioned-archives)
 
 [Installing Google Cloud SDK](https://cloud.google.com/sdk/install)
+
+[Initializing Cloud SDK](https://cloud.google.com/sdk/docs/initializing)
+
+[Managing SDK Configurations](https://cloud.google.com/sdk/docs/configurations)
+
+[Managing SDK Components](https://cloud.google.com/sdk/docs/components)
