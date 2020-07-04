@@ -51,7 +51,7 @@ and don't froget to run `source .bashrc` to refressh your change.
 
 After finishing above three steps, you run `gcloud --help` to make sure everything works. You might see the error message as shown below:
 
-![gcloud_error.png]({{site.baseurl}}/img/post/gcloud_error.png)
+![gcloud_error.png]({{site.baseurl}}/img/post/gcloud_error.jpg)
 
 
 This is causes by the Anaconda environment initialization. You need to run `activate base` to activate your base environment before run the gcloud commands.
