@@ -12,8 +12,8 @@ tags:
   - Shared VPC
   - gcloud
 ---
-
-![ Photo by Emile Perron on Unsplash]({{site.baseurl}}/https://unsplash.com/photos/xrVDYZRGdw4)
+![photo-computer.jpg]({{site.baseurl}}/img/photo-computer.jpg)
+Photo by [Emile Perron](https://unsplash.com/@emilep) on [Unsplash](https://unsplash.com/@emilep)
 
 
 ## A New Post
