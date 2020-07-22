@@ -79,7 +79,7 @@ Here is a breakdown of the command, so you understand what is happening:
 
 With success of above command, an instance named ***cpu-instance-test*** is created from the AI Platform Notebook Instances page, shown as below:
 
-![Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled%203.png](Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled%203.png)
+![notebook_instance_cpu]({{site.baseurl}}/img/post/ai_notebooks_cpu.png)
 
 ### Command to create an instance with GPUs (gpu command)
 
@@ -114,7 +114,7 @@ The gpu command is similar to the cpu command, the only difference are the last 
 
 With the success of above command, an instance with name of ***gpu-instance-test*** is shown in the Notebook instances page, as shown below:
 
-![Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled%204.png](Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled%204.png)
+![notebook_instance_gpu]({{site.baseurl}}/img/post/ai_notebooks_gpu.png)
 
 I hope this post is helpful. If I missed anything, please let me know in the comments.
 
