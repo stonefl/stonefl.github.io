@@ -23,11 +23,11 @@ thumbnail: /img/post/photo-computer.jpg
 
 ## What is the Problem?
 
-The problem is that not all regions support AI Platform Notebooks Instance services and usually a Shared VPC does not contain all regions. For example, the following picture shows my shared VPC (***subnet-us-west-2***) from my host project (***my-host-project-268902***) only has region `us-west2`. For security reason, the shared VPC has turned the `Private Google Access` on, which means all VMs created in my service project can not have public IP.
+The problem is that not all regions support AI Platform Notebooks instance service and a Shared VPC usually does not contain all regions. For example, the following picture shows my shared VPC (**subnet-us-west-2**) from my host project (**my-host-project-268902**) only has region `us-west2`. For security reason, the shared VPC has turned the `Private Google Access` on, which means all VMs created in my service project can not have public IP.
 
 ![sharedvpc]({{site.baseurl}}/img/post/ai_notebooks_sharedvpc.png)
 
-As shown by the following picture, however, if you create the AI Platform Notebooks instance through the web console, you would find that there is no `us-west2` in the **Region** dropdown list. To connect to other network resources, however, I need to create a notebook Instance in region `us-west2` to use my shared VPC.  What should I do?
+As shown by the following picture, however, if you create the AI Platform Notebooks instance through the web console, you would find that there is no `us-west2` in the **Region** dropdown list. Now, I need to create a notebook instance in region `us-west2` to use my shared VPC to connect to other network resources.  What should I do?
 
 ![notebook_instance_console]({{site.baseurl}}/img/post/ai_notebook_console.png)
 
@@ -35,11 +35,11 @@ If you are familiar with GCP, you might know that I can create an AI platform no
 
 ![permissiondenied_error]({{site.baseurl}}/img/post/ai_notebook_error.png)
 
-## How Did I Solve It?
+## How Did I Solve The Problem?
 
-Instead of using the above `gcloud beta notebooks instance create` command, I created a Deep Learning VM instance from the command `gcloud compute instances create` as described in [Create a TensorFlow Deep Learning VM instance from the command line](https://cloud.google.com/ai-platform/deep-learning-vm/docs/tensorflow_start_instance#creating_ainstance_from_the_command_line).  The example command in the document can create a Deep Learning VM, but I could not see it in the AI Platform Notebooks Instance page.
+Instead of using the above `gcloud beta notebooks instance create` command, I created a Deep Learning VM instance from the command `gcloud compute instances create` as described in [Create a TensorFlow Deep Learning VM instance from the command line](https://cloud.google.com/ai-platform/deep-learning-vm/docs/tensorflow_start_instance#creating_ainstance_from_the_command_line).  However, the example command in the document can create a Deep Learning VM, but it did not show up in the AI Platform Notebooks Instance page.
 
-The following are the two commands I have adapted from the Deep Learning VM command to create AI Platform Notebooks instances without GPUs and with GPUs.
+The following are the two commands that I have adapted from the Deep Learning VM command mentioned above to create AI Platform Notebooks instances without GPUs and with GPUs.
 
 ### Command to create an instance without GPUs (cpu command)
 
@@ -66,18 +66,18 @@ gcloud compute instances create $INSTANCE_NAME \
 
 Here is a breakdown of the command, so you understand what is happening:
 
-- `gcloud compute instances create` create a new instance with specified name
-- `--zone` specifies which zone the instance to be created, need to be consistent to the shared VPC region
-- `--project` specifies the ID of service project where the instance is going to be created
+- `gcloud compute instances create` creates a new instance with specified name
+- `--zone` specifies which zone the instance to be created and needs to be consistent to the shared VPC region
+- `--project` specifies the ID of project where the instance to be created
 - `--machine-type` specifies the machine type as *n1-standard-4*, which provides 4 vCPU and 15GB of RAM. For more machine types, see [GCP VM Machine Types](https://cloud.google.com/compute/docs/machine-types)
 - `--image-family` specifies the Deep Learning VM image. For more image families, see [AI Platform Deep Learning VM Images](https://cloud.google.com/ai-platform/deep-learning-vm/docs/images)
-- `--image-project` must be `**deeplearning-platform-release**`
-- `--subnet` specifies the Shared subnet from the host project
-- `--no-address` specifies that there is no public address. It can be ignored, if the shared VPC allows public IP
-- `--tags` must be **`deeplearning-vm`,** otherwise, it will not show in the notebook instance page
-- `--scopes` and `--metadata` must be specified as above, otherwise, the instance cannot set up the proxy to the JupyterLab the link of **OPEN JUPYTERLAB** won't show up. For more information of the settings, see [Use SSH to Access to JupyterLab](https://cloud.google.com/ai-platform/notebooks/docs/ssh-access).
+- `--image-project` must be **`deeplearning-platform-release`**
+- `--subnet` specifies the shared subnet from the host project
+- `--no-address` specifies that the VM has no public address. It can be ignored, if the shared VPC allows public IP
+- `--tags` must be **`deeplearning-vm`**, otherwise, it will not show up in the notebook instance page
+- `--scopes` and `--metadata` must be specified as above, otherwise, the instance cannot set up the proxy to the JupyterLab and the link of **OPEN JUPYTERLAB** won't work. For more information of the settings, see [Use SSH to Access to JupyterLab](https://cloud.google.com/ai-platform/notebooks/docs/ssh-access).
 
-With success of above command, an instance named ***cpu-instance-test*** is created from the AI Platform Notebook Instances page, shown as below:
+With success of above command, an instance named **cpu-instance-test** can be seen from the AI Platform Notebook Instances page:
 
 ![notebook_instance_cpu]({{site.baseurl}}/img/post/ai_notebooks_cpu.png)
 
@@ -106,15 +106,16 @@ gcloud compute instances create $INSTANCE_NAME \
   --metadata='install-nvidia-driver=True,proxy-mode=project_editors'
 ```
 
-The gpu command is similar to the cpu command, the only difference are the last three options:
+The gpu command is similar to the cpu command, the only differences are the last three options:
 
 - `--maintenance-policy` must be **`TERMINATE`**, because of the [GPU restrictions](https://cloud.google.com/compute/docs/gpus#restrictions)
 - `--accelerator` specifies the GPU type to use. For more details of GPU types, see [Create GPU instance gcloud](https://cloud.google.com/compute/docs/gpus/add-gpus#create-gpu-instance-gcloud)
 - `--metadata` `install-nvidia-driver=True` specifies that the NVIDIA driver should be installed and `proxy-mode=project_editors` is used to setup proxy to JupyterLab.
 
-With the success of above command, an instance with name of ***gpu-instance-test*** is shown in the Notebook instances page, as shown below:
+With the success of above command, an instance with name of **gpu-instance-test** will show in the Notebook instances page:
 
 ![notebook_instance_gpu]({{site.baseurl}}/img/post/ai_notebooks_gpu.png)
+
 
 I hope this post is helpful. If I missed anything, please let me know in the comments.
 
