@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: >-
   Create AI Platform Notebooks Instance in Shared VPC Having No Service
   Availability
