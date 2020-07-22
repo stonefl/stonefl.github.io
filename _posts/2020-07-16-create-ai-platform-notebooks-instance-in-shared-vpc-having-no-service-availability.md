@@ -16,7 +16,7 @@ tags:
                        Photo by [Emile Perron](https://unsplash.com/@emilep) on [Unsplash](https://unsplash.com/@emilep)
 
 [AI Platform Notebooks](https://cloud.google.com/ai-platform-notebooks) is a managed service that provides an integration of JupyterLab, Git, and optimized data science libraries and frameworks. From it, you can get access to almost all ML frameworks, such as TensorFlow, Keras, PyTorch, etc. It is an excellent place for machine learning developers to experiment, develop, and deploy models into production. In addition, AI Platform Notebooks also supports enterprise security architectures through shared VPC and private IP controls.
-
+<!--more-->
 ## What is Shared VPC?
 
 [Shared Virtual Private Network (VPC)](https://cloud.google.com/vpc/docs/shared-vpc) allows organizations to connect resources from multiple projects to a common/shared VPC network. This allows cloud resources to communicate with each other securely and efficiently using internal IP addresses. Using Shared VPC is a good practice for Organization Admins to keep centralized control over network resources, while delegating administrative responsibilities to Service Project Admins.
