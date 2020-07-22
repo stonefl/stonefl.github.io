@@ -11,9 +11,9 @@ tags:
   - AI Platform
   - Shared VPC
   - gcloud
+bigimg: /img/post/photo-computer.jpg
+thumbnail: /img/post/photo-computer.jpg
 ---
-![photo-computer.jpg]({{site.baseurl}}/img/post/photo-computer.jpg)
-                       Photo by [Emile Perron](https://unsplash.com/@emilep) on [Unsplash](https://unsplash.com/@emilep)
 
 [AI Platform Notebooks](https://cloud.google.com/ai-platform-notebooks) is a managed service that provides an integration of JupyterLab, Git, and optimized data science libraries and frameworks. From it, you can get access to almost all ML frameworks, such as TensorFlow, Keras, PyTorch, etc. It is an excellent place for machine learning developers to experiment, develop, and deploy models into production. In addition, AI Platform Notebooks also supports enterprise security architectures through shared VPC and private IP controls.
 <!--more-->
