@@ -27,13 +27,13 @@ The problem is that not all regions support AI Platform Notebooks Instance servi
 
 ![sharedvpc]({{site.baseurl}}/img/post/ai_notebooks_sharedvpc.png)
 
-As shown by the following picture, however, if you create the AI Platform Notebooks instance through the web console, you would find that there is no `us-west2` in the **Region** dropdown list. To connect to other network resources, however, I need to create a notebook Instance in region `us-west2` to use my shared VPC.  How should I do?
+As shown by the following picture, however, if you create the AI Platform Notebooks instance through the web console, you would find that there is no `us-west2` in the **Region** dropdown list. To connect to other network resources, however, I need to create a notebook Instance in region `us-west2` to use my shared VPC.  What should I do?
 
 ![notebook_instance_console]({{site.baseurl}}/img/post/ai_notebook_console.png)
 
 If you are familiar with GCP, you might know that I can create an AI platform notebooks instance from the `gcloud beta notebooks instance create` command line as described in [Create an AI Platform Notebooks instance from the command line](https://cloud.google.com/ai-platform/notebooks/docs/create-new#create-command-line). However, when I specified the subnet to the shared VPC, I got the **PERMISSION_DENIED** error message shown as below:
 
-![Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled%202.png](Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled%202.png)
+![permissiondenied_error]({{site.baseurl}}/img/post/ai_notebook_error.png)
 
 ## How Did I Solve It?
 
