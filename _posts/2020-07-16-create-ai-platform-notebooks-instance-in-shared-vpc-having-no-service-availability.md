@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: >-
-  Create AI Platform Notebooks Instance in Shared VPC Having No Service
+  Create AI Platform Notebooks Instance in Shared VPC Without Service
   Availability
 date: '2020-07-16'
 categories:
