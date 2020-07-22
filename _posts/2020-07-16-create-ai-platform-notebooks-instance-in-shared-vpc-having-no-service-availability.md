@@ -2,7 +2,8 @@
 layout: post
 published: false
 title: >-
-  Create AI Platform Notebooks Instance in Shared VPC Having No Service Availability
+  Create AI Platform Notebooks Instance in Shared VPC Having No Service
+  Availability
 date: '2020-07-16'
 categories:
   - Google Cloud Platform
@@ -11,7 +12,7 @@ tags:
   - Shared VPC
   - gcloud
 ---
-![photo-computer.jpg]({{site.baseurl}}/img/photo-computer.jpg)
+![photo-computer.jpg]({{site.baseurl}}/img/post/photo-computer.jpg)
                        Photo by [Emile Perron](https://unsplash.com/@emilep) on [Unsplash](https://unsplash.com/@emilep)
 
 [AI Platform Notebooks](https://cloud.google.com/ai-platform-notebooks) is a managed service that provides an integration of JupyterLab, Git, and optimized data science libraries and frameworks. From it, you can get access to almost all ML frameworks, such as TensorFlow, Keras, PyTorch, etc. It is an excellent place for machine learning developers to experiment, develop, and deploy models into production. In addition, AI Platform Notebooks also supports enterprise security architectures through shared VPC and private IP controls.
@@ -20,15 +21,15 @@ tags:
 
 [Shared Virtual Private Network (VPC)](https://cloud.google.com/vpc/docs/shared-vpc) allows organizations to connect resources from multiple projects to a common/shared VPC network. This allows cloud resources to communicate with each other securely and efficiently using internal IP addresses. Using Shared VPC is a good practice for Organization Admins to keep centralized control over network resources, while delegating administrative responsibilities to Service Project Admins.
 
-## What is the Problem Here?
+## What is the Problem?
 
 The problem is that not all regions support AI Platform Notebooks Instance services and usually a Shared VPC does not contain all regions. For example, the following picture shows my shared VPC (***subnet-us-west-2***) from my host project (***my-host-project-268902***) only has region `us-west2`. For security reason, the shared VPC has turned the `Private Google Access` on, which means all VMs created in my service project can not have public IP.
 
-![Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled.png](Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled.png)
+![sharedvpc]({{site.baseurl}}/img/post/ai_notebooks_sharedvpc.png)
 
 As shown by the following picture, however, if you create the AI Platform Notebooks instance through the web console, you would find that there is no `us-west2` in the **Region** dropdown list. To connect to other network resources, however, I need to create a notebook Instance in region `us-west2` to use my shared VPC.  How should I do?
 
-![Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled%201.png](Create%20AI%20Platform%20Notebooks%20Instance%20in%20Shared%20VP%2067ec1d4d150d4c9880cedc093cde93b5/Untitled%201.png)
+![notebook_instance_console]({{site.baseurl}}/img/post/ai_notebook_console.png)
 
 If you are familiar with GCP, you might know that I can create an AI platform notebooks instance from the `gcloud beta notebooks instance create` command line as described in [Create an AI Platform Notebooks instance from the command line](https://cloud.google.com/ai-platform/notebooks/docs/create-new#create-command-line). However, when I specified the subnet to the shared VPC, I got the **PERMISSION_DENIED** error message shown as below:
 
