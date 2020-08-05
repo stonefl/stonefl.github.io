@@ -84,7 +84,7 @@ GEM
       gemoji (~> 2.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0)
-    json (1.8.3)
+    json (2.3.0)
     kramdown (1.10.0)
     libv8 (3.16.14.15)
     liquid (3.0.6)
