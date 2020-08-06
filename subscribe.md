@@ -1,5 +1,4 @@
 ---
-layout: base
+layout: page
 comments: false
 ---
-{% include subscription.html %} 
