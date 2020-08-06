@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Welcome
-comments: false
+layout: base
 ---
 
 {% include subscription.html %} 
