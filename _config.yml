@@ -28,7 +28,7 @@ navbar-links:
    - Categories: "/archives/categories"
    - Tags: "/archives/tags"
   About: "/about/"
-  Subscribe: "/subscribe/"
+  Subscribe: "/_include/subscription"
   
   
   
