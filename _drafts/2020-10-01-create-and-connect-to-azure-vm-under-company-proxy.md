@@ -37,7 +37,9 @@ az vm create \
   --ssh-key-values ~/.ssh/azure_vm.pub
 ```
 
-
+```
+az group create --name myResourceGroup --location eastus
+```
 4. Connect to VM through Proxy
    Set proxy in WinSCP
 
