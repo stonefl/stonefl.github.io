@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: Create and Connect to Azure VM under Company Proxy
+title: How to Create and Connect to Azure VM through WinSCP
 ---
 [Proxy servers](https://en.wikipedia.org/wiki/Proxy_server) usually act as a firewall and web filter protect users and internal network from the bad stuff that lives out in the wild internet. 
 
@@ -15,5 +15,3 @@ Proxy servers act as a firewall and web filter, provide shared network connectio
 
 4. Connect to VM through Proxy
    Set proxy in WinSCP
-   
-
