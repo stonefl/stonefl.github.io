@@ -17,9 +17,9 @@ To learn Microsoft Azure, the first thing you might want to try is to create a V
 You can create a VM easily with the Portal, but the Azure CLI would make your life easier. Installing Azure CLI on Windows is pretty simply and straightforward. You can simply follow the steps described in the document of [Install Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) to install the Azure CLI through downloading the Microsoft Installer(MSI) or through Powershell command.
    
 ## Create SSH Key Pairs
-SSH keys are going to be used for security connection from your WinSCP/Putty to the Azure VM. I usually use the command `ssh-keygen` through Git Bash on Windows, but it is seems that the Windows most recent updates caused all `ssh` related commands in Git Bash stop working. I used `cmd` run the following command to generate the SSH Key Pairs:
-```cmd
-
+SSH keys are going to be used for security connection from your WinSCP/Putty to the Azure VM. I usually use the command `ssh-keygen` through Git Bash on Windows, but it is seems that the Windows most recent updates caused all `ssh` related commands in Git Bash stop working. I used Powershell and ran the following command to generate the SSH Key Pairs. Feel free to change the capitalized `USERANME` in the command, I always make it the same to the username I will use in the VM that is going to be created next.
+```powershell
+ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
 ```
 
 3. Create VM
