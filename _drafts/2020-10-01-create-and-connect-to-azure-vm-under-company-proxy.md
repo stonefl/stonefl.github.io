@@ -10,7 +10,8 @@ tags:
   - SSH
   - Proxy
 ---
-To learn Microsoft Azure, the first thing you might want to try is to create a VM and connect to it. If you follow the steps described in its official [quickstart document](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli), especially if you are under a company proxy. This post decribes the step-by-step process I used to create a Linux VM and connect to it through WindSCP on Windows 10 under a company proxy. 
+To learn Microsoft Azure Virtual Machine, the first thing you might want to try is to create a VM and connect to it. If you follow the steps described in its official [quickstart document](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli), especially if you are under a company proxy. This post decribes the step-by-step process I used to create a Linux VM and connect to it through WindSCP on Windows 10 under a company proxy. 
+
 <!--more-->
 
 ## Install Azure ClI
@@ -26,7 +27,7 @@ ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
 You will be prompted to provide a passphrase, if you can keep it empty.If it runs successfully, you will get an identification file(azure_vm) and a public key file (azure_vm.pub). Of course, you can change to different names, intead of using azure_vm here.
 
 ## Create VM
-You can run the following command to create a VM with the 
+You can run the following command to create a VM with the ssh key file you created above. You can specify the VM name and admin username through changing the capitalized `VM-NAME` and `USERANME`, respectivley. 
 
 ```
 az vm create \
@@ -36,12 +37,18 @@ az vm create \
   --admin-username USERNAME \
   --ssh-key-values ~/.ssh/azure_vm.pub
 ```
+Note, above command assumeds that you already have a resource-group created, if not, you can create one through the following command:
 
 ```
 az group create --name myResourceGroup --location eastus
 ```
-4. Connect to VM through Proxy
-   Set proxy in WinSCP
+
+## Connect to VM under Proxy
+
+If you are using Windows and under a compay proxy, using WinSCP/Putty is best choice. Because both of them have built-in support for tunneling through a HTTP proxy. This post post describes the settings in WinSCP, which is the closely cooperate with Putty SSH client and allows you move the files between your Windows and the remote servers through drag and drop. You can download and install both WinSCP and Putty through this [link](https://winscp.net/eng/downloads.php).
+
+
+   
 
 ## Reference
 [Install Azure CLI for Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
