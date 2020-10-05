@@ -17,9 +17,9 @@ To learn Microsoft Azure Virtual Machine, the first thing you want to try might 
 Picture from ([https://unsplash.com/@casparrubin](https://unsplash.com/photos/0qvBNep1Y04))
 
 ## Install Azure ClI
-You can create a VM easily with the Azure Portal, but the Azure CLI would make the process even easier. Installing Azure CLI on Windows is pretty simply and straightforward. You just need to simply follow the steps described in the document of [Install Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) to install the Azure CLI through downloading the Microsoft Installer(MSI) or Powershell command.
+You can create a VM easily with the Azure Portal, but the Azure CLI would make the process even easier. Installing Azure CLI on Windows is pretty simply and straightforward. You just need to simply follow the steps described in the document of [Install Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) to install the Azure CLI through downloading the Microsoft Installer(MSI) or Powershell commands.
 
-After installing, you can run `az login` to log into your azure account.
+After installation, you can run `az login` to log into your azure account.
    
 ## Create SSH Key Pairs
 SSH keys are going to be used for security connection from your WinSCP/PuTTY to the Azure VM. I usually run the command `ssh-keygen` through Git Bash on Windows, but it seems that Windows most-recent updates caused all `ssh` related commands in Git Bash stop working. I ran the following command in PowerShell to generate the SSH Key Pairs. Feel free to change the capitalized `USERANME` in the command, I always make it the same to the username I will use in the VM that is going to be created next.
