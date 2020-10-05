@@ -42,11 +42,24 @@ Note, above command assumeds that you already have a resource-group created, if 
 ```
 az group create --name myResourceGroup --location eastus
 ```
+It might take a few minutes to create the VM. You can check the created VM through the Azure portal.
 
 ## Connect to VM under Proxy
 
 If you are using Windows and under a compay proxy, using WinSCP/Putty is best choice. Because both of them have built-in support for tunneling through a HTTP proxy. This post post describes the settings in WinSCP, which is the closely cooperate with Putty SSH client and allows you move the files between your Windows and the remote servers through drag and drop. You can download and install both WinSCP and Putty through this [link](https://winscp.net/eng/downloads.php).
 
+To connect to the VM instance with SFTP, start WinSCP. Login dialog will appear. On the dialog:
+
+* Make sure **New site** node is selected.
+* On the **New site** node, make sure SFTP protocol is selected.
+* Enter **Host name** with the public IP address of the created VM.
+* Enter **User name** with the admin username when you create the VM.
+* Click the **Advanced...** button to set up a public key authentication.
+* Select **Authentication** under **SSH**, click the **...** to browse the **private file path**.
+* Select the `azure_vm` file created from the command of `ssh-keygen`
+* Select `OK` when it prompts to change OpenSSH private key to PuTTY private key format.
+* Save your site settings using the **Save** button.
+* Login using the **Login** button.
 
    
 
