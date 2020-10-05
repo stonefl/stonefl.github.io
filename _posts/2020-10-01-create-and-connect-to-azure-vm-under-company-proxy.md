@@ -13,6 +13,7 @@ tags:
 To learn Microsoft Azure Virtual Machine, the first thing you might want to try is to create a VM and connect to it. If you follow the steps described in its official [quickstart document](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli), you highly likely would fail to connect to it, especially if you are under a company proxy. This post decribes the step-by-step process I used to create a Linux VM and connect to it through WindSCP on Windows 10 under a company proxy. 
 
 <!--more-->
+![https://unsplash.com/photos/0qvBNep1Y04]({{site.baseurl}}/img/post/computer.jfif)
 
 ## Install Azure ClI
 You can create a VM easily with the Azure Portal, but the Azure CLI would make your life easier. Installing Azure CLI on Windows is pretty simply and straightforward. You can simply follow the steps described in the document of [Install Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) to install the Azure CLI through downloading the Microsoft Installer(MSI) or Powershell command.
