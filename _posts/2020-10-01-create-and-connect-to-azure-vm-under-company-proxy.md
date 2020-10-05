@@ -24,7 +24,7 @@ SSH keys are going to be used for security connection from your WinSCP/Putty to 
 ```powershell
 ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
 ```
-You will be prompted to provide a passphrase, if you can keep it empty.If it runs successfully, you will get an identification file(azure_vm) and a public key file (azure_vm.pub). Of course, you can change to different names, intead of using azure_vm here.
+You will be prompted to provide a passphrase, but you can keep it empty. If it runs successfully, you will get a private file(azure_vm) and a public key file (azure_vm.pub). Of course, you can change it to different file names intead of using _azurevm_ here.
 
 ## Create VM
 You can run the following command to create a VM with the ssh key file you created above. You can specify the VM name and admin username through changing the capitalized `VM-NAME` and `USERANME`, respectivley. 
