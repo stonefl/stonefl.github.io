@@ -26,8 +26,8 @@ ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
 ```
 You will be prompted to provide a passphrase, but you can keep it empty. If it runs successfully, you will get a private file(azure_vm) and a public key file (azure_vm.pub). Of course, you can change it to different file names intead of using _azurevm_ here.
 
-## Create VM
-You can run the following command to create a VM with the ssh key file you created above. You can specify the VM name and admin username through changing the capitalized `VM-NAME` and `USERANME`, respectivley. 
+## Create a Linux VM
+You can run the following command to create a Linux VM with the ssh key file you created above. You can specify the VM name and admin username through changing the capitalized `VM-NAME` and `USERANME`, respectivley. 
 
 ```
 az vm create \
@@ -37,12 +37,11 @@ az vm create \
   --admin-username USERNAME \
   --ssh-key-values ~/.ssh/azure_vm.pub
 ```
-Note, above command assumeds that you already have a resource-group created, if not, you can create one through the following command:
-
+Note, above command assumed that you have already created a resource group, if not, you can create one through the following command:
 ```
 az group create --name myResourceGroup --location eastus
 ```
-It might take a few minutes to create the VM. You can check the created VM through the Azure portal.
+It might take a few minutes to create the VM. Once create successfully, you can see the created VM in the Azure Portal.
 
 ## Connect to VM under Proxy
 
