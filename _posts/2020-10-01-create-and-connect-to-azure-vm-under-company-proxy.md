@@ -39,7 +39,7 @@ az vm create \
   --admin-username USERNAME \
   --ssh-key-values ~/.ssh/azure_vm.pub
 ```
-Note, above command assumed that you have already created a resource group, if not, you can create one through the following command:
+Note, above command assumes that you have already created a resource group, if not, you can create one through the following command:
 ```
 az group create --name myResourceGroup --location eastus
 ```
