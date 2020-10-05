@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: How to Create and Connect to Azure VM through WinSCP/Putty
+title: How to Create and Connect to Azure VM through WinSCP/PuTTY
 date: '2020-10-01'
 categories:
   - Azure
