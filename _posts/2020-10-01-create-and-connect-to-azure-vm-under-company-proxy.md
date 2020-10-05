@@ -58,7 +58,7 @@ To connect to the VM instance through WinSCP, start WinSCP, and Login dialog wil
 * Select **Authentication** under **SSH**, click the **...** to browse the **private file path**.
 ![WinSCP_authentication]({{site.baseurl}}/img/post/Winscp_authentication.PNG)
 * Select the `azure_vm` file created from the command of `ssh-keygen`
-* Select `OK` when it prompts to change OpenSSH private key to PuTTY private key format.
+* Select `OK` when it prompts to change OpenSSH private key format to PuTTY private key format.
 * Save the transfered `.ppk` file to the `.ssh` folder.
 * Select **Proxy** under **Connection** node.
 ![WinSCP_proxy]({{site.baseurl}}/img/post/Winscp_proxy.PNG)
