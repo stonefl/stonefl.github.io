@@ -49,8 +49,9 @@ It might take a few minutes to create the VM. You can check the created VM throu
 If you are using Windows and under a compay proxy, using WinSCP/Putty is best choice. Because both of them have built-in support for tunneling through a HTTP proxy. This post post describes the settings in WinSCP, which is the closely cooperate with Putty SSH client and allows you move the files between your Windows and the remote servers through drag and drop. You can download and install both WinSCP and Putty through this [link](https://winscp.net/eng/downloads.php).
 
 To connect to the VM instance with SFTP, start WinSCP. Login dialog will appear. On the dialog:
-![WinSCP_newsite]({{site.baseurl}}/img/post/Winscp_newsite.PNG)
+
 * Make sure **New site** node is selected.
+![WinSCP_newsite]({{site.baseurl}}/img/post/Winscp_newsite.PNG)
 * On the **New site** node, make sure SFTP protocol is selected.
 * Enter **Host name** with the public IP address of the created VM.
 * Enter **User name** with the admin username when you create the VM.
