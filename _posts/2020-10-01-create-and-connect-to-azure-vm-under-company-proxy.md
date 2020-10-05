@@ -47,7 +47,7 @@ It might take a few minutes to create the VM. Once create successfully, you can 
 
 ## Connect to VM under Proxy
 
-If you are using Windows and under a compay proxy, WinSCP/PuTTY are best choices to connect to the remote VM and both of them have built-in support for tunneling through a HTTP proxy. This post describes the settings in WinSCP, which is the closely cooperate with PuTTY SSH client. So the instructions here are also applicable to PuTTY. You can download and install both WinSCP and PuTTY through this [link](https://winscp.net/eng/downloads.php).
+If you are using Windows and under a compay proxy, WinSCP/PuTTY are the best choices to connect to the remote VM, because both of them have built-in support for tunneling through a HTTP proxy. This post describes the settings in WinSCP that is the closely cooperate with PuTTY SSH client. So the instructions here are also applicable to PuTTY. You can download and install both WinSCP and PuTTY through this [link](https://winscp.net/eng/downloads.php).
 
 To connect to the VM instance through WinSCP, start WinSCP, and Login dialog will appear. On the dialog:
 
