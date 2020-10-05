@@ -22,7 +22,7 @@ You can create a VM easily with the Azure Portal, but the Azure CLI would make t
 After installation, you can run `az login` to log into your azure account.
    
 ## Create SSH Key Pairs
-SSH keys are going to be used for security connection from your WinSCP/PuTTY to the Azure VM. I usually run the command `ssh-keygen` through Git Bash on Windows, but it seems that Windows most-recent updates caused all `ssh` related commands in Git Bash stop working. I ran the following command in PowerShell to generate the SSH Key Pairs. Feel free to change the capitalized `USERANME` in the command, I always make it the same to the username I will use in the VM that is going to be created next.
+SSH keys are going to be used for security connection from your WinSCP/PuTTY to the Azure VM. I usually run the command `ssh-keygen` through Git Bash on Windows, but it seems that Windows most-recent updates caused all `ssh` related commands in Git Bash stop working. Thus I ran the following command in PowerShell to generate the SSH Key Pairs. Feel free to change the capitalized `USERANME` in the command, I always keep it the same to the username I will use in the VM that is going to be created next.
 ```powershell
 ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
 ```
