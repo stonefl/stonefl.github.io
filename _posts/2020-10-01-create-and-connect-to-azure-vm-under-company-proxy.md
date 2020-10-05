@@ -20,7 +20,7 @@ You can create a VM easily with the Azure Portal, but the Azure CLI would make y
 After installing, you can run `az login` to log into your azure account.
    
 ## Create SSH Key Pairs
-SSH keys are going to be used for security connection from your WinSCP/Putty to the Azure VM. I usually run the command `ssh-keygen` through Git Bash on Windows, but it seems that Windows most-recent updates caused all `ssh` related commands in Git Bash stop working. I ran the following command in PowerShell to generate the SSH Key Pairs. Feel free to change the capitalized `USERANME` in the command, I always make it the same to the username I will use in the VM that is going to be created next.
+SSH keys are going to be used for security connection from your WinSCP/PuTTY to the Azure VM. I usually run the command `ssh-keygen` through Git Bash on Windows, but it seems that Windows most-recent updates caused all `ssh` related commands in Git Bash stop working. I ran the following command in PowerShell to generate the SSH Key Pairs. Feel free to change the capitalized `USERANME` in the command, I always make it the same to the username I will use in the VM that is going to be created next.
 ```powershell
 ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
 ```
@@ -45,9 +45,9 @@ It might take a few minutes to create the VM. Once create successfully, you can 
 
 ## Connect to VM under Proxy
 
-If you are using Windows and under a compay proxy, using WinSCP/Putty is best choice. Because both of them have built-in support for tunneling through a HTTP proxy. This post post describes the settings in WinSCP, which is the closely cooperate with Putty SSH client and allows you move the files between your Windows and the remote servers through drag and drop. You can download and install both WinSCP and Putty through this [link](https://winscp.net/eng/downloads.php).
+If you are using Windows and under a compay proxy, WinSCP/PuTTY are best choices to connect to the remote VM and both of them have built-in support for tunneling through a HTTP proxy. This post describes the settings in WinSCP, which is the closely cooperate with PuTTY SSH client. So the instructions here are also applicable to PuTTY. You can download and install both WinSCP and PuTTY through this [link](https://winscp.net/eng/downloads.php).
 
-To connect to the VM instance with SFTP, start WinSCP. Login dialog will appear. On the dialog:
+To connect to the VM instance through WinSCP, start WinSCP, and Login dialog will appear. On the dialog:
 
 * Make sure **New site** node is selected.
 ![WinSCP_newsite]({{site.baseurl}}/img/post/Winscp_newsite.PNG)
