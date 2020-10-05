@@ -14,6 +14,7 @@ To learn Microsoft Azure Virtual Machine, the first thing you might want to try 
 
 <!--more-->
 ![https://unsplash.com/photos/0qvBNep1Y04]({{site.baseurl}}/img/post/computer.jfif)
+Picture from ([unsplash.com](https://unsplash.com/photos/0qvBNep1Y04))
 
 ## Install Azure ClI
 You can create a VM easily with the Azure Portal, but the Azure CLI would make your life easier. Installing Azure CLI on Windows is pretty simply and straightforward. You can simply follow the steps described in the document of [Install Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) to install the Azure CLI through downloading the Microsoft Installer(MSI) or Powershell command.
