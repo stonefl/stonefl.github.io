@@ -54,7 +54,7 @@ az vm create \
   --ssh-key-values ~/.ssh/azure_vm.pub
 ```
 
-**Note**: This command only works in Linux command environment. You have to use Windows Subsystem for Linux (WSL) on Windows 10, or you can run it in any Linux systems.
+**Note**: This command only works in Linux command environment. You have to use Windows Subsystem for Linux (WSL) on Windows 10, or you can run it in the Azure Cloud Shell.
 
 ## References
 https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview
