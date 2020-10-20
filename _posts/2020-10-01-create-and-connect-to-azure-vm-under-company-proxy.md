@@ -15,7 +15,6 @@ bigimg: /img/post/computer.jfif
 To learn Microsoft Azure Virtual Machine, the first thing you want to try might be to create a VM and connect to it. If you follow the steps described in Microsoft's [official quickstart document](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli), you most likely fail to connect to it, especially when you are under a company proxy. This post decribes the step-by-step process I performed to create a Linux VM and connect to it through WindSCP on Windows 10 under a company proxy. 
 
 <!--more-->
-
 ![computer]({{site.baseurl}}/img/post/computer.jfif)
 Picture comes from ([https://unsplash.com/@casparrubin](https://unsplash.com/photos/0qvBNep1Y04))
 
@@ -79,4 +78,3 @@ Hope this post helpful to you. Please feel free to leave your commments and sugg
 [Quickstart - Create a Linux VM with Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli)
 
 [SSH suddenly stopped working in git-bash on Windows 10](https://superuser.com/questions/1496843/ssh-suddenly-stopped-working-in-git-bash-on-windows-10)
-
