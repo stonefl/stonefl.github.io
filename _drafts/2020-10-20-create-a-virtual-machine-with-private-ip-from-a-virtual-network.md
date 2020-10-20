@@ -28,13 +28,15 @@ Here are three important settings need to note:
 * **Public IP**: use a public IP address if you want to connect to the VM from outside internet. Choose `None` if you only need to communicate with the VM within the virtual network or your company networks.
 
 ## Create from Azure CLI
-[previous post](https://leifengblog.net/blog/create-and-connect-to-azure-vm-under-company-proxy/) has described how to install Azure Cli and create SSH key pairs. If haven't installed Azure Cli or created SSH key pairs, you can check my previous post out for the information. It assumes that you have created a SSH private key file named `azure_vm.pub` that is located in `~/.ssh/`.
+The [previous post](https://leifengblog.net/blog/create-and-connect-to-azure-vm-under-company-proxy/) described how to install Azure Cli and create SSH key pairs. If you haven't them yet, you can check out the post for assitance. It assumes that you have created a SSH private key file named `azure_vm.pub` that is located in `~/.ssh/`.
 
-You can run the following commands to create a Linux VM with a private IP address assigned automatically from the `SUBNETID`. The `SUBNETID` is obtained through running commands `az network vnet subnet show` and passing the VNet resource group name, VNet name, and Subnet name. 
+You can run the following commands to create a Linux VM with a private IP address assigned automatically from the `SUBNETID`. The `SUBNETID` is obtained through running the command of `az network vnet subnet show` and passing the names of VNet Resource Group, VNet, and Subnet. 
 
 You can specify the VM name and admin username through changing the capitalized `VM-NAME` and `USERANME`, respectivley. 
 
-You can specify a static private IP address with `--private-ip-address` parameter, such ass `--private-ip-address 192.168.1.101`. In this example, I didn't specify the private IP and it will be assigned by the subnet automatically. You can also specify a static public IP address with the `--public-ip-address` parameter. The public ip has been set to empty in the following command, which means the VM has no public ip and cannot be accessed from the virtual network. However, it should be accessible from the on-premises networks which are usually connected to the virutal network.
+You can specify a static private IP address with `--private-ip-address` parameter, such ass `--private-ip-address 192.168.1.101`. In this example, I didn't specify the private IP and let it assigned by the subnet automatically. 
+
+You can also specify a static public IP address with the `--public-ip-address` parameter. The public ip has been set to empty in the following command, which means the VM has no public ip and cannot be accessed from the outside internet. 
 
 ```
 export SUBNETID=$(az network vnet subnet show -g VNET-RESOURCE-GROUP-NAME --vnet-name VNET-NAME -n SUBNET-NAME -o tsv --query id)
