@@ -23,9 +23,9 @@ If you prefer to use the Portal to create a VM, the following picture shows how 
 ![azure_vm_private_ip]({{site.baseurl}}/img/post/azure_vm_private_ip.PNG)
 
 Here are three important settings need to note:
-* Virtual network: select a shared virutal network or create a new one.
-* Subnet: select a subnet associated with the selected virtual network.
-* Public IP: use a public IP address if you want to connect to the VM from outside the virtual network. Choose **None** if you only communicate with the VM within the virtual network or your company networks.
+* **Virtual network**: select an existing virutal network or create a new one.
+* **Subnet**: select a subnet associated with the selected virtual network.
+* **Public IP**: use a public IP address if you want to connect to the VM from outside internet. Choose `None` if you only need to communicate with the VM within the virtual network or your company networks.
 
 ## Create from Azure CLI
 [previous post](https://leifengblog.net/blog/create-and-connect-to-azure-vm-under-company-proxy/) has described how to install Azure Cli and create SSH key pairs. If haven't installed Azure Cli or created SSH key pairs, you can check my previous post out for the information. It assumes that you have created a SSH private key file named `azure_vm.pub` that is located in `~/.ssh/`.
