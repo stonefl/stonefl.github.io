@@ -19,7 +19,7 @@ In [previous post](https://leifengblog.net/blog/create-and-connect-to-azure-vm-u
 VNet is a logically isolated network from each other in Azure. You can configure its IP address ranges, subnets, route tables, gateways, and security settings, much like a traditional network in a data center. Virtual Machines in the same VNet can access each other by default. VNet enables Azure resources, such as VMs, to securely communicate with each other, to the internet, and to on-premises networks.
 
 ## Settings in Azure Portal
-If you prefer to use protal to create a VM, the following picture shows how to configure in the **Networking** settings for the VM.
+If you prefer to use the Portal to create a VM, the following picture shows how to configure the **Networking** settings for the VM.
 ![azure_vm_private_ip]({{site.baseurl}}/img/post/azure_vm_private_ip.PNG)
 
 Here are three important settings need to note:
