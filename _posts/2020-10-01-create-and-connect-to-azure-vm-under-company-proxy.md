@@ -16,6 +16,9 @@ To learn Microsoft Azure Virtual Machine, the first thing you want to try might 
 
 <!--more-->
 
+![computer]({{site.baseurl}}/img/post/computer.jfif)
+Picture comes from ([https://unsplash.com/@casparrubin](https://unsplash.com/photos/0qvBNep1Y04))
+
 ## Install Azure ClI
 You can create a VM easily with the Azure Portal, but the Azure CLI would make the process even easier. Installing Azure CLI on Windows is pretty simply and straightforward. You just need to simply follow the steps described in the document of [Install Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) to install the Azure CLI through downloading the Microsoft Installer(MSI) or Powershell commands.
 
@@ -77,6 +80,3 @@ Hope this post helpful to you. Please feel free to leave your commments and sugg
 
 [SSH suddenly stopped working in git-bash on Windows 10](https://superuser.com/questions/1496843/ssh-suddenly-stopped-working-in-git-bash-on-windows-10)
 
-## Credit
-
-Title picture comes from ([https://unsplash.com/@casparrubin](https://unsplash.com/photos/0qvBNep1Y04))
