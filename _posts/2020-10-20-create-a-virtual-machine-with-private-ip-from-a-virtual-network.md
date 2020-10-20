@@ -62,5 +62,4 @@ https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview
 
 https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-static-private-ip-arm-cli
 
-## Credit
-Title picture comes from ([https://unsplash.com/@timmossholder](https://unsplash.com/photos/0zRt0bQysMw))
+
