@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: >-
-  Create a Virtual Machine with Private IP from a Virtual Network that's in a
+  Create a Virtual Machine with a Private IP from a Virtual Network that's in a
   Different Subscription in Azure
 date: '2020-10-20'
 categories:
@@ -59,5 +59,3 @@ az vm create \
 https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview
 
 https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-static-private-ip-arm-cli
-
-
