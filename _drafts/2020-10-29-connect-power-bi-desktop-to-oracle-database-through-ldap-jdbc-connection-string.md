@@ -19,6 +19,7 @@ Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/
 
 
 
+
 ## References
 Power BI Official Document
 https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-oracle-database#installing-the-oracle-client
