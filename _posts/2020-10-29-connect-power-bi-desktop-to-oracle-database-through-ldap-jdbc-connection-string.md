@@ -42,6 +42,7 @@ After create the new connection, if you can expand the left panel, you will find
 With the  above connection details information, you can take the following steps to conncet to the Oracle Database in Power BI Desktop:
 * From the **Home** tab, select **Get Data**
 * From the **Get Data** window that appears, select **More** (if necessary), select **Database** > **Oracle database**, and then select **Connect**
+
 * You might get the warning message on recommended provider shown as below. Just click on **OK** to skip it.
 ![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_2.png)
 
