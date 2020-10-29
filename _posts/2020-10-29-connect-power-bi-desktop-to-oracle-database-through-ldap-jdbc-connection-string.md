@@ -33,7 +33,10 @@ With the above custom JDBC URL, followwing the steps below, you can create a new
 * Load the `DBservicename` as the **DB Service**
 * **Test** the connection, if succeffuly, click the **Save** button.
 
-After create the new connection, if you can expand the left panel, you will find the **Connection Details** of the new LDAP connection, which has the following format:
+After create the new connection, if you can expand the left panel, you will find the **Connection Details** of the new LDAP connection, shown as the highlighted area below:
+![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_1.png)
+
+The **Connection Details** has the following format:
 ```
 [username]@//[servername]:[serverport]/[servicename]
 ```
