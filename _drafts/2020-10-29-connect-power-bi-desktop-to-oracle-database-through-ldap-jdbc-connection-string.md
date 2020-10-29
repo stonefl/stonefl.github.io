@@ -47,6 +47,8 @@ With the connection details information above, you can take the following steps 
 
 ![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_3.png)
 
+**Note:**
+The process described in this post is not the best way to connect to Oracel Database. You might notice that the `[servername]:[serverport]/[servicename]` in the connection details of the LDAP connection, because the Oracel server might be behind a network Load Balancer. In this case, you can refer to [this post](https://medium.com/@eikonomega/connecting-to-oracle-database-with-cx-oracle-and-ldap-5da7925a305c) and [this post](http://technologydribble.info/2015/02/10/how-to-create-an-oracle-database-link-using-ldap-authentication/) for the settings of **ldap.ora** for the Oracel client.
 
 
 ## References
