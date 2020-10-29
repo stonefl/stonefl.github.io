@@ -46,7 +46,6 @@ With the  above connection details information, you can take the following steps
 ![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_2.png)
 
 * Copy the `[servername]:[serverport]/[servicename]` part from the above connection details in SQL Developer to the **Server** field shown as below, then click **OK**.
-
 ![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_3.png)
 
 **Note:**
