@@ -54,4 +54,5 @@ The process described in this post is not the best way to connect to Oracel Data
 ## References
 Power BI Official Document
 https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-oracle-database#installing-the-oracle-client
-
+Making Database Connections from Oracle SQL Developer
+https://blogs.oracle.com/oraclemagazine/making-database-connections
