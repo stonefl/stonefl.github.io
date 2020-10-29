@@ -101,7 +101,7 @@
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}" />
   {% if page.thumbnail %}
-  <meta name="twitter:image" content="{{ page.thumbnail }}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ page.thumbnail }}" />
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}  
