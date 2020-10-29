@@ -62,7 +62,7 @@
 </div>
 <!-- add feature image -->	
 {% if page.thumbnail %}
-	{% include page-feature-image.html image=page.thumbnail %}
+	<meta property="og:image" content="{{ site.url }}/{{ page.thumbnail }}" />
 {% endif %}
 </header>
 
