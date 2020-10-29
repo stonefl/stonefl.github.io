@@ -60,6 +60,10 @@
     </div>
   </div>
 </div>
+<!-- add feature image -->	
+{% if page.thumbnail %}
+	{% include page-feature-image.html image=page.thumbnail %}
+{% endif %}
 </header>
 
 
