@@ -44,6 +44,7 @@ With the  above connection details information, you can take the following steps
 * From the **Get Data** window that appears, select **More** (if necessary), select **Database** > **Oracle database**, and then select **Connect**
 
 * You might get the warning message on recommended provider shown as below. Just click on **OK** to skip it.
+
 ![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_2.png)
 
 * Copy the `[servername]:[serverport]/[servicename]` part from the above connection details in SQL Developer to the **Server** field shown as below, then click **OK**.
