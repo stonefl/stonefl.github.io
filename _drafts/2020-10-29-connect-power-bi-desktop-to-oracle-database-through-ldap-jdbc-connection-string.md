@@ -14,10 +14,12 @@ Microsoft Power BI Desktop can connect to multiple data sources, one of the most
 
 <!--more-->
 
-![private_sign]({{site.baseurl}}/img/post/dashboard.jpg.jpg)
+![private_sign]({{site.baseurl}}/img/post/dashboard.jpg)
 Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/mcSDtbWXUZU))
 
+## Custom JDBC URL
 
+![private_sign]({{site.baseurl}}/img/post/sql_developer01.PNG)\
 
 
 ## References
