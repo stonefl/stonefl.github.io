@@ -90,6 +90,7 @@
   
   {% if page.thumbnail %}
   <meta property="og:image" content="{{ site.url }}{{ page.thumbnail }}" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ site.url }}{{ page.thumbnail }}" />
   {% else %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
