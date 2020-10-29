@@ -18,9 +18,9 @@ Microsoft Power BI Desktop can connect to multiple data sources, one of the most
 Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/mcSDtbWXUZU))
 
 ## Custom JDBC URL
-![private_sign]({{site.baseurl}}/img/post/sql_developer01.PNG)
+![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
 
-The picture above shows an example of settings of a Custom JDBC connection to an Oracle Database. The URL/Conncetion string in the **Custom JDBC URL** box usually follow the format below:
+The picture above shows an example of settings of a Custom JDBC connection to an Oracle Database. The URL/Conncetion string in the **Custom JDBC URL** box usually follows the format below:
 ```
 jdbc:oracle:thin:@ldap://[ldapservername:port]/[DBservicename],cn=Oraclecontext,dc=domaincontext1,dc=domaincontext2
 ```
@@ -33,7 +33,20 @@ With the custom JDBC URL, you can follow the steps below to create a new LDAP co
 * The **Context** should be loaded autoamatically
 * Load the `DBservicename` as the **DB Service**
 * **Test** the connection, if succeffuly, click the **Save** button.
-After 
+
+After create the new connection, you can expand the left panel, and you will find the **Connection Details** of the new LDAP connection, which has the following format:
+```
+[username]@//[servername]:[serverport]/[servicename]
+```
+
+## Connect to Oracle Database in Power BI Desktop
+With the connection details information above, you can take the following steps to conncet to the Oracle Database:
+* From the **Home** tab, select **Get Data**.
+* From the **Get Data** window that appears, select **More** (if necessary), select **Database** > **Oracle database**, and then select **Connect**.
+* Copy the `[servername]:[serverport]/[servicename]` part from the above connection details of the LDAP connection in SQL Developer to the **Server** field shown as below, then click **OK**.
+
+![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_3.png)
+
 
 
 ## References
