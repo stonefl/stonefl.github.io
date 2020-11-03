@@ -25,7 +25,7 @@ The picture above shows an example of settings of Custom JDBC connection to an O
 jdbc:oracle:thin:@ldap://[ldapservername:port]/[DBservicename],cn=Oraclecontext,dc=domaincontext1,dc=domaincontext2
 ```
 ## Transfer Custom JDBC URL to LDAP Connection
-With the above custom JDBC URL, followwing the steps below, you can create a new LDAP connection which can show the real `ServerName/ServiceName` information that is required by Power BI to connect to the Oracle Database:
+With the above custom JDBC URL, following the steps below, you can create a new LDAP connection which can show the real `ServerName/ServiceName` information that is required by Power BI to connect to the Oracle Database:
 * Create a new connection with a new **Name** in SQL Developer
 * Fill in your **Username** and **Password**
 * Select `LDAP` in the **Connection Type** drop-down list
