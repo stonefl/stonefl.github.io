@@ -17,8 +17,19 @@ In [previous post](https://leifengblog.net/blog/create-and-connect-to-azure-vm-u
 ![private_sign]({{site.baseurl}}/img/post/private_sign.jpg)
 Picture comes from ([https://unsplash.com/@timmossholder](https://unsplash.com/photos/0zRt0bQysMw))
 
+## Create SSH Key Pairs
+SSH keys are going to be used for security connection to the Azure VM. You can run the following command in PowerShell or the Cloud Shell to generate the SSH Key Pairs. Feel free to change the capitalized USERANME in the command, I always keep it the same to the username I will use in the VM that is going to be created next.
+```
+ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
+```
+
+You will be prompted to provide a passphrase, but you can keep it empty. If it runs successfully, you will get a private file (azure_vm) and a public key file (azure_vm.pub) in the folder `$HOME/.ssh/`. Of course, you can choose different file names intead of using azure_vm here.
+
+
 ## What is a Virtual Network(VNet)
 VNet is a logically isolated network from each other in Azure. You can configure its IP address ranges, subnets, route tables, gateways, and security settings, much like a traditional network in a data center. Virtual Machines in the same VNet can access each other by default. VNet enables Azure resources, such as VMs, to securely communicate with each other, to the internet, and to on-premises networks.
+
+
 
 ## Settings in Azure Portal
 If you prefer to use the Portal to create a VM, the following picture shows how to configure the **Networking** settings for the VM.
@@ -31,15 +42,6 @@ Here are three important settings need to note:
 
 ## Create from Azure CLI
 
-### Create SSH Key Pairs
-SSH keys are going to be used for security connection to the Azure VM. You can run the following command in PowerShell or the Cloud Shell to generate the SSH Key Pairs. Feel free to change the capitalized USERANME in the command, I always keep it the same to the username I will use in the VM that is going to be created next.
-```
-ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
-```
-
-You will be prompted to provide a passphrase, but you can keep it empty. If it runs successfully, you will get a private file (azure_vm) and a public key file (azure_vm.pub) in the folder `$HOME/.ssh/`. Of course, you can choose different file names intead of using azure_vm here.
-
-### Create a Linux VM through Azure Cli
 
 You can run the following commands to create a Linux VM with a private IP address assigned automatically from the `SUBNETID`. The `SUBNETID` is obtained through running the command of `az network vnet subnet show` and passing the names of VNet Resource Group, VNet, and Subnet. 
 
