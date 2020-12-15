@@ -37,7 +37,7 @@ SSH keys are going to be used for security connection to the Azure VM. You can r
 ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
 ```
 
-You will be prompted to provide a passphrase, but you can keep it empty. If it runs successfully, you will get a private file (azure_vm) and a public key file (azure_vm.pub) in the folder `$HOME/.ssh`. Of course, you can choose different file names intead of using azure_vm here.
+You will be prompted to provide a passphrase, but you can keep it empty. If it runs successfully, you will get a private file (azure_vm) and a public key file (azure_vm.pub) in the folder `$HOME/.ssh/`. Of course, you can choose different file names intead of using azure_vm here.
 
 ### Create a Linux VM through Azure Cli
 
