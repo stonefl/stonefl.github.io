@@ -11,7 +11,6 @@ tags:
   - VM
   - Private IP
 thumbnail: /img/post/private_sign.jpg
-bigimg: /img/post/private_sign.jpg
 ---
 In [previous post](https://leifengblog.net/blog/create-and-connect-to-azure-vm-under-company-proxy/) I described how to create a Linux Virtual Machine(VM) and connect to it through WindSCP on Windows 10 under a company proxy. However, it is not a best practice from security perspective. One of the best practices is to create a VM with private IP that comes from a dedicated Virtual Network (VNet). The VNet can be in the same Resource Group as the VM, but it can also be from different Resource Groups and even different Subscriptions. This post describes how to create a Linux VM with a Private IP in a VNet that comes from a different Subscription.
 <!--more-->
