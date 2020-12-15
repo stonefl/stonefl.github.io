@@ -30,7 +30,16 @@ Here are three important settings need to note:
 * **Public IP**: use a public IP address if you want to connect to the VM from outside internet. Choose `None` if you only need to communicate with the VM within the virtual network or your company networks.
 
 ## Create from Azure CLI
-The [previous post](https://leifengblog.net/blog/create-and-connect-to-azure-vm-under-company-proxy/) described how to install Azure Cli and create SSH key pairs. If you haven't them yet, you can check out the post for assitance. It assumes that you have created a SSH private key file named `azure_vm.pub` that is located in `~/.ssh/`.
+
+### Create SSH Key Pairs
+SSH keys are going to be used for security connection to the Azure VM. You can run the following command in PowerShell or the Cloud Shell to generate the SSH Key Pairs. Feel free to change the capitalized USERANME in the command, I always keep it the same to the username I will use in the VM that is going to be created next.
+```
+ssh-keygen -t rsa -b 4096 -C "USERNAME" -f $HOME/.ssh/azure_vm
+```
+
+You will be prompted to provide a passphrase, but you can keep it empty. If it runs successfully, you will get a private file (azure_vm) and a public key file (azure_vm.pub) in the folder `$HOME/.ssh`. Of course, you can choose different file names intead of using azure_vm here.
+
+### Create a Linux VM through Azure Cli
 
 You can run the following commands to create a Linux VM with a private IP address assigned automatically from the `SUBNETID`. The `SUBNETID` is obtained through running the command of `az network vnet subnet show` and passing the names of VNet Resource Group, VNet, and Subnet. 
 
@@ -55,6 +64,28 @@ az vm create \
 ```
 
 **Note**: This command only works in Linux command environment. You have to use Windows Subsystem for Linux (WSL) on Windows 10, or you can run it in the Azure Cloud Shell.
+
+## Connect to VM throguh WinSCP
+
+Once you created the VM either through portal or Cli, you use WinSCP/PuTTY to connect to the VM using the private ip within your privated network. You can download and install both WinSCP and PuTTY through this [link](https://winscp.net/eng/downloads.php).
+
+To connect to the VM instance through WinSCP, you simply start WinSCP and login dialog will appear. On the dialog:
+
+* Make sure **New site** node is selected.
+![WinSCP_newsite]({{site.baseurl}}/img/post/Winscp_newsite.PNG)
+* On the **New site** node, make sure SFTP protocol is selected.
+* Enter **Host name** with the public IP address of the created VM.
+* Enter **User name** with the admin username when you create the VM.
+* Click the **Advanced...** button to set up a public key authentication.
+* Select **Authentication** under **SSH**, click the **...** to browse the **private file path**.
+![WinSCP_authentication]({{site.baseurl}}/img/post/Winscp_authentication.PNG)
+* Select the `azure_vm` file created from the command of `ssh-keygen`
+* Select `OK` when it prompts to change OpenSSH private key format to PuTTY private key format.
+* Save the transfered `.ppk` file to the `.ssh` folder.
+* Save your site settings using the **Save** button.
+* Login using the **Login** button.
+
+Hope this post helpful to you. Please feel free to leave your commments and suggestions.
 
 ## References
 https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview
