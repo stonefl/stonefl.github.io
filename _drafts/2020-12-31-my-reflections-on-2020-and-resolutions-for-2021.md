@@ -13,8 +13,10 @@ thumbnail: /img/post/bye-2020.jpg
 
 # Reflections on 2020
 
-- **Enjoyed staying more with family**: I have been working from home since the late of March. At the very beginning, I worried my two screaming girls would ruin my work at home. It turned out that I was completely wrong that they know when they cannot disrupt me and when I will have time to play games with them. I'm really enjoying the time staying with them at home.
-- Learned cloud platforms: I have learned both Google Cloud Platform and Microsoft Azure and have successfully obtained three GCP at the beginning of this year.
+- **Enjoyed staying more with family**: I have been working from home since the late of March. At the very beginning, I worried my two screaming little girls would ruin my work at home. It turned out that I was completely wrong. They know when they cann't disrupt me and when they can ask me to play games with them. To be honest, I have got used to working from home and I'm really enjoying the time staying with my family at home.
+
+- **Learned new cloud skills**: Cloud computing is the key to the future industries. I feel lucky to have chances to learn about both Google Cloud Platform and Microsoft Azure, who are the two of the top public cloud providers in the world. I have successfully obtained three GCP at the beginning of 2020.
+![three_certs]({{site.baseurl}}/img/post/ThreeCerts.JPG)
 
 - Got a manager position:
 Ultimately, he notes that the best team leaders are the ones that aren’t angling for power for power’s sake. “They are the great individual contributors who never, ever want to be a manager," Jobs says. "But decide they have to be a manager because no one else is going to be able to do as good a job as them.”
