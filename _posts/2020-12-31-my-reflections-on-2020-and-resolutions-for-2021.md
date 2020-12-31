@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: My Reflections on 2020 and Resolutions for 2021
 date: '2020-12-31'
 categories:
