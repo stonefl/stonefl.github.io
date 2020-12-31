@@ -46,13 +46,14 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 [Run Dataflow Jobs in a Shared VPC without Regional Endpoints on GCP](https://leifengblog.net/blog/run-dataflow-jobs-in-a-shared-vpc-on-gcp/)
 
 # Resolutions for 2021
-- **Trying be a better manager**: so far so good, need to be better
+
+- **To be a better manager**: keep learning and improving.
 - **Get threee Certificates of Azure**: Data Scientist, Administrator, and Solution Architect
 - **Read more books**: at least one book per month. And review some of the good ones.
-- **Write more blogs**: at least one blog per month. Not only focus on techniques but also on management. 
-- Run more miles: at least three miles per day. 
-- Spend less time on political medium and news
-- Take a long vacation to take my family to a long trip
+- **Write more blogs**: at least one blog per month. Not only focus on techniques, but also on management. 
+- **Run more miles**: reach total 1000 miles by the end of 2021. 
+- **Spend less time on political medium and news**. Yes, I think political medium and news are not good for health, neither physical nor mental.
+- **Take a long vacation for a long trip with family**: This is what I owe to my daughters.
 
 
 
