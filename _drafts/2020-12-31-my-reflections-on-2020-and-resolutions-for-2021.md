@@ -22,6 +22,7 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 ![three_certs]({{site.baseurl}}/img/post/ThreeCerts.JPG)
 
 - **Started a manager role**:I got started 
+
 > They are the great individual contributors who never, ever want to be a manager. But decide they have to be a manager because no one else is going to be able to do as good a job as them.
 --Steve Jobs
 
