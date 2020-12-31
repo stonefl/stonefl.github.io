@@ -7,7 +7,7 @@ categories:
   - Reflections
 thumbnail: /img/post/bye-2020.jpg
 ---
-2020 is over, and brighter days are coming in 2021. On the last day of 2020, I want to reflect on the past year and setup some goals for the new year. The COVID-19 changed our lives and caused many losses, but I was, luckily enough, able to get on some new habits, chanllenges, and achievements in 2020.
+2020 is over, and brighter days are coming. On the last day of 2020, I want to reflect on the past year and setup some goals for the new 2021. The COVID-19 changed our lives and caused many losses, but I was, lucky enough, able to get on some new habits, chanllenges, and achievements in 2020.
 
 <!--more-->
 
