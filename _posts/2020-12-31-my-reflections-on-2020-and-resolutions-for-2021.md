@@ -16,20 +16,20 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 
 # Reflections on 2020
 
-- **Enjoyed staying more with family**: I have been working from home since the late of March. At the very beginning, I worried my two screaming little girls would ruin my work at home. It turned out that I was completely wrong. They know when they cann't disrupt me and when they can ask me to play games with them. To be honest, I have got used to working from home and I'm really enjoying the time staying with my family at home.
+- **Enjoyed staying more with family**: I have been working from home since the late of March. At the very beginning, I worried my two screaming little girls would ruin my work at home. It turned out that I was completely wrong. They know when they can't disturb me and when they can ask me to play games with them. I have got used to working from home and am really enjoying the time staying with them.
 
-- **Learned about cloud skills**: Cloud computing is the key to the future industries. I feel lucky to have chances to learn about both Google Cloud Platform and Microsoft Azure, who are the two of the top public cloud providers in the world. I have successfully obtained three GCP certificates at the end of 2019 and the beginning of 2020.
+- **Learned about cloud skills**: Cloud computing is key to the future industries. I feel lucky to have chances of learning about both Google Cloud Platform and Microsoft Azure. They are two of the top public cloud platforms in the world. I have successfully obtained three GCP certificates at the end of 2019 and the beginning of 2020.
 ![three_certs]({{site.baseurl}}/img/post/ThreeCerts.JPG)
 
-- **Started a manager role**: I got started a new role of Manager Operations Research at FedEx Freight on Sep. 16th. The quote from Steve Jobs below might be the best reason why I would move from a technical person to a manager. While it is challenging, I'm learning to be a good manager.
+- **Started a manager role**: I started a role as Manager of Operations Research on Sep. 16th. The quote from Steve Jobs below might be the best reason why I would move from a technical person to a manager. While it is a challenging, I'm learning to be a good manager.
 
-> "They are the great individual contributors who never, ever want to be a manager... But decide they have to be a manager because no one else is going to be able to do as good a job as them."
+> "They are the great individual contributors who never, ever want to be a manager... But decide they have to be a manager because no one else is going to be able to do as good a job as them." -- Steve Jobs
 
-- **Started new good habits**: Started with working from home, I have been getting up at 5am and running everyday. Running distance started from 0.7 miles increased to 3.5 miles now. I have reached total 250 miles goal!
+- **Started two new good habits**: Started with working from home, I have been getting up at 5am and running everyday. Running distance started from 0.7 miles increased to 3.5 miles now and I have reached total 250 miles two days ago! 
 
-- **Read books**: I have finsihed 10 English and 15 Chinses books, covering history, business, management, computer, big data, productivity and time management. I will take time to do a review on some of the great ones.
+- **Read books**: I have finsihed 10 English and 15 Chinses books, in areas of history, business, management, computer, big data, productivity and time management, etc. I will take time to do a review on some of the great ones.
 
-- **Wrote blogs**: I'm not a blogger, but I like to write down what I have learned in a logging way. I have finished 7 tech blogs on GCP, Azure and Power BI. Welcome to check them out:
+- **Wrote blogs**: I'm not a blogger, but I like to write down what I have learned in a logging way. I have finished 7 tech blogs on GCP, Azure and Power BI. Please feel free to check them out:
 
 [Connect Power BI Desktop to Oracle Database through LDAP JDBC Connection String](https://leifengblog.net/blog/connect-power-bi-desktop-to-oracle-database-through-ldap-jdbc-connection-string/)
 
@@ -47,13 +47,13 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 
 # Resolutions for 2021
 
-- **To be a better manager**: keep learning and improving.
-- **Get threee Certificates of Azure**: Data Scientist, Administrator, and Solution Architect
-- **Read more books**: at least one book per month. And review some of the good ones.
+- **To be a better manager**: keep learning and improving to a great manager.
+- **Get threee certificates of Azure**: Data Scientist, Administrator, and Solution Architect
+- **Read more books**: at least one book per month and review some of the good ones.
 - **Write more blogs**: at least one blog per month. Not only focus on techniques, but also on management. 
-- **Run more miles**: reach total 1000 miles by the end of 2021. 
-- **Spend less time on political medium and news**. Yes, I think political medium and news are not good for health, neither physical nor mental.
-- **Take a long vacation for a long trip with family**: This is what I owe to my daughters.
+- **Run more miles**: reach total 1,000 miles by the end of 2021. 
+- **Spend less time on political medium and news**: political medium and news are not good for health, neither physical nor mental.
+- **Take a long vacation for a long trip with family**: This is what I owe the girls in 2020.
 
 
 
