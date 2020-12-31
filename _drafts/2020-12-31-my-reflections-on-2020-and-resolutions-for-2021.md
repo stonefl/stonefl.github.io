@@ -18,7 +18,7 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 
 - **Enjoyed staying more with family**: I have been working from home since the late of March. At the very beginning, I worried my two screaming little girls would ruin my work at home. It turned out that I was completely wrong. They know when they cann't disrupt me and when they can ask me to play games with them. To be honest, I have got used to working from home and I'm really enjoying the time staying with my family at home.
 
-- **Learned new cloud skills**: Cloud computing is the key to the future industries. I feel lucky to have chances to learn about both Google Cloud Platform and Microsoft Azure, who are the two of the top public cloud providers in the world. I have successfully obtained three GCP at the beginning of 2020.
+- **Learned new cloud skills**: Cloud computing is the key to the future industries. I feel lucky to have chances to learn about both Google Cloud Platform and Microsoft Azure, who are the two of the top public cloud providers in the world. I have successfully obtained three GCP certificates at the end of 2019 and the beginning of 2020.
 ![three_certs]({{site.baseurl}}/img/post/ThreeCerts.JPG)
 
 - **Started a manager role**:I got started 
