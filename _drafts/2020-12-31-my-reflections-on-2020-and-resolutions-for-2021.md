@@ -2,6 +2,10 @@
 layout: post
 published: false
 title: My Reflections on 2020 and Resolutions for 2021
+date: '2020-12-31'
+categories:
+  - Reflections
+thumbnail: /img/post/bye-2020.jpg
 ---
 ## A New Post
 
