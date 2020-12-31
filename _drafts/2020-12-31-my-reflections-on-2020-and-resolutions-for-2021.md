@@ -21,19 +21,34 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 - **Learned about cloud skills**: Cloud computing is the key to the future industries. I feel lucky to have chances to learn about both Google Cloud Platform and Microsoft Azure, who are the two of the top public cloud providers in the world. I have successfully obtained three GCP certificates at the end of 2019 and the beginning of 2020.
 ![three_certs]({{site.baseurl}}/img/post/ThreeCerts.JPG)
 
-- **Started a manager role**:I got started a new role of Manager Operations Research at FedEx Freight on Sep. 16th. The quote from Steve Jobs below might be the best reason why I would move from a technical person to a manager. While it is challenging, I'm learning to be a good manager.
+- **Started a manager role**: I got started a new role of Manager Operations Research at FedEx Freight on Sep. 16th. The quote from Steve Jobs below might be the best reason why I would move from a technical person to a manager. While it is challenging, I'm learning to be a good manager.
 
 > "They are the great individual contributors who never, ever want to be a manager... But decide they have to be a manager because no one else is going to be able to do as good a job as them."
 
-- **Started new good habits**:
-- Read 9 books:
-- Wrote 7 tech blogs:
+- **Started new good habits**: Started with working from home, I have been getting up at 5am and running everyday. Running distance started from 0.7 miles increased to 3.5 miles now. I have reached total 250 miles goal!
 
+- **Read books**: I have finsihed 10 English and 15 Chinses books, covering history, business, management, computer, big data, productivity and time management. I will take time to do a review on some of the great ones.
+
+- **Wrote blogs**: I'm not a blogger, but I like to write down what I have learned in a logging way. I have finished 7 tech blogs on GCP, Azure and Power BI. Welcome to check them out:
+
+[Connect Power BI Desktop to Oracle Database through LDAP JDBC Connection String](https://leifengblog.net/blog/connect-power-bi-desktop-to-oracle-database-through-ldap-jdbc-connection-string/)
+
+[Create a Virtual Machine with Private IP from a Virtual Network that's in a Different Subscription in Azure](https://leifengblog.net/blog/create-a-virtual-machine-with-private-ip-from-a-virtual-network/)
+
+[Create and Connect to Azure VMs through WinSCP/PuTTY](https://leifengblog.net/blog/create-and-connect-to-azure-vm-under-company-proxy/)
+
+[Create AI Platform Notebooks Instance in Shared VPC without Service Availability](https://leifengblog.net/blog/create-ai-platform-notebooks-instance-in-shared-vpc-without-service-availability/)
+
+[Install, Setup and Manage Google Cloud SDK to Use Python From Anaconda](https://leifengblog.net/blog/Installing-Google-Cloud-SDK-to-Use-Python-from-Anaconda/)
+
+[Setup Kubeflow Cluster in a Shared VPC on Google Cloud Platform](https://leifengblog.net/blog/setup-kubeflow-cluster-in-shared-vpc-on-google-cloud-platform/)
+
+[Run Dataflow Jobs in a Shared VPC without Regional Endpoints on GCP](https://leifengblog.net/blog/run-dataflow-jobs-in-a-shared-vpc-on-gcp/)
 
 # Resolutions for 2021
 - **Trying be a better manager**: so far so good, need to be better
 - **Get threee Certificates of Azure**: Data Scientist, Administrator, and Solution Architect
-- **Read more books**: at least one book per month.
+- **Read more books**: at least one book per month. And review some of the good ones.
 - **Write more blogs**: at least one blog per month. Not only focus on techniques but also on management. 
 - Run more miles: at least three miles per day. 
 - Spend less time on political medium and news
