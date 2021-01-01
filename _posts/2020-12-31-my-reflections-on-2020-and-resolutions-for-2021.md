@@ -48,7 +48,7 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 # Resolutions for 2021
 
 - **To be a better manager**: keep learning and improving to a great manager.
-- **Get threee certificates of Azure**: Data Scientist, Administrator, and Solution Architect
+- **Get three certificates of Azure**: Data Scientist, Administrator, and Solution Architect
 - **Read more books**: at least one book per month and review some of the good ones.
 - **Write more blogs**: at least one blog per month. Not only focus on techniques, but also on management. 
 - **Run more miles**: reach total 1,000 miles by the end of 2021. 
