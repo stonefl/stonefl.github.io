@@ -25,7 +25,7 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 
 > "They are the great individual contributors who never, ever want to be a manager... But decide they have to be a manager because no one else is going to be able to do as good a job as them." -- Steve Jobs
 
-- **Started two new good habits**: Started with working from home, I have been getting up at 5am and running everyday. Running distance started from 0.7 miles increased to 3.0 miles now and I have reached total 200 miles two days ago! 
+- **Started two new good habits**: Started with working from home, I have been getting up at 5am and running everyday. Running distance started from 0.7 miles increased to 3.0 miles now and I have reached total 150 miles two days ago! 
 
 - **Read books**: I have finsihed 10 English and 10 Chinses books, in areas of history, business, management, computer, big data, productivity and time management, etc. I will take time to do a review on some of the great ones.
 
