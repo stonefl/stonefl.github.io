@@ -69,7 +69,7 @@ To connect to the VM instance through WinSCP, you simply start WinSCP and login 
 * Save your site settings using the **Save** button.
 * Login using the **Login** button.
 
-Hope this post helpful to you. Please feel free to leave your commments and suggestions.
+Hope this post is helpful to you. Please feel free to leave your commments and suggestions.
 
 ## Reference
 [Install Azure CLI for Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
