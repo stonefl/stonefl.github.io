@@ -95,7 +95,7 @@ Unzip the downloaded file and go into the folder. Double click on the `setup.exe
 After installation, navigate to installation directory (Oracle home), which is the **Software location** in the step of **Specify Installation Location** above. Then go into **Network** > **Admin**.
 
 * Create two files `ldap.ora` and `sqlnet.ora` if they are not generated automatically. 
-* The content of file`ldap.ora` should be similar to the following. 
+* The content of file`ldap.ora` should be similar to the following: 
 
 ```
 DIRECTORY_SERVERS = (oid.myinfo.domain.com:3060)
