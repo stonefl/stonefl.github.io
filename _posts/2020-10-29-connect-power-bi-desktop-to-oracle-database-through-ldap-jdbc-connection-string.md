@@ -55,7 +55,7 @@ Want to clarify that the `servername`, `serverport` and `servicename` from the *
 
 ## Install and Configure ODAC
 
-#### Step 1: Uninstall any existing version of ODAC (Optional) 
+#### Step 1: Uninstall any existing version of ODAC 
 If you have installed the Xcopy version, to uninstall all ODAC products, execute the following command in the **Oracel Home** directory:
 ```
 uninstall.bat all odac
