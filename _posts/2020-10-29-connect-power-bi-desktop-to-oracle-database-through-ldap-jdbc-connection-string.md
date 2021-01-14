@@ -30,6 +30,7 @@ The picture above shows an example of **Custom JDBC** connection to an Oracle Da
 jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
 ```
 
+
 #### LDAP Connection
 The picture below shows the LDAP Connection with the same connection information from the JDBC URL above. The the fields of **LDAP Server**,  **Context**, and **DB Service** should have the same values as `ldapservername:ldapport`, `DomainContext`, and `DBservicename` from the **Custom JDBC URL** above.
 
