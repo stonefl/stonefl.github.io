@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: >-
   Connect Power BI Desktop to Oracle Database through LDAP/JDBC Connection
   Strings
