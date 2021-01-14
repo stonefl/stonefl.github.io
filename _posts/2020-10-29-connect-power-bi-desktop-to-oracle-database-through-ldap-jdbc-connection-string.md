@@ -55,11 +55,17 @@ If you have installed the Xcopy version, to uninstall all ODAC products, execute
 ```
 uninstall.bat all odac
 ```
-If you have installed non-Xcopy version, you can use the Universal Installer. You can find it from:
+If you have installed non-Xcopy version, you can use the **Universal Installer** as Administrator. You can find it from:
 **Start** -> **All programs** -> **Oracle - OraClient12Home1** ->**Oracle Installation Products**->**Universal Installer**.
 
+### Step 2: Check the version from Power BI Desktop -> Help -> About. The following is the screenshot of 64-bit version. Yours might 32-bit version.
+![powerbi-version]({{site.baseurl}}/img/post/powerbi-version.png)
 
+### Step 3: Download 
 
+https://download.oracle.com/otn/other/ole-oo4o/ODAC122011_x64.zip
+
+https://www.oracle.com/database/technologies/odac-downloads.html
 
 ## Connect to Oracle Database in Power BI Desktop
 With the  above connection details information, you can take the following steps to conncet to the Oracle Database in Power BI Desktop:
