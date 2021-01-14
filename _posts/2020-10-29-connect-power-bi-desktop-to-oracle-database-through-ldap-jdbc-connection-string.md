@@ -26,7 +26,7 @@ Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/
 
 ## LDAP Connection in SQL Developer
 
-There are serveral software clients can be used to connect to Oracle Database, [Oracel SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) might be the most popular one. Authentication through a LDAP server is the most secure and popular way in SQL Developer to connect to an Oracle Database.
+There are serveral software clients can be used to connect to Oracle Database, [Oracel SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) might be the most popular one. Authentication through a LDAP server is the most secure and popular way in SQL Developer to connect to an Oracle Database. The LDAP servers can be sepecified in both JDBC URL or LDAP connection. The following decribes the string formats in the two types of connections.
 
 ### Custom JDBC URL
 ![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
@@ -54,6 +54,17 @@ The **Connection Details** has the following format:
 [username]@//[servername]:[serverport]/[servicename]
 ```
 
+## Install ODAC
+
+### Step 1: Uninstall any existing version of ODAC on the machine.  
+If you have installed the Xcopy version, to uninstall all ODAC products, execute the following command in the **Oracel Home** directory:
+```
+uninstall.bat all odac
+```
+If you have installed non-Xcopy version, you can use the Universal Installer. You can find it:
+**Start** -> **All programs** -> **Oracle - OraClient12Home1** ->**Oracle Installation Products**->**Universal Installer**.
+
+Peter551059
 
 
 ## Connect to Oracle Database in Power BI Desktop
