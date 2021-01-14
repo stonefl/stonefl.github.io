@@ -109,8 +109,7 @@ DIRECTORY_SERVERS = (oid.myinfo.domain.com:3060)
 DIRECTORY_SERVER_TYPE =oid
 DEFAULT_ADMIN_CONTEXT="cn=OracleContext, dc=DomainContext"
 ```
-
-You need to update the **DIRECTORY_SERVERS** to your `[ldapservername:ldapport]` and **DEFAULT_ADMIN_CONTEXT** to your `[DomainContext]`.
+**Note:** You need to update above **DIRECTORY_SERVERS** to your `[ldapservername:ldapport]` and **DEFAULT_ADMIN_CONTEXT** to your `[DomainContext]`.
 * File `sqlnet.ora` should have the follwing content in it:
 
 ```
