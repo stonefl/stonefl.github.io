@@ -136,9 +136,9 @@ With above ODAC installation and configurations, you can take the following step
 * Put the `[DBservicename]` in the **Server** box. If the OID is created with only `cn=OracleContext`, then you need to append a dot at the end of service name. For my case, my service name is **ABC_DEFG** and the OID is created only context of `cn=OracleContext`, I need to specify the server as **ABC_DEFG.**. 
 ![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_3.png)
 
-**Note:** if `[DBservicename]`does not work, you can try to copy the `[servername]:[serverport]/[servicename]` from the above connection details in SQL Developer to the **Server** field.
+**Note:** if `[DBservicename]`does not work, use the string of `[servername]:[serverport]/[servicename]` from the above connection details of LDAP Connection in SQL Developer to the **Server** field.
 
-* If asked, user the Database credentials to connect to the database.
+* If asked, use the Database credentials to connect to the database.
 ![powerbi-install08]({{site.baseurl}}/img/post/powerbi-install08.PNG)
 
 
