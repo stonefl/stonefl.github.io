@@ -64,10 +64,14 @@ Note: If none of above works, you can also delete the folder of the ODAC version
 ![powerbi-version]({{site.baseurl}}/img/post/powerbi-version.png)
 
 ### Step 3: Download ODAC Installation File
-The installation file **64-bit ODAC 12.2c Release 1 (12.2.0.1.1) for Windows x64: ** `ODAC122011_x64.zip `  from [ODAC download](https://www.oracle.com/database/technologies/odac-downloads.html) page. 
+The installation file from [ODAC download](https://www.oracle.com/database/technologies/odac-downloads.html) page. In my case, I downloaded `ODAC122011_x64.zip `under the **64-bit ODAC 12.2c Release 1 (12.2.0.1.1) for Windows x64** section.
 
 ### Step 4: Install ODAC
-Unzip the downloaded file file, 
+Unzip the downloaded file and go into the folder. Double click on the `setup.exe` to start the installation process:
+
+![powerbi-install01]({{site.baseurl}}/img/post/powerbi-install01.PNG)
+Choose your preferred language
+
 
 
 
