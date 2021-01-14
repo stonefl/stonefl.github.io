@@ -73,11 +73,11 @@ You can find the version information from **Power BI Desktop** -> **Help** -> **
 The installation file can be downloaded from [ODAC download](https://www.oracle.com/database/technologies/odac-downloads.html) page. In my case, I have downloaded `ODAC122011_x64.zip` from the **64-bit ODAC 12.2c Release 1 (12.2.0.1.1) for Windows x64** section.
 
 #### Step 4: Install ODAC
-Unzip the downloaded file and double-click on the `setup.exe` in the unzipped folder to start the installation process:
+Unzip the downloaded file and double-click the `setup.exe` in the unzipped folder to start the installation process:
 * Choose your preferred language
 ![powerbi-install01]({{site.baseurl}}/img/post/powerbi-install01.PNG)
 
-* Choose `Use Existing Windows User`. In my case, my username is `corp\<EMP_ID>` and password is my LDAP password.
+* Choose **Use Existing Windows User**. In my case, my username is `corp\<EMP_ID>` and password is my LDAP password.
 ![powerbi-install02]({{site.baseurl}}/img/post/powerbi-install02.PNG)
 
 * Use the default **Oracle base** and **Software location**.
