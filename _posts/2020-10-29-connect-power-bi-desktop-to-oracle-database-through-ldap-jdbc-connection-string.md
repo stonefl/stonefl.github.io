@@ -130,7 +130,7 @@ FDW =
 ```
 
 ## Connect to Oracle Database in Power BI Desktop
-With the ODAC installation and configurations, you can take the following steps to conncet to the Oracle Database in Power BI Desktop.
+With above ODAC installation and configurations, you can take the following steps to conncet to the Oracle Database in Power BI Desktop:
 * From the **Home** tab, select **Get Data**
 * From the **Get Data** window that appears, select **More** (if necessary), select **Database** > **Oracle database**, and then select **Connect**
 * Put the `[DBservicename]` in the **Server** box. If the OID is created with only `OracleContext`, then you need to append a dot at the end of service name. For example, if the service name is **ABC_DEFG** and the OID is created only under `OracleContext`, then it should be specified as **ABC_DEFG.**. 
