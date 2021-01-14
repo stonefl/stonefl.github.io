@@ -11,23 +11,23 @@ tags:
   - Power BI
 thumbnail: /img/post/dashboard.jpg
 ---
-Microsoft Power BI Desktop can connect to many data sources, one of the most popular datasources is Oracle Database. However, the missed steps on installation Oracle client and ambiguous specification of `ServerName/ServiceName` make the [Power BI's official document](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-oracle-database#installing-the-oracle-client) hard to follow. This post aims to fill the gap with step-by-step instrucitons on installing and configuring an Oracle Data Access Client (ODAC) and how to get the connection information to an Oracle Database through the LDAP or JDBC connection strings.
+Microsoft Power BI Desktop can connect to many data sources, Oracle Database is one of the most popular ones. The missed steps on installation of Oracle client and ambiguous specification of `ServerName/ServiceName` in the [Power BI's official document](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-oracle-database#installing-the-oracle-client) make it hard to follow. This post aims to fill the gap with step-by-step instrucitons to figure out LDAP information for connecting to an Oracle Database, to install and configure an Oracle Data Access Client (ODAC), and to connect to an Oracle Database in Power BI Desktop.
 <!--more-->
 
 ![private_sign]({{site.baseurl}}/img/post/dashboard.jpg)
 Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/mcSDtbWXUZU))
 
 
-## LDAP Connection in SQL Developer
+## LDAP Information in SQL Developer
 
-There are serveral software clients can be used to connect to Oracle Database, [Oracel SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) might be the most popular one. Authentication through a LDAP server is the most secure and popular way in SQL Developer to connect to an Oracle Database. The LDAP servers can be sepecified in both JDBC URL or LDAP connection. The following decribes the string formats in the two types of connections.
+There are serveral software clients can be used to connect to Oracle Database, [Oracel SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) might be the most popular one. Authentication through a LDAP server is the most secure and popular way in SQL Developer to connect to an Oracle Database. The LDAP servers information can be specified in both JDBC URL and LDAP types of connection. T
 
-### Custom JDBC URL
+#### Custom JDBC URL
 ![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
 
-The picture above shows an example of settings of Custom JDBC connection to an Oracle Database. The conncetion string in the **Custom JDBC URL** box usually has the format below:
+The picture above shows an example of **Custom JDBC** connection to an Oracle Database. The conncetion string in the **Custom JDBC URL** box usually has the format below:
 ```
-jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
+jdbc:oracle:thin:@ldap://**[ldapservername:ldapport]/[DBservicename],[DomainContext]**
 ```
 
 ### Transfer Custom JDBC URL to LDAP Connection
