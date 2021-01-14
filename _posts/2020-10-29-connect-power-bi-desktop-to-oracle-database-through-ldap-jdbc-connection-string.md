@@ -93,7 +93,7 @@ Unzip the downloaded file and go into the folder. Double click on the `setup.exe
 
 After installation, navigate to installation directory (Oracle home), which is the **Software location** in the step of **Specify Installation Location** above. Then go into **Network** > **Admin**.
 
-* Create two files `ldap.ora` and `sqlnet.ora` if they are not generated. 
+* Create two files `ldap.ora` and `sqlnet.ora` if they are not generated automatically. 
 * The content of file`ldap.ora` should besimilar to the following. 
 ```
 DIRECTORY_SERVERS = (oid.myinfo.domain.com:3060)
@@ -106,7 +106,17 @@ You need to update the **DIRECTORY_SERVERS** to your `[ldapservername:ldapport]`
 ```
 NAMES.DIRECTORY_PATH= (LDAP, TNSNAMES, EZCONNECT)
 ```
-
+* If you updated the **DB Connection Configuration** fields during the installation, you will find the file `tnsnames.ora` should have the following content.
+```
+FDW =
+   (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = [servername])(PORT = [serverport]))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = [DBservicename]) 
+    )
+  )
+```
 ## Connect to Oracle Database in Power BI Desktop
 With the  above connection details information, you can take the following steps to conncet to the Oracle Database in Power BI Desktop:
 * From the **Home** tab, select **Get Data**
