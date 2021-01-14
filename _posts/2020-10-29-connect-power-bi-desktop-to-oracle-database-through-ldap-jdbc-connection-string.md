@@ -80,6 +80,10 @@ Unzip the downloaded file and go into the folder. Double click on the `setup.exe
 * Use the default **Available Product Components**.
 ![powerbi-install04]({{site.baseurl}}/img/post/powerbi-install04.PNG)
 
+* It is recommended to configure ODP.NET for machine-wide level
+![powerbi-install05]({{site.baseurl}}/img/post/powerbi-install05.PNG)
+
+
 ## Connect to Oracle Database in Power BI Desktop
 With the  above connection details information, you can take the following steps to conncet to the Oracle Database in Power BI Desktop:
 * From the **Home** tab, select **Get Data**
