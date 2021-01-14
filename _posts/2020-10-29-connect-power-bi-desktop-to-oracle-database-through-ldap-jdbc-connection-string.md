@@ -20,14 +20,14 @@ Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/
 
 ## LDAP Information in SQL Developer
 
-There are serveral software clients can be used to connect to Oracle Database, [Oracel SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) might be the most popular one. Authentication through a LDAP server is the most secure and popular way in SQL Developer to connect to an Oracle Database. The LDAP servers information can be specified in both JDBC URL and LDAP types of connection. T
+There are serveral software clients can be used to connect to Oracle Database, [Oracel SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) might be the most popular one. Authentication through a LDAP server is the most secure and popular way in SQL Developer to connect to an Oracle Database. The LDAP servers information can be specified in both JDBC URL and LDAP types of connection.
 
 #### Custom JDBC URL
 ![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
 
 The picture above shows an example of **Custom JDBC** connection to an Oracle Database. The conncetion string in the **Custom JDBC URL** box usually has the format below:
 ```
-jdbc:oracle:thin:@ldap://**[ldapservername:ldapport]/[DBservicename],[DomainContext]**
+jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
 ```
 
 ### Transfer Custom JDBC URL to LDAP Connection
