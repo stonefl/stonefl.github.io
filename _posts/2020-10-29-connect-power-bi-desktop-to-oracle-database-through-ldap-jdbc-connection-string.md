@@ -92,7 +92,7 @@ Unzip the downloaded file and double-click the `setup.exe` in the unzipped folde
 * It is O.K. to leave the **DB Connection Configuration** fields empty, because we are going to use the LDAP configurations. You can also fill them out with the corresponding information from the section **LDAP Connection in SQL Developer** as shown in the picture below.
 ![powerbi-install06]({{site.baseurl}}/img/post/powerbi-install06.PNG)
 
-* If you get error for pre-requisite check on certain items, uncheck the boxes for it and proceed.
+* If you get error for pre-requisite check on certain items, you can just uncheck the boxes and proceed.
 ![powerbi-install07]({{site.baseurl}}/img/post/powerbi-install07.PNG)
 
 * The remaining installation steps are pretty straight forward. The installation will take couple of minutes.
