@@ -101,7 +101,6 @@ After installation, navigate to installation directory (Oracle home), which is t
 DIRECTORY_SERVERS = (oid.myinfo.domain.com:3060)
 DIRECTORY_SERVER_TYPE =oid
 DEFAULT_ADMIN_CONTEXT="cn=OracleContext, dc=DomainContext"
-
 ```
 
 You need to update the **DIRECTORY_SERVERS** to your `[ldapservername:ldapport]` and **DEFAULT_ADMIN_CONTEXT** to your `[DomainContext]`.
