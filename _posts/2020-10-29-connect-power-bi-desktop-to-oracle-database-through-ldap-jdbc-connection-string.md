@@ -2,8 +2,8 @@
 layout: post
 published: true
 title: >-
-  Connect Power BI Desktop to Oracle Database through LDAP JDBC Connection
-  String
+  Connect Power BI Desktop to Oracle Database through LDAP/JDBC Connection
+  Strings
 categories:
   - Database
 tags:
@@ -11,11 +11,16 @@ tags:
   - Power BI
 thumbnail: /img/post/dashboard.jpg
 ---
-Microsoft Power BI Desktop can connect to multiple data sources, one of the most popular datasources is Oracle Database. There are serveral client softwares can be used to connect to Oracle Database, Oracel SQL Developer might be the most popular one. Custom JDBC URL/Connection string with LDAP authentication is one of the multiple connections ways in SQL Developer to connect to an Oracle Database. Intead of installing and configuring an Oracle Data Access Client (ODAC) that needs to be compatible with your Oracle Server described in Power BI's [official document](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-oracle-database#installing-the-oracle-client), this post describes a way of figuring out the `ServerName/ServiceName` through the custom JDBC connection string in SQL Deverloper and use it to connect to an Oracle Database in Power BI Desktop.  
+Microsoft Power BI Desktop can connect to multiple data sources, one of the most popular datasources is Oracle Database. However, the missed steps on installation Oracle client and ambiguous specification of `ServerName/ServiceName`values make the instructions of Power BI's [official document](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-oracle-database#installing-the-oracle-client) hard to follow. This post aims to fill the gap with step-by-step instrucitons for installing and configuring an Oracle Data Access Client (ODAC) and how to get the connection information to an Oracle Database through the LDAP or JDBC connection strings.
 <!--more-->
 
 ![private_sign]({{site.baseurl}}/img/post/dashboard.jpg)
 Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/mcSDtbWXUZU))
+
+There are serveral client softwares can be used to connect to Oracle Database, Oracel SQL Developer might be the most popular one. Custom JDBC URL/Connection string with LDAP authentication is one of the multiple connections ways in SQL Developer to connect to an Oracle Database. Intead of installing and configuring an Oracle Data Access Client (ODAC) that needs to be compatible with your Oracle Server described in Power BI's [official document](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-oracle-database#installing-the-oracle-client), this post describes a way of figuring out the `ServerName/ServiceName` through the custom JDBC connection string in SQL Deverloper and use it to connect to an Oracle Database in Power BI Desktop.  
+
+
+
 
 ## Custom JDBC URL
 ![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
