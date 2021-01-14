@@ -48,7 +48,7 @@ The **Connection Details** has the following format:
 [username]@//[servername]:[serverport]/[servicename]
 ```
 
-## Install ODAC
+## Install and Configure ODAC
 
 #### Step 1: Uninstall any existing version of ODAC  
 If you have installed the Xcopy version, to uninstall all ODAC products, execute the following command in the **Oracel Home** directory:
