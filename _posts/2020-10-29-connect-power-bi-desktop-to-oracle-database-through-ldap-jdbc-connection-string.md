@@ -108,6 +108,7 @@ You need to update the **DIRECTORY_SERVERS** to your `[ldapservername:ldapport]`
 NAMES.DIRECTORY_PATH= (LDAP, TNSNAMES, EZCONNECT)
 ```
 * If you updated the **DB Connection Configuration** fields during the installation, you will find the file `tnsnames.ora` should have the following content.
+<pre
 ```
 FDW =
    (DESCRIPTION =
@@ -117,7 +118,7 @@ FDW =
       (SERVICE_NAME = [DBservicename]) 
     )
   )
-```
+```>
 
 ## Connect to Oracle Database in Power BI Desktop
 With the ODAC installation and configurations, you can take the following steps to conncet to the Oracle Database in Power BI Desktop.
