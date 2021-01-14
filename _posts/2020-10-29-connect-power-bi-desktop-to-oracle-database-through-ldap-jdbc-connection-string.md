@@ -50,7 +50,7 @@ The **Connection Details** has the following format:
 
 ## Install ODAC
 
-### Step 1: Uninstall any existing version of ODAC on the machine.  
+#### Step 1: Uninstall any existing version of ODAC  
 If you have installed the Xcopy version, to uninstall all ODAC products, execute the following command in the **Oracel Home** directory:
 ```
 uninstall.bat all odac
@@ -60,7 +60,8 @@ If you have installed non-Xcopy version, you can use the **Universal Installer**
 
 Note: If none of above works, you can also delete the folder of the ODAC version number under `C:\app\client\` and folder of `C:\Program Files\Oracle` directly.
 
-### Step 2: Check the version from Power BI Desktop -> Help -> About. The following is the screenshot of 64-bit version. Yours might 32-bit version.
+#### Step 2: Check the version from Power BI Desktop
+You can find the version information from **Power BI Desktop** -> **Help** -> **About**. The following is a screenshot of 64-bit version. Yours might have 32-bit version.
 ![powerbi-version]({{site.baseurl}}/img/post/powerbi-version.png)
 
 ### Step 3: Download ODAC Installation File
