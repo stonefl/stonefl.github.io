@@ -26,6 +26,7 @@ There are serveral software clients can be used to connect to Oracle Database, [
 ![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
 
 The picture above shows an example of **Custom JDBC** connection to an Oracle Database. The conncetion string in the **Custom JDBC URL** box usually has the format below:
+
 ```
 jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
 ```
@@ -43,7 +44,7 @@ In fact, if you don't have the LDAP Connection, you can use the following steps 
 * Click the **Load** button to load the `DBservicename` in the **DB Service**, if it cannot load, you can copy and paste the `DBservicename` from JDBC URL.
 * **Test** the connection, if succeffuly, click the **Save** button.
 
-After create the new connection, if you expand the left panel, you will find the **Connection Details** of the new LDAP connection, shown as the highlighted area below:
+After creating the new connection, if you expand the left panel, you can find the **Connection Details** of the new LDAP connection, shown as the highlighted area below:
 ![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_1.png)
 
 The **Connection Details** has the following format:
@@ -54,7 +55,7 @@ Want to clarify that the `servername`, `serverport` and `servicename` from the *
 
 ## Install and Configure ODAC
 
-#### Step 1: Uninstall any existing version of ODAC  
+#### Step 1: Uninstall any existing version of ODAC (Optional) 
 If you have installed the Xcopy version, to uninstall all ODAC products, execute the following command in the **Oracel Home** directory:
 ```
 uninstall.bat all odac
