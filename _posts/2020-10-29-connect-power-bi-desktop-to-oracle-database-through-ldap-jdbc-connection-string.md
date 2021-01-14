@@ -136,10 +136,6 @@ With the ODAC installation and configurations, you can take the following steps 
 * If asked, user the Database credentials to connect to the database.
 ![powerbi-install08]({{site.baseurl}}/img/post/powerbi-install08.PNG)
 
- shown as below, then click **OK**.
-![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_3.png)
-
-
 
 
 ## References
