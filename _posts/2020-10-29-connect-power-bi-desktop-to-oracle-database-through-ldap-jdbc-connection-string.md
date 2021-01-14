@@ -138,6 +138,8 @@ With the ODAC installation and configurations, you can take the following steps 
 
 
 
+
+
 ## References
 
 https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-oracle-database#installing-the-oracle-client
