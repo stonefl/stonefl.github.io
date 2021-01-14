@@ -89,6 +89,11 @@ Unzip the downloaded file and go into the folder. Double click on the `setup.exe
 * If you get error for pre-requisite check on certain items, uncheck the boxes for it and proceed.
 ![powerbi-install07]({{site.baseurl}}/img/post/powerbi-install07.PNG)
 
+* The remaining steps are pretty straight forward. The installation will take couple of minutes.
+
+After installation, navigate to installation directory (Oracle home), which is the **Software location** in the step of **Specify Installation Location** above. Then go into **Network** > **Admin**.
+
+
 
 ## Connect to Oracle Database in Power BI Desktop
 With the  above connection details information, you can take the following steps to conncet to the Oracle Database in Power BI Desktop:
