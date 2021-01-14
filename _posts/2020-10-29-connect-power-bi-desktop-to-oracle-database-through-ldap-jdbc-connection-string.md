@@ -122,17 +122,30 @@ FDW =
 With the ODAC installation and configurations, you can take the following steps to conncet to the Oracle Database in Power BI Desktop.
 * From the **Home** tab, select **Get Data**
 * From the **Get Data** window that appears, select **More** (if necessary), select **Database** > **Oracle database**, and then select **Connect**
-
-* Copy the `[servername]:[serverport]/[servicename]` part from the above connection details in SQL Developer to the **Server** field shown as below, then click **OK**.
+* Put the `[DBservicename]` in the **Server** box. If the OID is created with only and `OracleContext`, then you need to append a dot at the end of service name. For example, if the service name is **ABC_DEFG** and the OID is created only under `OracleContext`, then it should be specified as **ABC_DEFG.**. You can pick data connectivity modes from **Import** and **DirectQuery**. Then click **OK** to connect.
 ![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_3.png)
 
-**Note:**
-The process described in this post is not the best way to connect to Oracel Database. You might notice that the `[servername]:[serverport]/[servicename]` in the connection details of the LDAP connection might change from time to time, because the Oracel server might be behind a network Load Balancer. In this case, you can refer to [this post](https://medium.com/@eikonomega/connecting-to-oracle-database-with-cx-oracle-and-ldap-5da7925a305c), [this post](http://technologydribble.info/2015/02/10/how-to-create-an-oracle-database-link-using-ldap-authentication/), and [this post](https://docs.oracle.com/cd/E11882_01/network.112/e10835/ldap.htm#NETRF011) for the settings of **ldap.ora** for an [Oracel client](https://www.oracle.com/database/technologies/install-odac-12c-122010.html).
+**Note:** if `[DBservicename]`does not work, you can try to copy the `[servername]:[serverport]/[servicename]` from the above connection details in SQL Developer to the **Server** field.
+
+* If asked, user the Database credentials to connect to the database.
+![powerbi-install08]({{site.baseurl}}/img/post/powerbi-install08.PNG)
+
+ shown as below, then click **OK**.
+![connect_to_oracle_db]({{site.baseurl}}/img/post/connect-oracle-database_3.png)
+
+
 
 
 ## References
-Power BI Official Document:
+
 https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-oracle-database#installing-the-oracle-client
 
-Making Database Connections from Oracle SQL Developer:
 https://blogs.oracle.com/oraclemagazine/making-database-connections
+
+https://medium.com/@eikonomega/connecting-to-oracle-database-with-cx-oracle-and-ldap-5da7925a305c
+
+http://technologydribble.info/2015/02/10/how-to-create-an-oracle-database-link-using-ldap-authentication/
+
+https://docs.oracle.com/cd/E11882_01/network.112/e10835/ldap.htm#NETRF011
+
+https://www.oracle.com/database/technologies/install-odac-12c-122010.html
