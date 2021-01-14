@@ -30,14 +30,16 @@ The picture above shows an example of **Custom JDBC** connection to an Oracle Da
 jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
 ```
 
-### Transfer Custom JDBC URL to LDAP Connection
-With the above custom JDBC URL, following the steps described below, you can create a new LDAP connection which can show the real `ServerName/ServiceName` information can be used by Power BI to connect to the Oracle Database:
-* Create a new connection with a new **Name** in SQL Developer
-* Fill in your **Username** and **Password**
+#### LDAP Connection
+The picture below shows the LDAP Connection with the same connection information from the JDBC URL above. The the fields of **LDAP Server**,  **Context**, and **DB Service** should have the same values as `ldapservername:ldapport`, `DomainContext`, and `DBservicename` from the **Custom JDBC URL** above.
+
+In fact, if you don't have the LDAP Connection, you can use the following steps to create one from the above custom JDBC URL in SQL Developer:
+* Create a new connection with a new **Name** 
+* Fill in your **Username** and/or **Password**
 * Select `LDAP` in the **Connection Type** drop-down list
 * Put the `ldapservername:ldapport` from the above custom JDBC URL into the **LDAP Server** field
-* The **Context** should be loaded autoamatically
-* Load the `DBservicename` as the **DB Service**
+* The **Context** should be loaded autoamatically, if not, you can copy `DomainContext` from the JDBC 
+* Click the **Load** button to load the `DBservicename` in the **DB Service**, if it cannot load, you can copy and paste the `DBservicename` from JDBC URL.
 * **Test** the connection, if succeffuly, click the **Save** button.
 
 After create the new connection, if you expand the left panel, you will find the **Connection Details** of the new LDAP connection, shown as the highlighted area below:
