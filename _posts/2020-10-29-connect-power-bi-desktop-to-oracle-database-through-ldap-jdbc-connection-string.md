@@ -27,7 +27,7 @@ There are serveral software clients can be used to connect to Oracle Database, [
 
 The picture above shows an example of settings of Custom JDBC connection to an Oracle Database. The conncetion string in the **Custom JDBC URL** box usually has the format below:
 ```
-jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],cn=OracleContext,dc=domaincontext
+jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
 ```
 
 ### Transfer Custom JDBC URL to LDAP Connection
@@ -94,14 +94,18 @@ Unzip the downloaded file and go into the folder. Double click on the `setup.exe
 After installation, navigate to installation directory (Oracle home), which is the **Software location** in the step of **Specify Installation Location** above. Then go into **Network** > **Admin**.
 
 * Create two files `ldap.ora` and `sqlnet.ora` if they are not generated. 
-* File`ldap.ora` should have the following content. For the DIRECTORY_SERVERS
+* The content of file`ldap.ora` should besimilar to the following. 
 ```
-DIRECTORY_SERVERS = ([ldapservername:ldapport])
+DIRECTORY_SERVERS = (oid.myinfo.domain.com:3060)
 DIRECTORY_SERVER_TYPE =oid
-DEFAULT_ADMIN_CONTEXT="cn=OracleContext"
+DEFAULT_ADMIN_CONTEXT="cn=OracleContext, dc=DomainContext"
 
 ```
-
+You need to update the **DIRECTORY_SERVERS** to your `[ldapservername:ldapport]` and **DEFAULT_ADMIN_CONTEXT** to your `[DomainContext]`.
+* File `sqlnet.ora` should have the follwing content in it.
+```
+NAMES.DIRECTORY_PATH= (LDAP, TNSNAMES, EZCONNECT)
+```
 
 ## Connect to Oracle Database in Power BI Desktop
 With the  above connection details information, you can take the following steps to conncet to the Oracle Database in Power BI Desktop:
