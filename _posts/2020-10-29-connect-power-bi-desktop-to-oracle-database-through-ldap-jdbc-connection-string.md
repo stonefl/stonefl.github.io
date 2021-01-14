@@ -86,6 +86,8 @@ Unzip the downloaded file and go into the folder. Double click on the `setup.exe
 * It is O.K. to leave the **DB Connection Configuration** fields empty. You can also fill them with the corresponding information from the section **LDAP Connection in SQL Developer** as shown in the picture below.
 ![powerbi-install06]({{site.baseurl}}/img/post/powerbi-install06.PNG)
 
+* If you get error for pre-requisite check on certain items, uncheck the boxes for it and proceed.
+![powerbi-install07]({{site.baseurl}}/img/post/powerbi-install07.PNG)
 
 
 ## Connect to Oracle Database in Power BI Desktop
