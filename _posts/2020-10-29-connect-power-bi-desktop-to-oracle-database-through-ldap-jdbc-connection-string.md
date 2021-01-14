@@ -97,9 +97,10 @@ Unzip the downloaded file and double-click the `setup.exe` in the unzipped folde
 
 * The remaining installation steps are pretty straight forward. The installation will take couple of minutes.
 
-After installation, navigate to installation directory (Oracle home), which is the **Software location** in the step of **Specify Installation Location** above. Then go into **Network** > **Admin**.
+
 
 #### Step 5: Configure Connection
+* After installation, navigate to installation directory (Oracle home), which is the **Software location** in the step of **Specify Installation Location** above. Then go into **Network** > **Admin**.
 * Create two files `ldap.ora` and `sqlnet.ora` if they are not generated automatically. 
 * The content of file`ldap.ora` should be similar to the following: 
 
