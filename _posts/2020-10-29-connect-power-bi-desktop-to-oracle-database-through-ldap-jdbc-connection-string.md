@@ -68,14 +68,13 @@ The installation file from [ODAC download](https://www.oracle.com/database/techn
 
 ### Step 4: Install ODAC
 Unzip the downloaded file and go into the folder. Double click on the `setup.exe` to start the installation process:
-
-Choose your preferred language:
+# Choose your preferred language
 ![powerbi-install01]({{site.baseurl}}/img/post/powerbi-install01.PNG)
 
-Pick **Existing Windows User** and specify the User Name and Password. In my case, **User Name** is `corp\<EMP_ID>` and **Password** is my LDAP password.
+# Choose `Use Existing Windows User`. In my case, my username is `corp\<EMP_ID>` and password is my LDAP password.
 ![powerbi-install02]({{site.baseurl}}/img/post/powerbi-install02.PNG)
 
-Use the default **Oracle base** and **Software location** paths.
+# Use the default **Oracle base** and **Software location**.
 ![powerbi-install03]({{site.baseurl}}/img/post/powerbi-install03.PNG)
 
 
