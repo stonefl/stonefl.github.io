@@ -17,12 +17,6 @@ Microsoft Power BI Desktop can connect to many data sources, one of the most pop
 ![private_sign]({{site.baseurl}}/img/post/dashboard.jpg)
 Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/mcSDtbWXUZU))
 
-## Table of Content
-
-{:.no_toc}
-
-* TOC
-{:toc}
 
 ## LDAP Connection in SQL Developer
 
@@ -61,10 +55,10 @@ If you have installed the Xcopy version, to uninstall all ODAC products, execute
 ```
 uninstall.bat all odac
 ```
-If you have installed non-Xcopy version, you can use the Universal Installer. You can find it:
+If you have installed non-Xcopy version, you can use the Universal Installer. You can find it from:
 **Start** -> **All programs** -> **Oracle - OraClient12Home1** ->**Oracle Installation Products**->**Universal Installer**.
 
-Peter551059
+
 
 
 ## Connect to Oracle Database in Power BI Desktop
