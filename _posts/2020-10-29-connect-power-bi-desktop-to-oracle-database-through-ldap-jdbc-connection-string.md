@@ -60,10 +60,10 @@ If you have installed the Xcopy version, to uninstall all ODAC products, execute
 ```
 uninstall.bat all odac
 ```
-If you have installed non-Xcopy version, you can use the **Universal Installer** as Administrator. You can find it from:
+If you have installed non-Xcopy version, you can run the **Universal Installer** as Administrator. You can find it through:
 **Start** -> **All programs** -> **Oracle - OraClient12Home1** ->**Oracle Installation Products**->**Universal Installer**.
 
-Note: If none of above works, you can also delete the folder of the ODAC version number under `C:\app\client\` and folder of `C:\Program Files\Oracle` directly.
+Note: If none of above works, you can also delete the folder of the ODAC client folder `C:\app\client\` and folder of `C:\Program Files\Oracle` directly.
 
 #### Step 2: Check Power BI Desktop Version
 You can find the version information from **Power BI Desktop** -> **Help** -> **About**. The following is a screenshot of 64-bit version.
