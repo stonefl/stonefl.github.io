@@ -18,7 +18,7 @@ Microsoft Power BI Desktop can connect to many data sources, Oracle Database is 
 Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/mcSDtbWXUZU))
 
 
-## Lightweight Directory Application Protocol (LDAP) Information in SQL Developer
+## Lightweight Directory Application Protocol (LDAP) Connection in SQL Developer
 
 There are serveral software clients can be used to connect to Oracle Database, [Oracel SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) might be the most popular one.LDAP is the most secure and popular way for Enterprise to manage user access to Oracle Databases. The LDAP servers information can be specified in both JDBC URL and LDAP types of connection.
 
@@ -89,7 +89,7 @@ Unzip the downloaded file and double-click the `setup.exe` in the unzipped folde
 * It is recommended to configure ODP.NET for machine-wide level
 ![powerbi-install05]({{site.baseurl}}/img/post/powerbi-install05.PNG)
 
-* It is O.K. to leave the **DB Connection Configuration** fields empty, because we are going to use the LDAP configurations. You can also fill them with the corresponding information from the section **LDAP Connection in SQL Developer** as shown in the picture below.
+* It is O.K. to leave the **DB Connection Configuration** fields empty, because we are going to use the LDAP configurations. You can also fill them out with the corresponding information from the section **LDAP Connection in SQL Developer** as shown in the picture below.
 ![powerbi-install06]({{site.baseurl}}/img/post/powerbi-install06.PNG)
 
 * If you get error for pre-requisite check on certain items, uncheck the boxes for it and proceed.
