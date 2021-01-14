@@ -18,9 +18,9 @@ Microsoft Power BI Desktop can connect to many data sources, Oracle Database is 
 Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/mcSDtbWXUZU))
 
 
-## LDAP Information in SQL Developer
+## Lightweight Directory Application Protocol (LDAP) Information in SQL Developer
 
-There are serveral software clients can be used to connect to Oracle Database, [Oracel SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) might be the most popular one. Authentication through a LDAP server is the most secure and popular way in SQL Developer to connect to an Oracle Database. The LDAP servers information can be specified in both JDBC URL and LDAP types of connection.
+There are serveral software clients can be used to connect to Oracle Database, [Oracel SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) might be the most popular one.LDAP is the most secure and popular way for Enterprise to manage user access to Oracle Databases. The LDAP servers information can be specified in both JDBC URL and LDAP types of connection.
 
 #### Custom JDBC URL
 ![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
@@ -49,6 +49,7 @@ The **Connection Details** has the following format:
 ```
 [username]@//[servername]:[serverport]/[servicename]
 ```
+Want to clarify that the `servername`, `serverport` and `servicename` from the **Connection Details** are the fully qualified domain name (FQDN) for the Oracle host resolved from the LDAP.
 
 ## Install and Configure ODAC
 
