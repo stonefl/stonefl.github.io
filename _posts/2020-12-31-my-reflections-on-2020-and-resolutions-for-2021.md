@@ -52,5 +52,5 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 - **Read more books**: at least one book per month and review some of the good ones.
 - **Write more blogs**: at least one blog per month. Not only focus on techniques, but also on management. 
 - **Run more miles**: reach total 1,000 miles by the end of 2021. 
-- **Spend less time on political media and news**: political medium and news are not good for health, neither physical nor mental.
+- **Spend less time on political media and news**: political media and news are not good for health, neither physical nor mental.
 - **Take a long vacation for a long trip with family**: This is what I owe the girls in 2020.
