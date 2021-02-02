@@ -73,13 +73,12 @@ DIRECTORY_SERVERS = ([ldapservername:ldapport])
 DEFAULT_ADMIN_CONTEXT = "[DomainContext]"
 DIRECTORY_SERVER_TYPE = OID
 ```
-Note: you need to update the content in the brackets with your own information.
-
-![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
-The picture above shows an example of Custom JDBC connection to an Oracle Databasev in SQL Developer. The conncetion string in the Custom JDBC URL box usually has the format below:
+Note: you need to update the content in the brackets with your own information. The following picture shows an example of Custom JDBC connection to an Oracle Database in SQL Developer. The conncetion string in the Custom JDBC URL box usually has the format below. This is where you can get the information in the brackets.
 ```
 jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
 ```
+
+![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
 
 
 
