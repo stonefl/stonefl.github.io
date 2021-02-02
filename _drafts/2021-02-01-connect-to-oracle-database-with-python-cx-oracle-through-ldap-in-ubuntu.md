@@ -14,6 +14,8 @@ Configuration of cx_Oracle for Python to connect to remote Oracle Database is no
 
 <!--more-->
 ## Connection Architecture
+The following picture shows the connection architcture, where the users run a Python program that calls the cx_Oracle module. The cx_Oracle module loads the Oracle Client libraries that connect to the oracle data through the Oracle Net. 
+
 ![bye-2020]({{site.baseurl}}/img/post/cx_Oracle_arch.png)
 Picture comes from ([cx_Oracle Architecture](https://cx-oracle.readthedocs.io/en/latest/_images/cx_Oracle_arch.png))
 
