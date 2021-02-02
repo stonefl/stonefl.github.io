@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Connect to Oracle Database with Python cx_Oracle through LDAP in Ubuntu
 thumbnail: /img/post/mylaptop.jpg
 date: '2021-01-31'
@@ -137,5 +137,3 @@ I hope this post is helpful. If I missed anything, please let me know in the com
 cx_Oracle 8 Installation Document: https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html#install-oracle-client
 
 Connecting Python to Oracle Databases with `cx_Oracle` and ldap: https://eikonomega.medium.com/connecting-to-oracle-database-with-cx-oracle-and-ldap-5da7925a305c
-
-
