@@ -77,13 +77,14 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
     DIRECTORY_SERVER_TYPE = OID
     ```
     
-**Note**: you need to update the content in the brackets with your own information. The following picture shows an example of Custom JDBC connection to an Oracle Database in SQL Developer. The conncetion string in the Custom JDBC URL box usually has the format below. This is where you can get the information in the brackets.
-```
-jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
-```
+**Note**: you need to update the content in the square brackets with your own information. The following picture shows an example of Custom JDBC connection to an Oracle Database in SQL Developer. 
 
 ![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
 
+The conncetion string in the Custom JDBC URL box usually has the format below. This is where you can get the information in the brackets.
+```
+jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
+```
 
 
 ## Connect to Oracle Database in Python
