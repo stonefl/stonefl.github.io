@@ -87,9 +87,11 @@ jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContex
 ```
 
 
-## Connect to Oracle Database in Python
+## Connect to Oracle Database in Python Programs
 
-With the above installation and configurations, the following Python scripts can be used to connect to the Oracle Database. The scripts is pretty self-explanatory, but you need to note the **[DBservicename]** in the scripts: if your OID is created with only `cn=OracleContext`, then you need to append a dot (.) at the end of service name. For my case, my service name is ABC_DEFG and the OID is created only context of `cn=OracleContext`, I need to specify the server as `ABC_DEFG.`.
+With the installation and setttings, the following Python scripts is an example program that can be used to connect to a remote Oracle Database. 
+
+
 
 ```python
 '''
@@ -135,6 +137,8 @@ finally:
         con.close() 
 
 ```
+
+Althrough the scripts itself is pretty simple and self-explanatory, you need to note the **[DBservicename]** in the scripts. If your OID is created with only `cn=OracleContext`context, then you need to append a dot (.) at the end of service name. For my case, my service name is ABC_DEFG and the OID is created with the only context of `cn=OracleContext`, so I need to specify the server as `ABC_DEFG.`.
 
 I hope this post is helpful. If I missed anything, please let me know in the comments.
 
