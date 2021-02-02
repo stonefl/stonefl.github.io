@@ -86,13 +86,13 @@ jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContex
 
 With the above installation and configurations, the following Python scripts can be used to connect to the Oracle Database. The scripts is pretty self-explained, but you need to note the **[DBservicename]** in the scripts: if your OID is created with only `cn=OracleContext`, then you need to append a dot (.) at the end of service name. For my case, my service name is ABC_DEFG and the OID is created only context of `cn=OracleContext`, I need to specify the server as `ABC_DEFG.`.
 
+```python
 ```
-'''
 A Python scripts that:
     1) get the username and password for the oracle database;
     2) read sql query from a file
     3) run the query and print out column metadata
-'''
+```
 import cx_Oracle
 import getpass # library to input password
 
