@@ -14,7 +14,7 @@ Configuration of cx_Oracle for Python to connect to remote Oracle Database is no
 
 <!--more-->
 ## Connection Architecture
-![bye-2020]({{site.baseurl}}/img/post/bye-2020.jpg)
+![bye-2020]({{site.baseurl}}/img/post/cx_Oracle_arch.png)
 Picture comes from ([cx_Oracle Architecture](https://cx-oracle.readthedocs.io/en/latest/_images/cx_Oracle_arch.png))
 
 ## Install cx_Oracle
