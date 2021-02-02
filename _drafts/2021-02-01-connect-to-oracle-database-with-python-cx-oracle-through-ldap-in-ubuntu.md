@@ -60,7 +60,7 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
 # sqlnet.ora
 # Place this file in the network/admin subdirectory or your 
 # $ORACLE_HOME location.
-NAMES.DIRECTORY_PATH = (LDAP
+NAMES.DIRECTORY_PATH = (LDAP)
 ```
 
 and `ldap.ora` with the content below:
@@ -68,12 +68,68 @@ and `ldap.ora` with the content below:
 # ldap.ora
 # Place this file in the network/admin subdirectory or your 
 # $ORACLE_HOME location.
-DIRECTORY_SERVERS = (your-server.your-organization:389:636)
-DEFAULT_ADMIN_CONTEXT = "ldap-ou-designation"
+DIRECTORY_SERVERS = ([ldapservername:ldapport])
+DEFAULT_ADMIN_CONTEXT = "[DomainContext]"
 DIRECTORY_SERVER_TYPE = OID
 ```
+Note: you need to update the content in the brackets with your own information.
+
+The picture above shows an example of Custom JDBC connection to an Oracle Databasev in SQL Developer. The conncetion string in the Custom JDBC URL box usually has the format below:
+```
+jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
+```
+![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
 
 
+## Connect to Oracle Database in Python
+
+
+If the OID is created with only cn=OracleContext, then you need to append a dot at the end of service name. For my case, my service name is ABC_DEFG and the OID is created only context of cn=OracleContext, I need to specify the server as ABC_DEFG..
+
+```
+'''
+A Python scripts that:
+    1) get the username and password for the oracle database;
+    2) read sql query from a file
+    3) run the query and print out column metadata
+'''
+import cx_Oracle
+import getpass # library to input password
+
+try: 
+    # input username and password
+    username = input("Please enter your FDW username: ")
+    password = getpass.getpass("Enter your LDAP password: ")
+
+    # read sql query from file
+    sqlfilename = "./my_sql_query.sql"
+    f = open(sqlfilename)
+    sql_string = f.read()
+    print("SQL = " + sql_string)
+
+    # set up connection through LDAP
+    con = cx_Oracle.connect('{0}/{1}@**[DBservicename][.]**'.format(username, password)) 
+      
+    # create a cursor instance 
+    cursor = con.cursor() 
+      
+    # run the query 
+    cursor.execute(sql_string) 
+
+    # print out metadata
+    for column in cursor.description:
+        print(column)
+      
+except cx_Oracle.DatabaseError as e: 
+    print("There is a problem with Oracle", e) 
+  
+finally: 
+    if cursor: 
+        cursor.close() 
+    if con: 
+        con.close() 
+
+```
 
 ## References
 
