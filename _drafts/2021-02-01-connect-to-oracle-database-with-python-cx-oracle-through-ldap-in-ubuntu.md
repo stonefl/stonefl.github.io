@@ -36,6 +36,25 @@ sudo apt update && sudo apt install python3-pip
 pip3 install cx_Oracle
 ```
 
+## Install Oracle Client
+There are multiple ways to install the Oracle Cient, the following describes the steps to install an Oracle Instant Client through the zip files:
+
+* Download the latest version "Basic" or "Basic Light" zip file from the Instant Client download page[64-bit](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html) or [32-bit](https://www.oracle.com/database/technologies/instant-client/linux-x86-32-downloads.html)
+
+* Unzip the package into a single directory that is accessible to your application. For example:
+```
+sudo mkdir -p /opt/oracle
+sudo unzip instantclient-basic-linux.x64-21.1.0.0.0.zip -d /opt/oracle/
+```
+* Install `libaio` package with sudo or as the root user. This package is also called `libaio1` in some distributions. For example, in my case I need to run:
+```
+sudo apt install libaio1
+```
+* Add the following line in the `$HOME/.bashrc` file and run `source .bashrc` to refresh the settings.
+```
+export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
+```
+
 
 ## References
 
