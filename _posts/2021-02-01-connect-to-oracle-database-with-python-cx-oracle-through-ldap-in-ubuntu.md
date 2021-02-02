@@ -27,7 +27,7 @@ python --version
 python3 --version
 ```
 
-* Before installation of cx_Oracle, you might need to install pip for Python 3 on Ubuntu VM through the following commands:
+* Before installing cx_Oracle, you might need to install `pip3` for Python 3 through the following commands:
 ```
 sudo apt update && sudo apt install python3-pip
 ```
