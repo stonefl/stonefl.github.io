@@ -54,6 +54,25 @@ sudo apt install libaio1
 ```
 export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
 ```
+* Create subdirectory `network/admin` within the directory `opt/oracle/instantclient_21_1/`, if it is not created yet.
+* In the `network/admin` subdirectory, create two files of `sqlnet.ora` with the following content:
+```
+# sqlnet.ora
+# Place this file in the network/admin subdirectory or your 
+# $ORACLE_HOME location.
+NAMES.DIRECTORY_PATH = (LDAP
+```
+
+and `ldap.ora` with the content below:
+```
+# ldap.ora
+# Place this file in the network/admin subdirectory or your 
+# $ORACLE_HOME location.
+DIRECTORY_SERVERS = (your-server.your-organization:389:636)
+DEFAULT_ADMIN_CONTEXT = "ldap-ou-designation"
+DIRECTORY_SERVER_TYPE = OID
+```
+
 
 
 ## References
