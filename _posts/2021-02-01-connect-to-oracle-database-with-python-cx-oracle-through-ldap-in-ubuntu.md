@@ -61,7 +61,7 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
 ```
 # sqlnet.ora
 # Place this file in the network/admin subdirectory or your 
-# $ORACLE_HOME location.
+# $LD_LIBRARY_PATH location.
 NAMES.DIRECTORY_PATH = (LDAP)
 ```
 
@@ -69,7 +69,8 @@ NAMES.DIRECTORY_PATH = (LDAP)
 ```
 # ldap.ora
 # Place this file in the network/admin subdirectory or your 
-# $ORACLE_HOME location.
+# $LD_LIBRARY_PATH location.
+
 DIRECTORY_SERVERS = ([ldapservername:ldapport])
 DEFAULT_ADMIN_CONTEXT = "[DomainContext]"
 DIRECTORY_SERVER_TYPE = OID
