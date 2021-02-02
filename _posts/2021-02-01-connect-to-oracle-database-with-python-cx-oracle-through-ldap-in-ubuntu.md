@@ -56,7 +56,8 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
 ```
 * Create subdirectory `network/admin` within the directory `opt/oracle/instantclient_21_1/`, if it is not created yet.
 * In the `network/admin` subdirectory, create two files:
-1.`sqlnet.ora` with the content:
+
+   1.`sqlnet.ora` with the content:
 ```
 # sqlnet.ora
 # Place this file in the network/admin subdirectory or your 
@@ -64,7 +65,7 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
 NAMES.DIRECTORY_PATH = (LDAP)
 ```
 
-2.`ldap.ora` with the content:
+   2.`ldap.ora` with the content:
 ```
 # ldap.ora
 # Place this file in the network/admin subdirectory or your 
