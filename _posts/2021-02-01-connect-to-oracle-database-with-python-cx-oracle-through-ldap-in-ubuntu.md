@@ -66,6 +66,7 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
     ```
 
    2.`ldap.ora` with the content:
+   
     ```
     # ldap.ora
     # Place this file in the network/admin subdirectory or your 
@@ -75,6 +76,7 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
     DEFAULT_ADMIN_CONTEXT = "[DomainContext]"
     DIRECTORY_SERVER_TYPE = OID
     ```
+    
 **Note**: you need to update the content in the brackets with your own information. The following picture shows an example of Custom JDBC connection to an Oracle Database in SQL Developer. The conncetion string in the Custom JDBC URL box usually has the format below. This is where you can get the information in the brackets.
 ```
 jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
