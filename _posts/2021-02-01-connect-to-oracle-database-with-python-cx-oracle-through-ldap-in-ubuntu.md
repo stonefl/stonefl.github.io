@@ -21,12 +21,11 @@ The following picture depicts the connection architcture. Users can run a Python
 Picture comes from ([cx_Oracle Architecture](https://cx-oracle.readthedocs.io/en/latest/_images/cx_Oracle_arch.png))
 
 ## Install cx_Oracle
-* Check your Python versions through the following commands to make sure you have Python 3 installed.
+* Check your Python versions through the following commands to make sure you have Python 3 installed. All the following steps are for Python 3. 
 ```
 python --version
 python3 --version
 ```
-In my case, on my VM I have both Python 2.7 and Python 3.6 installed. All the following steps are for Python 3.
 
 * Before installation of cx_Oracle, you might need to install pip for Python 3 on Ubuntu VM through the following commands:
 ```
