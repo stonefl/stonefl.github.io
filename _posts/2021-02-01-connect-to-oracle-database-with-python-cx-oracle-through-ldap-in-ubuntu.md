@@ -14,9 +14,9 @@ Connecting to Oracle Database with Python cx_Oracle through LDAP is not trivial.
 
 <!--more-->
 ## Connection Architecture
-The following picture shows the connection architcture, where the users run a Python program that calls the cx_Oracle module. The cx_Oracle module loads Oracle Client libraries that provide the necessary network connectivity to access an Oracle Database instance. Thus, to connect to a remote Oracle Database, we need to install both cx_Oracle moduel and Oracle Client libraries. 
+The following picture depicts the connection architcture. Users can run a Python program that calls the cx_Oracle module that loads Oracle Client libraries. The libraries provide necessary network connectivity to access to an Oracle Database instance. Thus, to connect to a remote Oracle Database, it needs to install both cx_Oracle moduel and Oracle Client libraries. 
 
-![bye-2020]({{site.baseurl}}/img/post/cx_Oracle_arch.png)
+![cx_Oracle_Architecture]({{site.baseurl}}/img/post/cx_Oracle_arch.png)
                   
 Picture comes from ([cx_Oracle Architecture](https://cx-oracle.readthedocs.io/en/latest/_images/cx_Oracle_arch.png))
 
