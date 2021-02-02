@@ -21,7 +21,7 @@ The following picture depicts the connection architcture. Users can run a Python
 Picture comes from ([cx_Oracle Architecture](https://cx-oracle.readthedocs.io/en/latest/_images/cx_Oracle_arch.png))
 
 ## Install cx_Oracle
-* Check your Python versions through the following commands to make sure you have Python 3 installed. All the following steps are for Python 3. 
+* Check your Python versions through the following commands to make sure you have Python 3 installed. All the following steps are for Python 3: 
 ```
 python --version
 python3 --version
@@ -31,7 +31,7 @@ python3 --version
 ```
 sudo apt update && sudo apt install python3-pip
 ```
-* With `pip3` installed, you can run the following command to install cx_Oracle
+* With `pip3` installed, you can run the following command to install cx_Oracle:
 ```
 pip3 install cx_Oracle
 ```
