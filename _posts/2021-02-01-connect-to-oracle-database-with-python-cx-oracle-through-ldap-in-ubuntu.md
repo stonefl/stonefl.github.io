@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Connect to Oracle Database with Python cx_Oracle through LDAP in Ubuntu
 thumbnail: /img/post/mylaptop.jpg
 date: '2021-01-31'
