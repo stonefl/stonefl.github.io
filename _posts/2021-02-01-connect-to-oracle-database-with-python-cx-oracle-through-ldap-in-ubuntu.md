@@ -64,7 +64,7 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
 NAMES.DIRECTORY_PATH = (LDAP)
 ```
 
-and `ldap.ora` with the content below:
+* and `ldap.ora` with the content below:
 ```
 # ldap.ora
 # Place this file in the network/admin subdirectory or your 
@@ -75,11 +75,12 @@ DIRECTORY_SERVER_TYPE = OID
 ```
 Note: you need to update the content in the brackets with your own information.
 
+![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
 The picture above shows an example of Custom JDBC connection to an Oracle Databasev in SQL Developer. The conncetion string in the Custom JDBC URL box usually has the format below:
 ```
 jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContext]
 ```
-![custom jdbc url]({{site.baseurl}}/img/post/sql_developer01.PNG)
+
 
 
 ## Connect to Oracle Database in Python
