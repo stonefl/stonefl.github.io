@@ -108,7 +108,7 @@ try:
     print("SQL = " + sql_string)
 
     # set up connection through LDAP
-    con = cx_Oracle.connect('{0}/{1}@**[DBservicename][.]**'.format(username, password)) 
+    con = cx_Oracle.connect('{0}/{1}@[DBservicename][.]'.format(username, password)) 
       
     # create a cursor instance 
     cursor = con.cursor() 
