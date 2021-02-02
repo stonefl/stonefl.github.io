@@ -37,25 +37,26 @@ pip3 install cx_Oracle
 ```
 
 ## Install Oracle Client
-There are multiple ways to install the Oracle Cient, the following describes the steps to install an Oracle Instant Client through the zip files:
+There are multiple ways to install the Oracle Cient, the following describes the steps to install an Oracle Instant Client through zip file.
 
-* Download the latest version "Basic" or "Basic Light" zip file from the Instant Client download page[64-bit](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html) or [32-bit](https://www.oracle.com/database/technologies/instant-client/linux-x86-32-downloads.html)
+* Download the latest version "Basic" or "Basic Light" zip file from the Instant Client download page[64-bit](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html) or [32-bit](https://www.oracle.com/database/technologies/instant-client/linux-x86-32-downloads.html).
 
-* Unzip the package into a single directory that is accessible to your application. For example:
+* Unzip the package into a single directory that is accessible. For example:
 ```
 sudo mkdir -p /opt/oracle
 sudo unzip instantclient-basic-linux.x64-21.1.0.0.0.zip -d /opt/oracle/
 ```
-* Install `libaio` package with sudo or as the root user. This package is also called `libaio1` in some distributions. For example, in my case I need to run:
+* Install `libaio` package. This package is also called `libaio1` in some distributions. For example, in my case, I need to run:
 ```
 sudo apt install libaio1
 ```
-* Add the following line in the `$HOME/.bashrc` file and run `source .bashrc` to refresh the settings.
+* Add the following line in the `$HOME/.bashrc` file and run `source .bashrc` to refresh the settings:
 ```
 export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
 ```
 * Create subdirectory `network/admin` within the directory `opt/oracle/instantclient_21_1/`, if it is not created yet.
-* In the `network/admin` subdirectory, create two files of `sqlnet.ora` with the following content:
+* In the `network/admin` subdirectory, create two files:
+1.`sqlnet.ora` with the content:
 ```
 # sqlnet.ora
 # Place this file in the network/admin subdirectory or your 
@@ -63,7 +64,7 @@ export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
 NAMES.DIRECTORY_PATH = (LDAP)
 ```
 
-* and `ldap.ora` with the content below:
+2.`ldap.ora` with the content:
 ```
 # ldap.ora
 # Place this file in the network/admin subdirectory or your 
