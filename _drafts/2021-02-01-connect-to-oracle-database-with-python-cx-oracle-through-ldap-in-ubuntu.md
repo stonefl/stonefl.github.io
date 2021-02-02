@@ -20,6 +20,11 @@ The following picture shows the connection architcture, where the users run a Py
                   Picture comes from ([cx_Oracle Architecture](https://cx-oracle.readthedocs.io/en/latest/_images/cx_Oracle_arch.png))
 
 ## Install cx_Oracle
+* Check your Python versions through the following commands to make sure you have Python 3 installed.
+```
+python --version
+python3 --version
+```
 
 
 
