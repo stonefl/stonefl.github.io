@@ -31,7 +31,7 @@ python3 --version
 ```
 sudo apt update && sudo apt install python3-pip
 ```
-* With pip3 installed, you run the following command to install cx_Oracle
+* With `pip3` installed, you can run the following command to install cx_Oracle
 ```
 pip3 install cx_Oracle
 ```
