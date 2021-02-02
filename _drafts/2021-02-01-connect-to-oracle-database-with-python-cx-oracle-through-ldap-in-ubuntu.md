@@ -83,8 +83,7 @@ jdbc:oracle:thin:@ldap://[ldapservername:ldapport]/[DBservicename],[DomainContex
 
 ## Connect to Oracle Database in Python
 
-
-If the OID is created with only cn=OracleContext, then you need to append a dot at the end of service name. For my case, my service name is ABC_DEFG and the OID is created only context of cn=OracleContext, I need to specify the server as ABC_DEFG..
+With the above installation and configurations, the following Python scripts can be used to connect to the Oracle Database. The scripts is pretty self-explained, but you need to note the **[DBservicename]** in the scripts: if your OID is created with only `cn=OracleContext`, then you need to append a dot (.) at the end of service name. For my case, my service name is ABC_DEFG and the OID is created only context of `cn=OracleContext`, I need to specify the server as `ABC_DEFG.`.
 
 ```
 '''
@@ -131,10 +130,12 @@ finally:
 
 ```
 
+I hope this post is helpful. If I missed anything, please let me know in the comments.
+
 ## References
 
 cx_Oracle 8 Installation Document: https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html#install-oracle-client
 
+Connecting Python to Oracle Databases with `cx_Oracle` and ldap: https://eikonomega.medium.com/connecting-to-oracle-database-with-cx-oracle-and-ldap-5da7925a305c
 
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
