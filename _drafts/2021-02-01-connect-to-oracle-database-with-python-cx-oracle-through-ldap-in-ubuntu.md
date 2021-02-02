@@ -14,7 +14,7 @@ Configuration of cx_Oracle for Python to connect to remote Oracle Database is no
 
 <!--more-->
 ## Connection Architecture
-The following picture shows the connection architcture, where the users run a Python program that calls the cx_Oracle module. The cx_Oracle module loads Oracle Client libraries that connect to the oracle data through the Oracle Net. Thus, to connect to a remote Oracle Database, we need to install both cx_Oracle moduel and Oracle Client libraries. 
+The following picture shows the connection architcture, where the users run a Python program that calls the cx_Oracle module. The cx_Oracle module loads Oracle Client libraries that provide the necessary network connectivity to access an Oracle Database instance. Thus, to connect to a remote Oracle Database, we need to install both cx_Oracle moduel and Oracle Client libraries. 
 
 ![bye-2020]({{site.baseurl}}/img/post/cx_Oracle_arch.png)
                   Picture comes from ([cx_Oracle Architecture](https://cx-oracle.readthedocs.io/en/latest/_images/cx_Oracle_arch.png))
@@ -25,7 +25,16 @@ The following picture shows the connection architcture, where the users run a Py
 python --version
 python3 --version
 ```
+In my case, on my VM I have both Python 2.7 and Python 3.6 installed. All the following steps are for Python 3.
 
+* Before installation of cx_Oracle, you might need to install pip for Python 3 on Ubuntu VM through the following commands:
+```
+sudo apt update && sudo apt install python3-pip
+```
+* With pip3 installed, you run the following command to install cx_Oracle
+```
+pip3 install cx_Oracle
+```
 
 
 ## References
