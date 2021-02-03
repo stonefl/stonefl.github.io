@@ -10,7 +10,7 @@ tags:
   - Python
   - Oracle
 ---
-Connecting to Oracle Database with Python cx_Oracle through LDAP is not trivial. It needs to install cx_Oracle module and Oracle Instant Client libraries, as well as set up LDAP settings in the Oracle Client. This post describes the processes to set up a connection to an Oracle Database on-premises with Python on a Ubuntu 18.04 LTS Virtual Machine in Microsoft Azure. 
+Connecting to an Oracle Database with Python cx_Oracle through LDAP is not trivial. It needs to install cx_Oracle module and Oracle Instant Client libraries, as well as set up LDAP settings in the Oracle Client. This post describes the processes to set up a connection to an Oracle Database on-premises with Python on a Ubuntu 18.04 LTS Virtual Machine in Microsoft Azure. 
 
 <!--more-->
 ## Connection Architecture
