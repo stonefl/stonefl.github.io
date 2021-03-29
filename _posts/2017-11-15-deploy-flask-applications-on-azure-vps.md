@@ -4,7 +4,6 @@ published: true
 title: Deploy a Flask Application on an Azure Virtual Machine
 tags:
   - Python
-  - 'Azure '
   - Flask
   - Apache Web Server
 categories:
@@ -26,7 +25,7 @@ sudo apt-get update
 sudo apt-get install libapache2-mod-wsgi   # for python 2.7
 sudo apt-get install libapache2-mod-wsgi-py3  #for python 3
 ```
- 
+
 ## Step 2: Install Python Environment and Flask
 
 This step is to set up Python environment and dependent libraries for our Flask applications. After login to the VPS, you can check your python version and pip version through running following commands. You might have both python2.7 and python 3.x are pre-installed. 
@@ -86,7 +85,7 @@ Then you can use following commands to activate and deactivate the built virutal
  ```
 source  env/bin/activate  # to activate environment
 deactivate # to deactiate current environment
-```
+ ```
 After activating an evironment, you can use `pip` (no matter python 2 or 3) to install packages for the activated environment, for example,
 ```
 pip install --user flask
