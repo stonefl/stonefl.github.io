@@ -9,6 +9,7 @@ tags:
   - Azure
   - Azure ML Workspace
 ---
+
 This notebook describes the steps you can follow to train a Machine Learning model and deploy the trained model as web service on a Azure Kubernetes Service (AKS) cluster in Azure ML Workspace. AKS is a good choice for the high-scal production deployments.
 
 ## 1. Prerequisites
@@ -280,25 +281,13 @@ for i in range(len(x_new)):
     print ("Patient {}".format(x_new[i]), predicted_classes[i] )
 ```
 
+## References
 
+[Create an Azure Machine Learning workspace](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-manage-workspace?tabs=azure-portal)
 
+[Create and Manage Azure Machine Learning Compute Instance](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-manage-compute-instance?tabs=azure-cli)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Create and Attach an Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-attach-kubernetes?tabs=python)
 
 
 
