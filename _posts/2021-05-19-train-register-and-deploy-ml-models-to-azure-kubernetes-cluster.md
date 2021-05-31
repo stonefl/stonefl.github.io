@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: 'Train, Register and Deploy ML Models to Azure Kubernetes Cluster'
-date: '2021-02-15'
+date: '2021-04-15'
 categories:
   - Cloud
 tags:
