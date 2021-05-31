@@ -12,6 +12,8 @@ tags:
 
 Auzre Machine Learing Workspace provides a centralized platform to work with all aspects of Machine Learning, from creating and training ML models to publishing the models to services. This post describes the steps you can follow to train a ML model and deploy the trained model as web service on a Azure Kubernetes Service (AKS) cluster in Azure ML Workspace.
 
+<!--more-->
+
 ## 1. Prerequisites
 
 In order to follow the steps described herein and run the notebook, you need to have:
