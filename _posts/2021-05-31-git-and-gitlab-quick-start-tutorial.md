@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Git and GitLab Quick Start Tutorial
 date: '2021-02-15'
 categories:
