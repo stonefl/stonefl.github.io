@@ -207,7 +207,7 @@ With the registered model and generated files of entry script and conda dependen
 3. Select **Deploy** on the top
 4. Fill the **Deploy a model** table with the below info:
 
-![](./image/ML_Deploy_Portal.PNG)
+![cx_Oracle_Architecture]({{site.baseurl}}/img/post/ML_Deploy_Portal.PNG)
 
 Deployment will take some time as it first runs a process to create a container image, and then runs a process to create a web service based on the image. When deployment has completed successfully, you'll see a status of **Healthy**.
 
