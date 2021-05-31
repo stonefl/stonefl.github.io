@@ -11,24 +11,25 @@ tags:
   - GitHub
 ---
 This is a quick start manual for new hires or beginners to Git or GitLab. Although this manual aims for GitLab Enterprise edition on Windows, most of the instructions also apply to general Git and GitLab/GitHub practices. This post assumes that you have already set up a GitLab web account where you can restore and manage your source code. 
+<!--more-->
 
 ## Download and Install Git for Windows
 The following instructions are for installing Git on Windows, if you need to install Git for other operating systems, please follow the instructions on [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 Go to https://git-scm.com/download/win and the download will start automatically. If the download doesn't start automatically, you can manually do so through clicking the download links.
 
-![Download Git for Windows](./images/gitlab01.png)
+![Download Git for Windows]({{site.baseurl}}/img/post/gitlab01.png)
 
 When the download finishes, you will get an `.exe` file and you can double-click it to install. You can keep all default settings during installation.
 
 ## Configure Git for the First Time
 After installation of Git your Windows system, you can start `Git Bash` from the **Start Menu**:
 
-![Git Bash from Start Menu](./images/gitlab02.png)
+![Git Bash from Start Menu]({{site.baseurl}}/img/post/gitlab02.png)
 
 You can also start `Git Bash` from the **Context Menu** through right-click from any local directory:
 
-![Git Bash from Context Menu](./images/gitlab03.png)
+![Git Bash from Context Menu]({{site.baseurl}}/img/post/gitlab03.png)
 
 Once you start your `Git Bash` for the first time, it is a good idea to customize your Git environment through running the following commands. Note, the setting commands only need to run once.
 ```
@@ -44,14 +45,14 @@ On Windows systems, this command  looks for the file `.gitconfig` from your $HOM
 ## Clone a GitLab Repository
 You can get a copy of a remote repository on GitLab through `git clone` command. As shown in the following picture, there are two ways to connect to the remote repository: **HTTPS** and **SSH**.
 
-![Clone GitLab Repository](./images/gitlab04.png)
+![Clone GitLab Repository]({{site.baseurl}}/img/post/gitlab04.png)
 
 ### Clone with HTTPS
 You can copy the URL to the HTTPS and run the following command to clone the remote repository to your local directory. The command would prompt message asking for the username and password to the remote GitLab project.
 ```
 git clone <URL_HTTPS>
 ```
-![Clone with HTTPS](./images/gitlab05.png)
+![Clone with HTTPS]({{site.baseurl}}/img/post/gitlab05.png)
 
 ### Clone with SSH
 
@@ -64,7 +65,7 @@ You can create a new SSH key pair through running the following command in the `
 ssh-keygen -t rsa -b 4096 -C "<USERNAME>" f $HOME/.ssh/gitlab_rsa
 ```
 
-![Generate SSH Key Pair](./images/gitlab06.png)
+![Generate SSH Key Pair]({{site.baseurl}}/img/post/gitlab06.png)
 
 
 #### Configure SSH in SSH Agent
@@ -88,7 +89,7 @@ Once you get the SSH key pair, set up the SSH key through the following steps:
 * Select **SSH Keys** from the **User Settings** on the left menu
 * Copy the content from generated `id_rsa.pub` and paste it in the **Key** box and set up the expiration date if needed
 * Click **Add key**, you will get an email notifying you added a key to your profile.
-![Set up SSH Keys in GitLab](./images/gitlab07.png)
+![Set up SSH Keys in GitLab]({{site.baseurl}}/img/post/gitlab07.png)
 
 
 #### Clone with SSH Command
@@ -96,15 +97,15 @@ Once you set up your SSH key in your GitLab profile, you can run the following c
 ```
 git clone <URL_SSH>
 ```
-![Clone with SSH](./images/gitlab08.png)
+![Clone with SSH]({{site.baseurl}}/img/post/gitlab08.png)
 
 Once you clone the remote repository to local successfully, you can navigate to the directory through `cd <REPOSITORY_NAME>`:
 
-![Go into local directory](./images/gitlab09.png)
+![Go into local directory]({{site.baseurl}}/img/post/gitlab09.png)
 
 Now, you are inside your working directory and you can make any changes you like. Once you are happy with the changes, you can `add` and `commit` them to the local repository and then `push` to the remote repository so that your fellow team members can see the changes you made.
 
-![git push flow](./images/gitlab12.png)
+![git push flow]({{site.baseurl}}/img/post/gitlab12.png)
 
 Please note that you are in the default **master** branch and all the changes you made are within this branch.  And when you push the changes to remote repo, it will update the **master** branch there. Usually, this is not the best practice. 
 
@@ -120,16 +121,16 @@ Excellent code depends on rigorous review. The following flow might be the best 
 ### Pull from Remote
 Before you make any changes, it is always a good idea to run command `git pull` to make sure your current local repository is up to date.
 
-![delete local branch](./images/gitlab21.png)
+![delete local branch]({{site.baseurl}}/img/post/gitlab21.png)
 
 ### Create a New Branch
 Branches let you work on new features or bug fixes of the main project code that is in the `master` branch. You can use `git branch <BRANCH_NAME>` to create a new branch and `git branch` to check your branches.
 
-![create a new branch](./images/gitlab10.png)
+![create a new branch]({{site.baseurl}}/img/post/gitlab10.png)
 
 Note the asterisk next to the `master` which indicates that you are currently in the `master` branch. To switch to your new branch, you need to run `git checkout <BRANCH_NAME>`.
 
-![swith branch](./images/gitlab11.png)
+![swith branch]({{site.baseurl}}/img/post/gitlab11.png)
 
 ### Commit Local Changes
 Now, you are in the new feature branch and are ready to make changes to your codes. 
@@ -138,42 +139,42 @@ Now, you are in the new feature branch and are ready to make changes to your cod
 Once you finish your changes, you can run `git staus` to check the changes you have made.
 
 
-![check changes](./images/gitlab13.png)
+![check changes]({{site.baseurl}}/img/post/gitlab13.png)
 
 #### git add
 You can run command `git add <FILE_NAME>` (add the specific file) or `git add .` (add all files) to add your changes to the staging area. The staging area is an intermediate place between your working directory and local Git repo where any changes that you've made can be reviewed before you actually commit them to the repo.
 
-![check changes](./images/gitlab14.png)
+![check changes]({{site.baseurl}}/img/post/gitlab14.png)
 
 #### git commit
 Next, you can commit the changes to your local repo through running `git commit -m "MESSAGE_TEXT"`.
 
-![commit changes](./images/gitlab15.png)
+![commit changes]({{site.baseurl}}/img/post/gitlab15.png)
 
 #### git push
 After commit to local repo, you can push the commits from the local to the new branch in the remote repo through running `git push -u origin <BRANCH_NAME>`.
 
-![push changes ](./images/gitlab16.png)
+![push changes ]({{site.baseurl}}/img/post/gitlab16.png)
 
 #### merge request
 Once you pushed the local to the new branch in remote repository, you can submit a **merger request** through the URL in above command or from **Project** -->**Branches** in the GitLab page.
 
-![merge request](./images/gitlab17.png)
+![merge request]({{site.baseurl}}/img/post/gitlab17.png)
 
 The **Merge Request** button will pop up the **New Merge Request** page, where you can: 1) fill the title of the request; 2) write a brief description; 3) assign reviewer(s), Milestone and Labels; and 4) set up approval rules.  
 
-![merge request](./images/gitlab18.png)
+![merge request]({{site.baseurl}}/img/post/gitlab18.png)
 
 
 
 Once the merge request has been submitted, the reviewer(s) will get notification and they can go the request page to do: 1) check the commits and changes; 2) write comments; 3) approve the merge (if applicable); or 4) close the merge request (if applicable).
 
-![review merge request](./images/gitlab19.png)
+![review merge request]({{site.baseurl}}/img/post/gitlab19.png)
 
 #### delete local branch
 Once your new branch has been merged to the target branch in the remote repository, you can delete your local branch through running `git branch delete -d <BRANCH_NAME>`.  Note, you have to get out of the branch before you running this command deleting it.
 
-![delete local branch](./images/gitlab20.png)
+![delete local branch]({{site.baseurl}}/img/post/gitlab20.png)
 
 #### pull from remote
 Now, it will be a good practice to run `git pull` again to synchronize your remote repository to your local.
