@@ -10,7 +10,7 @@ tags:
   - Azure ML Workspace
 ---
 
-This notebook describes the steps you can follow to train a Machine Learning model and deploy the trained model as web service on a Azure Kubernetes Service (AKS) cluster in Azure ML Workspace. AKS is a good choice for the high-scal production deployments.
+Auzre Machine Learing Workspace provides a centralized platform to work with all aspects of Machine Learning, from creating and training ML models to publishing the models to services. This post describes the steps you can follow to train a ML model and deploy the trained model as web service on a Azure Kubernetes Service (AKS) cluster in Azure ML Workspace.
 
 ## 1. Prerequisites
 
@@ -20,11 +20,11 @@ In order to follow the steps described herein and run the notebook, you need to 
 * A Computer Instance that can run this notebook. For more information, see [Create and Manage Azure Machine Learning Compute Instance](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-manage-compute-instance?tabs=azure-cli)
 * An Azure Kubernetes Service Inference cluster. For more information, seee [Create and Attach an Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-attach-kubernetes?tabs=python)
 
+You can find the training data and associated notebook from the [github repository](https://github.com/stonefl/deploy_ml_models_to_aks).
 
 ## 2. Install and Update the Azure Machine Learning SDK
 
 The Azure Machine Learning SDK is updated frequently. Run the following command to install/upgrade to the latest release, along with the additional package to support notebook widgets.
-
 
 ```python
 !pip install --upgrade azureml-sdk azureml-widgets
@@ -288,8 +288,3 @@ for i in range(len(x_new)):
 [Create and Manage Azure Machine Learning Compute Instance](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-manage-compute-instance?tabs=azure-cli)
 
 [Create and Attach an Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-attach-kubernetes?tabs=python)
-
-
-
-
-
