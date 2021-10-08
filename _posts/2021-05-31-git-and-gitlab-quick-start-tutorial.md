@@ -62,7 +62,7 @@ Cloning with SSH is securer and is the recommended way by FedEx Enterprise. To c
 You can create a new SSH key pair through running the following command in the `Git Bash` or `PowerShell`. You can use the default key file name and empty passphrase. This command generates two files with names of `id_rsa` and `id_rsa.pub` under the path of `C:\Users\$USER\.ssh\`.
 
 ```
-ssh-keygen -t rsa -b 4096 -C "<USERNAME>" f $HOME/.ssh/gitlab_rsa
+ssh-keygen -t rsa -b 4096 -C "<USERNAME>" -f $HOME/.ssh/gitlab_rsa
 ```
 
 ![Generate SSH Key Pair]({{site.baseurl}}/img/post/gitlab06.png)
