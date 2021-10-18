@@ -10,7 +10,7 @@ tags:
   - GitLab
   - GitHub
 ---
-This is a quick start manual for new hires or beginners to Git or GitLab. Although this manual aims for GitLab Enterprise edition on Windows, most of the instructions also apply to general Git and GitLab/GitHub practices. This post assumes that you have already set up a GitLab web account where you can restore and manage your source code. 
+This post is a quick start manual for beginners to Git or GitLab. Although this manual aims for the GitLab Enterprise edition on Windows, the instructions apply to general Git and GitLab/GitHub practices. This post assumes that you have already set up a GitLab web account where you can restore and manage your source code. 
 <!--more-->
 
 ## Download and Install Git for Windows
