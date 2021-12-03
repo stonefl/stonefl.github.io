@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-subtitle: Something about me
 comments: false
 ---
 
@@ -11,8 +10,8 @@ Hi there, my name is Lei Feng. I passionate about learning and applying technolo
 You can reach me through email: [lfengstone@gmail.com](lfengstone@gmail.com)
 
 ---
+## Opinion Disclaimer
+The views and opinions expressed on this site are my own and do not reflect the official policy or position of my professional organizations, companies, and affiliations. 
 
-
-## About This Website
 
 This website is built on top of [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll).
