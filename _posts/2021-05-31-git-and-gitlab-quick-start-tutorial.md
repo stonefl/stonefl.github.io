@@ -169,7 +169,6 @@ Once you push the local to the new branch in the remote repository, you can subm
 ![merge request]({{site.baseurl}}/img/post/gitlab17.png)
 
 The **Merge Request** button will pop up the **New Merge Request** page, where you can:
-
 1. fill the title of the request; 
 2. write a brief description; 
 3. assign reviewer(s), Milestone and Labels; 
@@ -179,7 +178,6 @@ The **Merge Request** button will pop up the **New Merge Request** page, where y
 
 
 Once the merge request has been submitted, the reviewer(s) will get notification and they can go the request page to do: 
-
 1. check the commits and changes; 
 2. write comments; 
 3. approve the merge (if applicable);
