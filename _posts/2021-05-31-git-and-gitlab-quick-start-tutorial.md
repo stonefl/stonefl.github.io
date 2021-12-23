@@ -126,21 +126,21 @@ Excellent code depends on rigorous review. The following flow might be the best 
 * The final reviewer follows the same reviewing process again. The author again addresses any comments. Once the final reviewer is happy and the build is green, then the new branch will be **merged** with the target branch.
 
 ### Pull from Remote
-Before you make any changes, it is always a good idea to run command `git pull` to make sure your current local repository is up to date.
+Before you make any changes, it is always a good idea to run the command `git pull` to make sure your current local repository is up to date.
 
 ![delete local branch]({{site.baseurl}}/img/post/gitlab21.png)
 
 ### Create a New Branch
-Branches let you work on new features or bug fixes of the main project code that is in the `master` branch. You can use `git branch <BRANCH_NAME>` to create a new branch and `git branch` to check your branches.
+Branches let you work on new features or bug fixes of the main project code in the `master` branch. You can use `git branch <BRANCH_NAME>` to create a new branch and `git branch` to check your branches.
 
 ![create a new branch]({{site.baseurl}}/img/post/gitlab10.png)
 
-Note the asterisk next to the `master` which indicates that you are currently in the `master` branch. To switch to your new branch, you need to run `git checkout <BRANCH_NAME>`.
+Note the asterisk next to the `master`, which indicates that you are currently in the `master` branch. To switch to your new branch, you need to run `git checkout <BRANCH_NAME>`.
 
 ![swith branch]({{site.baseurl}}/img/post/gitlab11.png)
 
 ### Commit Local Changes
-Now, you are in the new feature branch and are ready to make changes to your codes. 
+Now, you are in the new feature branch and ready to change your codes. 
 
 #### git status
 Once you finish your changes, you can run `git staus` to check the changes you have made.
@@ -149,7 +149,7 @@ Once you finish your changes, you can run `git staus` to check the changes you h
 ![check changes]({{site.baseurl}}/img/post/gitlab13.png)
 
 #### git add
-You can run command `git add <FILE_NAME>` (add the specific file) or `git add .` (add all files) to add your changes to the staging area. The staging area is an intermediate place between your working directory and local Git repo where any changes that you've made can be reviewed before you actually commit them to the repo.
+You can run the command `git add <FILE_NAME>` (add the specific file) or `git add .` (add all files) to add your changes to the staging area. A staging area is an intermediate place between your working directory and local Git repo where any changes that you've made can be reviewed before you actually commit them to the repo.
 
 ![check changes]({{site.baseurl}}/img/post/gitlab14.png)
 
@@ -159,32 +159,44 @@ Next, you can commit the changes to your local repo through running `git commit 
 ![commit changes]({{site.baseurl}}/img/post/gitlab15.png)
 
 #### git push
-After commit to local repo, you can push the commits from the local to the new branch in the remote repo through running `git push -u origin <BRANCH_NAME>`.
+After committing to the local repo, you can push the commits from the local to the new branch in the remote repo through running `git push -u origin <BRANCH_NAME>`.
 
 ![push changes ]({{site.baseurl}}/img/post/gitlab16.png)
 
 #### merge request
-Once you pushed the local to the new branch in remote repository, you can submit a **merger request** through the URL in above command or from **Project** -->**Branches** in the GitLab page.
+Once you push the local to the new branch in the remote repository, you can submit a **merger request** through the URL in the above command or from **Project** -->**Branches** on the GitLab page.
 
 ![merge request]({{site.baseurl}}/img/post/gitlab17.png)
 
-The **Merge Request** button will pop up the **New Merge Request** page, where you can: 1) fill the title of the request; 2) write a brief description; 3) assign reviewer(s), Milestone and Labels; and 4) set up approval rules.  
+The **Merge Request** button will pop up the **New Merge Request** page, where you can:
+
+1. fill the title of the request; 
+2. write a brief description; 
+3. assign reviewer(s), Milestone and Labels; 
+4. set up approval rules.  
 
 ![merge request]({{site.baseurl}}/img/post/gitlab18.png)
 
 
+Once the merge request has been submitted, the reviewer(s) will get notification and they can go the request page to do: 
 
-Once the merge request has been submitted, the reviewer(s) will get notification and they can go the request page to do: 1) check the commits and changes; 2) write comments; 3) approve the merge (if applicable); or 4) close the merge request (if applicable).
+1. check the commits and changes; 
+2. write comments; 
+3. approve the merge (if applicable);
+4. close the merge request (if applicable).
 
 ![review merge request]({{site.baseurl}}/img/post/gitlab19.png)
 
 #### delete local branch
-Once your new branch has been merged to the target branch in the remote repository, you can delete your local branch through running `git branch delete -d <BRANCH_NAME>`.  Note, you have to get out of the branch before you running this command deleting it.
+Once your new branch has been merged to the target branch in the remote repository, you can delete your local branch by running `git branch delete -d <BRANCH_NAME>`.  Note, you have to get out of the branch before you run this command deleting it.
 
 ![delete local branch]({{site.baseurl}}/img/post/gitlab20.png)
 
 #### pull from remote
 Now, it will be a good practice to run `git pull` again to synchronize your remote repository to your local.
+
+
+I hope this quick-start tutorial is helpful to you. Please feel free to leave any comments and advice. Thanks for reading.
 
 ## References
 
