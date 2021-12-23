@@ -22,16 +22,16 @@ Go to https://git-scm.com/download/win, and the download will start automatical
 
 When the download finishes, you will get an `.exe` file, and you can double-click it to install. You can keep all default settings during installation.
 
-## Configure Git for the First Time
-After installation of Git your Windows system, you can start `Git Bash` from the **Start Menu**:
+## Configure Git for First Time
+After installation of Git on your Windows system, you can start `Git Bash` from the **Start Menu**:
 
 ![Git Bash from Start Menu]({{site.baseurl}}/img/post/gitlab02.png)
 
-You can also start `Git Bash` from the **Context Menu** through right-click from any local directory:
+You can also start `Git Bash` from the **Context Menu** through right-clicking from any local directory:
 
 ![Git Bash from Context Menu]({{site.baseurl}}/img/post/gitlab03.png)
 
-Once you start your `Git Bash` for the first time, it is a good idea to customize your Git environment through running the following commands. Note, the setting commands only need to run once.
+Once you start your `Git Bash` for the first time, it is a good idea to customize your Git environment by running the following commands. Note, the setting commands only need to do one time.
 ```
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
@@ -40,15 +40,15 @@ You can check all your settings through running:
 ```
  git config --list
 ```
-On Windows systems, this command  looks for the file `.gitconfig` from your $HOME directory, which usually is `C:\Users\$USER`.
+On Windows systems, this command looks for the file `.gitconfig` from your $HOME directory, which usually is `C:\Users\$USER`.
 
 ## Clone a GitLab Repository
-You can get a copy of a remote repository on GitLab through `git clone` command. As shown in the following picture, there are two ways to connect to the remote repository: **HTTPS** and **SSH**.
+You can get a copy of a remote repository on GitLab through the `git clone` command. As shown in the following picture, there are two ways to connect to the remote repository: **HTTPS** and **SSH**.
 
 ![Clone GitLab Repository]({{site.baseurl}}/img/post/gitlab04.png)
 
 ### Clone with HTTPS
-You can copy the URL to the HTTPS and run the following command to clone the remote repository to your local directory. The command would prompt message asking for the username and password to the remote GitLab project.
+You can copy the URL to the HTTPS and run the following command to clone a remote repository to your local directory. The command would prompt a message asking for the username and password to the remote GitLab project.
 ```
 git clone <URL_HTTPS>
 ```
@@ -56,10 +56,10 @@ git clone <URL_HTTPS>
 
 ### Clone with SSH
 
-Cloning with SSH is securer and is the recommended way by FedEx Enterprise. To clone with SSH connection, you need to follow the instructions below to set up SSH Key in your GitLab profile.
+Cloning with SSH is securer and is the recommended way. To clone with an SSH connection, you need to follow the instructions below to set up SSH Key in your GitLab profile.
 
 #### Generate SSH Key Pair
-You can create a new SSH key pair through running the following command in the `Git Bash` or `PowerShell`. You can use the default key file name and empty passphrase. This command generates two files with names of `id_rsa` and `id_rsa.pub` under the path of `C:\Users\$USER\.ssh\`.
+You can create a new SSH key pair by running the following command in the `Git Bash` or `PowerShell`. You can use the default key file name and empty passphrase. This command generates two files with names of `id_rsa` and `id_rsa.pub` under the path of `C:\Users\$USER\.ssh\`.
 
 ```
 ssh-keygen -t rsa -b 4096 -C "<USERNAME>" -f $HOME/.ssh/gitlab_rsa
@@ -74,13 +74,15 @@ Run the following commands
 eval `ssh-agent -s`
 ssh-add ~/.ssh/gitlab_rsa
 ```
-Add the following settings into `~/.ssh/config` file. Generate a new one if it doesn't exist yet:
+Add the following settings into `~/.ssh/config` file:
 ```
 # FedEx gitlab production environment
 Host gitlab.prod.fedex.com
   PreferredAuthentications publickey
   IdentityFile ~/.ssh/gitlab_rsa
 ```
+Generate a new one if it doesn't exist yet.
+
 #### Set up SSH Keys in GitLab Profile
 
 Once you get the SSH key pair, set up the SSH key through the following steps:
@@ -93,7 +95,7 @@ Once you get the SSH key pair, set up the SSH key through the following steps:
 
 
 #### Clone with SSH Command
-Once you set up your SSH key in your GitLab profile, you can run the following command with corresponding SSH URL to clone the remote repository without inputting username and password. 
+Once you set up your SSH key in your GitLab profile, you can run the following command with the corresponding SSH URL to clone the remote repository without inputting your username and password. 
 ```
 git clone <URL_SSH>
 ```
@@ -103,20 +105,25 @@ Once you clone the remote repository to local successfully, you can navigate to 
 
 ![Go into local directory]({{site.baseurl}}/img/post/gitlab09.png)
 
-Now, you are inside your working directory and you can make any changes you like. Once you are happy with the changes, you can `add` and `commit` them to the local repository and then `push` to the remote repository so that your fellow team members can see the changes you made.
+Now, you are inside your working directory, and you can make any changes you like. Once you are happy with the changes, you can `add` and `commit` them to the local repository and then `push` to the remote repository so that your fellow team members can see the changes you made.
 
 ![git push flow]({{site.baseurl}}/img/post/gitlab12.png)
 
-Please note that you are in the default **master** branch and all the changes you made are within this branch.  And when you push the changes to remote repo, it will update the **master** branch there. Usually, this is not the best practice. 
+Please note that you are in the default **master** branch and all the changes you made are within this branch. And when you push the changes to the remote repo, it will update the **master** branch there. Usually, this is not the best practice. 
 
 ## Best Practices for Code Review
 
 Excellent code depends on rigorous review. The following flow might be the best practices for code review and team collaboration:
-* Once check out a repository, a developer creates a new feature **branch** and makes changes this feature branch and tests it. 
-* When the developer is happy on the changes, then he/she **push**es the changes to the **new branch**, and make a **merge request**. 
+
+* Once checks out a repository, a developer creates a new feature **branch**, makes changes in this feature branch, and tests it. 
+
+* When happy on the changes, the developer **push**es the changes in the **new branch**, and make a **merge request**. 
+
 * The developer assigns the **merge request** to a **reviewer**, who looks at it and makes comments as appropriate. When the reviewer finish, he/she can assign it back to the author.
+
 * The author **addresses the comments**. This stage can go around for a while, but once both reviewer and author are happy, they can approve a merge or assign it to a final reviewer who can do the merge.
-* The final reviewer follows the same reviewing process again. The author again addresses any comments. Once the final reviewer is happy and the build is green, then the new branch will be **merged to the target branch**.
+
+* The final reviewer follows the same reviewing process again. The author again addresses any comments. Once the final reviewer is happy and the build is green, then the new branch will be **merged** with the target branch.
 
 ### Pull from Remote
 Before you make any changes, it is always a good idea to run command `git pull` to make sure your current local repository is up to date.
