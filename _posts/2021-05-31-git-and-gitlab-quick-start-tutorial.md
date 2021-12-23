@@ -14,13 +14,13 @@ This post is a quick start manual for beginners to Git or GitLab. Although this 
 <!--more-->
 
 ## Download and Install Git for Windows
-The following instructions are for installing Git on Windows, if you need to install Git for other operating systems, please follow the instructions on [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+The following instructions are for installing Git on Windows. If you need to install Git for other operating systems, please follow instructions [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-Go to https://git-scm.com/download/win and the download will start automatically. If the download doesn't start automatically, you can manually do so through clicking the download links.
+Go to https://git-scm.com/download/win, and the download will start automatically. If the download doesn't start automatically, you can manually click the download links.
 
 ![Download Git for Windows]({{site.baseurl}}/img/post/gitlab01.png)
 
-When the download finishes, you will get an `.exe` file and you can double-click it to install. You can keep all default settings during installation.
+When the download finishes, you will get an `.exe` file, and you can double-click it to install. You can keep all default settings during installation.
 
 ## Configure Git for the First Time
 After installation of Git your Windows system, you can start `Git Bash` from the **Start Menu**:
