@@ -76,8 +76,8 @@ ssh-add ~/.ssh/gitlab_rsa
 ```
 Add the following settings into `~/.ssh/config` file:
 ```
-# FedEx gitlab production environment
-Host gitlab.prod.fedex.com
+# my company gitlab production environment
+Host gitlab.prod.mycompany.com
   PreferredAuthentications publickey
   IdentityFile ~/.ssh/gitlab_rsa
 ```
