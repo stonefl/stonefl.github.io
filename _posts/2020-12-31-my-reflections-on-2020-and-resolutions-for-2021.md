@@ -49,8 +49,8 @@ Picture comes from ([https://unsplash.com/@macroman](https://unsplash.com/photos
 
 - **To be a better manager**: keep learning and improving to be a great manager.
 - **Get three certificates of Azure**: Data Scientist, Administrator, and Solution Architect
-- **Read more books**: at least one book every two months and review some of the good ones.
-- **Write more blogs**: at least one blog every two months. Not only focus on techniques, but also management. 
+- **Read more books**: at least one book every months and review some of the good ones.
+- **Write more blogs**: at least one blog every months. Not only focus on techniques, but also management. 
 - **Run more miles**: complete 1,000 miles by the end of 2021. 
 - **Spend less time on political media and news**: political media and news are not good for health, neither physical nor mental.
 - **Take an extended vacation for a long trip with family**: This is what I owed the girls in 2020.
