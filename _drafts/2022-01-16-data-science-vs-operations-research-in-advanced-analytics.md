@@ -71,7 +71,27 @@ The following table summarizes the differences between DS and OR from multiple d
 | Data and Computation Requirements 	| Data needs are extensive to learn underlying patterns<br>Data storage and processing power needs could be very high 	| Data needs are lower than data science<br>The processing power required to solve mathematical models could be very high 	|  	|  	|
 
 
+## DS and OR Overlap and Work Together
 
 
+Although DS and OR work in different paradigms and cover different stages of analysis, they are closely relevant and overlapped. 
 
+### Share Common Knowledge and Skills
 
+Both of them require mathetics, statistics, and computer science knowledge. DS has considerable overlap with OR in statistical analysis, which uses advanced statistical inferences, models, and theories to find meaning in large data sets. In the big data era, practitioners in DS and OR need to know how to use computers, clusters, and cloud computing to quickly analyze large amounts of data from different sources in various formats and types for useful insights.
+
+### ML Rely on Optimization
+
+Machine Learning (ML) models of DS rely on optimization algorithms. Notice that training any ML models always involves solving an optimization problem. For supervised ML models, for example, the process of training Linear or Logistic Regression models is finding a line or a curve to minimize error or loss. As one example for unsupervised ML models, the K-means clustering model is to partition data points to minimize the distances to centroids. Even the reinforcement learning models, where agents take actions to maximize cumulative rewards.
+
+Based on the above two facts, it is relatively easy for an OR professional to transfer to a Data Scientist through limited ML and AI training. However, picking up required skills in OR requires rather significant amounts of effort, usually deserves a full-time Ph.D.
+
+## DS and OR Work Together
+
+DS and OR enable companies to transform data into information, information into insights, and insights into better decisions in today's competitive environments.
+
+![data science]({{site.baseurl}}/img/post/ds_04.png)
+
+The graph above illustrates the journey from data to business value. Data is the fuel that powers data science's vehicle that generates actionable insights. The data foundation contains the strategies of data ingestion, data storage, and management. Data science analyzes data to predict the future and provide actionable insights. Optimization engines are created for the best decisions for business values maximization under different situations or constraints.
+
+Whether your domains are in DS or OR, your job is solving problems, answering questions, increasing revenue, reducing cost, improving efficiency, and adding business values through delivering effective solutions. I'm still enjoying these.
