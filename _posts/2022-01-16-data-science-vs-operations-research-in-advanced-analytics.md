@@ -28,7 +28,7 @@ From the above definition, we can see that DS is a mixture study of maths/statis
 ![data science]({{site.baseurl}}/img/post/ds_01.png)
 
 
-**Operations Research (OR)**, compared to DS, has a long history. OR originated in military planning efforts during World War II, and today it is applied widely in business, industry, and society. It is a discipline that applies analytical methods to find optimal or near-optimal solutions to decision-making problems. The analytical methods include various problem-solving techniques, such as statistical analysis, simulation, optimization, queueing theory, stochastic process, etc. OR is a study of making better decisions and usually starts with a real-world problem to be solved.
+**Operations Research (OR)**, compared to DS, has a long history. OR originated in military planning efforts during World War II, and today it is applied widely in business, industry, and society. It is a discipline that applies analytical methods to find optimal or near-optimal solutions to decision-making problems. The analytical methods include various problem-solving techniques, such as **statistical analysis**, **optimization**, **simulation**, ** queueing theory**, **stochastic process**, etc. OR is a study of making better decisions and usually starts with a real-world problem.
 
 The following picture illustrates the typical steps of an OR problem-solving process. The practical nature of OR forces the process to start from understanding real-world business problems. OR practitioners will translate the business problem into one or more generic OR problems or their variants, such as Traveling Salesman Problem (TSP), Vehicle Routing Problem (VRP), Facility Location/Routing Problem, etc. The translated generic OR problems will be modeled in mathematical ways through Linear, Integer, or Mixed-Integer Programmings and get solved through various searching, heuristic, and dynamic programming algorithms.  
 
@@ -43,16 +43,16 @@ DS and OR are both powerful analytics disciplines and work in different paradigm
 ## DS and OR are Used at Different Stages of Analysis
 
 The Gartner Analytics Ascendency Mode identifies four main types of analytics: descriptive, diagnostic, predictive, and prescriptive. Each addresses the following questions:
-1. Descriptive Analytics: What happened?
-2. Diagnostic Analytics: Why did it happen?
-3. Predictive Analytics: What will happen in the future?
-4. Prescriptive Analytics: What should I do to improve the outcome?
+1. **Descriptive Analytics**: What happened?
+2.** Diagnostic Analytics**: Why did it happen?
+3. **Predictive Analytics**: What will happen in the future?
+4. optimization,: What should I do to improve the outcome?
 
 ![data science]({{site.baseurl}}/img/post/ds_03.png)
 
 Picture comes from ([Gartner.com](https://www.gartner.com/en))
 
-While people separate the above four analytics into categories/types, I would argue that they are linked together and build upon each other. As one moves from simple analytics to more complex ones, the degree of difficulty increases and, at the same time, generates more value.
+While people separate the above four analytics into categories/types, I would argue that they are linked together and build upon each other. As one moves from simple analytics to more complex ones, the degree of difficulty increases and, at the same time, generates more values.
 
 Recall that statistics, data mining, and machine learning are the three primary techniques in the DS domain. **Statistical analysis** is known as descriptive analytics providing the information/hindsight of what happened; **Data Mining** works as diagnostic analytics that provides insights on why it happened; **Machine Learning** is the predictive analytics that answers the foresight on what will happen. Thus the first three stages of analytics correspond to the three primary techniques from DS domain. Lastly, OR goes with prescriptive analytics that seeks optimal solutions to better decisions.
 
