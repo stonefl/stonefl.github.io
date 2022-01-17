@@ -15,7 +15,7 @@ Both Data Science (DS) and Operations Research (OR) are two disciplines that pro
 ![dashboard]({{site.baseurl}}/img/post/dashboard.jpg)
 Picture comes from ([https://unsplash.com/@goumbik](https://unsplash.com/photos/mcSDtbWXUZU))
 
-Let's get started with the description of DS and OR.
+Let's get started with the definitions of DS and OR.
 
 
 ## What are DS and OR?
