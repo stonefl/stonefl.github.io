@@ -37,15 +37,32 @@ The following picture illustrates the typical steps of an OR problem-solving pro
 Picture comes from ([Big Picture of Operations Research](https://towardsdatascience.com/the-big-picture-of-operations-research-8652d5153aad))
 
 
+DS and OR are both powerful analytics disciplines and work in different paradigms. The nature of the analytical problem should determine the choice of the discipline/technique.
 
 
+## DS and OR are Used at Different Stages of Analysis
 
+The Gartner Analytics Ascendency Mode identifies four main types of analytics: descriptive, diagnostic, predictive, and prescriptive. Each addresses the following questions:
+1. Descriptive Analytics: What happened?
+2. Diagnostic Analytics: Why did it happen?
+3. Predictive Analytics: What will happen in the future?
+4. Prescriptive Analytics: What should I do to improve the outcome?
 
+![data science]({{site.baseurl}}/img/post/ds_03.png)
 
+Picture comes from ([Gartner.com](https://www.gartner.com/en))
 
+While people separate the above four analytics into categories/types, I would argue that they are linked together and build upon each other. As one moves from simple analytics to more complex ones, the degree of difficulty increases and, at the same time, generates more value.
 
+Recall that statistics, data mining, and machine learning are the three primary techniques in the DS domain. **Statistical analysis** is known as descriptive analytics providing the information/hindsight of what happened; **Data Mining** works as diagnostic analytics that provides insights on why it happened; **Machine Learning** is the predictive analytics that answers the foresight on what will happen. Thus the first three stages of analytics correspond to the three primary techniques from DS domain. Lastly, OR goes with prescriptive analytics that seeks optimal solutions to better decisions.
 
+The following table summarizes the differences between DS and OR from multiple dimensions.
 
+|            |    ** Data Science**      |  **Operations Research** |
+|------------|:-------------:|------:|
+| Capability |  left-aligned | $1600 |
+| col 2 is   |    centered   |   $12 |
+| col 3 is   | right-aligned |    $1 |
 
 
 
