@@ -9,7 +9,7 @@ categories:
 date: '2022-01-16'
 ---
 
-Both Data Science (DS) and Operations Research (OR) are two disciplines that provide advanced analytics capabilities. They are highly relevant and overlapped, but they work in two different paradigms. In this post, I'm trying to explain the relationship between DS and OR, the differences, and how they could work together in advanced analytics based on my experience in DS and OR.
+Both Data Science (DS) and Operations Research (OR) are two disciplines that provide advanced analytics capabilities. They are highly relevant and overlapped, but they work in two different paradigms. In this post, I'm trying to explain the relationship between DS and OR, the differences, and how they could work together in advanced analytics based on my experience in both domains.
 <!--more-->
 
 ![dashboard]({{site.baseurl}}/img/post/dashboard.jpg)
