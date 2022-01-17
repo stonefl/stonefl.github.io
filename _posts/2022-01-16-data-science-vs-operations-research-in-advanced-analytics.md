@@ -99,7 +99,9 @@ Whether our domains are in DS or OR, our jobs are solving problems, answering qu
 ## References
 
 What is O.R.:https://www.informs.org/Explore/What-is-O.R.-Analytics/What-is-O.R.
+
 2022 Data and Analytics Predictions and Prescriptions: https://www.jesse-anderson.com/wp-content/uploads/2022/01/DBP2022Insights.pdf
+
 Data science vs. operations research: A comparison: https://www.iise.org/isemagazine/details.aspx?id=49802
 
 
