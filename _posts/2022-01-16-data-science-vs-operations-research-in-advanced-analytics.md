@@ -58,17 +58,33 @@ Recall that statistics, data mining, and machine learning are the three primary 
 
 The following table summarizes the differences between DS and OR from multiple dimensions.
 
-|  	| Data Science 	| Operations Research 	|  	|  	|
-|:---:	|---	|---	|---	|---	|
-| Capability 	| Descriptive, Diagnostic, and Predictive 	| Prescriptive 	|  	|  	|
-| Business Value 	| Knowledge and actional insights 	| Optimal or near-optimal actions/strategies/decisions 	|  	|  	|
-| Quantitative Tools 	| Statistics, Data Mining and Machine Learning Models, Artificial Intelligence 	| Mathematical Modeling, Optimization Algorithms, Heuristics 	|  	|  	|
-| Popular Algorithms 	| Linear Regression, Logistic Regression, Support Vector Machine, Decision Tree, Neural Network  	| Linear Programming, Integer Programming, Dynamic Programming, Graph/Network Algorithms 	|  	|  	|
-| Software/Platforms 	| SAS, Sci-kit Learning, Spark, TensorFlow, Python, 	| CPLEX, Gurobi, OR-tools, Java, C++, Python 	|  	|  	|
-| Paradigm 	| Data-Centric 	| Problem-Centric 	|  	|  	|
-| Project Steps 	| Opportunity statement<br>Data acquisition<br>Data exploration and opportunity reframing if needed<br>Model creation and Training<br>Iterative model evaluation<br>Modeling deployment 	| Identification of the problem<br>Mathematical modeling/formulation of business objective and constraints<br>Data acquisition if needed<br>Iterative modeling and refinement<br>Modeling deployment 	|  	|  	|
-| Business Application Examples 	| Shipment volume forecasting<br>Delivery time estimating<br>Predictive fleet maintenance and fuel economy 	| Optimize stop sequence to minimize travel distance and time for pickup and delivery<br>Optimize network design and volume routing to minimize transportation cost  	|  	|  	|
-| Data and Computation Requirements 	| Data needs are extensive to learn underlying patterns<br>Data storage and processing power needs could be very high 	| Data needs are lower than data science<br>The processing power required to solve mathematical models could be very high 	|  	|  	|
+|  	| Data Science 	| Operations Research 	| 
+|:---:	|---	|---	|
+| **Capability** 	| Descriptive, Diagnostic, and Predictive 	| Prescriptive 	| 
+| **Business Value**	| Knowledge and actional insights 	| Optimal or near-optimal actions/strategies/decisions 	|
+| **Quantitative Tools**	| Statistics, Data Mining and Machine Learning Models, Artificial Intelligence 	| Mathematical Modeling, Optimization Algorithms, Heuristics 	| 
+| **Popular Algorithms**	| Linear Regression, Logistic Regression, Support Vector Machine, Decision Tree, Neural Network  	| Linear Programming, Integer Programming, Dynamic Programming, Graph/Network Algorithms 	| 
+| **Software/Platforms** 	| SAS, Sci-kit Learning, Spark, TensorFlow, Python, 	| CPLEX, Gurobi, OR-tools, Java, C++, Python 	| 
+| **Paradigm** 	| Data-Centric 	| Problem-Centric 	|
+| **Project Steps** 	| * Opportunity statement
+                          * Data acquisition
+                          * Data exploration and opportunity reframing if needed
+                          * Model creation and Training
+                          * Iterative model evaluation
+                          * Modeling deployment 	| 
+                          * Identification of the problem                    
+                          * Mathematical modeling/formulation of business objective and constraints
+                          * Data acquisition if needed<br>Iterative modeling and refinement<br>Modeling deployment 	| 
+| **Business Application Examples** 	| 
+                          * Shipment volume forecasting
+                          * Delivery time estimating
+                          * Predictive fleet maintenance and fuel economy 	| 
+                          * Optimize stop sequence to minimize travel distance and time for pickup and delivery
+                          * Optimize network design and volume routing to minimize transportation cost  	| 
+| **Data and Computation Requirements** 	| * Data needs are extensive to learn underlying patterns
+* Data storage and processing power needs could be very high 	| 
+* Data needs are lower than data science
+* The processing power required to solve mathematical models could be very high 	| 
 
 
 ## DS and OR Overlap and Work Together
