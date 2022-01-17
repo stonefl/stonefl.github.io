@@ -94,3 +94,14 @@ DS and OR enable companies to transform data into information, information into 
 The graph above illustrates the journey from data to business value. Data is the fuel that powers data science's vehicle that generates actionable insights. The data foundation contains the strategies of data ingestion, data storage, and management. Data science analyzes data to predict the future and provide actionable insights. Optimization engines are created for the best decisions for business values maximization under different situations or constraints.
 
 Whether your domains are in DS or OR, your job is solving problems, answering questions, increasing revenue, reducing cost, improving efficiency, and adding business values through delivering effective solutions. I'm still enjoying these.
+
+
+## References
+
+What is O.R.:https://www.informs.org/Explore/What-is-O.R.-Analytics/What-is-O.R.
+2022 Data and Analytics Predictions and Prescriptions: https://www.jesse-anderson.com/wp-content/uploads/2022/01/DBP2022Insights.pdf
+Data science vs. operations research: A comparison: https://www.iise.org/isemagazine/details.aspx?id=49802
+
+
+
+
