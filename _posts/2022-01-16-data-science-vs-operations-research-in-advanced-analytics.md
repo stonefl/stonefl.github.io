@@ -44,9 +44,9 @@ DS and OR are both powerful analytics disciplines and work in different paradigm
 
 The Gartner Analytics Ascendency Mode identifies four main types of analytics: descriptive, diagnostic, predictive, and prescriptive. Each addresses the following questions:
 1. **Descriptive Analytics**: What happened?
-2.** Diagnostic Analytics**: Why did it happen?
+2. **Diagnostic Analytics**: Why did it happen?
 3. **Predictive Analytics**: What will happen in the future?
-4. optimization,: What should I do to improve the outcome?
+4. **Optimization**: What should I do to improve the outcome?
 
 ![data science]({{site.baseurl}}/img/post/ds_03.png)
 
