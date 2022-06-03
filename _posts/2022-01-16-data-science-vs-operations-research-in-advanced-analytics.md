@@ -91,7 +91,7 @@ DS and OR together enable companies to transform data into information, informat
 
 ![data science]({{site.baseurl}}/img/post/ds_04.png)
 
-The graph above illustrates the journey from data to business value. Data is the fuel that powers data science's vehicle that generates actionable insights. The data foundation contains the strategies of data ingestion, data storage, and management. Data science analyzes data to predict the future and provide actionable insights. Optimization engines are created for the best decisions for business values maximization under different situations or constraints.
+The graph above illustrates the journey from data to business value. Data is the fuel that powers data science's vehicle that generates actionable insights. The data foundation contains the strategies of data ingestion, data storage, and management. Data science analyzes data to predict the future and provide actionable insights. Optimization engines are created for the best decisions for business values maximization under different situations or constraints.Finally, the decisions have been automated into the system.
 
 Whether our domains are in DS or OR, our jobs are solving problems, answering questions, increasing revenue, reducing cost, improving efficiency, and adding business values through delivering effective solutions. I'm still enjoying these.
 
