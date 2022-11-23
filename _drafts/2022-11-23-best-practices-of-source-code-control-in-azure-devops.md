@@ -13,6 +13,13 @@ thumbnail: /img/post/git-with-azure-devops.jpg
 This post is a quick start manual for beginners to use Git with Auzre DevOps to source code control. Although this manual aims for the operations with Repos of Azure DevOps, the instructions apply to general Git practices. This post assumes that you have already set up a Azure DevOps account where you can restore your source code and manage the development. 
 <!--more-->
 
+# Table of Content
+
+{:.no_toc}
+
+* TOC
+{:toc}
+
 ## Download and Install Git for Windows
 
 The following instructions are for installing Git on Windows. If you need to install Git for other operating systems, please follow instructions [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
@@ -23,7 +30,7 @@ Go to https://git-scm.com/download/win, and the download will start automatical
 
 When the download finishes, you will get an `.exe` file, and you can double-click it to install. You can keep all default settings during installation.
 
-## Configure Git for First Time
+## Configure Git for the First Time
 
 After installation of Git on your Windows system, you can start `Git Bash` from the **Start Menu**:
 
