@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Best Practices of Source Code Control in Azure DevOps
 date: '2022-10-25'
 categories:
