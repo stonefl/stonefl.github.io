@@ -114,7 +114,7 @@ Once you get the SSH key pair, set up the SSH public key through the following s
 * Select **SSH Public Keys** from the dropdown list
 * Click **+ New Key** button in the upper-right corner of the page
 * Copy the content from generated `id_rsa.pub` and paste it in the **Public Key Data** box and give the key an informative name for future management
-* Click **Add **, you will get an email notifying you added a key to your profile.
+* Click **Add**, you will get an email notifying you added a key to your profile.
   ![Set up SSH Keys in GitLab]({{site.baseurl}}/img/post/git-ado-02.png)
 
 
@@ -239,4 +239,3 @@ I hope this quick-start tutorial is helpful to you. Please feel free to leave an
 
 * https://git-scm.com/book/en/v2
 * [Auzre DevOps - Use SSH Key Authentication]( "https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops")
-
