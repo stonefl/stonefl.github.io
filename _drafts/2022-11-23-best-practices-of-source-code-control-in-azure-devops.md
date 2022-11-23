@@ -55,27 +55,27 @@ You can check all your settings through running:
 
 On Windows systems, this command looks for the file `.gitconfig` from your $HOME directory, which usually is `C:\Users\$USER`.
 
-## Clone a GitLab Repository
+## Clone a Code Repository from Azure DevOps
 
-You can get a copy of a remote repository on GitLab through the `git clone` command. As shown in the following picture, there are two ways to connect to the remote repository: **HTTPS** and **SSH**.
+You can get a copy of a remote repository on Azure DevOps through the `git clone` command. Click on the **Clone** button in the upper-right corner of your repository, you can get the tab shown as the following picture. There are two ways to connect to the remote repository: **HTTPS** and **SSH**.
 
-![Clone GitLab Repository]({{site.baseurl}}/img/post/gitlab04.png)
+![Clone GitLab Repository]({{site.baseurl}}/img/post/git-ado-01.png)
 
 ### Clone with HTTPS
 
-You can copy the URL to the HTTPS and run the following command to clone a remote repository to your local directory. The command would prompt a message asking for the username and password to the remote GitLab project.
+You can copy the URL to the HTTPS and run the following command to clone a remote repository to your local directory. The command would prompt a message asking for the username and password to the remote Azure DevOps repository. 
 
 ```
 git clone <URL_HTTPS>
 ```
 
-![Clone with HTTPS]({{site.baseurl}}/img/post/gitlab05.png)
+This is not recommended way to connect to the repo, while clone with SSH described below is securer and more convenient way to do so.
 
 ### Clone with SSH
 
-Cloning with SSH is securer and is the recommended way. To clone with an SSH connection, you need to follow the instructions below to set up SSH Key in your GitLab profile.
+To clone with an SSH connection, you need to follow the instructions below to set up SSH Key in your Azure DevOps settings.
 
-#### Generate SSH Key Pair
+#### Generate a SSH Key Pair
 
 You can create a new SSH key pair by running the following command in the `Git Bash` or `PowerShell`. You can use the default key file name and empty passphrase. This command generates two files with names of `id_rsa` and `id_rsa.pub` under the path of `C:\Users\$USER\.ssh\`.
 
@@ -106,16 +106,16 @@ Host gitlab.prod.mycompany.com
 
 Generate a new one if it doesn't exist yet.
 
-#### Set up SSH Keys in GitLab Profile
+#### Add the Public Key Azure DevOps Settings
 
-Once you get the SSH key pair, set up the SSH key through the following steps:
+Once you get the SSH key pair, set up the SSH public key through the following steps:
 
-* Log into GitLab, click your profile picture in the upper-right corner of the page
-* Select **Settings** from the dropdown list
-* Select **SSH Keys** from the **User Settings** on the left menu
-* Copy the content from generated `id_rsa.pub` and paste it in the **Key** box and set up the expiration date if needed
-* Click **Add key**, you will get an email notifying you added a key to your profile.
-  ![Set up SSH Keys in GitLab]({{site.baseurl}}/img/post/gitlab07.png)
+* Log into Azuer DevOps, click **User settings** icon in the upper-right corner of the page
+* Select **SSH Public Keys** from the dropdown list
+* Click **+ New Key** button in the upper-right corner of the page
+* Copy the content from generated `id_rsa.pub` and paste it in the **Public Key Data** box and give the key an informative name for future management
+* Click **Add **, you will get an email notifying you added a key to your profile.
+  ![Set up SSH Keys in GitLab]({{site.baseurl}}/img/post/git-ado-02.png)
 
 
 #### Clone with SSH Command
@@ -126,7 +126,7 @@ Once you set up your SSH key in your GitLab profile, you can run the following c
 git clone <URL_SSH>
 ```
 
-![Clone with SSH]({{site.baseurl}}/img/post/gitlab08.png)
+![Clone with SSH]({{site.baseurl}}/img/post/git-ado-03.png)
 
 Once you clone the remote repository to local successfully, you can navigate to the directory through `cd <REPOSITORY_NAME>`:
 
@@ -199,18 +199,19 @@ After committing to the local repo, you can push the commits from the local to t
 
 #### merge request
 
-Once you push the local to the new branch in the remote repository, you can submit a **merger request** through the URL in the above command or from **Project** -->**Branches** on the GitLab page.
+Once you push the local to the new branch in the remote repository, you can submit a pull request through **Create a pull request** button on the remote repository page.
 
-![merge request]({{site.baseurl}}/img/post/gitlab17.png)
+![merge request]({{site.baseurl}}/img/post/git-ado-04.png)
 
-The **Merge Request** button will pop up the **New Merge Request** page, where you can:
+The **Create a pull request** button will pop up the **New pull request** page, where you can:
 
-1. fill the title of the request; 
-2. write a brief description; 
-3. assign reviewer(s), Milestone and Labels; 
-4. set up approval rules.  
+1. fill the title of the request;
+2. write a brief description;
+3. assign reviewer(s) from the drop down list; 
+4. link work item(s) from the drop down list;
+5. add tags and labels.
 
-![merge request]({{site.baseurl}}/img/post/gitlab18.png)
+![merge request]({{site.baseurl}}/img/post/git-ado-05.png)
 
 
 Once the merge request has been submitted, the reviewer(s) will get notification and they can go the request page to do: 
@@ -220,7 +221,6 @@ Once the merge request has been submitted, the reviewer(s) will get notification
 3. approve the merge (if applicable);
 4. close the merge request (if applicable).
 
-![review merge request]({{site.baseurl}}/img/post/gitlab19.png)
 
 #### delete local branch
 
@@ -237,9 +237,6 @@ I hope this quick-start tutorial is helpful to you. Please feel free to leave an
 
 ## References
 
-* https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
-* https://about.gitlab.com/images/press/git-cheat-sheet.pdf
-* https://about.gitlab.com/blog/2017/03/17/demo-mastering-code-review-with-gitlab/ 
-* GitLab Get Started: https://about.gitlab.com/get-started/
-* GitLab Learn: https://about.gitlab.com/learn/
 * https://git-scm.com/book/en/v2
+* [Auzre DevOps - Use SSH Key Authentication]( "https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops")
+
