@@ -80,7 +80,7 @@ To clone with an SSH connection, you need to follow the instructions below to se
 You can create a new SSH key pair by running the following command in the `Git Bash` or `PowerShell`. You can use the default key file name and empty passphrase. This command generates two files with names of `id_rsa` and `id_rsa.pub` under the path of `C:\Users\$USER\.ssh\`.
 
 ```
-ssh-keygen -t rsa -b 4096 -C "<USERNAME>" -f $HOME/.ssh/gitlab_rsa
+ssh-keygen -t rsa -b 4096 -C "<USERNAME>" -f $HOME/.ssh/ado_rsa
 ```
 
 ![Generate SSH Key Pair]({{site.baseurl}}/img/post/gitlab06.png)
@@ -92,16 +92,17 @@ Run the following commands
 
 ```
 eval `ssh-agent -s`
-ssh-add ~/.ssh/gitlab_rsa
+ssh-add ~/.ssh/ado_rsa
 ```
 
 Add the following settings into `~/.ssh/config` file:
 
 ```
 # my company gitlab production environment
-Host gitlab.prod.mycompany.com
+Host *
   PreferredAuthentications publickey
-  IdentityFile ~/.ssh/gitlab_rsa
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/ado_rsa
 ```
 
 Generate a new one if it doesn't exist yet.
