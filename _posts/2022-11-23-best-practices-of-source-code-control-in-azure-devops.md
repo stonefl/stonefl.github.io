@@ -77,7 +77,8 @@ To clone with an SSH connection, you need to follow the instructions below to se
 
 #### Generate a SSH Key Pair
 
-You can create a new SSH key pair by running the following command in the `Git Bash` or `PowerShell`. You can use the default key file name and empty passphrase. This command generates two files with names of `id_rsa` and `id_rsa.pub` under the path of `C:\Users\$USER\.ssh\`.
+You can create a new SSH key pair by running the following command in the `Git Bash` or `PowerShell`. You can use the default key file name and empty passphrase. This command generates two files with names of `ado_rsa` and `ado_rsa.pub` under the path of `C:\Users\$USER\.ssh\`.
+Note: if your git bash does not work correctly, you can run the same command through PowerShell if you are using Windows.
 
 ```
 ssh-keygen -t rsa -b 4096 -C "<USERNAME>" -f $HOME/.ssh/ado_rsa
