@@ -8,7 +8,7 @@ categories:
   - Management
 ---
 
-In today's fast-paced and ever-evolving technological landscape, the role of a technology manager has become increasingly important. A technology manager is responsible for overseeing complex projects, leading teams of technical experts, and ensuring that the organization's technology infrastructure is up-to-date and aligned with its overall strategic goals. To be a great technology manager, one must possess a unique set of skills and qualities that combine technical expertise with leadership abilities. In this blog, we will be discussing the qualities that make a great technology manager.
+In today's fast-paced and ever-evolving technological landscape, the role of a technology manager has become increasingly important. The technolgoy manager here refers to all types of managers who work in the technology domains, such as Data Science, Data Engieering, Product Engineering, and IT. A technology manager is responsible for overseeing complex projects, leading teams of technical experts, and ensuring that the organization's technology infrastructure is up-to-date and aligned with its overall strategic goals. To be a great technology manager, one must possess a set of skills and qualities that combine technical expertise with leadership abilities. In this blog, I did a reflection on my experience of working as managers in the past  discussing the qualities that make a great technology manager.
 
 ## Technical Competency
 
