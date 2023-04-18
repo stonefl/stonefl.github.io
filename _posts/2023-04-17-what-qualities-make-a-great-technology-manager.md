@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: What Qualities Make a Great Technology Manager
 date: '2023-04-17'
 categories:
