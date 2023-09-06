@@ -12,7 +12,7 @@ This post is a quick start manual for beginners to use Git with GitHub to source
 
 * TOC
 {:toc}
-## Check Git Version
+## Check and Install Git Version
 There are many operating systems have git pre-installed, especially if you are using Linux or macOS systems. You can use the following command to check the pre-installed git version:
 ```bash
 git --version
@@ -27,7 +27,14 @@ I just included the processes of installation for Windows and CentOS Linux:
 
 ![Download Git for Windows]({{site.baseurl}}/img/post/gitlab01.png)
 
-When the download finishes, you will get an `.exe` file, and you can double-click it to install. You can keep all default settings during installation.
+2. When the download finishes, you will get an `.exe` file, and you can double-click it to install. You can keep all default settings during installation.
+
+### Install Git on CentOS Linux
+The easiest way to install Git on CentOS Linux is through CentOS's package manager - Yum(Yellowdog Updater, Modified):
+```bash
+sudo yum install git
+```
+
 
 ## Configure Git for the First Time
 
