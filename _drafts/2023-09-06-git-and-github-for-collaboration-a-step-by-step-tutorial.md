@@ -70,11 +70,11 @@ You can check all your settings through running:
 
 This command looks for the file `.gitconfig` from your $HOME directory. On Windows, the $HOME direcotry is usually `C:\Users\$USER`. On Linux, you can check your $HOME directory through command `echo $HOME`.
 
-## Clone a Code Repository from Azure DevOps
+## Clone a Code Repository from GitHub
 
-You can get a copy of a remote repository on Azure DevOps through the `git clone` command. Click on the **Clone** button in the upper-right corner of your repository, you can get the tab shown as the following picture. There are two ways to connect to the remote repository: **HTTPS** and **SSH**.
+You can get a copy of a remote repository from GitHub through the `git clone` command. Click on the **Code** button shown in the following picture. There are two ways to connect to the remote repository: **HTTPS** and **SSH**.
 
-![Clone GitLab Repository]({{site.baseurl}}/img/post/git-ado-01.png)
+![Clone GitHub Repository]({{site.baseurl}}/img/post/git-ado-01.png)
 
 ### Clone with HTTPS
 
