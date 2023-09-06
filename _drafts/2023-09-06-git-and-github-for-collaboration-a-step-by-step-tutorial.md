@@ -1,16 +1,9 @@
 ---
 layout: post
 published: false
-title: Git and GitHub for Collaboration: A Step-by-Step Tutorial
-date: '2022-10-25'
-categories:
-  - Tutorial
-tags:
-  - Git
-  - Azure DevOps
-thumbnail: /img/post/git-with-azure-devops.jpg
+title: Untitled
 ---
-This post is a quick start manual for beginners to use Git with Auzre DevOps to source code control. Although this manual aims for the operations with Repos of Azure DevOps, the instructions apply to general Git practices. This post assumes that you have already set up a Azure DevOps account where you can restore your source code and manage the development. 
+This post is a quick start manual for beginners to use Git with GitHub to source code control. Although this manual aims for the operations with Repositories of GitHub, the instructions apply to general Git practices. This post assumes that you have already set up a GitHub account where you can store your source code and manage the development.
 <!--more-->
 
 # Table of Content
@@ -36,7 +29,7 @@ After installation of Git on your Windows system, you can start `Git Bash` from 
 
 ![Git Bash from Start Menu]({{site.baseurl}}/img/post/gitlab02.png)
 
-You can also start `Git Bash` from the **Context Menu** through right-clicking from any local directory:
+You can also start `Git Bash` from the **Context Menu** through right-clicking from any local directory while pressing the **shift** button:
 
 ![Git Bash from Context Menu]({{site.baseurl}}/img/post/gitlab03.png)
 
