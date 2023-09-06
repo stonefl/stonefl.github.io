@@ -173,33 +173,36 @@ Please note that you are in the default **main** branch and all the changes you 
 
 ## Best Practices for Code Review
 
-Excellent code depends on rigorous review. The following flow might be the best practices for code review and team collaboration:
+Excellent code depends on rigorous review. The following flow are usually the best practices for code review and team collaboration:
 
 * Once checks out a repository, a developer creates a new feature **branch**, makes changes in this feature branch, and tests it. 
 
-* When happy on the changes, the developer **push**es the changes in the **new branch**, and make a **merge request**. 
+* When happy on the changes, the developer **push**es the changes in the **new branch**, and make a **pull request**. 
 
-* The developer assigns the **merge request** to a **reviewer**, who looks at it and makes comments as appropriate. When the reviewer finish, he/she can assign it back to the author.
+* The developer assigns the **pull request** to a **reviewer**, who looks at it and makes comments as needed. When the reviewer finishes, he/she can assign it back to the author.
 
-* The author **addresses the comments**. This stage can go around for a while, but once both reviewer and author are happy, they can approve a merge or assign it to a final reviewer who can do the merge.
+* The author **addresses the comments**. This stage can go around for a while, but once both reviewer and author are happy, they can **approve a merge** or assign it to a final reviewer who can do the merge.
 
 * The final reviewer follows the same reviewing process again. The author again addresses any comments. Once the final reviewer is happy and the build is green, then the new branch will be **merged** with the target branch.
 
+
+Here are the demos on each of the code review steps.
+
 ### Pull from Remote
 
-Before you make any changes, it is always a good idea to run the command `git pull` to make sure your current local repository is up to date.
+Before you make any changes, it is always a good idea to run the command `git pull` within the local repository to make sure your current local version is up to date.
 
-![delete local branch]({{site.baseurl}}/img/post/gitlab21.png)
+![delete local branch]({{site.baseurl}}/img/post/github06.png)
 
 ### Create a New Branch
 
 Branches let you work on new features or bug fixes of the main project code in the `master` branch. You can use `git branch <BRANCH_NAME>` to create a new branch and `git branch` to check your branches.
 
-![create a new branch]({{site.baseurl}}/img/post/gitlab10.png)
+![create a new branch]({{site.baseurl}}/img/post/github07.png)
 
-Note the asterisk next to the `master`, which indicates that you are currently in the `master` branch. To switch to your new branch, you need to run `git checkout <BRANCH_NAME>`.
+Note the asterisk next to the `main`, which indicates that you are currently in the `main` branch. To switch to your new branch, you need to run `git checkout <BRANCH_NAME>`.
 
-![swith branch]({{site.baseurl}}/img/post/gitlab11.png)
+![swith branch]({{site.baseurl}}/img/post/github08.png)
 
 ### Commit Local Changes
 
@@ -207,16 +210,16 @@ Now, you are in the new feature branch and ready to change your codes.
 
 #### git status
 
-Once you finish your changes, you can run `git staus` to check the changes you have made.
+Once you finish your changes, you can run `git status` to check the changes you have made.
 
 
-![check changes]({{site.baseurl}}/img/post/gitlab13.png)
+![check changes]({{site.baseurl}}/img/post/github09.png)
 
 #### git add
 
 You can run the command `git add <FILE_NAME>` (add the specific file) or `git add .` (add all files) to add your changes to the staging area. A staging area is an intermediate place between your working directory and local Git repo where any changes that you've made can be reviewed before you actually commit them to the repo.
 
-![check changes]({{site.baseurl}}/img/post/gitlab14.png)
+![check changes]({{site.baseurl}}/img/post/github10.png)
 
 #### git commit
 
