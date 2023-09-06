@@ -12,7 +12,17 @@ This post is a quick start manual for beginners to use Git with GitHub to source
 
 * TOC
 {:toc}
-## Check and Install Git Version
+
+## What are Git and GitHub?
+
+**Git** is an open source and free tool for source control management or what’s referred to as SCM. With Git, you can manage changes to files over time, so you can easily revert to a previous version if necessary. Git is also a distributed version control system, which means that you can work on your code on your own computer and then easily share it with others.
+
+**GitHub** is a hosting service for Git repositories. It provides a place to store your code, collaborate with others, and track issues. GitHub is also a social platform where you can connect with other developers and learn from them.
+
+Git and GitHub are essential tools for software development. They help us to track changes to our code, collaborate with others, and learn from others. Git and GitHub are two essential tools to use as a Data Scientist and Developer.
+
+## Check and Install Git 
+
 There are many operating systems have git pre-installed, especially if you are using Linux or macOS systems. You can use the following command to check the pre-installed git version:
 ```bash
 git --version
@@ -38,7 +48,7 @@ sudo yum install git
 
 ## Configure Git for the First Time
 
-After installation of Git on your Windows system, you can start `Git Bash` from the **Start Menu**:
+After installation of Git on your system, if you are using Windows system, you can start `Git Bash` from the **Start Menu**:
 
 ![Git Bash from Start Menu]({{site.baseurl}}/img/post/gitlab02.png)
 
@@ -46,7 +56,7 @@ You can also start `Git Bash` from the **Context Menu** through right-clicking f
 
 ![Git Bash from Context Menu]({{site.baseurl}}/img/post/gitlab03.png)
 
-Once you start your `Git Bash` for the first time, it is a good idea to customize your Git environment by running the following commands. Note, the setting commands only need to do one time.
+You can also use the default command line of your operating system to run git commands. For the first time to run git command, it is a good idea to customize your Git environment by running the following commands: 
 
 ```
 git config --global user.email "you@example.com"
@@ -59,7 +69,7 @@ You can check all your settings through running:
  git config --list
 ```
 
-On Windows systems, this command looks for the file `.gitconfig` from your $HOME directory, which usually is `C:\Users\$USER`.
+This command looks for the file `.gitconfig` from your $HOME directory. On Windows, the $HOME direcotry is usually `C:\Users\$USER`. On Linux, you can check your 
 
 ## Clone a Code Repository from Azure DevOps
 
