@@ -123,37 +123,32 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f $HOME/.ssh/<your file n
 ![Generate SSH Key Pair]({{site.baseurl}}/img/post/github02.png)
 
 
-#### Configure SSH in SSH Agent
+#### Adding SSH Key to SSH Agent
 
-Run the following commands 
+Before adding a new SSH key to the ssh-agent to manage your keys, you should have checked for existing SSH keys and generated a new SSH key.
+
+Run the following command to start the ssh-agent in the background:
 
 ```
 eval `ssh-agent -s`
-ssh-add ~/.ssh/ado_rsa
 ```
 
-Add the following settings into `~/.ssh/config` file:
-
+Run the following command to add your SSH private key to the ssh-agent.
 ```
-# my company gitlab production environment
-Host *
-  PreferredAuthentications publickey
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/ado_rsa
+ssh-add ~/.ssh/<your file name>
 ```
 
-Generate a new one if it doesn't exist yet.
 
-#### Add the Public Key Azure DevOps Settings
+#### Add the Public Key GitHub Settings
 
-Once you get the SSH key pair, set up the SSH public key through the following steps:
+Once you get the SSH key pair, add the SSH public key to your GitHub account settings:
 
-* Log into Azuer DevOps, click **User settings** icon in the upper-right corner of the page
-* Select **SSH Public Keys** from the dropdown list
-* Click **+ New Key** button in the upper-right corner of the page
-* Copy the content from generated `ado_rsa.pub` and paste it in the **Public Key Data** box and give the key an informative name for future management
-* Click **Add**, you will get an email notifying you added a key to your profile.
-  ![Set up SSH Keys in GitLab]({{site.baseurl}}/img/post/git-ado-02.png)
+1. Log into GitHub, click your profile photo icon in the upper-right corner of any page, then select **Settings** from the dropdown list.
+2. In the "Access" section of the left sidebarSelect, click  **SSH and GPG keys**
+3. Click **New SSH key** button in the upper-right corner of the page
+4. Copy the content from generated public key file `<your file name>.pub` and paste it in the **Key** box and give the key an informative title for future management
+5. Click **Add SSH key**.
+  ![Set up SSH Keys in GitLab]({{site.baseurl}}/img/post/github03.png)
 
 
 #### Clone with SSH Command
