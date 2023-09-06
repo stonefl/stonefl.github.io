@@ -74,7 +74,7 @@ This command looks for the file `.gitconfig` from your $HOME directory. On Windo
 
 You can get a copy of a remote repository from GitHub through the `git clone` command. Click on the **Code** button shown in the following picture. There are two ways to connect to the remote repository: **HTTPS** and **SSH**.
 
-![Clone GitHub Repository]({{site.baseurl}}/img/post/git-ado-01.png)
+![Clone GitHub Repository]({{site.baseurl}}/img/post/github01.png)
 
 ### Clone with HTTPS
 
