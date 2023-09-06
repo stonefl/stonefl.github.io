@@ -13,7 +13,7 @@ This post is a quick start manual for beginners to use Git with GitHub to source
 * TOC
 {:toc}
 
-## What are Git and GitHub?
+## Introduction to Git and GitHub
 
 **Git** is an open source and free tool for source control management or what’s referred to as SCM. With Git, you can manage changes to files over time, so you can easily revert to a previous version if necessary. Git is also a distributed version control system, which means that you can work on your code on your own computer and then easily share it with others.
 
@@ -21,7 +21,7 @@ This post is a quick start manual for beginners to use Git with GitHub to source
 
 Git and GitHub are essential tools for software development. They help us to track changes to our code, collaborate with others, and learn from others. Git and GitHub are two essential tools to use as a Data Scientist and Developer.
 
-## Check and Install Git 
+## Install Git
 
 There are many operating systems have git pre-installed, especially if you are using Linux or macOS systems. You can use the following command to check the pre-installed git version:
 ```bash
@@ -44,7 +44,6 @@ The easiest way to install Git on CentOS Linux is through CentOS's package manag
 ```bash
 sudo yum install git
 ```
-
 
 ## Configure Git for the First Time
 
@@ -69,7 +68,7 @@ You can check all your settings through running:
  git config --list
 ```
 
-This command looks for the file `.gitconfig` from your $HOME directory. On Windows, the $HOME direcotry is usually `C:\Users\$USER`. On Linux, you can check your 
+This command looks for the file `.gitconfig` from your $HOME directory. On Windows, the $HOME direcotry is usually `C:\Users\$USER`. On Linux, you can check your $HOME directory through command `echo $HOME`.
 
 ## Clone a Code Repository from Azure DevOps
 
