@@ -12,12 +12,18 @@ This post is a quick start manual for beginners to use Git with GitHub to source
 
 * TOC
 {:toc}
+## Check Git Version
+There are many operating systems have git pre-installed, especially if you are using Linux or macOS systems. You can use the following command to check the pre-installed git version:
+```bash
+git --version
+```
+If you need to install a Git for other operating systems, please follow instructions from [Installing Git] (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to do so.
 
-## Download and Install Git for Windows
+I just included the processes of installation for Windows and CentOS Linux:
 
-The following instructions are for installing Git on Windows. If you need to install Git for other operating systems, please follow instructions [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+### Download and Install Git for Windows
 
-Go to https://git-scm.com/download/win, and the download will start automatically. If the download doesn't start automatically, you can manually click the download links.
+1. Go to https://git-scm.com/download/win to download the lastest version. The download will start automatically. If the download doesn't start automatically, you can manually click the corresponding download links.
 
 ![Download Git for Windows]({{site.baseurl}}/img/post/gitlab01.png)
 
