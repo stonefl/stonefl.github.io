@@ -78,28 +78,49 @@ You can get a copy of a remote repository from GitHub through the `git clone` co
 
 ### Clone with HTTPS
 
-You can copy the URL to the HTTPS and run the following command to clone a remote repository to your local directory. The command would prompt a message asking for the username and password to the remote Azure DevOps repository. 
+1. Go to the GitHub repository that you want to clone.
+2. Click on the **Code** button.
+3. Under the HTTPS tab, copy the URL.
+4. In your local terminal, navigate to the directory where you want to clone the repository.
+5. Run the following command:
 
 ```
 git clone <URL_HTTPS>
 ```
 
-This is not recommended way to connect to the repo, while clone with SSH described below is securer and more convenient way to do so.
+The command would prompt a message asking for the username and password to the remote GitHub repository. Enter your credentials and press Enter.
+
+The remote repository will be cloned to your local directory.
+
+
+**Note**: Cloning a repository using HTTPS is not the recommended way to do it. This is because it requires you to enter your GitHub username and password every time you want to clone the repository. This can be a security risk, especially if you are cloning the repository from a public computer.
+
 
 ### Clone with SSH
 
-To clone with an SSH connection, you need to follow the instructions below to set up SSH Key in your Azure DevOps settings.
+A more secure and convenient way to clone a repository is to use SSH. SSH is a secure protocol that allows you to authenticate to a remote server without having to enter your username and password. To use SSH, you will need to generate an SSH key pair. Once you have generated your SSH key pair, you can add it to your GitHub account. Then, you can clone the repository using the following command:
+
+```
+git clone git@github.com:<USERNAME>/<REPOSITORY_NAME>.git
+```
 
 #### Generate a SSH Key Pair
 
-You can create a new SSH key pair by running the following command in the `Git Bash` or `PowerShell`. You can use the default key file name and empty passphrase. This command generates two files with names of `ado_rsa` and `ado_rsa.pub` under the path of `C:\Users\$USER\.ssh\`.
-Note: if your git bash does not work correctly, you can run the same command through PowerShell if you are using Windows.
-
+You can create a new SSH key pair by running the following command in your local terminal. 
 ```
-ssh-keygen -t rsa -b 4096 -C "<USERNAME>" -f $HOME/.ssh/ado_rsa
+ssh-keygen -t ed25519 -C "your_email@example.com" -f $HOME/.ssh/<your file name>
 ```
 
-![Generate SSH Key Pair]({{site.baseurl}}/img/post/gitlab06.png)
+You can just press Enter to use empty passphrase when the command prompt to ask for passphrase. This command generates two files with names of `<your file name>` and `<your file name>.pub` under the path of `$HOME\.ssh\`.
+
+
+**Note**: if you are using a legacy system that doesn't support the Ed25519 algorithm, use:.
+
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f $HOME/.ssh/<your file name>
+```
+
+![Generate SSH Key Pair]({{site.baseurl}}/img/post/github02.png)
 
 
 #### Configure SSH in SSH Agent
