@@ -101,7 +101,7 @@ The remote repository will be cloned to your local directory.
 A more secure and convenient way to clone a repository is to use SSH. SSH is a secure protocol that allows you to authenticate to a remote server without having to enter your username and password. To use SSH, you will need to generate an SSH key pair. Once you have generated your SSH key pair, you can add it to your GitHub account. Then, you can clone the repository using the following command:
 
 ```
-git clone git@github.com:<USERNAME>/<REPOSITORY_NAME>.git
+git clone git@<GITHUB_SERVER>.com:<USERNAME>/<REPOSITORY_NAME>.git
 ```
 
 #### Generate a SSH Key Pair
@@ -159,17 +159,17 @@ Once you set up your SSH key in your GitLab profile, you can run the following c
 git clone <URL_SSH>
 ```
 
-![Clone with SSH]({{site.baseurl}}/img/post/git-ado-03.png)
+![Clone with SSH]({{site.baseurl}}/img/post/github04.png)
 
 Once you clone the remote repository to local successfully, you can navigate to the directory through `cd <REPOSITORY_NAME>`:
 
-![Go into local directory]({{site.baseurl}}/img/post/gitlab09.png)
+![Go into local directory]({{site.baseurl}}/img/post/github05.png)
 
 Now, you are inside your working directory, and you can make any changes you like. Once you are happy with the changes, you can `add` and `commit` them to the local repository and then `push` to the remote repository so that your fellow team members can see the changes you made.
 
 ![git push flow]({{site.baseurl}}/img/post/gitlab12.png)
 
-Please note that you are in the default **master** branch and all the changes you made are within this branch. And when you push the changes to the remote repo, it will update the **master** branch there. Usually, this is not the best practice. 
+Please note that you are in the default **main** branch and all the changes you made are within this branch. And when you push the changes to the remote repo, it will update the **main** branch there. Usually, this is not the best practice. 
 
 ## Best Practices for Code Review
 
