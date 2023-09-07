@@ -9,7 +9,7 @@ tags:
   - Git
   - GitHub
 ---
-This post is a quick start manual for beginners to use Git with GitHub to source code control. Although this manual aims for the operations with Repositories of GitHub, the instructions apply to general Git practices. This post assumes that you have already set up a GitHub account where you can store your source code and manage the development.
+This post is a quick start manual for beginners to use Git with GitHub for source code control. Although this manual aims for the operations with repositories of GitHub, the instructions apply to general Git practices. This post assumes that you have already set up a GitHub account where you can store your source code and manage the development.
 <!--more-->
 
 # Table of Content
@@ -19,7 +19,7 @@ This post is a quick start manual for beginners to use Git with GitHub to source
 * TOC
 {:toc}
 
-## Introduction to Git and GitHub
+## Introduce to Git and GitHub
 
 **Git** is an open source and free tool for source control management or what’s referred to as SCM. With Git, you can manage changes to files over time, so you can easily revert to a previous version if necessary. Git is also a distributed version control system, which means that you can work on your code on your own computer and then easily share it with others.
 
@@ -27,7 +27,7 @@ This post is a quick start manual for beginners to use Git with GitHub to source
 
 Git and GitHub are essential tools for software development. They help us to track changes to our code, collaborate with others, and learn from others. Git and GitHub are two essential tools to use as a Data Scientist and Developer.
 
-## Install Git
+## Install and Configure Git
 
 There are many operating systems have git pre-installed, especially if you are using Linux or macOS systems. You can use the following command to check the pre-installed git version:
 ```bash
@@ -52,7 +52,7 @@ The easiest way to install Git on CentOS Linux is through CentOS's package manag
 sudo yum install git
 ```
 
-## Configure Git for the First Time
+### Configure Git for the First Time
 
 After installation of Git on your system, if you are using Windows system, you can start `Git Bash` from the **Start Menu**:
 
@@ -211,7 +211,7 @@ Note the asterisk next to the `main`, which indicates that you are currently in 
 
 ![swith branch]({{site.baseurl}}/img/post/github08.png)
 
-### Commit Local Changes
+### Commit Changes
 
 Now, you are in the new feature branch and ready to change your codes. 
 
