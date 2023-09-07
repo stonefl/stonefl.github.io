@@ -161,7 +161,7 @@ Once you get the SSH key pair, add the SSH public key to your GitHub account set
 3. Click **New SSH key** button in the upper-right corner of the page
 4. Copy the content from generated public key file `<your file name>.pub` and paste it in the **Key** box and give the key an informative title for future management
 5. Click **Add SSH key**.
-  ![Set up SSH Keys in GitLab]({{site.baseurl}}/img/post/github03.png)
+  ![Set up SSH Keys in GitHub]({{site.baseurl}}/img/post/github03.png)
 
 
 #### Clone with SSH Command
