@@ -25,22 +25,23 @@ This post is a quick start manual for beginners to use Git with GitHub for sourc
 
 **GitHub** is a hosting service for Git repositories. It provides a place to store your code, collaborate with others, and track issues. GitHub is also a social platform where you can connect with other developers and learn from them.
 
-Git and GitHub are essential tools for software development. They help us to track changes to our code, collaborate with others, and learn from others. Git and GitHub are two essential tools to use as a Data Scientist and Developer.
+Git and GitHub are essential tools for software development. They help us to track changes to our code, collaborate with others, and learn from others.
 
 ## Install and Configure Git
 
-There are many operating systems have git pre-installed, especially if you are using Linux or macOS systems. You can use the following command to check the pre-installed git version:
+Many operating systems come with Git pre-installed, especially Linux and macOS systems. To check if Git is already installed on your system, open a terminal window and type the following command:
+
 ```bash
 git --version
 ```
-If you need to install a Git for other operating systems, please follow instructions from 
-[Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to do so.
+If you need to install a Git for your operating systems, please follow instructions from 
+[Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-I just included the processes of installation for Windows and CentOS Linux:
+Here are the major steps of installation for Windows and CentOS Linux:
 
 ### Download and Install Git for Windows
 
-1. Go to https://git-scm.com/download/win to download the lastest version. The download will start automatically. If the download doesn't start automatically, you can manually click the corresponding download links.
+1. Go to https://git-scm.com/download/win download the lastest version. The download will start automatically. If not, you can manually click the corresponding download links.
 
 ![Download Git for Windows]({{site.baseurl}}/img/post/gitlab01.png)
 
@@ -48,6 +49,7 @@ I just included the processes of installation for Windows and CentOS Linux:
 
 ### Install Git on CentOS Linux
 The easiest way to install Git on CentOS Linux is through CentOS's package manager - Yum(Yellowdog Updater, Modified):
+
 ```bash
 sudo yum install git
 ```
@@ -62,11 +64,16 @@ You can also start `Git Bash` from the **Context Menu** through right-clicking f
 
 ![Git Bash from Context Menu]({{site.baseurl}}/img/post/gitlab03.png)
 
-You can also use the default command line of your operating system to run git commands. For the first time to run git command, it is a good idea to customize your Git environment by running the following commands: 
+You can also use the default command line of your operating system to run git commands. For the first time to run git command, it is a good idea to configure your Git environment by running the following commands: 
 
 ```
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+```
+If you need set up proxy for git, you can run the following commands:
+```
+git config --global http.proxy <proxy_url>
+git config --global https.proxy <proxy_url>
 ```
 
 You can check all your settings through running:
@@ -75,11 +82,11 @@ You can check all your settings through running:
  git config --list
 ```
 
-This command looks for the file `.gitconfig` from your $HOME directory. On Windows, the $HOME direcotry is usually `C:\Users\$USER`. On Linux, you can check your $HOME directory through command `echo $HOME`.
+This command looks for the file of `.gitconfig` from your $HOME directory. On Windows, the $HOME direcotry is usually `C:\Users\$USER`. On Linux, you can check your $HOME directory through command `echo $HOME`.
 
 ## Clone a Code Repository from GitHub
 
-You can get a copy of a remote repository from GitHub through the `git clone` command. Click on the **Code** button shown in the following picture. There are two ways to connect to the remote repository: **HTTPS** and **SSH**.
+You can get a copy of a remote repository from GitHub through the `git clone` command. Click on the **Code** button shown in the following screenshot. There are two ways to connect to the remote repository: **HTTPS** and **SSH**.
 
 ![Clone GitHub Repository]({{site.baseurl}}/img/post/github01.png)
 
@@ -98,7 +105,6 @@ git clone <URL_HTTPS>
 The command would prompt a message asking for the username and password to the remote GitHub repository. Enter your credentials and press Enter.
 
 The remote repository will be cloned to your local directory.
-
 
 **Note**: Cloning a repository using HTTPS is not the recommended way to do it. This is because it requires you to enter your GitHub username and password every time you want to clone the repository. This can be a security risk, especially if you are cloning the repository from a public computer.
 
