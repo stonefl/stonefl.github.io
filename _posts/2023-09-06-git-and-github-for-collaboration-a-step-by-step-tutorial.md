@@ -252,7 +252,7 @@ Once you push the local to the new branch in the remote repository, you can subm
 
 ![merge request]({{site.baseurl}}/img/post/github13.png)
 
-The **Compare & pull request** button will pop up the **Open a pull request** page, where you can:
+The **New pull request** button will pop up the **Open a pull request** page, where you can:
 
 1. fill the title of the request;
 2. write a brief description or comments;
