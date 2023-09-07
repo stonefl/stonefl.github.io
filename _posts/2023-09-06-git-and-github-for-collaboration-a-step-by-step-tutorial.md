@@ -241,7 +241,7 @@ After committing to the local repo, you can push the commits from the local to t
 
 #### merge request
 
-Once you push the local to the new branch in the remote repository, you can submit a pull request through **Compare & pull request** button on the remote repository page.
+Once you push the local to the new branch in the remote repository, you can submit a pull request through **Pull Requests** tab and then **New pull request** button on the remote repository page.
 
 ![merge request]({{site.baseurl}}/img/post/github13.png)
 
@@ -267,11 +267,16 @@ Once the pull request has been submitted, the reviewer(s) will get notification 
 After the changes have been approved, the branch can be merged to the target branch through the **Merge pull request** button.
 ![merge request]({{site.baseurl}}/img/post/github16.png)
 
-#### delete local branch
+#### delete the merged branch
 
-Once your new branch has been merged to the target branch in the remote repository, you can delete your local branch by running `git branch delete -d <BRANCH_NAME>`.  Note, you have to get out of the branch before you run this command deleting it.
+Once your new branch has been merged to the target branch in the remote repository, you can delete the merged branches from the **branches** tab in the GitHub repository.
+![merge request]({{site.baseurl}}/img/post/github17.png)
 
-![delete local branch]({{site.baseurl}}/img/post/gitlab20.png)
+You can delete branch from your local repository by running 
+`git branch delete -d <BRANCH_NAME>`. 
+Note, you have to get out of the branch before you run this command deleting it.
+
+![delete local branch]({{site.baseurl}}/img/post/github18.png)
 
 #### pull from remote
 
@@ -283,4 +288,4 @@ I hope this quick-start tutorial is helpful to you. Please feel free to leave an
 ## References
 
 * https://git-scm.com/book/en/v2
-* [Auzre DevOps - Use SSH Key Authentication]( "https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops")
+* [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/enterprise-server@3.6/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)
