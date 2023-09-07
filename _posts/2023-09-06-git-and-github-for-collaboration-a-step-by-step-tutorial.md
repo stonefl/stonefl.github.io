@@ -231,38 +231,41 @@ You can run the command `git add <FILE_NAME>` (add the specific file) or `git ad
 
 Next, you can commit the changes to your local repo through running `git commit -m "MESSAGE_TEXT"`.
 
-![commit changes]({{site.baseurl}}/img/post/gitlab15.png)
+![commit changes]({{site.baseurl}}/img/post/github11.png)
 
 #### git push
 
 After committing to the local repo, you can push the commits from the local to the new branch in the remote repo through running `git push -u origin <BRANCH_NAME>`.
 
-![push changes ]({{site.baseurl}}/img/post/gitlab16.png)
+![push changes ]({{site.baseurl}}/img/post/github12.png)
 
 #### merge request
 
-Once you push the local to the new branch in the remote repository, you can submit a pull request through **Create a pull request** button on the remote repository page.
+Once you push the local to the new branch in the remote repository, you can submit a pull request through **Compare & pull request** button on the remote repository page.
 
-![merge request]({{site.baseurl}}/img/post/git-ado-04.png)
+![merge request]({{site.baseurl}}/img/post/github13.png)
 
-The **Create a pull request** button will pop up the **New pull request** page, where you can:
+The **Compare & pull request** button will pop up the **Open a pull request** page, where you can:
 
 1. fill the title of the request;
-2. write a brief description;
+2. write a brief description or comments;
 3. assign reviewer(s) from the drop down list; 
-4. link work item(s) from the drop down list;
-5. add tags and labels.
+4. add tags and labels;
+5. link work item(s) from the drop down list;
 
-![merge request]({{site.baseurl}}/img/post/git-ado-05.png)
+![merge request]({{site.baseurl}}/img/post/github14.png)
 
 
-Once the merge request has been submitted, the reviewer(s) will get notification and they can go the request page to do: 
+Once the pull request has been submitted, the reviewer(s) will get notification and they can go the request page to do: 
 
 1. check the commits and changes; 
 2. write comments; 
 3. approve the merge (if applicable);
-4. close the merge request (if applicable).
+4. request changes (if applicable).
+![merge request]({{site.baseurl}}/img/post/github15.png)
 
+After the changes have been approved, the branch can be merged to the target branch through the **Merge pull request** button.
+![merge request]({{site.baseurl}}/img/post/github16.png)
 
 #### delete local branch
 
