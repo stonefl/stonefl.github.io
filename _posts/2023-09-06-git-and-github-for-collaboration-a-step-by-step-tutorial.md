@@ -33,7 +33,8 @@ There are many operating systems have git pre-installed, especially if you are u
 ```bash
 git --version
 ```
-If you need to install a Git for other operating systems, please follow instructions from [Installing Git] (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to do so.
+If you need to install a Git for other operating systems, please follow instructions from 
+[Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to do so.
 
 I just included the processes of installation for Windows and CentOS Linux:
 
