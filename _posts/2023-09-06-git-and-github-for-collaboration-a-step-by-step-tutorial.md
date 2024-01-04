@@ -151,6 +151,15 @@ Run the following command to add your SSH private key to the ssh-agent.
 ssh-add ~/.ssh/<your file name>
 ```
 
+Add the following settings into ~/.ssh/config file:
+
+```
+# my company gitlab production environment
+Host *
+  PreferredAuthentications publickey
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/ado_rsa
+```
 
 #### Add the Public Key GitHub Settings
 
