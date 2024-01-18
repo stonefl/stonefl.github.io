@@ -19,7 +19,7 @@ You can manually set up proxy environment variables through right-click on **Thi
 1. User variable(only for current login user):
 
     - Variable: `HTTP_PROXY`
-    - Value: `http://<i></i>proxyserver:port`
+    - Value: `http:\//proxyserver:port`
    and 
     - Variable: `HTTPS_PROXY`
     - Value: `https://proxyserver:port`
