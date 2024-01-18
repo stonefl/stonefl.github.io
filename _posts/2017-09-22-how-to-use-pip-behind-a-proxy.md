@@ -22,7 +22,7 @@ You can manually set up proxy environment variables through right-click on **Thi
     - Value: http:<span>//proxyserver:port
    and 
     - Variable: `HTTPS_PROXY`
-    - Value: `"https://proxyserver:port"`
+    - Value: https:<span>//proxyserver:port
 2. System variable(all users):
 
     - Variable: `HTTP_PROXY`
