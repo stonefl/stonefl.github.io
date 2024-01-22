@@ -289,7 +289,7 @@ Once your new branch has been merged to the target branch in the remote reposito
 ![merge request]({{site.baseurl}}/img/post/github17.png)
 
 You can delete branch from your local repository by running 
-`git branch delete -d <BRANCH_NAME>`. 
+`git branch -D <BRANCH_NAME>`. 
 Note, you have to get out of the branch before you run this command deleting it.
 
 ![delete local branch]({{site.baseurl}}/img/post/github18.png)
