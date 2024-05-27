@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Cracking the Code: Solving Puzzles with Constraints Programming'
 date: '2024-05-27'
 categories:
