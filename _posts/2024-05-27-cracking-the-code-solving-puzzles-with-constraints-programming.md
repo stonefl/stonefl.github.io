@@ -31,6 +31,32 @@ Einstein’s puzzle is a brain teaser was claimed created by Albert Einstein, wh
 
 ![einstein's puzzle]({{site.baseurl}}/img/post/einstein_puzzle.webp)
 
+**Here is the Einstein's Puzzle:**
+
+**FACTS:**
+1. There are 5 houses in 5 different colors.
+2. In each house lives a person with a different nationality.
+3. These 5 owners drink a certain beverage, smoke a certain brand of cigarette and keep a certain pet. No owners have the same pet, brand of cigarette, or drink.
+
+**CLUES:**
+1. The Brit lives in a red house.
+2. The Swede keeps a dog.
+3. The Dane drinks tea.
+4. The green house is on the left of the white house.
+5. The green house owner drinks coffee.
+6. The person who smokes Pall Mall keeps birds.
+7. The owner of the yellow house smokes Dunhill.
+8. The man living in the house right in the center drinks milk.
+9. The Norwegian lives in the first house.
+10. The man who smokes Blends lives next to the one who keeps cats.
+11. The man who keeps horses lives next to the man who smokes Dunhill.
+12. The owner who smokes Camel drinks beer.
+13. The German smokes Marlborough.
+14. The Norwegian lives next to the blue house.
+15. The man who smokes Blends has a neighbor who drinks water.
+
+The question is, **who keeps the fish**?
+
 
 
 
