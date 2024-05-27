@@ -69,14 +69,30 @@ If you got stuck, no worries! You are welcome to check out the notebook below to
 <script src="https://gist.github.com/stonefl/e58711cb9b39b5be2675726d2e6916c6.js"></script>
 
 
+## Sudoku
 ![einstein's puzzle]({{site.baseurl}}/img/post/sudoku.webp)
 
+Sudoku is a another popular logic puzzle game played on a 9x9 grid. The goal is to fill the grid with digits so that every row, column, and 3x3 subgrid (also called “boxes,” “blocks,” or “regions”) contains all of the digits from 1 to 9, following the rules:
+
+- Each row must contain the digits 1–9 without repetition.
+- Each column must contain the digits 1–9 without repetition.
+- Each subgrid (3x3 box) must contain the digits 1–9 without repetition.
+
+Again, you are highly recommended to try solve the puzzle by hand before moving to the CP solution.
+
+Sudoku is a perfect example to show CP’s power. We can easily translate the grid’s rules into constraints, and CP could efficiently find the correct numbers to fill every cell.
+
+<script src="https://gist.github.com/stonefl/800aecaa6e0a8e80a97db39d7ca4e04c.js"></script>
 
 
+## Beyond Puzzles: The Power of CP
+CP isn’t just for brainteasers. It’s used in various fields to solve complex optimization problems, especially those with non-linear or discontinuous constraints. From scheduling employees to designing circuits, CP helps find optimal solutions efficiently.
 
+## Ready to Try CP?
+CP is becoming more accessible with libraries available in popular languages like Python and Java. With online resources and tutorials, you can be a constraint programming pro in no time! Check out the [Google OR-Tools](https://developers.google.com/optimization/cp).
 
-
-
+## Let’s Discuss!
+Have you used CP before? What kind of problems do you think CP could solve in the future? Is it possible to use together with LLM model to build an agentic LLM-CP solver? Share your thoughts in the comments below!
 
 
 
