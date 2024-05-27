@@ -4,10 +4,11 @@ published: true
 title: 'Cracking the Code: Solving Puzzles with Constraints Programming'
 date: '2024-05-27'
 categories:
-  - constraintprogramming
   - optimization
   - AI
 thumbnail: /img/post/cp_image.webp
+tags:
+  - Constraint Programming
 ---
 
 Have you ever got stumped by a logic puzzle? Sukodu got you scratching your head? Einstein’s puzzle made you crazy with the clues and facts? These puzzles might seem like mental gymnastics, but there’s a secret weapon can be used to crack the code: Constraint Programming (CP).
@@ -93,8 +94,3 @@ CP is becoming more accessible with libraries available in popular languages lik
 
 ## Let’s Discuss!
 Have you used CP before? What kind of problems do you think CP could solve in the future? Is it possible to use together with LLM model to build an agentic LLM-CP solver? Share your thoughts in the comments below!
-
-
-
-
-
