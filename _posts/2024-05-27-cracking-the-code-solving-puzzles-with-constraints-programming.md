@@ -69,7 +69,7 @@ If you got stuck, no worries! You are welcome to check out the notebook below to
 <script src="https://gist.github.com/stonefl/e58711cb9b39b5be2675726d2e6916c6.js"></script>
 
 
-
+![einstein's puzzle]({{site.baseurl}}/img/post/sudoku.webp)
 
 
 
