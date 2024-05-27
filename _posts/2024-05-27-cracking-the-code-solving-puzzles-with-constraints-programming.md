@@ -58,8 +58,15 @@ Einstein’s puzzle is a brain teaser was claimed created by Albert Einstein, wh
 The question is, **who keeps the fish**?
 
 
+From mathematical perspective, the Einstein’s Puzzle can be formulated as a combinatorial optimization problem. It can be converted to a problem that orders 5 sets (Nationality, House, Pet, Drink, and Smoke), each of which has 5 elements. The ordering has to satisfy above facts and clues. Elements in these sets with the same order correspond to a statement of ‘which person lives in which house, keeps which pet, drinks which beverage and smokes which cigarette‘. Then the question ‘who keeps the fish’ can be answered.
+
+Before looking at the solution notebook below, you are encouraged to try to solve it by hand to feel why it is supposedly too tough for 98% of population.
+
+If you got stuck, no worries! You are welcome to check out the notebook below to see how CP solves it with ease. Here is the notebook I created for the solution using google’s OR-tools.
 
 
+
+<script src="https://gist.github.com/stonefl/e58711cb9b39b5be2675726d2e6916c6.js"></script>
 
 
 
