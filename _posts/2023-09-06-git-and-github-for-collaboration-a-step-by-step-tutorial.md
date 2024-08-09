@@ -216,6 +216,26 @@ Before you make any changes, it is always a good idea to run the command `git pu
 
 ![delete local branch]({{site.baseurl}}/img/post/github06.png)
 
+#### Checkout Remote Rranch
+Usually you need to check out remote branches created by other developers, here is how you can pull the branches you want:
+1. **Fetch all remote branches**
+```
+git fetch origin
+```
+This command will fetch all remote branches from the reposity. `origin` is the remote name you're targeting. So if you have an `upstream` remote name, you can run `git fetch upstream`.
+
+2. **List the branches available to checkout**
+```
+git branch -a
+```
+This command lists all branches available for checkout. The remote branches are prefixed with `remote/origin`
+
+3. Pull from a remote branch
+```
+git checkout -b fix-feature-a origin/feature-a-branch
+```
+This command creates and checks out a new local branch names `fix-feature-a` that pulls all changes from remote branch `origin/feature-a-branch`.
+
 ### Create a New Branch
 
 Branches let you work on new features or bug fixes of the main project code in the `master` branch. You can use `git branch <BRANCH_NAME>` to create a new branch and `git branch` to check your branches.
