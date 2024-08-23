@@ -123,8 +123,7 @@ Additionally, **Statistical Power (**1 - $\beta$) is the probability that a test
 
 A legal analogy could help clarify these key concepts of hypothesis testing. In the United States, a fundamental principle in courtroom trials is that a defendant is presumed innocents until proven guilty beyond a reasonable doubt. The starting assumption of innocence represents the hypotheses:
 
-$H_0$:  the defendant is innocent.
-
+$H_0$:  the defendant is innocent
 $H_a$: the defendant is guilty
 
 The prosecutor’s role is to present evidence that persuades the jury to reject the null hypothesis. If the persecutor fails to provide sufficient evidence, the jury will not reject the null hypothesis. However, finding a person innocent (or accepting the $H_0$) is not an option: a verdict of not guilty means the evidence is insufficient to establish guilt, but it does not prove innocence.
@@ -138,7 +137,7 @@ The following table summarizes the major factors of hypothesis testing and their
 | Null Hypothesis ($H_0$) | Equals the claimed value | The defendant is innocent |
 | Alternative Hypothesis ($H_a$) | Not equals the claimed value | The defendant is guilty |
 | Significance level ($\alpha$) | A “risk tolerance” of making a Type I error  | The “reasonable doubt” standard |
-| P-value | Probability of observing a sample statistic as extreme or more extreme, assuming H_0 is true | The strength of the prosecutor's evidence (lower P-value = stronger evidence against innocence) |
+| P-value | Probability of observing a sample statistic as extreme or more extreme, assuming $H_0$ is true | The strength of the prosecutor's evidence (lower P-value = stronger evidence against innocence) |
 | Type I Error | Rejecting the null hypothesis when it's true | Wrongly convicting an innocent defendant |
 | Type II Error | Failing to reject the null hypothesis when it's false | Acquitting a guilty person |
 | Statistical Power (1- $\beta$)| Probability of correctly rejecting the $H_0$ when it's false. | Ability to correctly convict a guilty person |
