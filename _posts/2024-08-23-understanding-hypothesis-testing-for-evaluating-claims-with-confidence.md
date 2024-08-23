@@ -123,8 +123,9 @@ Additionally, **Statistical Power (**1 - $\beta$) is the probability that a test
 
 A legal analogy could help clarify these key concepts of hypothesis testing. In the United States, a fundamental principle in courtroom trials is that a defendant is presumed innocents until proven guilty beyond a reasonable doubt. The starting assumption of innocence represents the hypotheses:
 
-$H_0$:  the defendant is innocent
-$H_a$: the defendant is guilty
+- $H_0$:  the defendant is innocent
+- $H_a$: the defendant is guilty
+
 
 The prosecutor’s role is to present evidence that persuades the jury to reject the null hypothesis. If the persecutor fails to provide sufficient evidence, the jury will not reject the null hypothesis. However, finding a person innocent (or accepting the $H_0$) is not an option: a verdict of not guilty means the evidence is insufficient to establish guilt, but it does not prove innocence.
 
