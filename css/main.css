@@ -537,6 +537,7 @@ small.post-date {
   background: #FFF;
   border-radius: 0;
   color: #404040;
+  margin: 0 10px;
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
