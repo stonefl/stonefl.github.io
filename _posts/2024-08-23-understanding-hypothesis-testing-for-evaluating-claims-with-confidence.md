@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Understanding Hypothesis Testing for Evaluating Claims with Confidence
 categories:
   - Statistics
