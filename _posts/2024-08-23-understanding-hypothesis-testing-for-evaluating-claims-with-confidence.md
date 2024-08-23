@@ -38,6 +38,7 @@ Hypothesis testing is a structured process to evaluate claims or ideas based on 
 ### Step 1: Formulate the hypotheses:
 
 - Null Hypothesis ($H_0$): the initial assumption for a hypothesis testing, usually claiming a specific value for a population parameter.
+
 - Alternative Hypothesis ($H_a$) : claiming the population parameter differs from the value specified in the null hypothesis.
 
 ### Step 2: Set a Significance Level ($\alpha$)
@@ -46,7 +47,7 @@ The significance level represents the probability of rejecting the null hypothes
 
 ### Step 3: Collect Sample Data
 
-Draw a sample from the population and measure the relevant sample statistics, such as sample size($n$), sample mean($\overline{x}$) or sample proportion($\^{p}$).
+Draw a sample from the population and measure the relevant sample statistics, such as sample size($n$), sample mean($\overline{x}$) or sample proportion($\hat{p}$).
 
 ### Step 4: Calculate P-Value
 
