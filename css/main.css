@@ -533,11 +533,10 @@ small.post-date {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  padding: 10px 5px;
+  padding: 10px 10px;
   background: #FFF;
   border-radius: 0;
   color: #404040;
-  margin: 0 10px;
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
