@@ -35,7 +35,7 @@ Hypothesis testing is a structured process to evaluate claims or ideas based on 
 
 ### Step 1: Formulate the hypotheses:
 
-- Null Hypothesis ($H_0$): the initial assumption for a hypothesis testing, usually claiming a specific value for a population parameter.
+- Null Hypothesis ($`H_0`$): the initial assumption for a hypothesis testing, usually claiming a specific value for a population parameter.
 - Alternative Hypothesis ($H_a$) : claiming the population parameter differs from the value specified in the null hypothesis.
 
 ### Step 2: Set a Significance Level ($\alpha$)
