@@ -22,9 +22,7 @@ The critical question is: what constitutes “significantly lower”? In the Tes
 In statistics, hypothesis testing is the standard procedure used to answer such questions. For our Tesla example, with the sample mean of 334 miles from the randomly selected samples, the process would work as follows:
 
 - We start by assuming that the advertised claim is true, meaning the mean range of the *population* of all Tesla Model S sedans equals to 359 miles.
-
 - Using this assumption, we calculate the likelihood of drawing a random sample where the sample mean deviates from 359 miles by at least as much as the one we found. Specifically, we calculate the likelihood of drawing another random sample (of size 100) with a sample mean of 334 miles or less.
-
 - If such a sample is fairly likely to have occurred by chance, we have evidence that the claim might be true. However, if the sample is unlikely to have occurred by chance, we have reason to believe the population mean range is probably not what the advertisement claims.
 
 Please note that even if a sample result is very likely to have occurred by chance, this does not prove the claim is true; it only suggests the claim might be valid. There could still be other explanations for the sample result, such as an unusual sample selection or confounding variables that were not accounted for.
@@ -38,7 +36,6 @@ Hypothesis testing is a structured process to evaluate claims or ideas based on 
 ### Step 1: Formulate the hypotheses:
 
 - Null Hypothesis ($H_0$): the initial assumption for a hypothesis testing, usually claiming a specific value for a population parameter.
-
 - Alternative Hypothesis ($H_a$) : claiming the population parameter differs from the value specified in the null hypothesis.
 
 ### Step 2: Set a Significance Level ($\alpha$)
@@ -58,7 +55,6 @@ Assuming the null hypothesis is true, calculate the probability of observing a s
 Compare the P-value to the chosen significance level:
 
 - If the P-value is less than the significance level, reject the null hypothesis.
-
 - If the P-value is greater than or equal to the significance level, fail to reject the null hypothesis.
 
 Let’s walk through some of the key concepts in the hypothesis testing process.
