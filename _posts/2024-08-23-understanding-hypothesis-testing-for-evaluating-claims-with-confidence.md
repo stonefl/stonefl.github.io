@@ -13,7 +13,7 @@ In today's information-explosion world, we are constantly bombarded with claims 
 
 Although hypothesis testing might seem complicated, the core concept is straightforward: it helps to determine whether there is sufficient evidence to support a specific claim or hypothesis. In this blog post, i will explain what hypothesis testing is and how it works. 
 
-# Introduction to Hypothesis Testing
+## Introduction to Hypothesis Testing
 
 Let’s start with a real-world example. Tesla, the electric vehicle company, claims that their Model S sedan has a mean range of 359 miles between charges.[ [Tesla website](https://www.tesla.com/models)] How could we verify this claim? One approach is to study a random sample of 100 Model S cars and calculate their average range. If Tesla's claim is accurate, we would expect the sample mean **to be close to 359 miles**. If the claim is false, the sample mean would likely **be significantly lower than** the advertised figure, assuming advertisers usually claim their best results.
 
@@ -29,7 +29,7 @@ Please note that even if a sample result is very likely to have occurred by chan
 
 Now, let's define hypothesis testing more precisely. In statistics, a hypothesis is a claim about a population parameter. In the Tesla example, the population parameter is the mean range between charges. Hypothesis testing is a method to determine whether a particular claim about a population parameter is supported by available sample evidence.
 
-# Hypothesis Testing Process
+## Hypothesis Testing Process
 
 Hypothesis testing is a structured process to evaluate claims or ideas based on sample evidence. Here's an outline of the general process, followed by an explanation of the key concepts.
 
@@ -108,7 +108,7 @@ The idea that a hypothesis test cannot lead us to accept the null hypothesis ill
 
 ## Type I Error, Type II Error, and Statistical Power
 
-![image.png](Understanding%20Hypothesis%20Testing%20for%20Evaluating%20Cl%20e0c233e0c88e47cd8e8fb62dd15ab8d1/image.png)
+![image.png]({{site.baseurl}}/img/post/type1_2_errors.png)
 
 Even when hypothesis testing is conducted correctly, two common types of errors may still occur. In the Tesla example, where we are testing the claim that the mean range of Model S sedans is 359 miles, two possible incorrect conclusions can be made:
 
