@@ -10,6 +10,8 @@ thumbnail: /img/post/Hypothesis_testing.png
 ---
 In today's information-explosion world, we are constantly bombarded with claims made by individuals, organizations, and companies. Advertisers emphasize the quality of their products, universities boast about the salaries of their graduates, and pharmaceutical companies promote the efficacy of their medicines. But how do we know if these claims are trustworthy? Hypothesis testing offers a systematic approach to assess the validity of such claims.
 
+<!--more-->
+
 Although hypothesis testing might seem complicated, the core concept is straightforward: it helps to determine whether there is sufficient evidence to support a specific claim or hypothesis. In this blog post, i will explain what hypothesis testing is and how it works. 
 
 # Introduction to Hypothesis Testing
