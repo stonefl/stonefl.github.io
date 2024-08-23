@@ -135,13 +135,13 @@ The following table summarizes the major factors of hypothesis testing and their
 
 | **Concepts** | **Hypothesis Testing**  | **Courtroom Trial** |
 | --- | --- | --- |
-| Null Hypothesis (H_0) | Equals the claimed value | The defendant is innocent |
-| Alternative Hypothesis (H_a) | Not equals the claimed value | The defendant is guilty |
-| Significance level (alpha) | A “risk tolerance” of making a Type I error  | The “reasonable doubt” standard |
+| Null Hypothesis ($H_0$) | Equals the claimed value | The defendant is innocent |
+| Alternative Hypothesis ($H_a$) | Not equals the claimed value | The defendant is guilty |
+| Significance level ($\alpha$) | A “risk tolerance” of making a Type I error  | The “reasonable doubt” standard |
 | P-value | Probability of observing a sample statistic as extreme or more extreme, assuming H_0 is true | The strength of the prosecutor's evidence (lower P-value = stronger evidence against innocence) |
 | Type I Error | Rejecting the null hypothesis when it's true | Wrongly convicting an innocent defendant |
 | Type II Error | Failing to reject the null hypothesis when it's false | Acquitting a guilty person |
-| Statistical Power | Probability of correctly rejecting the H_0 when it's false. | Ability to correctly convict a guilty person |
+| Statistical Power (1- $\beta$)| Probability of correctly rejecting the $H_0$ when it's false. | Ability to correctly convict a guilty person |
 
 ## Conclusion
 
