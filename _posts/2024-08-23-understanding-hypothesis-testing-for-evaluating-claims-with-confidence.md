@@ -15,7 +15,7 @@ Although hypothesis testing might seem complicated, the core concept is straight
 
 ## Introduction to Hypothesis Testing
 
-Let’s start with a real-world example. Tesla, the electric vehicle company, claims that their Model S sedan has a mean range of 359 miles between charges([Tesla website](https://www.tesla.com/models)). How could we verify this claim? One approach is to study a random sample of 100 Model S cars and calculate their average range. If Tesla's claim is accurate, we would expect the sample mean **to be close to 359 miles**. If the claim is false, the sample mean would likely **be significantly lower than** the advertised figure, assuming advertisers usually claim their best results.
+Let’s start with a real-world example. Tesla, the electric vehicle company, claims that their Model S sedan has a mean range of 359 miles between charges ([Tesla website](https://www.tesla.com/models)). How could we verify this claim? One approach is to study a random sample of 100 Model S cars and calculate their average range. If Tesla's claim is accurate, we would expect the sample mean **to be close to 359 miles**. If the claim is false, the sample mean would likely **be significantly lower than** the advertised figure, assuming advertisers usually claim their best results.
 
 The critical question is: what constitutes “significantly lower”? In the Tesla example, if the sample mean range is only 150 miles, we would have  strong reason to doubt the claim. In contrast, if the sample mean is 360 miles, it would provide strong evidence supporting the claim. But how do we deal with less obvious cases? For instance, if the sample mean is 334 miles, should we consider that “significantly lower” than the claimed mean range of 359 miles?
 
@@ -35,8 +35,8 @@ Hypothesis testing is a structured process to evaluate claims or ideas based on 
 
 ### Step 1: Formulate the hypotheses:
 
-- Null Hypothesis ($\H_0$): the initial assumption for a hypothesis testing, usually claiming a specific value for a population parameter.
-- Alternative Hypothesis ($\H_a$) : claiming the population parameter differs from the value specified in the null hypothesis.
+- Null Hypothesis ($H_0$): the initial assumption for a hypothesis testing, usually claiming a specific value for a population parameter.
+- Alternative Hypothesis ($H_a$) : claiming the population parameter differs from the value specified in the null hypothesis.
 
 ### Step 2: Set a Significance Level ($\alpha$)
 
