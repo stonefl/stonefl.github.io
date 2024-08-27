@@ -14,8 +14,9 @@ p {
   margin: 30px 0;
 }
 
-li {
-  margin: 25px 0 ;
+p li {
+  line-height: 180%;
+  margin: 25px 0;
 }
 
 p a {
