@@ -10,7 +10,7 @@ body {
   background: #FFF;
 }
 p {
-  line-height: 150%;
+  line-height: 200%;
   margin: 30px 0;
 }
 p a {
@@ -533,14 +533,14 @@ small.post-date {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  padding: 10px 10px;
+  padding: 20px 10px;
   background: #FFF;
   border-radius: 0;
   color: #404040;
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
-    padding: 15px 25px;
+    padding: 25px 25px;
   }
 }
 .pager li a:hover,
