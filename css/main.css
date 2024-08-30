@@ -19,8 +19,8 @@ li {
   margin: 30px 0;  /* Default spacing for multiple lines */
 }
 
-.no_toc {
-  margin: 0 0; 
+ul.no_toc#markdown-toc li {
+  margin-bottom: 5px;
 }
 
 p a {
