@@ -21,6 +21,7 @@ li {
 
 li:only-child,
 li:last-child {
+  line-height: 100%;
   mmargin: 5px 0;/* Reduced spacing for a single line */
 }
 
