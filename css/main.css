@@ -15,12 +15,13 @@ p {
 }
 
 li {
-  margin: 20px 0;  /* Default spacing for multiple lines */
+  line-height: 180%;
+  margin: 30px 0;  /* Default spacing for multiple lines */
 }
 
 li:only-child,
 li:last-child {
-  margin-bottom: 10px; /* Reduced spacing for a single line */
+  mmargin: 5px 0;/* Reduced spacing for a single line */
 }
 
 p a {
