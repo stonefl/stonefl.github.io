@@ -20,7 +20,7 @@ li {
 }
 
 .no_toc {
-  margin: 10px 0;  /* Default spacing for multiple lines */
+  margin: 0 0; 
 }
 
 p a {
