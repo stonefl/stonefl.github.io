@@ -14,7 +14,7 @@ p {
   margin: 30px 0;
 }
 
-li {
+article.blog-post ul li {
   line-height: 150%;
   margin: 30px 0;  /* Default spacing for multiple lines */
 }
