@@ -19,7 +19,7 @@ article.blog-post ul li {
   margin: 30px 0;  /* Default spacing for multiple lines */
 }
 
-ul.no_toc li{
+article.blog-post ul.no_toc li{
   line-height: 150%;
   margin: 5px 0;
 }
