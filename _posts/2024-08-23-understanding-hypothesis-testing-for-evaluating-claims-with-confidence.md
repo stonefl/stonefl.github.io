@@ -5,8 +5,9 @@ title: Understanding Hypothesis Testing for Evaluating Claims with Confidence
 categories:
   - Statistics
   - Data Analysis
-  - Data-Driven Decision Making
 thumbnail: /img/post/Hypothesis_testing.png
+tags:
+  - Hypothesis Testing
 ---
 In today's information-explosion world, we are constantly bombarded with claims made by individuals, organizations, and companies. Advertisers emphasize the quality of their products, universities boast about the salaries of their graduates, and pharmaceutical companies promote the efficacy of their medicines. But how do we know if these claims are trustworthy? Hypothesis testing offers a systematic approach to assess the validity of such claims.
 <!--more-->
