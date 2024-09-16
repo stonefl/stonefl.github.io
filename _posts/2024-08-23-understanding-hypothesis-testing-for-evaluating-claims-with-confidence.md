@@ -130,7 +130,7 @@ A legal analogy could help clarify these key concepts of hypothesis testing. In 
 
 The prosecutor’s role is to present evidence that persuades the jury to reject the null hypothesis. If the persecutor fails to provide sufficient evidence, the jury will not reject the null hypothesis. However, **finding a person innocent (or accepting the $H_0$) is not an option: a verdict of not guilty means the evidence is insufficient to establish guilt, but it does not prove innocence.**
 
-Different cases need different standards of reasonable doubt. For example, a civil case involving a $5000 fine might require a more strict standard, thus lower level of significance, than a criminal case involving a death penalty, where the consequences of wrongly rejecting the null hypothesis are severe.
+Different cases need different standards of reasonable doubt. For example, a civil case involving a $5000 fine might require a less strict standard, thus higher level of significance, than a criminal case involving a death penalty, where the consequences of wrongly rejecting the null hypothesis are severe.
 
 The following table summarizes the major factors of hypothesis testing and their corresponding courtroom trial concepts.
 
@@ -139,7 +139,7 @@ The following table summarizes the major factors of hypothesis testing and their
 | Null Hypothesis ($H_0$) | Equals the claimed value | The defendant is innocent |
 | Alternative Hypothesis ($H_a$) | Not equals the claimed value | The defendant is guilty |
 | Significance level ($\alpha$) | A “risk tolerance” of making a Type I error  | The “reasonable doubt” standard |
-| P-value | Probability of observing a sample statistic as extreme or more extreme, assuming $H_0$ is true | The strength of the prosecutor's evidence (lower P-value = stronger evidence against innocence) |
+| P-value | Probability of observing a sample statistic as extreme or more extreme, assuming $H_0$ is true | The strength of the prosecutor's evidence (a lower P-value means stronger evidence against innocence) |
 | Type I Error | Rejecting the null hypothesis when it's true | Wrongly convicting an innocent defendant |
 | Type II Error | Failing to reject the null hypothesis when it's false | Acquitting a guilty person |
 | Statistical Power (1- $\beta$)| Probability of correctly rejecting the $H_0$ when it's false. | Ability to correctly convict a guilty person |
