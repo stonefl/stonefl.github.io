@@ -105,7 +105,7 @@ Hypothesis testing always begins with the assumption that the null hypothesis is
 
 It is important to note that “accepting the null hypothesis” is not a possible outcome, because the null hypothesis is always the initial assumption. The test may not provide sufficient evidence to reject this assumption, but it cannot, by itself, prove that the assumption is true. Therefore, we never conclude that there is sufficient evidence to support a null hypothesis.
 
-The idea that a hypothesis test cannot lead us to accept the null hypothesis illustrates the adage “absence of evidence is not evidence of absence.” This concept also explains why it is easy to prove the existence of mythical creatures, such as Bigfoot or the Loch Ness Monster exists, while disproval of their existence is nearly impossible.
+The idea that a hypothesis test cannot lead us to accept the null hypothesis illustrates the adage “absence of evidence is not evidence of absence.” This concept also explains why it is easy to claim the existence of mythical creatures, such as Bigfoot or the Loch Ness Monster, while disproval of their existence is nearly impossible.
 
 ## Type I Error, Type II Error, and Statistical Power
 
