@@ -13,6 +13,7 @@ tags:
   - Ollama
   - AnythingLLM
   - DeepSeek
+thumbnail: /img/post/ollama_11.webp
 ---
 With the rapid influx of new LLM research papers, I wanted a way to **store, summarize, and explore** these findings seamlessly. The idea was to build a QnA system that could quickly retrieve relevant knowledge while keeping everything under my control. Given the excitement around **DeepSeek R1**, I thought this as a perfect opportunity to test its capabilities. In this blog, I’ll share how I set up a local Knowledge QnA system using **Ollama**, **DeepSeek R1**, and **AnythingLLM**—a solution that enables efficient querying of structured and unstructured knowledge sources while maintaining full data privacy and local execution. 
 <!--more-->
