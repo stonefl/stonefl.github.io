@@ -37,12 +37,12 @@ With that in mind, I chose **Ollama** to run the distilled version of **DeepSeek
 
 ### Installing Ollama
 
-1. Go to the Ollama website ([https://ollama.com/](https://ollama.com/)) and download the appropriate version for your operating system.
+* Go to the Ollama website ([https://ollama.com/](https://ollama.com/)) and download the appropriate version for your operating system.
 ![image.png]({{site.baseurl}}/img/post/ollama_01.png)
 
-2. Once downloaded, unzip the file and double-click to install.
+* Once downloaded, unzip the file and double-click to install.
 
-3. After installation, verify it's working by running the following command in terminal:
+* After installation, verify it's working by running the following command in terminal:
 
 ```sh
 ollama --version
@@ -55,19 +55,19 @@ You can also check Ollama's status by opening [http://localhost:11434](http://lo
 
 ### Installing DeepSeek R1
 
-1. Visit the **Models** section on [Ollama’s website](https://ollama.com/).
+* Visit the **Models** section on [Ollama’s website](https://ollama.com/).
 
-2. Search for **DeepSeek R1** and choose the version you want to download. In this guide, I downloaded the **7B model**.
+* Search for **DeepSeek R1** and choose the version you want to download. In this guide, I downloaded the **7B model**.
 
 ![image.png]({{site.baseurl}}/img/post/ollama_02.png)
 
-3. Copy and run the following command in the terminal to download the model:
+* Copy and run the following command in the terminal to download the model:
 
 ```sh
 ollama run deepseek-r1:7b
 ```
 
-4. Once the installation is complete, you can test it with a simple prompt:
+* Once the installation is complete, you can test it with a simple prompt:
 
 ![image.png]({{site.baseurl}}/img/post/ollama_03.png)
 
@@ -92,20 +92,20 @@ To exit, press `Ctrl + D`, or type `/bye` or `/exit`.
 
 ### Installing AnythingLLM
 
-1. Visit the [AnythingLLM website](https://anythingllm.com/) and download the desktop version.
+* Visit the [AnythingLLM website](https://anythingllm.com/) and download the desktop version.
 
-2. Install the software and launch it.
+* Install the software and launch it.
 
-3. When prompted, click **Get Started**.
+* When prompted, click **Get Started**.
 ![image.png]({{site.baseurl}}/img/post/ollama_04.png)
 
-4. In the LLM Prference, select **Ollama** as the LLM provider.
+* In the LLM Prference, select **Ollama** as the LLM provider.
 ![image.png]({{site.baseurl}}/img/post/ollama_05.png)
 
-5. Proceed with the default settings until you reach the page for workspace creation.
+* Proceed with the default settings until you reach the page for workspace creation.
 ![image.png]({{site.baseurl}}/img/post/ollama_06.png)
 
-6. Name your workspace and finalize the setup.
+* Name your workspace and finalize the setup.
 
 Once configured, click your workspace name on the left pane to test the chatbot. You should see DeepSeek R1 processing queries.
 ![image.png]({{site.baseurl}}/img/post/ollama_07.png)
@@ -118,14 +118,14 @@ Once configured, click your workspace name on the left pane to test the chatbot.
 
 AnythingLLM allows you to **upload PDFs, Markdown, JSON, and audio files** as knowledge sources. Here’s how you can start adding documents:
 
-1. Click the **Upload** button next to the workspace name.
+* Click the **Upload** button next to the workspace name.
 
-2. From the file upload UI, select and upload your documents.
+* From the file upload UI, select and upload your documents.
 ![image.png]({{site.baseurl}}/img/post/ollama_08.png)
 
-3. Choose the document to add to the workspace.
+* Choose the document to add to the workspace.
 
-4. Save it as **embeddings** for retrieval.
+* Save it as **embeddings** for retrieval.
 
 Once the knowledge base is set up, you can query it using the AnythingLLM UI. For example, I tested the system with the question: *"How do you evaluate an LLM?"* 
 The response included the most relevant answer based on the ingested data.
