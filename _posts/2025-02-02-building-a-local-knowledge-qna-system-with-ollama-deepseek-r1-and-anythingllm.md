@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: >-
   Building a Local Knowledge QnA System with Ollama, DeepSeek R1, and
   AnythingLLM
