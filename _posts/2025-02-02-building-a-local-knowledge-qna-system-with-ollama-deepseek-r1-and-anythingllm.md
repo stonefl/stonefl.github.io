@@ -27,7 +27,9 @@ As large language models (LLMs) become increasingly powerful, many businesses an
 
 With that in mind, I chose **Ollama** to run the distilled version of **DeepSeek R1** locally and **AnythingLLM** as an interface to manage knowledge ingestion and retrieval.
 
+
 ---
+
 
 ## Step 1: Setting Up Ollama
 
@@ -80,7 +82,9 @@ To exit, press `Ctrl + D`, or type `/bye` or `/exit`.
 - `ollama run` — Runs a model. If not downloaded, it pulls and serves it.
 - `ollama serve` — Starts the server to serve the downloaded models.
 
+
 ---
+
 
 ## Step 2: Installing and Configuring AnythingLLM
 
@@ -106,7 +110,9 @@ To exit, press `Ctrl + D`, or type `/bye` or `/exit`.
 Once configured, click your workspace name on the left pane to test the chatbot. You should see DeepSeek R1 processing queries.
 ![image.png]({{site.baseurl}}/img/post/ollama_07.png)
 
+
 ---
+
 
 ## Step 3: Ingesting Knowledge Sources
 
@@ -126,7 +132,9 @@ The response included the most relevant answer based on the ingested data.
 ![image.png]({{site.baseurl}}/img/post/ollama_09.png)
 ![image.png]({{site.baseurl}}/img/post/ollama_10.png)
 
+
 ---
+
 
 ## Conclusion
 
