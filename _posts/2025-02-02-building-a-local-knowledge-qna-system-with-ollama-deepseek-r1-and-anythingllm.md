@@ -47,7 +47,6 @@ ollama --version
 ```
 
 If installed correctly, this will display the version number.
-![image.png]({{site.baseurl}}/img/post/ollama_02.png)
 
 You can also check Ollama's status by opening [http://localhost:11434](http://localhost:11434) in a web browser, which will return the status of the installed Ollama.
 
