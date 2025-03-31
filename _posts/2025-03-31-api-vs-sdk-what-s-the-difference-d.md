@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'API vs. SDK: What’s the Difference?d'
+title: 'API vs. SDK: What’s the Difference?'
 published: true
 date: '2025-03-31'
 categories:
