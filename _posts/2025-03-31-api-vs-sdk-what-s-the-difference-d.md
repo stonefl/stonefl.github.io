@@ -10,6 +10,7 @@ categories:
 tags:
   - API
   - SDK
+thumbnail: /img/post/api-vs-sdk.jpg
 ---
 In today’s digital world, terms like API and SDK are thrown around often. But what do they really mean? Here’s a simple breakdown using an analogy we all understand: a restaurant experience! 🍽️ <!--more-->
 
