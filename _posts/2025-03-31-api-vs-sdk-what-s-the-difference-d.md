@@ -1,7 +1,15 @@
 ---
 layout: post
-published: false
 title: 'API vs. SDK: What’s the Difference?d'
+published: true
+date: '2025-03-31'
+categories:
+  - Tech
+  - TechnologyExplained
+  - SoftwareDevelopment
+tags:
+  - API
+  - SDK
 ---
 In today’s digital world, terms like API and SDK are thrown around often. But what do they really mean? Here’s a simple breakdown using an analogy we all understand: a restaurant experience! 🍽️ <!--more-->
 
@@ -24,5 +32,3 @@ An **SDK** is just that—a collection of tools, libraries, and documentation th
 Next time you hear “API” or “SDK,” think of them as the difference between ordering food from a menu vs. getting a full cooking kit to create your own dishes! 🍽️👨‍🍳
 
 **Quiz**: based on the definitions of API and SDK in this post, is ChatGPT API or SDK?
-
-#TechSimplified #API #SDK #SoftwareDevelopment #TechnologyExplained
