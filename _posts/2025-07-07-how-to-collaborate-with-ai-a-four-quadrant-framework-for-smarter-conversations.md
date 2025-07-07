@@ -21,7 +21,7 @@ By mapping what the human and AI each know or don’t know-or don't know- we gai
 ## Understanding the Four Quadrants
 
 
-![4_quadrants_ai_dialogue](/img/post/api-vs-sdk.jpg)
+![4_quadrants_ai_dialogue](/img/post/4_quadrants_ai_dialogue.png)
 
 This framework divides interaction types into four quadrants, each reflecting a different configuration of knowledge between the user and the AI. Recognizing these distinctions helps you choose the right prompting strategy and unlock more effective, goal-oriented collaboration:
 
@@ -91,12 +91,12 @@ Quadrants 2 and 4 are particularly valuable: in one, AI teaches you; in the othe
 
 ## Adapting in an Evolving AI Landscape
 
-![4_quadrants_01](assets/4_quadrants_01.png)
+![4_quadrants_01](/img/post/4_quadrants_ai_dialogue_01.png)
 The quadrants aren’t fixed. They evolve as AI’s capabilities grow. The knowledge boundaries of AI are constantly expanding. AI is continually pushing its horizontal knowledge axis downwards, meaning Quadrant 1 (AI knows, I know) will continuously expand, and Quadrant 4 (AI doesn't know, I know) will continuously shrink as AI absorb more public knowledge and emerging techniques like RAG extend their reach.
 
 So, what remains our human advantage? Our tacit domain expertise, intuitive reasoning, and context-specific insights continue to be areas where AI exhibits limited understanding or adaptability. Unlike AI, humans bring lived experiences, cultural context, emontional intelligence, and ethical judgement - qualities that don't fit neatly into datasets. 
 
-![4_quadrants_02](assets/4_quadrants_02.png)
+![4_quadrants_02](/img/post/4_quadrants_ai_dialogue_02.png)
 
 As humans, we must also evolve-actively shift our knowledge boundary (vertical axis) to the left-learn more and learn faster, perhaps with the assistance of AI. The deeper and more extensively you query AI in Quadrant 2 and collaborate in Quadrant 3, the more exponential growth and greater returns you will achieve.
 
