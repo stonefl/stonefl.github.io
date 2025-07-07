@@ -11,7 +11,7 @@ tags:
   - Prompt
 thumbnail: /img/post/4_quadrants_ai_dialogue.png
 ---
-As tools like ChatGPT reshape how we work, prompting—the skill of designing effective instructions to guide AI behavior—has become a new critical skill. Techniques like zero-shot, few-shot, and chain-of-thought can improve outputs at a tactical level. But they canot answer the bigger questions: which approach should you choose for which situation? and how can we collaborate with AI effectively? <!--more-->
+As tools like ChatGPT reshape how we work, prompting—the skill of designing effective instructions to guide AI behavior—has become a new critical skill. Techniques like zero-shot, few-shot, and chain-of-thought can improve outputs at a tactical level. But they cannot answer the bigger questions: which approach should you choose for which situation? and how can we collaborate with AI effectively? <!--more-->
 
 To address these challenges, I'd like to introduce the **Four-Quadrant Framework of AI Dialogue**, a practical model inspired by the psychological *Johari Window Model*—a framework originally developed by psychologists Joseph Luft and Harrington Ingham in 1955 to improve self-awareness and interpersonal communication. This adaptation helps us better understand how knowledge is shared between humans and AI, and how to design interactions that are more intentional and impactful.
 
@@ -127,5 +127,3 @@ Einstein once said, “Imagination is more important than knowledge.” Today, w
 Don’t just use AI. Work with it. Learn from it. Teach it. Build with it.
 
 Which quadrant are you working in today? What would help you co-create more effectively with AI? Let’s explore that together.
-
-
