@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: >-
   How to Collaborate with AI: A Four-Quadrant Framework for Smarter
   Conversations
