@@ -94,7 +94,7 @@ Quadrants 2 and 4 are particularly valuable: in one, AI teaches you; in the othe
 ![4_quadrants_01](/img/post/4_quadrants_ai_dialogue_01.png)
 The quadrants aren’t fixed. They evolve as AI’s capabilities grow. The knowledge boundaries of AI are constantly expanding. AI is continually pushing its horizontal knowledge axis downwards, meaning Quadrant 1 (AI knows, I know) will continuously expand, and Quadrant 4 (AI doesn't know, I know) will continuously shrink as AI absorb more public knowledge and emerging techniques like RAG extend their reach.
 
-So, what remains our human advantage? Our tacit domain expertise, intuitive reasoning, and context-specific insights continue to be areas where AI exhibits limited understanding or adaptability. Unlike AI, humans bring lived experiences, cultural context, emontional intelligence, and ethical judgement - qualities that don't fit neatly into datasets. 
+So, what remains our human advantage? Our tacit domain expertise, intuitive reasoning, and context-specific insights continue to be areas where AI exhibits limited understanding or adaptability. Unlike AI, humans bring lived experiences, cultural context, emotional intelligence, and ethical judgement - qualities that don't fit neatly into datasets. 
 
 ![4_quadrants_02](/img/post/4_quadrants_ai_dialogue_02.png)
 
