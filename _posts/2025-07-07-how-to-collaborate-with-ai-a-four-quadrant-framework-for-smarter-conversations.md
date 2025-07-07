@@ -101,7 +101,7 @@ So, what remains our human advantage? Our tacit domain expertise, intuitive reas
 As humans, we must also evolve-actively shift our knowledge boundary (vertical axis) to the left-learn more and learn faster, perhaps with the assistance of AI. The deeper and more extensively you query AI in Quadrant 2 and collaborate in Quadrant 3, the more exponential growth and greater returns you will achieve.
 
 To maximize this opportunity:
-* treat Quadrant 2 as your active learning lab. Ask systematic, layered questions, test your understanding, and use AI to uncover nuances and edge cases. 
+* Treat Quadrant 2 as your active learning lab. Ask systematic, layered questions, test your understanding, and use AI to uncover nuances and edge cases. 
 * Use Quadrant 3 as your innovation studio. Explore new ideas, experiment with perspectives, and refine outputs through iteration. 
 
 Together, these actions would improve your ability to both learn from and build with AI.
