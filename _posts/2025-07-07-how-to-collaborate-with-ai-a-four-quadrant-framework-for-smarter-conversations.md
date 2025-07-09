@@ -72,7 +72,7 @@ This is a collaborative space where neither party holds all the answers. you and
 
 ---
 
-### Quadrant 4: Expert Informer (AI Doesn’t Know, I Know))
+### Quadrant 4: Expert Informer (AI Doesn’t Know, I Know)
 
 This quadrant is about transfer. You provide proprietary or specialized knowledge that the AI lacks. The goal is not to retrieve answers but to train and inform.
 
