@@ -82,6 +82,10 @@ If you just need to authorize with a user account without setting up a configura
 ```
 gcloud auth login
 ```
+If you need to authorize application default credentials (ADC), you can run:
+```
+gcloud auth application-default login
+```
 
 If you need to authorize with a service account instead of a user account, you can run:
 ```
